@@ -1,0 +1,33 @@
+html,
+body {
+	color: #000;
+	font-family: "Roboto Condensed", sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 1.2;
+	position: relative;
+	height: 100%;
+	background: #fafafa;
+	display: flex;
+	flex-direction: column;
+}
+
+.site__header {
+	position: relative;
+}
+
+.site__center {
+	position: relative;
+	padding: 0 0 20px;
+}
+
+.site__footer {
+	position: relative;
+	margin-top: auto;
+}
+
+.wsite {
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+}
