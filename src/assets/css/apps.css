@@ -22,6 +22,12 @@
 @import "__mainTop.css";
 @import "__mainTop_media.css";
 
+@import "__card.css";
+@import "__card_media.css";
+
+@import "__overlay.css";
+@import "__overlay_media.css";
+
 /* в самом низу */
 @import "main.css";
 @import "media.css";

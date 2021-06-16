@@ -1,7 +1,7 @@
 @media only screen and (max-width: 1200px) {
 	.mainTop {
 		margin: 0 -10px;
-		padding: 40px 0;
+		padding: 40px 0 20px;
 	}
 
 	.mainTop__left {
@@ -20,6 +20,15 @@
 		left: 7%;
 		bottom: 7%;
 	}
+	.mainTop__line {
+		margin: 0 -10px;
+	}
+	.mainTop__shopLinkOuter {
+		padding: 0 10px;
+	}
+	.mainTop__btlPromo {
+		padding: 0 10px;
+	}
 }
 
 @media only screen and (max-width: 1140px) {
@@ -28,6 +37,10 @@
 @media only screen and (max-width: 1080px) {
 	.mainTop__rightBoxDesc {
 		font-size: 0.875rem;
+	}
+	.mainTop__shopLinkDesc {
+		font-size: 0.875rem;
+		line-height: 1.4;
 	}
 }
 
@@ -52,11 +65,14 @@
 }
 
 @media only screen and (max-width: 820px) {
+	.mainTop__shopLinkDesc {
+		font-size: 0.75em;
+	}
 }
 
 @media only screen and (max-width: 768px) {
 	.mainTop {
-		padding: 10px 0;
+		padding: 10px 0 20px;
 	}
 	.mainTop__left {
 		width: 100%;
@@ -67,12 +83,33 @@
 		order: 1;
 		margin: 0 0 10px 0;
 	}
+	.mainTop__btlPromoLink_xl {
+		display: none;
+	}
+	.mainTop__btlPromoLink_sd {
+		display: block;
+	}
+	.mainTop__shopLink {
+		flex-direction: column;
+		justify-content: center;
+	}
+	.mainTop__shopLinkDesc {
+		padding: 5px 0 0 0;
+		text-align: center;
+		line-height: 1.3;
+	}
 }
 
 @media only screen and (max-width: 600px) {
+	.mainTop__shopLinkDesc {
+		display: none;
+	}
 }
 
 @media only screen and (max-width: 480px) {
+	.mainTop {
+		padding: 10px 0 16px;
+	}
 	.mainTop__right {
 		margin: 0 0 8px 0;
 	}
@@ -85,6 +122,26 @@
 	.mainTop__rightBoxTitle {
 		font-size: 0.875rem;
 	}
+	.mainTop__shopLinkTitle {
+		font-size: 0.875rem;
+	}
+	.mainTop__btlPromo {
+		display: none;
+	}
+	.mainTop__shopLinkOuter {
+		width: 100%;
+		padding: 0 10px;
+		height: 50px;
+	}
+	.mainTop__shopLink {
+		flex-direction: row;
+		justify-content: flex-start;
+	}
+	.mainTop__shopLinkDesc {
+		padding: 0 0 0 20px;
+		display: block;
+		text-align: left;
+	}
 }
 
 @media only screen and (max-width: 414px) {
@@ -94,6 +151,9 @@
 	.mainTop__rightBoxTitle {
 		font-size: 0.75rem;
 	}
+	/* .mainTop__shopLinkTitle {
+		font-size: 0.75rem;
+	} */
 }
 
 @media only screen and (max-width: 320px) {

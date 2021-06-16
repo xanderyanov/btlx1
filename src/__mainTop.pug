@@ -25,7 +25,12 @@ mixin mainTop
                 .mainTop__rightBoxTitle Специалисты
                 .mainTop__rightBoxDesc Наши врачи-косметологи и стилисты
       .mainTop__line 
-        .mainTop__shopLink 
-          .mainTop__shopLinkTitle E-Shop
-          .mainTop__shopLinkDesc Интернет-магазин профессиональной косметики
+        .mainTop__shopLinkOuter
+          a.mainTop__shopLink(href="#") 
+            span.mainTop__shopLinkTitle E-Shop
+            span.mainTop__shopLinkDesc Интернет-магазин профессиональной косметики
         .mainTop__btlPromo
+          a.mainTop__btlPromoLink.mainTop__btlPromoLink_xl(href="")
+            img(src="assets/img/creative/m22-1200х150-2.jpg", alt="")
+          a.mainTop__btlPromoLink.mainTop__btlPromoLink_sd(href="")
+            img(src="assets/img/creative/m22-600х150.jpg", alt="")
