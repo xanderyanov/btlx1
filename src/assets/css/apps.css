@@ -28,6 +28,9 @@
 @import "__overlay.css";
 @import "__overlay_media.css";
 
+@import "__price.css";
+@import "__price_media.css";
+
 /* в самом низу */
 @import "main.css";
 @import "media.css";

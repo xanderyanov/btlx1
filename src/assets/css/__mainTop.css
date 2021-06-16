@@ -67,19 +67,20 @@
 	line-height: 1.625rem;
 	letter-spacing: 0.04em;
 	text-transform: uppercase;
-	color: #333333;
+	/* color: #333333; */
 	/* margin: 0 0 20px 0; */
 }
 
 .mainTop__rightBoxDesc {
-	position: absolute;
+	/* position: absolute;
 	left: 10%;
-	bottom: 10%;
+	bottom: 10%; */
+	padding: 20px 0 0 0;
 	font-weight: 300;
 	font-size: 1rem;
 	line-height: 1.375rem;
 	letter-spacing: 0.04em;
-	color: var(--t1);
+	/* color: var(--t1); */
 }
 
 .mainTop__line {

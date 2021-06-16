@@ -26,6 +26,7 @@
 	padding: 50px 20px 50px 100px;
 	position: relative;
 	display: none;
+	background: var(--light1);
 }
 
 .priceBox__area {
@@ -57,7 +58,7 @@
 
 .innerPriceBox__close i {
 	font-size: 1.5rem;
-	color: var(--brick);
+	color: var(--color1);
 }
 
 .innerPriceBox__content {
