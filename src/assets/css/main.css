@@ -38,3 +38,13 @@ body {
 .wideBlock {
 	position: relative;
 }
+
+.title1 h2 {
+	font-weight: 300;
+	font-size: 2.625rem;
+	line-height: 1.2;
+	letter-spacing: 0.04em;
+	color: #333333;
+	margin: 0;
+	padding: 0;
+}
