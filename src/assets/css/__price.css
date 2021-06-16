@@ -11,6 +11,11 @@
 	flex-direction: column;
 	margin: 20px 0 0 0;
 }
+
+.priceBox__area:first-child {
+	margin: 10px 0 0 0;
+}
+
 .priceBox__title {
 	padding: 0 0 10px 0;
 }
