@@ -71,6 +71,9 @@
 }
 
 @media only screen and (max-width: 768px) {
+	.mainTop__area {
+		margin-bottom: 40px;
+	}
 	.mainTop {
 		padding: 10px 0 20px;
 	}
@@ -107,6 +110,9 @@
 }
 
 @media only screen and (max-width: 480px) {
+	.mainTop__area {
+		margin-bottom: 30px;
+	}
 	.mainTop {
 		padding: 10px 0 16px;
 	}

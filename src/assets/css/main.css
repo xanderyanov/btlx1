@@ -39,6 +39,10 @@ body {
 	position: relative;
 }
 
+.title1 {
+	position: relative;
+}
+
 .title1 h2 {
 	font-weight: 300;
 	font-size: 2.625rem;
