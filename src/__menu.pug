@@ -1,0 +1,520 @@
+mixin menuButton1
+  .menuButton1__area.menuButton1__area_JS
+    .menuButton1__text Главное меню
+    .menuButton1
+      span
+      span
+      span
+
+mixin topMenu
+  .topMenu__area.w0
+    .topMenu__wrapper.w1
+      +menuButton1
+      nav.topMenu__outer
+        ul.topMenu
+          li
+            a(href="#") Главная
+          li
+            a(href="#") Услуги
+          li.endLeftBlock
+            a(href="#") Специалисты
+          li
+            a(href="#") Бренды
+          li
+            a(href="#") Советы эксперта
+          li
+            a(href="#") Информация
+          li
+            a(href="#") Контакты
+      .topSearch.topSearch_JS
+        i.icon-search1
+
+mixin topMenuAdaptive
+  .topMenuAdaptive__area
+    .topMenuAdaptive__wrapper
+      .topMenuAdaptive__close
+        i.icon-close1
+      nav.topMenuAdaptive__outer
+        ul.topMenuAdaptive
+          li
+            a(href="#") Главная
+          li
+            a(href="#") Услуги
+          li
+            a(href="#") Специалисты
+          li
+            a(href="#") Бренды
+          li
+            a(href="#") Советы эксперта
+          li
+            a(href="#") Информация
+          li
+            a(href="#") Контакты
+
+
+
+mixin leftMenu
+  
+  nav.leftMenu__outer
+    nav.solutionMenu__outer
+      .solution__btn Решить проблему
+      ul.solution
+        li
+          a(href="") Лифтинг лица
+        li
+          a(href="") Пигментация
+        li
+          a(href="") Акне
+    ul.leftMenu
+      li.lev1
+        .lev_a_wrapper
+          a(href="") Все процедуры
+      li.lev1
+        .lev_a_wrapper
+          a.hasInner(href="") Инъекционная косметология
+          .openInner
+        ul
+          li.lev2
+            a(href="") Candela GENTLELASEPRO-U
+          li.lev2
+            a(href="") Venus Legasy
+          li.lev2
+            a(href="") Fotona
+      li.lev1
+        .lev_a_wrapper
+          a(href="") Инъекционная косметология
+          .openInner
+        ul
+          li.lev2
+            a(href="") Babor
+          li.lev2
+            a(href="") Prophilo
+          li.lev2
+            a(href="") Botox
+      li.lev1
+        .lev_a_wrapper
+          a(href="") Эстетическая косметология
+      li.lev1
+        .lev_a_wrapper
+          a(href="") Эстетика тела
+      li.lev1
+        .lev_a_wrapper
+          a(href="") Дерматология
+      li.lev1
+        .lev_a_wrapper
+          a(href="") Трихология
+      li.lev1
+        .lev_a_wrapper
+          a(href="") Nail Bar
+      li.lev1
+        .lev_a_wrapper
+          a(href="") Hair стиль
+      li.lev1
+        .lev_a_wrapper
+          a(href="") Brow Bar
+
+
+
+mixin leftMenuSuperTree
+  nav.leftMenu__outer.leftMenu__outerHideInMobile 
+    ul.leftMenu
+      li.lev1
+        .lev_a_wrapper
+          a.hasInner(href="") Решить проблему
+          .openInner
+        ul
+          li.lev2
+            .lev_a_wrapper
+              a.hasInner(href="") Лифтинг
+          li.lev2
+            .lev_a_wrapper
+              a.hasInner(href="") Пигментация
+          li.lev2
+            .lev_a_wrapper
+              a.hasInner(href="") Акне
+          li.lev2
+            .lev_a_wrapper
+              a.hasInner(href="") Лишний вес
+      li.lev1.active
+        .lev_a_wrapper
+          a.hasInner(href="") Услуги
+          .openInner
+        ul
+          li.lev2.active
+            .lev_a_wrapper
+              a.hasInner(href="") Аппаратная косметология 
+              .openInner
+            ul
+              li.lev3
+                .lev_a_wrapper
+                  a(href="") фотоомоложение
+              li.lev3
+                .lev_a_wrapper
+                  a(href="") лазерная косметология
+              li.lev3.active
+                .lev_a_wrapper
+                  a(href="") список всех процедур
+          li.lev2
+            .lev_a_wrapper
+              a(href="") Инъекционная косметология
+              .openInner
+            ul
+              li.lev3
+                .lev_a_wrapper
+                  a(href="") Список всех методик
+          li.lev2
+            .lev_a_wrapper
+              a.hasInner(href="") Лечебная косметология 
+              .openInner
+            ul
+              li.lev3
+                .lev_a_wrapper
+                  a(href="") фототерапия в дерматологии
+              li.lev3
+                .lev_a_wrapper
+                  a(href="") лазеротерапия в дерматологии
+              li.lev3
+                .lev_a_wrapper
+                  a(href="") подология
+              li.lev3
+                .lev_a_wrapper
+                  a(href="") трихология
+              li.lev3
+                .lev_a_wrapper
+                  a(href="") лечение храпа
+              li.lev3
+                .lev_a_wrapper
+                  a(href="") список всех процедур
+          li.lev2
+            .lev_a_wrapper
+              a.hasInner(href="") Эстетика и уход
+              .openInner
+            ul
+              li.lev3
+                .lev_a_wrapper
+                  a(href="") список всех процедур
+          li.lev2
+            .lev_a_wrapper
+              a.hasInner(href="") Имиджевая студия
+              .openInner
+            ul
+              li.lev3
+                .lev_a_wrapper
+                  a(href="") визаж
+              li.lev3
+                .lev_a_wrapper
+                  a(href="") стрижка
+              li.lev3
+                .lev_a_wrapper
+                  a(href="") окрашивание
+              li.lev3
+                .lev_a_wrapper
+                  a(href="") уход за волосами
+              li.lev3
+                .lev_a_wrapper
+                  a(href="") укладка
+              li.lev3
+                .lev_a_wrapper
+                  a(href="") лечение волос (трихология)
+              li.lev3
+                .lev_a_wrapper
+                  a(href="") brow bar
+              li.lev3
+                .lev_a_wrapper
+                  a(href="") маникюр
+              li.lev3
+                .lev_a_wrapper
+                  a(href="") педикюр
+              li.lev3
+                .lev_a_wrapper
+                  a(href="") лечение стопы и ногтевой пластины (подология)
+      li.lev1
+        .lev_a_wrapper
+          a(href="") Специалисты
+      li.lev1
+        .lev_a_wrapper
+          a.hasInner(href="") Оборудование
+          .openInner
+        ul
+          li.lev2
+            .lev_a_wrapper
+              a(href="") LPG
+          li.lev2
+            .lev_a_wrapper
+              a(href="") Candela
+          li.lev2
+            .lev_a_wrapper
+              a(href="") Fotona
+      li.lev1
+        .lev_a_wrapper
+          a(href="") Бренды
+      li.lev1
+        .lev_a_wrapper
+          a.hasInner(href="") О нас
+          .openInner
+        ul
+          li.lev2
+            .lev_a_wrapper
+              a(href="") Контакты
+          li.lev2
+            .lev_a_wrapper
+              a(href="") Дополнительная информация
+          li.lev2
+            .lev_a_wrapper
+              a(href="") Вакансии
+      li.lev1
+        .lev_a_wrapper
+          a(href="") Блог
+      li.lev1
+        .lev_a_wrapper
+          a(href="") Лицензии
+      li.lev1
+        .lev_a_wrapper
+          a(href="") Акции
+      li.lev1
+        .lev_a_wrapper
+          a(href="") Запись на прием
+
+mixin MenuBottom1__menu
+  nav.leftMenu__outer100 
+    ul.leftMenu
+      li.lev1
+        .lev_a_wrapper
+          a(href="") Специалисты
+      li.lev1
+        .lev_a_wrapper
+          a.hasInner(href="") Оборудование
+          .openInner
+        ul
+          li.lev2
+            .lev_a_wrapper
+              a(href="") LPG
+          li.lev2
+            .lev_a_wrapper
+              a(href="") Candela
+          li.lev2
+            .lev_a_wrapper
+              a(href="") Fotona
+      li.lev1
+        .lev_a_wrapper
+          a(href="") Бренды
+      li.lev1
+        .lev_a_wrapper
+          a.hasInner(href="") О нас
+          .openInner
+        ul
+          li.lev2
+            .lev_a_wrapper
+              a(href="") Контакты
+          li.lev2
+            .lev_a_wrapper
+              a(href="") Дополнительная информация
+          li.lev2
+            .lev_a_wrapper
+              a(href="") Вакансии
+      li.lev1
+        .lev_a_wrapper
+          a(href="") Блог
+      li.lev1
+        .lev_a_wrapper
+          a(href="") Лицензии
+      li.lev1
+        .lev_a_wrapper
+          a(href="") Акции
+      li.lev1
+        .lev_a_wrapper
+          a(href="") Запись на прием
+
+
+
+mixin MenuBottom1__serv
+  nav.leftMenu__outer100 
+    ul.leftMenu
+      li.lev1
+        .lev_a_wrapper
+          a.hasInner(href="") Аппаратная косметология 
+          .openInner
+        ul
+          li.lev2
+            .lev_a_wrapper
+              a(href="") фотоомоложение
+          li.lev2
+            .lev_a_wrapper
+              a(href="") лазерная косметология
+          li.lev2
+            .lev_a_wrapper
+              a(href="") список всех процедур
+      li.lev1
+        .lev_a_wrapper
+          a(href="") Инъекционная косметология
+          .openInner
+        ul
+          li.lev2
+            .lev_a_wrapper
+              a(href="") Список всех методик
+      li.lev1
+        .lev_a_wrapper
+          a.hasInner(href="") Лечебная косметология 
+          .openInner
+        ul
+          li.lev2
+            .lev_a_wrapper
+              a(href="") фототерапия в дерматологии
+          li.lev2
+            .lev_a_wrapper
+              a(href="") лазеротерапия в дерматологии
+          li.lev2
+            .lev_a_wrapper
+              a(href="") подология
+          li.lev2
+            .lev_a_wrapper
+              a(href="") трихология
+          li.lev2
+            .lev_a_wrapper
+              a(href="") лечение храпа
+          li.lev2
+            .lev_a_wrapper
+              a(href="") список всех процедур
+      li.lev1
+        .lev_a_wrapper
+          a.hasInner(href="") Эстетика и уход
+          .openInner
+        ul
+          li.lev2
+            .lev_a_wrapper
+              a(href="") список всех процедур
+      li.lev1
+        .lev_a_wrapper
+          a.hasInner(href="") Имиджевая студия
+          .openInner
+        ul
+          li.lev2
+            .lev_a_wrapper
+              a(href="") визаж
+          li.lev2
+            .lev_a_wrapper
+              a(href="") стрижка
+          li.lev2
+            .lev_a_wrapper
+              a(href="") окрашивание
+          li.lev2
+            .lev_a_wrapper
+              a(href="") уход за волосами
+          li.lev2
+            .lev_a_wrapper
+              a(href="") укладка
+          li.lev2
+            .lev_a_wrapper
+              a(href="") лечение волос (трихология)
+          li.lev2
+            .lev_a_wrapper
+              a(href="") brow bar
+          li.lev2
+            .lev_a_wrapper
+              a(href="") маникюр
+          li.lev2
+            .lev_a_wrapper
+              a(href="") педикюр
+          li.lev2
+            .lev_a_wrapper
+              a(href="") лечение стопы и ногтевой пластины (подология)
+      
+mixin MenuBottom1__probl
+  nav.leftMenu__outer100 
+    ul.leftMenu
+      li.lev1
+        .lev_a_wrapper
+          a.hasInner(href="") Лифтинг
+      li.lev1
+        .lev_a_wrapper
+          a.hasInner(href="") Пигментация
+      li.lev1
+        .lev_a_wrapper
+          a.hasInner(href="") Акне
+      li.lev1
+        .lev_a_wrapper
+          a.hasInner(href="") Лишний вес
+      
+
+
+
+
+mixin leftMenuAdaptive
+  ul.leftMenu
+    li.lev1
+      .lev_a_wrapper
+        a(href="") Все процедуры
+    li.lev1
+      .lev_a_wrapper
+        a.hasInner(href="") Инъекционная косметология
+        .openInner
+      ul
+        li.lev2
+          a(href="") Candela GENTLELASEPRO-U
+        li.lev2
+          a(href="") Venus Legasy
+        li.lev2
+          a(href="") Fotona
+    li.lev1
+      .lev_a_wrapper
+        a(href="") Инъекционная косметология
+        .openInner
+      ul
+        li.lev2
+          a(href="") Babor
+        li.lev2
+          a(href="") Prophilo
+        li.lev2
+          a(href="") Botox
+    li.lev1
+      .lev_a_wrapper
+        a(href="") Эстетическая косметология
+    li.lev1
+      .lev_a_wrapper
+        a(href="") Эстетика тела
+    li.lev1
+      .lev_a_wrapper
+        a(href="") Дерматология
+    li.lev1
+      .lev_a_wrapper
+        a(href="") Трихология
+    li.lev1
+      .lev_a_wrapper
+        a(href="") Nail Bar
+    li.lev1
+      .lev_a_wrapper
+        a(href="") Hair стиль
+    li.lev1
+      .lev_a_wrapper
+        a(href="") Brow Bar
+
+mixin onlySolutions
+  ul.solution
+    li
+      a(href="") Лифтинг лица
+    li
+      a(href="") Пигментация
+    li
+      a(href="") Акне
+
+
+
+mixin mbMenu-01-2021
+  .mbMenu__outer
+    .mbMenu
+      .mbMenu__itemOuter
+        a.mbMenu__item.mbMenu__mainBtn_JS(href="#")
+          i.icon-list
+          span Главное меню
+      .mbMenu__itemOuter
+        a.mbMenu__item.mbMenu__servBtn_JS(href="#")
+          i.icon-concealer
+          span Услуги
+      .mbMenu__itemOuter
+        a.mbMenu__item.mbMenu__solutionBtn_JS(href="#")
+          i.icon-darts
+          span Решить проблему
+      .mbMenu__itemOuter
+        a.mbMenu__item.mbMenu__searchBtn_JS(href="#")
+          i.icon-search2
+          span Поиск

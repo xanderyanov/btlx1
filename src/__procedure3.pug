@@ -1,0 +1,154 @@
+include __tempContent
+include __gallery
+
+mixin procedure3__intro 
+  .procedure3__intro
+    .procedure3__introText
+      .content
+        p Лазерная эпиляция волос  Candela GentleLasePro-U - это самый простой и быстрый способ избавиться от нежелательных волос. 
+        p Каждая женщина хочет иметь гладкую и нежную кожу, но многие сталкиваются с проблемой роста нежелательных волос, и эта проблема касаема не только женщин, но и мужчин. Способов избавления от нежелательных волос существует много, и самый эффективный и надежный из них - лазерная эпиляция волос  Candela GentleLasePro-U. 
+        p Всего за несколько сеансов можно навсегда распрощаться с нежелательными волосами.
+      .procedure3__introLinks
+        a.link1#goToPriceAnchor(href="#") Результат лечения
+        a.link1#goToPriceAnchor(href="#") О технологии
+        a.link1#goToPriceAnchor(href="#") Как проходит процедуры
+        a.link1#goToPriceAnchor(href="#") Показания / противопоказания
+        a.link1#goToPriceAnchor(href="#") Наши преимущества
+        a.link1#goToPriceAnchor(href="#") Перейти к ценам
+    .procedure3__introImg__outer
+      //- .procedure__introImg
+      //-   img(src="assets/img/temp/001.png", alt="")
+      .procedure3__introImg.videoBox.videoBox_i
+        iframe(width='560' height='315' src='https://www.youtube.com/embed/YCF6qjf1-h8' autoplay='1' frameborder='0' allow='accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen='')
+        //- iframe(width='560' height='315' src='https://www.youtube.com/embed/YCF6qjf1-h8?&autoplay=1' frameborder='0' allowfullscreen='')
+        //- iframe(width='560' height='315' src='https://www.youtube.com/embed/NnHkWF3AeKs' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen='')
+
+
+      //- .procedure__introImg.videoBox.videoBox_i
+      //-   iframe(width='560' height='315' src='https://www.youtube.com/embed/YCF6qjf1-h8' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen='')
+
+
+mixin imgSlider-2pic
+  .imgSlider__area
+    .imgSlider__outer
+      .imgSliderCaroucel
+        .swiper-container.imgSlider-container
+          .swiper-wrapper.imgSlider-wrapper
+            .swiper-slide.imgSlider-slide
+              .imgSlider-slideInner
+                a(href="assets/img/before-after/01.jpg" data-fancybox="group1" data-caption="002" style="background-image: url(assets/img/before-after/01.jpg)")
+            .swiper-slide.imgSlider-slide
+              .imgSlider-slideInner
+                a(href="assets/img/before-after/02.jpg" data-fancybox="group1" data-caption="002" style="background-image: url(assets/img/before-after/02.jpg)")
+            .swiper-slide.imgSlider-slide
+              .imgSlider-slideInner
+                a(href="assets/img/before-after/03.jpg" data-fancybox="group1" data-caption="002" style="background-image: url(assets/img/before-after/03.jpg)")
+        .imgSlider__left
+          i.icon-arr-left1
+        .imgSlider__right
+          i.icon-arr-right1
+ 
+mixin procedure
+  .procedure__area.w0
+    .procedure__outer.w1
+      .title1
+        h1 Лазерная эпиляция
+      .procedure
+              
+        .procedure__masters
+          .title1
+            h2 Наши специалисты
+          .procedure__masterscontent
+            .procedure__masterOuter
+              a.procedure__master(href="") Лукьянова Наталья
+            .procedure__masterOuter
+              a.procedure__master(href="") Лукьянова Наталья
+            .procedure__masterOuter
+              a.procedure__master(href="") Лукьянова Наталья
+            .procedure__masterOuter
+              a.procedure__master(href="") Лукьянова Наталья
+            .procedure__masterOuter
+              a.procedure__master(href="") Лукьянова Наталья
+        .procedure__longContent
+          .title1
+            h2 Описание
+          .content
+            +tempContent
+        .procedure__video
+          +videogallery
+        .procedure__photo
+          .title1
+            h3 Фото
+          +gallery
+        .price__area#priceAnchor
+          .title1
+            h2 Цены
+          .priceBox__area
+            .priceBox__title 
+              h3 Лазерная эпиляция лица и шеи
+            .priceBox
+              table
+                tr
+                  td Лоб
+                  td 2500 руб.
+                tr
+                  td Шея (задняя поверхность)
+                  td 3400 руб.
+                tr
+                  td Шея (передняя поверхность)
+                  td 3400 руб.
+                tr
+                  td Лицо
+                  td 5800 руб.
+                tr
+                  td Крылья носа
+                  td 2000 руб.
+          .priceBox__area
+            .priceBox__title 
+              h3 Лазерная эпиляция лица и шеи
+            .priceBox
+              table
+                tr
+                  td Лоб
+                  td 2500 руб.
+                tr
+                  td Шея (задняя поверхность)
+                  td 3400 руб.
+                tr
+                  td Шея (передняя поверхность)
+                  td 3400 руб.
+                tr
+                  td Лицо
+                  td 5800 руб.
+                tr
+                  td Крылья носа!
+                  td 2000 руб.
+          .outerLink__area
+            span Все для домашнего ухода Вы можете приобрести в нашем Бьюти-бутике.
+            a.outerLink(href="#", target="_blank", rel="nofollow") Открыть
+        .popular__area
+          .title1
+            h2 Популярные процедуры
+          .popular.mainBox.clearfix
+            .mainBox__itemOuter
+              a.mainBox__item(href="#")
+                .mainBox__itemImg(style="background-image: url(assets/img/serv/0001.jpg);")
+                  img.kv-img(src="assets/img/w285h285.png", alt="")
+                span Описание первого блока в несколько строчек
+            .mainBox__itemOuter
+              a.mainBox__item(href="#")
+                .mainBox__itemImg(style="background-image: url(assets/img/serv/0001.jpg);")
+                  img.kv-img(src="assets/img/w285h285.png", alt="")
+                span Описание первого блока в несколько строчек
+            .mainBox__itemOuter
+              a.mainBox__item(href="#")
+                .mainBox__itemImg(style="background-image: url(assets/img/serv/0001.jpg);")
+                  img.kv-img(src="assets/img/w285h285.png", alt="")
+                span Описание первого блока в несколько строчек
+            .mainBox__itemOuter
+              a.mainBox__item(href="#")
+                .mainBox__itemImg(style="background-image: url(assets/img/serv/0001.jpg);")
+                  img.kv-img(src="assets/img/w285h285.png", alt="")
+                span Описание первого блока в несколько строчек
+
+

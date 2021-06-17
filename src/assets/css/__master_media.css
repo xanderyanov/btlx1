@@ -1,0 +1,105 @@
+@media only screen and (max-width: 1200px) {
+  .master__consForm {
+    width: 100%;
+    margin-top: 20px;
+  }
+  .master__intro {
+    width: 70%;
+  }
+  .master__face {
+    width: 30%;
+    padding: 0 0 0 10px;
+  }
+  .master3__page {
+    padding: 0 10px;
+  }
+}
+
+@media only screen and (max-width: 1140px) {
+}
+
+@media only screen and (max-width: 1080px) {
+}
+
+@media only screen and (max-width: 1024px) {
+}
+
+@media only screen and (max-width: 920px) {
+}
+
+@media only screen and (max-width: 800px) {
+}
+
+@media only screen and (max-width: 768px) {
+  .master__intro {
+    width: 60%;
+  }
+  .master__face {
+    width: 40%;
+  }
+  .master3__top {
+    padding: 20px 30px;
+  }
+  .master3__topContentLeft {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0 0 20px 0;
+  }
+  .master3__topContentRight {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0 20px 0;
+  }
+  .master3__formOuter {
+    width: 100%;
+    max-width: none;
+  }
+  .mf3 {
+    max-width: 380px;
+  }
+  .mf3__area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+}
+
+@media only screen and (max-width: 480px) {
+  .master__face {
+    width: 100%;
+    padding: 0 30px;
+    order: 1;
+  }
+  .master__intro {
+    width: 100%;
+    order: 2;
+    margin-top: 10px;
+    padding: 10px;
+  }
+  .master__consForm {
+    order: 3;
+    margin-top: 10px;
+  }
+  .specialization {
+    padding: 7px 20px;
+    margin: 3px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+}
+
+@media only screen and (max-width: 320px) {
+  .master__face {
+    padding: 0;
+  }
+}

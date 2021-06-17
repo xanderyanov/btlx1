@@ -1,0 +1,86 @@
+@media only screen and (max-width: 1200px) {
+}
+
+@media only screen and (max-width: 1140px) {
+}
+
+@media only screen and (max-width: 1080px) {
+}
+
+@media only screen and (max-width: 1024px) {
+  .sliderPlus {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .julySlider.swiper-container {
+    height: 220px;
+  }
+
+  .julySlider__outer {
+    width: 100%;
+  }
+  .promoBox1__area {
+    width: 100%;
+    padding: 10px 0 0 0;
+  }
+
+  .promoBox1 {
+    display: block;
+    height: auto;
+  }
+
+  img.creative1 {
+    display: none;
+  }
+
+  img.creative2 {
+    display: block;
+    height: auto;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 920px) {
+  .julySlider.swiper-container {
+    height: 200px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+}
+
+@media only screen and (max-width: 768px) {
+}
+
+@media only screen and (max-width: 600px) {
+  .julySlider.swiper-container {
+    height: 200px;
+  }
+  img.creative2 {
+    display: none;
+  }
+  img.creative2_all {
+    display: none;
+  }
+  img.creative3 {
+    display: block;
+    height: auto;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .julySlider.swiper-container {
+    height: 160px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+}
+
+@media only screen and (max-width: 320px) {
+  .julySlider.swiper-container {
+    height: 140px;
+  }
+}

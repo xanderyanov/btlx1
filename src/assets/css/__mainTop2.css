@@ -1,0 +1,385 @@
+.mainTop__area {
+  position: relative;
+}
+
+.mainTop__outer {
+  position: relative;
+  padding: 20px 0;
+}
+
+.mainTop {
+  display: flex;
+  margin: 0 -10px;
+}
+
+.mainTop__left {
+  width: 50%;
+  position: relative;
+}
+.mainTop__promo {
+  width: 100%;
+  position: relative;
+  padding: 10px;
+}
+
+.mainTop__promo video {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  vertical-align: bottom;
+}
+
+.mainTop__right {
+  width: 50%;
+  position: relative;
+}
+
+.mainTop__menu {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.mainTop__menuItemOuter {
+  width: 50%;
+  height: 50%;
+  position: absolute;
+  overflow: hidden;
+}
+
+.mainTop__menuItemOuter_a {
+  /* background: var(--bg0); */
+  /* background: #e7b9b9; */
+  left: 0;
+  top: 0;
+}
+.mainTop__menuItemOuter_b {
+  /* background: #ac6f52;
+  background: rgba(89, 32, 4, 0.3); */
+  right: 0;
+  top: 0;
+}
+.mainTop__menuItemOuter_c {
+  left: 0;
+  bottom: 0;
+}
+.mainTop__menuItemOuter_d {
+  right: 0;
+  bottom: 0;
+}
+
+.colorBox_a {
+  /* background: #aba299; */
+  /* background: #9b3a83; */
+  background: #a38182;
+  background: #5d4b63;
+  color: #fff;
+}
+.colorBox_b {
+  /* background: #6a6e79; */
+  /* background: #7c52be; */
+
+  background: #d74d63;
+  color: #fff;
+}
+.colorBox_c {
+  /* background: #c24b35; */
+  /* background: #c14032; */
+  background: #cecbda;
+  color: #fff;
+}
+.colorBox_d {
+  /* background: #3a2f29; */
+  /* background: #e2b929; */
+  background: #a38182;
+  color: #fff;
+}
+
+.colorBox_e {
+  background: var(--x1greySuperLight);
+}
+
+.colorBox_f {
+  /* background: #2e2e2e; */
+  /* background: #f6e5e4; */
+  background: #5d4b63;
+  color: #fff;
+}
+
+.mainTop__menuItemWrapper {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  bottom: 10px;
+  left: 10px;
+}
+
+.mainTop__menuItem {
+  display: flex;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 20px 20px;
+  flex-direction: column;
+  justify-content: center;
+  text-decoration: none;
+}
+.mainTop__menuItem:hover,
+.mainTop__menuItem:focus {
+  text-decoration: none;
+}
+
+.mainTop__menuItemTop {
+  display: flex;
+  justify-content: space-between;
+}
+
+.mainTop__menuItemTitle {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.3;
+  text-align: left;
+  position: relative;
+  padding: 0 0 1rem 0;
+}
+.mainTop__menuItemTitle:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 2.5rem;
+  height: 2px;
+  background: #fff;
+}
+
+.mainTop__menuItemTop i {
+  font-size: 8rem;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  opacity: 0.1;
+  transition: all 0.3s;
+}
+.mainTop__menuItem:hover i,
+.mainTop__menuItem:focus i {
+  opacity: 0.3;
+}
+
+.mainTop__menuItemBottom {
+  width: 100%;
+  margin-top: 20px;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.mainTop__hideBoxOverlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 2490;
+  display: none;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.mainTop__hideContainer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 2500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*Если делать раскрытие в квадрате кнопок - то разкомментировать этот блок и закоментировать следующий*/
+/* .mainTop__hideBox {
+  position: absolute;
+  z-index: 2500;
+  display: none;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  left: 0;
+  top: 0;
+} */
+
+/* .mainTop__hideBox {
+  display: none;
+  position: fixed;
+  z-index: 2500;
+  width: 50%;
+  top: 50%;
+  left: 25%;
+  height: auto;
+  max-height: 60vh;
+  padding: 10px;
+  transform: translate(0, -50%);
+} */
+
+.mainTop__hideBox {
+  display: none;
+  width: 50%;
+  /* height: auto; */
+  /* max-height: 60vh; */
+  padding: 10px;
+  position: relative;
+}
+
+.mainTop__hideBoxInner {
+  max-height: 100%;
+  padding: 15px 10px 15px 15px;
+  display: flex;
+  flex-direction: column;
+  /* max-height: 90%; */
+}
+
+.mainTop__hideBoxInnerHeader {
+  display: flex;
+  justify-content: space-between;
+}
+
+.mainTop__hideBoxInnerTitle {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.mainTop__hideBoxInnerTitle i {
+  font-size: 2rem;
+  margin-right: 10px;
+  color: var(--brick);
+}
+.mainTop__hideBoxInnerTitle span {
+  font-size: 2rem;
+  color: var(--brick);
+}
+
+.mainTop__hideBoxClose {
+  cursor: pointer;
+}
+
+.mainTop__hideBoxClose i {
+  font-size: 2rem;
+  color: var(--brick);
+}
+
+.mainTop__hideBoxInnerContent {
+  flex: 1;
+  overflow-y: scroll;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 5px 0 0;
+  max-height: 60vh;
+}
+
+.mainTop__hideBoxInnerContentInner {
+  position: relative;
+  width: 100%;
+}
+
+.topMenuBox {
+  position: relative;
+}
+.topMenuBox li {
+  list-style: none;
+}
+.topMenuBox li a {
+  text-decoration: none;
+  color: #000;
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+
+.mainTopLineBox {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0 0 0;
+}
+
+.mainTopLineBox__leftOuter {
+  width: 30%;
+}
+
+.mainTopLineBox__leftWrapper {
+  /* padding-top: 30%; */
+  height: 100%;
+  position: relative;
+}
+
+.mainTopLineBox__leftItem {
+  display: flex;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 20px 20px;
+  align-items: center;
+  text-decoration: none;
+}
+
+.mainTopLineBox__itemTitle {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1;
+  text-align: center;
+  position: relative;
+  padding: 0 0 1rem 0;
+  white-space: nowrap;
+}
+
+.mainTopLineBox__itemTitle:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 2.5rem;
+  height: 2px;
+  background: #fff;
+}
+
+.mainTopLineBox__leftItem i {
+  font-size: 5rem;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  opacity: 0.1;
+  transition: all 0.3s;
+}
+
+.mainTopLineBox__leftItem:hover i {
+  opacity: 0.3;
+}
+
+.mainTopLineBox__itemDesc {
+  padding: 0 10px 0 30px;
+  font-size: 14px;
+  line-height: 1.5;
+  /* flex: 1; */
+}
+
+.mainTopLineBox__rightOuter {
+  width: 70%;
+  padding: 0 0 0 20px;
+}
+
+.mainTopLineBox__rightLink1 {
+  text-decoration: none;
+  display: block;
+}
+
+.mainTopLineBox__rightLink2 {
+  text-decoration: none;
+  display: none;
+}
+
+.mainTopLineBox__rightOuter img {
+  display: block;
+  width: 100%;
+}

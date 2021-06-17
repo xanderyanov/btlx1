@@ -1,0 +1,56 @@
+- var pageTitle = 'Процедуры'
+- var seoKeywords = 'Ключевые слова для страницы'
+- var seoDesc = 'Сео описание для страницы'
+
+include __const
+//- include __header
+include __header2
+include __menu
+include __mainTop
+include __mainProblem
+include __breadcrumbs
+include __wideBlock
+include __services
+include __forms
+
+include __footer
+include __menuBottom1
+
+
+
+
+<!DOCTYPE html>
+html(lang="ru-RU")
+  +head
+body
+
+  .site__header
+    +header2
+    //- +topMenu
+
+
+  .site__center
+    +breadcrumbs
+    +wideBlock
+    
+    +services
+    +zBlock1
+
+  .site__footer
+    +footer
+
+
+  +topMenuAdaptive
+  +search1
+
+  +toUp
+  
+  +formCallBack
+
+  +menuBottom1_page
+
+  //- далее вывод не на главной
+  +hideBox
+
+  +scripts
+  

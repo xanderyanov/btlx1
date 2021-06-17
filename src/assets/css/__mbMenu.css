@@ -1,0 +1,252 @@
+.mbMenu__area {
+  width: 100%;
+  position: relative;
+  z-index: 500;
+  display: none;
+}
+
+.mbMenu__fake {
+  width: 100%;
+}
+
+.mbMenu__outer {
+  width: 100%;
+  /* position: fixed;
+  bottom: 0;
+  left: 0; */
+  display: none;
+}
+
+.mbMenu {
+  width: 100%;
+  /* background: var(--bg0); */
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10px;
+
+  flex-wrap: wrap;
+}
+
+.mbMenu__itemOuter {
+  position: relative;
+
+  width: 48%;
+  padding: 20px 0;
+  border: 1px solid var(--tc0);
+  background: var(--bg0);
+  margin: 2% 0;
+  border-radius: 5px;
+}
+
+a.mbMenu__item {
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* color: #fff; */
+  color: var(--tc0);
+}
+
+a.mbMenu__item i {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+a.mbMenu__item span {
+  font-size: 1rem;
+}
+
+.mbMenu__overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 490;
+  display: none;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+/* .mbMenu__openBox {
+  display: none;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 0 30px;
+  height: 60vh;
+  max-height: 70vh;
+} */
+
+.mbMenu__openBox {
+  display: none;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 0 30px;
+  top: 15vh;
+  height: 70vh;
+}
+
+.mbMenu__openBoxInner {
+  display: flex;
+  flex-direction: column;
+  background: var(--bg0);
+  /* -webkit-border-top-left-radius: 10px;
+  -webkit-border-top-right-radius: 10px;
+  -moz-border-radius-topleft: 10px;
+  -moz-border-radius-topright: 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px; */
+  height: 100%;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  padding-bottom: 10px;
+}
+
+.mbMenu__openBoxTitle {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.mbMenu__openBoxTitle span {
+  font-size: 2rem;
+  color: var(--tc0);
+  font-weight: 500;
+}
+
+.mbMenu__openBoxClose {
+  background: var(--tc0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+}
+.mbMenu__openBoxClose i {
+  font-size: 1rem;
+  color: #fff;
+}
+
+.mbMenu__openBoxContent {
+  padding: 10px;
+  overflow-y: scroll;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.mbMenu__openBoxContentInner {
+  height: 100%;
+}
+
+.igMobile__area {
+  position: fixed;
+  left: 0;
+  width: 100%;
+  max-width: 500px;
+  left: 50%;
+  padding: 0 30px;
+  /* top: 15vh;
+  height: 70vh; */
+  /* left: 50%; */
+  top: 50%;
+  z-index: 500;
+  -webkit-transform: translate3d(-50%, -50%, 0);
+  transform: translate3d(-50%, -50%, 0);
+  display: none;
+}
+
+.igMobile__outer {
+  display: flex;
+  flex-direction: column;
+  /* background: var(--bg0); */
+  background: var(--x1greySuperLight);
+  /* height: 100%; */
+  /* -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px; */
+}
+
+.igMobile__title {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.igMobile__title span {
+  font-size: 2rem;
+  color: var(--tc0);
+  font-weight: 500;
+}
+
+.igMobile__close {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+.igMobile__close i {
+  font-size: 1.5rem;
+  color: var(--tc0);
+}
+
+.igMobile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.igMobile__item {
+  display: flex;
+  margin-bottom: 20px;
+  text-decoration: none;
+  align-items: center;
+}
+
+.igMobile__item span {
+  font-size: 1rem;
+  color: var(--tc0);
+}
+
+.igMobile__icon {
+  position: relative;
+  width: 2rem;
+  height: 2rem;
+  /* background: var(--tc0); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 40%;
+  background: #d6249f;
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
+  margin-right: 10px;
+}
+
+.igMobile__icon i {
+  font-size: 1rem;
+  color: #fff;
+}
+
+.igMobile__overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 490;
+  display: none;
+  background: rgba(0, 0, 0, 0.5);
+}

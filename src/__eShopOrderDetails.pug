@@ -1,0 +1,45 @@
+mixin orderDetails2
+  .orderDetails2__area
+    .orderDetails2__outer
+      .orderDetails2__titleOuter
+        .orderDetails2__mainTitle
+          h1 Заказ
+          span 20-01-2021 16:45
+        .orderDetails2__mainTitleStatus Ожидает оплаты
+      .eCatalog
+        each item in caroucel1
+          .eCatalog__itemArea.eCatalog__itemAreaInWide(id=item.id)
+            a.eCatalog__item(href="")
+              .eCatalog__itemFav
+                i.icon-eheart1.iconNoFav
+                i.icon-eheart1.iconInFav
+              .eCatalog__itemImgOuter 
+                .eCatalog__itemImg(style='background-image: url(' + item.img + ');')
+              .eCatalog__itemInfo 
+                .eCatalog__itemTitle!= item.title 
+                .eCatalog__itemDesc!= item.content 
+                .eCatalog__itemPrice
+                  span!= item.price 
+                  span ₽
+      .orderDetailsInfo__area
+        .orderDetailsInfo
+          .orderDetailsInfo1
+            .orderDetailsInfo__title
+              h3 Контактные данные
+            span Иван Аксенов
+            span 8(987)999-99-99
+            span ivan@tcmir.ru
+          .orderDetailsInfo2
+            .orderDetailsInfo__title
+              h3 Информация о заказе
+            span <strong>Получатель:</strong> Петров Владимир Васильевич
+            span <strong>Самовывоз:</strong> Пункт выдачи: ТК МИР, г. Саратов, ул. Московская, 113/117, 1 этаж, с 10:00 до 21:00. Для получения сообщите Ваш номер телефона, код из сообщения и номер заказа. 
+            span <strong>Комментарий:</strong> Lorem ipsum dolor sit amet ipsum dolor sit amet.
+          .orderDetailsInfo3
+            .orderDetailsInfo__price Сумма заказа:   6800 ₽
+            .orderDetails2__orderText Пока заказ находится на обработке у менеджера, Вы ничего не можете делать с этим заказом.
+            form.orderDetails2__form(action="", metod="post")
+              input.orderDetails2__btn.orderDetails2__btn_btn1(type="submit", value="Оплатить картой")
+            form.orderDetails2__form(action="", metod="post")
+              input.orderDetails2__btn.orderDetails2__btn_btn2(type="submit", value="Редактировать заказ") 
+

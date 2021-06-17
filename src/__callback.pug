@@ -1,0 +1,31 @@
+mixin callback
+  .callBackBtn 
+    i.icon-phone-call
+  .callBack__overlay 
+    .callBack__area
+      .callBack__form
+        .callBack__close
+          i.icon-close2021
+        .callback__intro
+          h2 Заказать обратный звонок
+          span заполните поля:
+        form.callback(action='#')
+          label(for="name_callback") Ваше имя
+          input.name_callback(name='name_callback', type='text', placeholder='')
+
+          label(for="phone_callback") Ваш телефон
+          input.phone_callback(name='phone_callback', type='text', placeholder='')
+          //- input.email_callback(name='email_callback', type='text', placeholder='Email')
+          input.work_email_callback(name='work_email_callback', type='text', placeholder='Рабочий email')
+          //- textarea.message_callback(name='message_callback', cols='30', rows='10', placeholder='Ваше сообщение')
+          //- .form_callback__text
+          //-   | *Отправляя сообщение Вы соглашаетесь с условиями 
+          //-   a(href='privacy-policy/', target='_blank')
+          //-     | политики
+          //-     | конфиденциальности
+          .form_callbackalrightBox
+            input.checkbox_callback(type='checkbox' required='')
+            span Согласен на обработку персональных данных
+          button.submit_callback(type='submit', name='submit_callback')
+            | Заказать звонок
+  

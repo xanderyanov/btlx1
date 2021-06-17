@@ -1,0 +1,105 @@
+.masters__area {
+  margin-top: 1.25rem;
+}
+
+.masters__outer {
+  position: relative;
+}
+
+.masters__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.mastersBox__outer {
+  /* width: 80%;
+  padding-left: 1.25rem; */
+  width: 100%;
+}
+
+.mastersBox {
+  display: flex;
+  margin: 0 -10px;
+  flex-wrap: wrap;
+}
+
+.mastersBox__itemOuter {
+  width: 33.333%;
+  padding: 10px;
+}
+
+.mastersBox__itemOuter.hidden {
+  display: none;
+}
+
+.mastersBox__itemOuter.visible {
+  display: block;
+}
+
+.mastersBox__item {
+  position: relative;
+  text-decoration: none;
+  transition: all 0.3s;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.mastersBox__itemImg {
+  width: 100%;
+}
+.mastersBox__itemImg img {
+  display: block;
+  width: 100%;
+}
+.mastersBox__itemInfo {
+  padding: 30px;
+  width: 100%;
+  background: rgba(255, 255, 255, 1);
+  display: flex;
+  flex-direction: column;
+  transition: all 0.3s;
+  flex: 1;
+}
+.mastersBox__itemInfoTitle {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  color: #4f4f4f;
+  padding: 0 0 1rem 0;
+  display: block;
+  position: relative;
+  transition: all 0.3s;
+}
+.mastersBox__itemInfoTitle:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 30%;
+  height: 2px;
+  background: #4f4f4f;
+}
+.mastersBox__item:hover .mastersBox__itemInfoTitle {
+  color: var(--reden);
+}
+.mastersBox__item:hover {
+  box-shadow: 0px 10px 20px rgb(0 0 0 / 8%);
+}
+
+.mastersBox__itemInfoDesc {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  color: #4f4f4f;
+  padding: 1rem 0 0 0;
+}
+
+.masterBox__content {
+  width: 100%;
+  margin: 20px 0 0 0;
+  padding: 30px 20px;
+  background-color: #f2f2f4;
+}

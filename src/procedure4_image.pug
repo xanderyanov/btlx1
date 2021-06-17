@@ -1,0 +1,148 @@
+- var pageTitle = 'Страница имиджевой процедуры'
+- var seoKeywords = 'Ключевые слова для страницы'
+- var seoDesc = 'Сео описание для страницы'
+
+include __const
+include __header3
+include __menu
+include __mainTop
+//- include __mainBox
+include __breadcrumbs
+include __wideBlock
+include __procedure3
+include __procedure4
+include __card
+
+include __forms
+include __footer
+
+include __menuBottom1
+
+
+
+
+
+<!DOCTYPE html>
+html(lang="ru-RU")
+  +head
+body
+
+  .site__header
+    +header3
+
+
+
+  .site__center
+    +breadcrumbs3
+    .procedure4__introArea
+      .procedure4__introOuter
+        .title0 
+          h1 Лазерная эпиляция Candela
+        +procedure4__intro
+    +wideBlock
+
+    +centerTextBox
+
+    .wideBox3__area 
+      .wideBox3
+        .procedure3__masters
+          .title3
+            h2 Наши специалисты
+          .procedure3__masterscontent
+            .procedure3__masterOuter
+              a.procedure3__master(href="") Лукьянова Наталья
+            .procedure3__masterOuter
+              a.procedure3__master(href="") Лукьянова Наталья
+            .procedure3__masterOuter
+              a.procedure3__master(href="") Лукьянова Наталья
+            .procedure3__masterOuter
+              a.procedure3__master(href="") Лукьянова Наталья
+            .procedure3__masterOuter
+              a.procedure3__master(href="") Лукьянова Наталья
+        //- .procedure__video
+        //-   +videogallery
+        //- .procedure__photo
+        //-   .title1
+        //-     h3 Фото
+        //-   +gallery
+
+
+
+        .price3__area#priceAnchor
+          .title3
+            h2 Цены
+          .priceBox3__area
+            .priceBox3__title 
+              h3 Лазерная эпиляция лица и шеи
+            .priceBox3
+              table
+                tr
+                  td Лоб
+                  td 2500 руб.
+                tr
+                  td Шея (задняя поверхность)
+                  td 3400 руб.
+                tr
+                  td Шея (передняя поверхность)
+                  td 3400 руб.
+                tr
+                  td Лицо
+                  td 5800 руб.
+                tr
+                  td Крылья носа
+                  td 2000 руб.
+          .priceBox3__area
+            .priceBox3__title 
+              h3 Лазерная эпиляция лица и шеи
+            .priceBox3
+              table
+                tr
+                  td Лоб
+                  td 2500 руб.
+                tr
+                  td Шея (задняя поверхность)
+                  td 3400 руб.
+                tr
+                  td Шея (передняя поверхность)
+                  td 3400 руб.
+                tr
+                  td Лицо
+                  td 5800 руб.
+                tr
+                  td Крылья носа!
+                  td 2000 руб.
+          //- .outerLink3__area
+          //-   a.outerLink3(href="#", target="_blank", rel="nofollow") Купить
+          //-   span Все для домашнего ухода Вы можете приобрести в нашем <strong>Бьюти-бутике.</strong>
+
+          .outerLink4__area
+            a.outerLink4(href="#", target="_blank", rel="nofollow")
+              i.icon-eshopping-cart
+              span Перейти к товару
+            span Все для домашнего ухода Вы можете приобрести в нашем <strong>Бьюти-бутике.</strong>
+        
+        +ProcedureImageGallery
+        
+        .card3__area
+          .card3__outer
+            .title3
+              h2 Альтернативные процедуры    
+            +card3
+    +zBlock3
+
+  .site__footer
+    +footer3
+
+
+  +topMenuAdaptive
+  +search1
+
+  +toUp
+  
+  +formCallBack
+
+  +menuBottom1_main
+  +hideBox
+
+  +scripts
+  

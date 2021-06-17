@@ -1,0 +1,251 @@
+.eShopTovar__area {
+  width: 100%;
+}
+
+.eShopTovar {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.eShopTovar__sliderArea {
+  background: #fff;
+  width: 42%;
+  float: left;
+  padding: 40px 30px;
+}
+
+.eShopTovar__titleArea {
+  width: 58%;
+  display: flex;
+  padding: 0 0 40px 8%;
+  flex-direction: column;
+}
+
+.eShopTovar__art {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+.eShopTovar__art span {
+  font-style: normal;
+  font-size: 12px;
+  line-height: 16px;
+  color: #333333;
+}
+
+.eShopTovar__art span:first-child {
+  font-weight: 700;
+  margin-right: 5px;
+}
+
+.eShopTovar__title {
+  margin-bottom: 8px;
+}
+
+.eShopTovar__title h1 {
+  font-family: "Open Sans";
+  font-weight: 800;
+  font-size: 28px;
+  line-height: 1.3;
+  color: #333333;
+  margin: 0;
+}
+
+.eShopTovar__titleDesc {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #333333;
+}
+
+.eShopTovar__descArea {
+  width: 58%;
+  display: flex;
+  padding: 0 0 0 8%;
+  flex-direction: column;
+}
+
+.eShopTovar__desc {
+  padding: 0 0 50px 0;
+}
+
+.eShopTovar__desc:last-child {
+  padding: 0;
+}
+
+.eShopTovar__desc_80 {
+  width: 80%;
+}
+
+.eShopTovar__descTitle {
+  border-bottom: 1px solid #e0e0e0;
+  margin: 0 0 10px 0;
+}
+
+.eShopTovar__descTitle span {
+  display: inline-block;
+  border-bottom: 3px solid #4f4f4f;
+  padding: 0 0 10px 0;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #333333;
+}
+
+.eShopTovar__desc table {
+  width: 100%;
+}
+
+.eShopTovar__desc tr {
+  width: 100%;
+}
+
+.eShopTovar__desc td {
+  padding: 10px 10px 10px 0;
+  width: 50%;
+}
+
+.eShopTovar__priceArea {
+  display: flex;
+  margin: 0 0 12px 0;
+  flex-wrap: wrap;
+}
+
+.eShopTovar__oldPrice {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  text-decoration-line: line-through;
+  text-transform: uppercase;
+  color: #828282;
+  margin: 0 12px 0 0;
+}
+
+.eShopTovar__discount {
+  background: #d54c64;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #ffffff;
+  padding: 4px 8px;
+  margin-bottom: 5px;
+}
+
+.eShopTovar__price {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.3;
+  color: #333333;
+  width: 100%;
+}
+
+.eShopTovar__btnsArea {
+  display: flex;
+  margin: 0 0 30px 0;
+}
+
+.eShopTovar__addToCartBtn {
+  background: var(--brick);
+  border-radius: 6px;
+  width: 100%;
+  max-width: 300px;
+  height: 56px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 20px;
+  color: #ffffff;
+  cursor: pointer;
+  transition: all 0.3s;
+  margin: 0 20px 0 0;
+}
+
+.eShopTovar__addToCartBtn:hover {
+  background: var(--reden);
+}
+
+.eShopTovar__favBtn {
+  width: 56px;
+  height: 56px;
+  background: #ffffff;
+  box-shadow: 0px 6px 15px rgba(206, 203, 218, 0.65);
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.eShopTovar__favBtn i {
+  font-size: 24px;
+}
+
+.eShopTovar__descContent {
+  padding: 14px 0 0 0;
+}
+
+.eShopTovar__descContent p {
+  font-size: 14px;
+  line-height: 22px;
+  color: #4f4f4f;
+}
+
+.advantage__area {
+  width: 100%;
+}
+
+.advantage__outer {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.advantage {
+  width: 100%;
+  display: flex;
+  margin: 0 -10px;
+  flex-wrap: wrap;
+}
+
+.advantage__itemOuter {
+  width: 25%;
+  padding: 10px;
+}
+
+.advantage__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.advantage__itemImg {
+  margin-bottom: 20px;
+}
+
+.advantage__itemTitle {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  color: #4f4f4f;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.advantage__itemLink {
+  display: block;
+  text-align: center;
+  font-size: 14px;
+  line-height: 20px;
+  color: #4f4f4f;
+  text-decoration: none;
+}
+.advantage__itemLink:hover {
+  text-decoration: underline;
+}

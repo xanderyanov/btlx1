@@ -1,0 +1,149 @@
+@media only screen and (max-width: 1200px) {
+}
+
+@media only screen and (max-width: 1140px) {
+}
+
+@media only screen and (max-width: 1080px) {
+  /* .order2Thumbs__itemArea {
+    width: 16.666%;
+  } */
+  .order2__left {
+    width: 40%;
+  }
+  .order2__right {
+    width: 60%;
+  }
+  .order2Title {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .profile2__rowTitle {
+    width: 25%;
+  }
+}
+
+@media only screen and (max-width: 920px) {
+}
+
+@media only screen and (max-width: 800px) {
+}
+
+@media only screen and (max-width: 768px) {
+  .cab2__tab section {
+    float: none;
+  }
+  .cab2__tab {
+    display: block;
+  }
+  .cab2__tab a {
+    display: flex;
+    margin: 5px 0 5px 0;
+  }
+  .order2 {
+    flex-direction: column;
+  }
+  .order2__left {
+    width: 100%;
+  }
+  .order2__right {
+    width: 100%;
+    padding-top: 10px;
+  }
+
+  .order2Thumbs {
+    justify-content: flex-start;
+  }
+  .order2Title {
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  .order2Date {
+    margin: 0 0 5px 0;
+  }
+  .order2Price {
+    margin-left: auto;
+  }
+  .profile2__rowTitle {
+    width: 30%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .order2__item {
+    width: 100%;
+  }
+  /* .order2Thumbs__itemArea {
+    width: 10%;
+  } */
+  /* .order2Thumbs__itemArea {
+    width: 33.333%;
+  } */
+  .order2 {
+    flex-direction: row;
+    padding: 5px 10px;
+  }
+  .order2__right {
+    padding: 0;
+  }
+  .order2Title {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .order2Price {
+    margin: 0;
+  }
+  .order2Thumbs {
+    justify-content: flex-end;
+  }
+  .order2__item {
+    padding: 5px 10px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  /* .order2Thumbs__itemArea {
+    width: 16.666%;
+  } */
+  .order2Title {
+    margin-bottom: 10px;
+  }
+  /* .order2Thumbs__itemArea {
+    width: 25%;
+  } */
+  .order2Id {
+    margin-bottom: 5px;
+  }
+  .order2__right {
+    padding-top: 5px;
+  }
+  .profile2__rowContentCorect span {
+    display: none;
+  }
+
+  .profile2__rowContentCorect i {
+    display: block;
+  }
+  .order2Date {
+    font-size: 0.75rem;
+  }
+  .order2Price {
+    font-size: 1.25rem;
+  }
+  .order2Id {
+    font-size: 0.75rem;
+  }
+  .order2Status {
+    font-size: 0.875rem;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+}
+
+@media only screen and (max-width: 320px) {
+}

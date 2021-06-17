@@ -1,0 +1,43 @@
+- var pageTitle = 'Блог'
+- var seoKeywords = 'Ключевые слова для страницы'
+- var seoDesc = 'Сео описание для страницы'
+
+include __const
+include __header
+include __menu
+include __slider1
+include __mainBox
+include __blog
+include __newsInMain
+include __forms
+include __footer
+
+
+
+
+<!DOCTYPE html>
+html(lang="ru-RU")
+  +head
+body
+
+  .site__header
+    +header
+    +topMenu
+
+  .site__center
+    +blogInBlogPage
+    +zBlock1
+
+  .site__footer
+    +footer
+
+
+  +topMenuAdaptive
+  +search1
+
+  +toUp
+
+  +formCallBack
+
+  +scripts
+  

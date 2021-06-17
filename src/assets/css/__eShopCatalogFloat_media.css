@@ -1,0 +1,182 @@
+@media only screen and (max-width: 1200px) {
+  .floatBox {
+    padding: 0 10px;
+  }
+}
+
+@media only screen and (max-width: 1140px) {
+}
+
+@media only screen and (max-width: 1080px) {
+}
+
+@media only screen and (max-width: 1024px) {
+  .floatBox {
+    padding: 0;
+  }
+  .floatBox__left {
+    float: none;
+    width: 25%;
+    order: 0;
+    padding: 0 10px 10px;
+  }
+  .eBrands__area {
+    float: none;
+    order: 1;
+    width: 25%;
+    padding: 0 10px 10px;
+    background: none;
+    margin: 0;
+  }
+  .eBrands__btn {
+    height: 42px;
+  }
+  .eBrands__content {
+    right: 10px;
+    left: 10px;
+  }
+  .eGreyLine__mbBtnSortOuter {
+    display: block;
+    order: 2;
+    width: 25%;
+    padding: 0 10px 10px;
+  }
+  .eGreyLine__mbBtnSort {
+    height: 42px;
+  }
+  .eGreyLine__mbBtnFiltrOuter {
+    display: flex;
+    order: 3;
+    width: 25%;
+    padding: 0 10px 10px;
+  }
+  .eGreyLine__mbBtnFiltr {
+    width: 100%;
+    height: 42px;
+  }
+  .eGreyLine__outer {
+    padding: 10px;
+    width: 100%;
+    float: none;
+    order: 4;
+  }
+  .floatBox__right {
+    padding: 0 0 0 0;
+    width: 100%;
+    float: none;
+    order: 5;
+  }
+  .eCatalog {
+    margin: 0;
+  }
+  .eSort__area {
+    display: none;
+  }
+  .eCatalog__itemArea {
+    padding: 10px;
+    width: 25%;
+  }
+  .eGreyLine {
+    justify-content: flex-end;
+    height: 36px;
+    min-height: auto;
+    margin: 0;
+  }
+
+  .eSort__area {
+    display: none;
+  }
+
+  .eSort__area_mb {
+    display: flex;
+  }
+  .eSort__areaWrapper {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 2600;
+    display: none;
+  }
+
+  .eSort__areaOuter {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media only screen and (max-width: 920px) {
+}
+
+@media only screen and (max-width: 820px) {
+  .floatBox {
+    padding: 0 5px;
+  }
+  .eCatalog__itemArea {
+    width: 33.333%;
+  }
+  .floatBox__left {
+    width: 50%;
+    padding: 5px;
+  }
+  .eBrands__area {
+    width: 50%;
+    padding: 5px;
+  }
+  .eGreyLine__mbBtnSortOuter {
+    width: 50%;
+    padding: 5px;
+  }
+  .eGreyLine__mbBtnFiltrOuter {
+    width: 50%;
+    padding: 5px;
+  }
+  .eBrands__content {
+    right: 5px;
+    left: 5px;
+  }
+  .eGreyLine__outer {
+    padding: 5px;
+  }
+  .eCatalog__itemArea {
+    padding: 5px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+}
+
+@media only screen and (max-width: 600px) {
+  .floatBox__left {
+    width: 100%;
+  }
+  .eBrands__area {
+    width: 100%;
+  }
+  .eCatalog__itemArea {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+}
+
+@media only screen and (max-width: 414px) {
+}
+
+@media only screen and (max-width: 400px) {
+  .eCatalog__itemArea {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+}

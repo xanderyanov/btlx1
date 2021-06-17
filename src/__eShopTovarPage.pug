@@ -1,0 +1,166 @@
+mixin eShopTovar 
+  .eShopTovar__area 
+    .eShopTovar.clearfix
+      .eShopTovar__sliderArea
+        +eShopTovarSlider
+      .eShopTovar__titleArea 
+        .eShopTovar__art 
+          span Артикул:
+          span 12673832
+        .eShopTovar__title
+          h1 Kerastase Paris
+        .eShopTovar__titleDesc Шампунь-ванна для светлых и окрашенных волос Blond Absolu Lumiere Shampoo
+      .eShopTovar__descArea
+        .eShopTovar__desc.eShopTovar__desc_80
+          .eShopTovar__descTitle
+            span О товаре
+          table 
+            tr 
+              td Объем
+              td 250 мл
+            tr 
+              td Действие	
+              td Очищение, увлажнение
+            tr 
+              td Зона применения
+              td Волосы
+            tr 
+              td Линейки косметики
+              td Kerastase | Blond Absolu
+            tr 
+              td Страна бренда
+              td Франция
+            tr 
+              td Страна-производитель
+              td Испания
+        .eShopTovar__priceArea
+          .eShopTovar__oldPrice 2 170 ₽
+          .eShopTovar__discount 20%
+          .eShopTovar__price 1 736 ₽
+        .eShopTovar__btnsArea 
+          .eShopTovar__addToCartBtn Добавить в корзину
+          .eShopTovar__favBtn 
+            i.icon-eheart1.iconNoFav
+            i.icon-like2fill.iconInFav
+        .eShopTovar__desc
+          .eShopTovar__descTitle
+            span Описание
+          .eShopTovar__descContent 
+            p Шампунь с гиалуроновой кислотой подходит для мелированных и осветленных волос. Формула обеспечивает интенсивное очищение, смягчает и увлажняет волосы от корней до самых кончиков. очищает волосы от загрязнений и эффективно удаляет микрочастицы пыли, которые делают волосы тусклыми и безжизненными.
+
+
+mixin eShopTovarSlider 
+  .eShopTovarSlider.clearfix
+    .swiper-container.eShopTovarSlider__container_image
+      .swiper-wrapper.eShopTovarSlider__wrapper_image 
+        each item in eCatalogBase
+          .swiper-slide.eShopTovarSlider__slide_image
+            a(href=item.img, data-fancybox='group1', data-caption='001')
+              img.swiper-lazy(data-src=item.img, alt="")
+              .swiper-lazy-preloader
+      .swiper-pagination.eShopTovarSlider__pagination
+    .eShopTovarSlider__container_thumb_outer
+      .swiper-container.eShopTovarSlider__container_thumb
+        .swiper-wrapper.eShopTovarSlider__wrapper_thumb
+          each item in eCatalogBase
+            .swiper-slide.eShopTovarSlider__slide_thumb
+              .eShopTovarSlider__slide_thumb_inner
+                img(src=item.img, alt="")
+      .swiper-button-prev.eShopTovarSlider__prev
+        i.icon-up3
+      .swiper-button-next.eShopTovarSlider__next
+        i.icon-down3
+          
+mixin catalogSlider 
+  .catalogSlider__area 
+    .catalogSlider__outer 
+      .catalogSlider
+
+
+mixin tovarSimilarCaroucel
+  .tovarSimilarCaroucel__area
+    .tovarSimilarCaroucel__outer
+      .tovarSimilarCaroucel__title
+        h2 С этим товаром покупают
+      .tovarSimilarCaroucel
+        .swiper-container.tsc1-container
+          .swiper-wrapper.tsc1-wrapper
+            each item in caroucel1
+              .swiper-slide.tsc1-slide
+                .eCatalog__itemArea_inSlider(id=item.id)
+                  a.eCatalog__item_inSlider(href="")
+                    .eCatalog__itemFav
+                      i.icon-eheart1.iconNoFav
+                      i.icon-eheart1.iconInFav
+                    .eCatalog__itemImgOuter 
+                      .eCatalog__itemImg(style='background-image: url(' + item.img + ');')
+                    .eCatalog__itemInfo_inSlider 
+                      .eCatalog__itemTitle!= item.title 
+                      .eCatalog__itemDesc!= item.content 
+                      .eCatalog__itemPrice
+                        span!= item.price 
+                        span ₽
+        .tsc1__left.tovarSimilarCaroucel__left
+          i.icon-arr-left1
+        .tsc1__right.tovarSimilarCaroucel__right
+          i.icon-arr-right1
+        .swiper-pagination.tsc__pagination.tsc1__pagination
+
+
+mixin tovarSimilarCaroucel2
+  .tovarSimilarCaroucel__area
+    .tovarSimilarCaroucel__outer
+      .tovarSimilarCaroucel__title
+        h2 Похожие товары
+      .tovarSimilarCaroucel
+        .swiper-container.tsc2-container
+          .swiper-wrapper.tsc2-wrapper
+            each item in caroucel2
+              .swiper-slide.tsc2-slide
+                .eCatalog__itemArea_inSlider(id=item.id)
+                  a.eCatalog__item_inSlider(href="")
+                    .eCatalog__itemFav
+                      i.icon-favorit1.iconNoFav
+                      i.icon-favorit2.iconInFav
+                    .eCatalog__itemImgOuter 
+                      .eCatalog__itemImg(style='background-image: url(' + item.img + ');')
+                    .eCatalog__itemInfo_inSlider 
+                      .eCatalog__itemTitle!= item.title 
+                      .eCatalog__itemDesc!= item.content 
+                      .eCatalog__itemPrice
+                        span!= item.price 
+                        span ₽
+        .tsc2__left.tovarSimilarCaroucel__left
+          i.icon-arr-left1
+        .tsc2__right.tovarSimilarCaroucel__right
+          i.icon-arr-right1
+        .swiper-pagination.tsc__pagination.tsc2__pagination
+
+mixin advantage
+  .advantage__area
+    .advantage__outer
+      .advantage
+        .advantage__itemOuter 
+          .advantage__item
+            .advantage__itemImg 
+              img(src="assets/img/adv/call-center-agent.svg", alt="")
+            .advantage__itemTitle Помощь
+            a.advantage__itemLink(href="") Частые вопросы
+        .advantage__itemOuter 
+          .advantage__item
+            .advantage__itemImg 
+              img(src="assets/img/adv/drone.svg", alt="")
+            .advantage__itemTitle Доставим
+            a.advantage__itemLink(href="") Условия бесплатной доставки
+        .advantage__itemOuter 
+          .advantage__item
+            .advantage__itemImg 
+              img(src="assets/img/adv/money.svg", alt="")
+            .advantage__itemTitle Оплата
+            a.advantage__itemLink(href="") Способы оплаты
+        .advantage__itemOuter 
+          .advantage__item
+            .advantage__itemImg 
+              img(src="assets/img/adv/return-box.svg", alt="")
+            .advantage__itemTitle Возврат
+            a.advantage__itemLink(href="") Что делать?

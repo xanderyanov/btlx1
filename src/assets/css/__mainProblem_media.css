@@ -1,0 +1,121 @@
+@media only screen and (max-width: 1200px) {
+}
+
+@media only screen and (max-width: 1140px) {
+}
+
+@media only screen and (max-width: 1080px) {
+}
+
+@media only screen and (max-width: 1024px) {
+  .mainProblem {
+    margin: 5px -5px 0;
+  }
+
+  .mainProblem__itemOuter {
+    padding: 5px;
+  }
+  .mainProblem__itemInfo {
+    padding: 0 10px 0 10px;
+  }
+  .mainProblem__itemInfoTitle {
+    font-size: 1.375rem;
+  }
+  .mainProblem__itemInfoContent {
+    margin: 10px 0 0 0;
+  }
+}
+
+@media only screen and (max-width: 920px) {
+  .mainProblem__itemInfoTitle {
+    font-size: 1.25rem;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .mainProblem__itemInfoTitle {
+    font-size: 1.125rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .mainProblem__itemOuter {
+    width: 100%;
+  }
+  .mainProblem__itemImg {
+    width: 30%;
+  }
+
+  .mainProblem__itemInfo {
+    width: 70%;
+  }
+  .innerPriceBox {
+    width: 70%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .mainProblem__itemImg {
+    width: 40%;
+  }
+
+  .mainProblem__itemInfo {
+    width: 60%;
+  }
+  .innerPriceBox {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .mainProblem {
+    margin: 0 -5px 0;
+  }
+  .mainProblem__itemInfo {
+    padding: 10px;
+  }
+  .mainProblem__itemImg {
+    width: 50%;
+  }
+
+  .mainProblem__itemInfo {
+    width: 50%;
+  }
+  .mainProblem__itemInfoTitle {
+    font-size: 1.25rem;
+  }
+  .mainProblem__itemInfoContent {
+    margin: 5px 0 0 0;
+  }
+  .innerPriceBox {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  .innerPriceBtn {
+    width: 3rem;
+    height: 3rem;
+    font-size: 1.5rem;
+  }
+  .mainProblem__itemInfo {
+    padding: 10px 5px;
+  }
+  .mainProblem__itemInfoTitle {
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  .mainProblem__itemInfoContent {
+    margin: 10px 0 0 0;
+  }
+  .mainProblem__itemInfoContent li,
+  .mainProblem__itemInfoContent p {
+    font-size: 0.75rem;
+  }
+  .mainProblem__itemInfoContent ul {
+    padding: 0 0 0 5px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+}

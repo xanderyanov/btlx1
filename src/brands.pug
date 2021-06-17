@@ -1,0 +1,55 @@
+- var pageTitle = 'Просто текстовая страница'
+- var seoKeywords = 'Ключевые слова для страницы'
+- var seoDesc = 'Сео описание для страницы'
+
+include __const
+include __header
+include __menu
+include __breadcrumbs
+include __tempContent
+include __brands
+
+include __forms
+include __footer
+
+
+
+
+<!DOCTYPE html>
+html(lang="ru-RU")
+  +head
+body
+
+  .site__header
+    +header
+    +topMenu
+
+
+  .site__center
+    +breadcrumbs
+    
+    +brands
+    
+    .textPage__area.w0
+      .textPage__outer.w1
+        .title1
+          h2 Бренды нашего салона
+        .textPage
+          .content
+            +tempContent
+    
+    +zBlock1
+
+  .site__footer
+    +footer
+
+
+  +topMenuAdaptive
+  +search1
+
+  +toUp
+  
+  +formCallBack
+
+  +scripts
+  

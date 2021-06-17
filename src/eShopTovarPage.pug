@@ -1,0 +1,60 @@
+- var pageTitle = 'Страница товара магазина'
+- var seoKeywords = 'Ключевые слова для страницы'
+- var seoDesc = 'Сео описание для страницы'
+
+include __const
+include __header3
+include __menu
+include __eShopTovarPage
+include __pagination
+include __mainTop
+include __mainProblem
+include __breadcrumbs
+include __services
+include __forms
+
+include __footer
+include __menuBottom1
+
+
+
+
+<!DOCTYPE html>
+html(lang="ru-RU")
+  +head
+body
+
+  .site__header
+    +header3
+
+  .site__center
+    +breadcrumbs3
+ 
+    +eShopTovar
+
+    +tovarSimilarCaroucel
+    +tovarSimilarCaroucel2
+
+    +advantage
+   
+    //- +zBlock3
+
+  .site__footer
+    +footer3
+
+  +topMenuAdaptive
+  +search1
+
+  +toUp
+  
+  +formCallBack
+
+  +menuBottom1_page
+
+  //- далее вывод не на главной
+  +hideBox
+
+  //- +eFilerMobile
+
+  +scripts
+  

@@ -1,0 +1,64 @@
+- var pageTitle = 'Страница мастера'
+- var seoKeywords = 'Ключевые слова для страницы'
+- var seoDesc = 'Сео описание для страницы'
+
+include __const
+include __header3
+include __menu
+include __breadcrumbs
+include __wideBlock
+include __eShopMenu
+include __eShopSlideLeftMenu
+
+include __master4
+
+include __forms
+include __footer
+include __menuBottom1
+include __mainTop
+
+include __popUpBlocks
+
+
+<!DOCTYPE html>
+html(lang="ru-RU")
+  +head
+body
+
+  .site__header
+    +header3
+  
+
+
+  .site__center
+    +breadcrumbs4
+
+    +master4
+    +wideBlock
+
+    +portfolio
+
+    +imgCaroucel1
+
+
+
+
+
+
+  .site__footer
+    +footer3
+
+
+  //- +topMenuAdaptive
+  +search1
+
+  +masterWindowForm
+
+  +toUp
+  
+  //- +formCallBack
+
+  +popUpBlocks
+
+  +scripts
+  

@@ -1,0 +1,46 @@
+.instagram__area {
+  padding: 20px 0;
+}
+
+#instafeed {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.ig__item {
+  width: 25%;
+  padding: 5px;
+}
+
+.ig__link {
+  display: block;
+  position: relative;
+  background-position: center center;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+.ig__link:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(255, 100, 10, 0.5);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-image: url(../img/eye.png);
+  opacity: 0;
+  transition: all 0.3s;
+}
+
+.ig__link:hover:after {
+  opacity: 1;
+}
+
+.ig__link img {
+  display: block;
+  width: 100%;
+}

@@ -1,0 +1,73 @@
+.brandIntro__area {
+  width: 100%;
+}
+
+.brandIntro {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto 40px;
+  display: flex;
+  position: relative;
+  flex-wrap: wrap;
+}
+
+.brandIntro__left {
+  width: 50%;
+  padding: 0 15px 0 0;
+}
+
+.brandIntroText {
+  margin: 0 0 20px 0;
+}
+
+.brandIntroText__btn {
+  font-weight: bold;
+  font-size: 10px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #4f4f4f;
+  display: none;
+}
+
+.brandIntro__right {
+  width: 50%;
+  padding: 0 0 0 15px;
+}
+
+.brandImgCover__outer {
+  position: relative;
+}
+
+.brandImgCover {
+  margin: -10px -10px;
+}
+
+.brandImgCover__itemOuter {
+  float: left;
+  padding: 10px;
+}
+
+.brandImgCover__itemOuter_big {
+  width: 66.666%;
+}
+
+.brandImgCover__itemOuter_small {
+  width: 33.333%;
+}
+
+.brandImgCover__item {
+  width: 100%;
+  padding-bottom: 100%;
+  position: relative;
+}
+
+.brandImgCover__itemInner {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

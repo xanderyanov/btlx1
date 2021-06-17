@@ -1,0 +1,134 @@
+mixin eShopCart
+  .eShopCart__area
+    .eShopCart__outer
+      .eShopCart__
+        //- .eShopCart__header
+        //-   .eShopCart__col1
+        //-   .eShopCart__colWrapper
+        //-     .eShopCart__col2 Наименование
+        //-     .eShopCart__col3
+        //-       span.dt Характеристики
+        //-       span.mb Хар.
+        //-     .cart2col4
+        //-       span.dt Цена за единицу
+        //-       span.mb Цена за ед.
+        //-     .eShopCart__col5
+        //-       span.dt Количество
+        //-       span.mb Кол-во
+        //-     .eShopCart__col6 Сумма //
+        //-   .eShopCart__col7
+        .eShopCart__item
+          a.eShopCart__img(href="")
+            img(src="assets/img/ecatalog/01.jpg", alt="")
+            .eShopCart__Discount_inImg 15%
+          .eShopCart__info
+            a(href="#").eShopCart__title
+              span Название товара в несколько слов
+              span 	J865L-1-3	3
+            //- .eShopCart__title__desc 
+            //-   span Размер 32
+            .eShopCart__itemButtons
+              .eShopCart__number.number.number_inTab(data-wareid='xxx', data-mode='qcont')
+                span.minus_tab(data-wareid='xxx', data-change='-1', title='Уменьшить количество') 
+                  i.icon-minus
+                input.cartCountInput(type='text', name='count', value='0', min='0', data-wareid='xxx')
+                span.plus_tab(data-wareid='xxx', data-change='1', title='Увеличить количество')
+                  i.icon-plus
+              .eShopCart__itemButtonsDel
+                span
+                  i.icon-close5.tdl-control.delete-svg(data-wareid='xxx', data-change='Z', title="Удалить")
+            .eShopCart__itemPriceArea
+              span.eShopCart__OldPrice 12000 Р/шт
+              span.eShopCart__Price 10000 Р/шт
+        .eShopCart__item
+          a.eShopCart__img(href="")
+            img(src="assets/img/ecatalog/02.jpg", alt="")
+            .eShopCart__Discount_inImg 15%
+          .eShopCart__info
+            a(href="#").eShopCart__title
+              span Название товара в несколько слов
+              span 	J865L-1-3	3
+            //- .eShopCart__title__desc 
+            //-   span Размер 32
+            .eShopCart__itemButtons
+              .eShopCart__number.number.number_inTab(data-wareid='xxx', data-mode='qcont')
+                span.minus_tab(data-wareid='xxx', data-change='-1', title='Уменьшить количество') 
+                  i.icon-minus
+                input.cartCountInput(type='text', name='count', value='0', min='0', data-wareid='xxx')
+                span.plus_tab(data-wareid='xxx', data-change='1', title='Увеличить количество')
+                  i.icon-plus
+              .eShopCart__itemButtonsDel
+                span
+                  i.icon-close5.tdl-control.delete-svg(data-wareid='xxx', data-change='Z', title="Удалить")
+            .eShopCart__itemPriceArea
+              span.eShopCart__OldPrice 12000 Р/шт
+              span.eShopCart__Price 10000 Р/шт
+      .orderCart__total
+        span.orderCart__totalTitle Итого: 
+        span.orderCart__totalCount 5
+        span.orderCart__totalCountTitle товаров
+        span.orderCart__totalPriceTitle на сумму: 
+        span.orderCart__totalPrice 12500 руб.  
+  
+  
+mixin order  
+  .orderForm__wrapper
+    h2 Оформление заказа
+    form.orderForm__area(action='#')
+      h3 Варианты доставки:
+      .radioBox__wrapper
+        .radioBox
+          input#customRadio1(type='radio', name='customRadio')
+          label(for='customRadio1') Самовывоз
+        .radioBox
+          input#customRadio2(type='radio', name='customRadio')
+          label(for='customRadio2') Доставка
+      .inputBox
+        label(for='formGroupExampleInput_f') Ваша фамилия *
+        input#formGroupExampleInput_f(type='text', placeholder='')
+      .inputBox
+        label(for='formGroupExampleInput_i') Ваше имя *
+        input#formGroupExampleInput_i(type='text', placeholder='')
+      .inputBox
+        label(for='formGroupExampleInput_o') Ваше отчество *
+        input#formGroupExampleInput_o(type='text', placeholder='')
+      .inputBox
+        label(for='formGroupExampleInput2') Ваш телефон *
+        input#formGroupExampleInput2(type='text', placeholder='')
+      .inputBox
+        label(for='formGroupExampleInput3') Ваш email *
+        input#formGroupExampleInput3(type='text', placeholder='')
+      .inputBox
+        label(for='formGroupExampleInput_town') Укажите Ваш город *
+        input#formGroupExampleInput_town(type='text', placeholder='')
+      .inputBox
+        label(for='formGroupExampleInput_street') Укажите улицу *
+        input#formGroupExampleInput_street(type='text', placeholder='')
+      .inputBox
+        label(for='formGroupExampleInput_house') Укажите номер дома *
+        input#formGroupExampleInput_house(type='text', placeholder='')
+      .inputBox
+        label(for='formGroupExampleInput_room') Номер квартиры
+        input#formGroupExampleInput_room(type='text', placeholder='')
+      
+      h3 Варианты оплаты:
+      .radioBox__wrapper
+        .radioBox
+          input#customRadio3(type='radio', name='customRadio2')
+          label(for='customRadio3') Наличными
+        .radioBox
+          input#customRadio4(type='radio', name='customRadio2')
+          label(for='customRadio4') Банковской картой
+      h3 Дополнительная информация:
+      .inputBox
+        label(for='exampleFormControlTextarea1') Уточните важные для Вас моменты
+        textarea#exampleFormControlTextarea1.form-control(rows='3')
+  .orderCart__total
+    span.orderCart__totalTitle Итого: 
+    span.orderCart__totalCount 5
+    span.orderCart__totalCountTitle товаров
+    span.orderCart__totalPriceTitle на сумму: 
+    span.orderCart__totalPrice 12500 руб.
+  button.orderForm__orderBtn(type='button')
+    i.icon-shopping-cart
+    span Заказать

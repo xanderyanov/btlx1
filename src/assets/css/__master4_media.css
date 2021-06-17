@@ -1,0 +1,139 @@
+@media only screen and (max-width: 1200px) {
+  .flexBox__outer {
+    padding: 0 10px;
+  }
+  .master4top {
+    padding: 40px 60px;
+  }
+
+  .master4top__right {
+    padding: 0 0 0 50px;
+  }
+  .portfolio {
+    margin: 0;
+  }
+}
+
+@media only screen and (max-width: 1140px) {
+}
+
+@media only screen and (max-width: 1080px) {
+}
+
+@media only screen and (max-width: 1024px) {
+  .flexBox__left {
+    display: none;
+  }
+
+  .flexBox__right {
+    width: 100%;
+    padding: 0;
+  }
+  /* .master4top__left {
+    width: 35%;
+  }
+
+  .master4top__right {
+    width: 65%;
+    padding: 0 0 0 40px;
+  } */
+}
+
+@media only screen and (max-width: 920px) {
+}
+
+@media only screen and (max-width: 800px) {
+}
+
+@media only screen and (max-width: 768px) {
+  .master4top {
+    padding: 30px 40px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .portfolio__item {
+    width: 50%;
+  }
+  .master4top__openFormBtn {
+    display: flex;
+  }
+  .master4top__right {
+    display: none;
+  }
+  .master4top__left {
+    width: 100%;
+  }
+  .master4top__inner {
+    flex-direction: row;
+    align-items: center;
+  }
+  .master4top__info {
+    order: 1;
+    text-align: left;
+    padding: 0 20px 0 0;
+  }
+  .master4top__img {
+    order: 2;
+    margin: 0;
+  }
+  .masterWindowForm__info span {
+    font-size: 12px;
+  }
+
+  .masterWindowForm__info span:first-child {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .master4top {
+    padding: 20px 30px;
+  }
+  .master4top__openFormBtn {
+    height: auto;
+  }
+  .masterWindowForm__left {
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+  }
+  .masterWindowForm__img {
+    width: 40%;
+    margin: 0;
+  }
+  .masterWindowForm__info {
+    width: 60%;
+    padding: 0 0 0 20px;
+  }
+
+  .masterWindowForm__info span {
+    text-align: left;
+  }
+
+  .masterWindowForm__right {
+    width: 100%;
+    padding: 10px 0 0 0;
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  .master4top {
+    padding: 15px 20px;
+  }
+  .master4top__info h1 {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.2;
+    margin-bottom: 10px;
+  }
+  .master4top__info {
+    padding: 0 5px 0 0;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+}
+
+@media only screen and (max-width: 320px) {
+}

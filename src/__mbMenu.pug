@@ -1,0 +1,125 @@
+include __menu
+
+mixin mbMenu
+  .mbMenu__overlay
+  .mbMenu__area
+    .mbMenu__openBox.mbMenu__openBox_mainMenuJs
+      .mbMenu__openBoxInner
+        .mbMenu__openBoxTitle
+          span Главное меню
+          .mbMenu__openBoxClose
+            i.icon-close1
+        .mbMenu__openBoxContent.xScroll
+          .mbMenu__openBoxContentInner
+            +leftMenuAdaptive
+    .mbMenu__openBox.mbMenu__openBox_servJs
+      .mbMenu__openBoxInner
+        .mbMenu__openBoxTitle
+          span Услуги
+          .mbMenu__openBoxClose
+            i.icon-close1
+        .mbMenu__openBoxContent.xScroll
+          .mbMenu__openBoxContentInner
+            +leftMenuAdaptive
+    .mbMenu__openBox.mbMenu__openBox_solutionJs
+      .mbMenu__openBoxInner
+        .mbMenu__openBoxTitle
+          span Решить проблему
+          .mbMenu__openBoxClose
+            i.icon-close1
+        .mbMenu__openBoxContent.xScroll
+          .mbMenu__openBoxContentInner
+            +onlySolutions
+    .mbMenu__openBox.mbMenu__openBox_searchJs
+      .mbMenu__openBoxInner
+        .mbMenu__openBoxTitle
+          span Поиск по сайту
+          .mbMenu__openBoxClose
+            i.icon-close1
+        .mbMenu__openBoxContent.xScroll
+          .mbMenu__openBoxContentInner
+            +search2
+
+    .mbMenu__fake
+    .mbMenu__outer
+      .mbMenu
+        .mbMenu__itemOuter
+          a.mbMenu__item.mbMenu__mainBtn_JS(href="#")
+            i.icon-list
+            span Главное меню
+        .mbMenu__itemOuter
+          a.mbMenu__item.mbMenu__servBtn_JS(href="#")
+            i.icon-concealer
+            span Услуги
+        .mbMenu__itemOuter
+          a.mbMenu__item.mbMenu__solutionBtn_JS(href="#")
+            i.icon-darts
+            span Решить проблему
+        .mbMenu__itemOuter
+          a.mbMenu__item.mbMenu__searchBtn_JS(href="#")
+            i.icon-search2
+            span Поиск
+
+
+mixin mbMenu_01_2021
+  .mbMenu__overlay
+  .mbMenu__area
+    .mbMenu__openBox.mbMenu__openBox_mainMenuJs
+      .mbMenu__openBoxInner
+        .mbMenu__openBoxTitle
+          span Главное меню
+          .mbMenu__openBoxClose
+            i.icon-close1
+        .mbMenu__openBoxContent.xScroll
+          .mbMenu__openBoxContentInner
+            +leftMenuAdaptive
+    .mbMenu__openBox.mbMenu__openBox_servJs
+      .mbMenu__openBoxInner
+        .mbMenu__openBoxTitle
+          span Услуги
+          .mbMenu__openBoxClose
+            i.icon-close1
+        .mbMenu__openBoxContent.xScroll
+          .mbMenu__openBoxContentInner
+            +leftMenuAdaptive
+    .mbMenu__openBox.mbMenu__openBox_solutionJs
+      .mbMenu__openBoxInner
+        .mbMenu__openBoxTitle
+          span Решить проблему
+          .mbMenu__openBoxClose
+            i.icon-close1
+        .mbMenu__openBoxContent.xScroll
+          .mbMenu__openBoxContentInner
+            +onlySolutions
+    .mbMenu__openBox.mbMenu__openBox_searchJs
+      .mbMenu__openBoxInner
+        .mbMenu__openBoxTitle
+          span Поиск по сайту
+          .mbMenu__openBoxClose
+            i.icon-close1
+        .mbMenu__openBoxContent.xScroll
+          .mbMenu__openBoxContentInner
+            +search2
+
+mixin igMobile
+  .igMobile__overlay
+  .igMobile__area
+    .igMobile__outer
+      .igMobile__title
+        span Наш инстаграм
+        .igMobile__close
+          i.icon-close2021
+      .igMobile
+        a.igMobile__item(href="#")
+          .igMobile__icon
+            i.icon-instagram2
+          span Центр косметлогии и красоты
+        a.igMobile__item(href="#")
+          .igMobile__icon
+            i.icon-instagram2
+          span Центр косметлогии и красоты
+        a.igMobile__item(href="#")
+          .igMobile__icon
+            i.icon-instagram2
+          span Центр косметлогии и красоты
+
