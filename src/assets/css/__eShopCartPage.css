@@ -1,389 +1,389 @@
 .eShopCart__pageArea {
-  padding: 0 0 20px;
-  background: #f8f8f8;
+	padding: 0 0 20px;
+	background: #f8f8f8;
 }
 .eShopCart__pageOuter {
-  background: #fff;
-  padding: 40px;
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
+	background: #fff;
+	padding: 40px;
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
 }
 
 .eShopCart__area {
-  padding: 20px 0 0;
+	padding: 20px 0 0;
 }
 
 .eShopCart__ {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  position: relative;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	position: relative;
 }
 
 .eShopCart__item {
-  display: flex;
-  align-items: center;
-  margin-bottom: 10px;
-  position: relative;
-  border-bottom: 2px solid #e5e5e5;
-  padding: 0 0 10px;
+	display: flex;
+	align-items: center;
+	margin-bottom: 10px;
+	position: relative;
+	border-bottom: 2px solid #e5e5e5;
+	padding: 0 0 10px;
 }
 .eShopCart__item:last-child {
-  border-bottom: none;
+	border-bottom: none;
 }
 
 a.eShopCart__img {
-  text-decoration: none;
-  display: inline-block;
-  position: relative;
+	text-decoration: none;
+	display: inline-block;
+	position: relative;
 }
 
 .eShopCart__img img {
-  display: block;
-  width: 100%;
-  max-width: 180px;
+	display: block;
+	width: 100%;
+	max-width: 180px;
 }
 .eShopCart__Discount_inImg {
-  position: absolute;
-  padding: 1px 3px;
-  left: 0;
-  top: 0;
-  background: #df2f4e;
-  color: #fff;
-  font-size: 1rem;
-  margin: 0 0 0.3125rem auto;
+	position: absolute;
+	padding: 1px 3px;
+	left: 0;
+	top: 0;
+	background: #df2f4e;
+	color: #fff;
+	font-size: 1rem;
+	margin: 0 0 0.3125rem auto;
 }
 
 .eShopCart__info {
-  flex: 1;
-  padding: 0 5% 0 20px;
-  display: flex;
-  align-items: center;
-  position: relative;
+	flex: 1;
+	padding: 0 5% 0 20px;
+	display: flex;
+	align-items: center;
+	position: relative;
 }
 
 a.eShopCart__title {
-  width: 60%;
-  text-decoration: none;
-  display: flex;
-  flex-direction: column;
-  padding: 0 10px 0 0;
+	width: 60%;
+	text-decoration: none;
+	display: flex;
+	flex-direction: column;
+	padding: 0 10px 0 0;
 }
 
 .eShopCart__title span {
-  font-size: 1.25rem;
-  line-height: 1.4;
-  /* color: var(--blueLink); */
-  color: #000;
+	font-size: 1.25rem;
+	line-height: 1.4;
+	/* color: var(--blueLink); */
+	color: #000;
 }
 
 .eShopCart__title span:first-child {
-  font-size: 1.125rem;
+	font-size: 1.125rem;
 }
 
 .eShopCart__title span:last-child {
-  font-size: 1rem;
-  color: #a6a6a6;
+	font-size: 1rem;
+	color: #a6a6a6;
 }
 
 .eShopCart__title__desc {
-  width: 15%;
-  display: none;
+	width: 15%;
+	display: none;
 }
 .eShopCart__title__desc span {
-  font-size: 1rem;
+	font-size: 1rem;
 }
 
 .eShopCart__itemButtons {
-  width: 18%;
+	width: 18%;
 }
 
 .number {
-  display: flex;
-  width: 150px;
-  justify-content: center;
+	display: flex;
+	width: 150px;
+	justify-content: center;
 }
 
 .number_inTabArea {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 .number_inTab {
-  border: none;
-  width: auto;
+	border: none;
+	width: auto;
 }
 
 .number i {
-  font-size: 0.875rem;
+	font-size: 0.875rem;
 }
 
 .number button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 34px;
-  height: 34px;
-  border: 2px solid #a6a6a6;
-  cursor: pointer;
-  outline: none;
-  color: var(--redFillhover);
-  font-size: 1.125rem;
-  font-weight: 400;
-  background: transparent;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 34px;
+	height: 34px;
+	border: 2px solid #a6a6a6;
+	cursor: pointer;
+	outline: none;
+	color: var(--redFillhover);
+	font-size: 1.125rem;
+	font-weight: 400;
+	background: transparent;
 }
 
 .number input {
-  display: flex;
-  text-align: center;
-  border: none;
-  outline: none;
-  color: #000;
-  font-size: 1.125rem;
-  font-weight: 700;
-  width: 80px;
-  background: transparent;
-  align-self: stretch;
-  box-sizing: border-box;
+	display: flex;
+	text-align: center;
+	border: none;
+	outline: none;
+	color: #000;
+	font-size: 1.125rem;
+	font-weight: 700;
+	width: 80px;
+	background: transparent;
+	align-self: stretch;
+	box-sizing: border-box;
 }
 
 .number_inTab span {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 28px;
-  height: 28px;
-  border-radius: 50%;
-  border: 2px solid #a6a6a6;
-  background: #f8f8f8;
-  cursor: pointer;
-  outline: none;
-  color: #a6a6a6;
-  font-size: 2rem;
-  font-weight: 400;
-  transition: all 0.3s;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 28px;
+	height: 28px;
+	border-radius: 50%;
+	border: 2px solid #a6a6a6;
+	background: #f8f8f8;
+	cursor: pointer;
+	outline: none;
+	color: #a6a6a6;
+	font-size: 2rem;
+	font-weight: 400;
+	transition: all 0.3s;
 }
 .number_inTab span:hover {
-  border: 2px solid var(--brick);
-  color: #fff;
-  background: var(--brick);
+	border: 2px solid var(--color1);
+	color: #fff;
+	background: var(--color1);
 }
 
 .number_inTab input {
-  width: 40px;
+	width: 40px;
 }
 
 .eShopCart__itemButtonsDel {
-  position: absolute;
-  right: 0;
-  top: 50%;
-  transform: translate(0, -50%);
+	position: absolute;
+	right: 0;
+	top: 50%;
+	transform: translate(0, -50%);
 }
 
 .eShopCart__itemButtonsDel span {
-  margin-left: auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 28px;
-  height: 28px;
-  border-radius: 50%;
-  border: 2px solid #a6a6a6;
-  background: #f8f8f8;
-  cursor: pointer;
-  outline: none;
-  color: #a6a6a6;
-  font-size: 2rem;
-  font-weight: 400;
-  transition: all 0.3s;
+	margin-left: auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 28px;
+	height: 28px;
+	border-radius: 50%;
+	border: 2px solid #a6a6a6;
+	background: #f8f8f8;
+	cursor: pointer;
+	outline: none;
+	color: #a6a6a6;
+	font-size: 2rem;
+	font-weight: 400;
+	transition: all 0.3s;
 }
 
 .eShopCart__itemButtonsDel span:hover {
-  border: 2px solid var(--brick);
-  color: #fff;
-  background: var(--brick);
+	border: 2px solid var(--color1);
+	color: #fff;
+	background: var(--color1);
 }
 
 .eShopCart__itemButtonsDel span i {
-  font-size: 0.875rem;
+	font-size: 0.875rem;
 }
 
 .dt {
-  display: block;
+	display: block;
 }
 .mb {
-  display: none;
+	display: none;
 }
 
 .eShopCart__itemPriceArea {
-  width: 17%;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
+	width: 17%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
 }
 
 .eShopCart__itemPriceArea span {
-  white-space: nowrap;
+	white-space: nowrap;
 }
 
 .eShopCart__OldPrice {
-  margin-bottom: 0.3125rem;
-  text-decoration: line-through;
-  font-size: 1rem;
-  font-style: italic;
-  color: #a6a6a6;
+	margin-bottom: 0.3125rem;
+	text-decoration: line-through;
+	font-size: 1rem;
+	font-style: italic;
+	color: #a6a6a6;
 }
 
 .eShopCart__Price {
-  font-size: 1.375rem;
-  font-weight: 700;
+	font-size: 1.375rem;
+	font-weight: 700;
 }
 
 #purchaseBtn.buyComplete {
-  background: #00994c;
+	background: #00994c;
 }
 
 #purchaseBtn.buyComplete:hover {
-  background: #00994c;
+	background: #00994c;
 }
 
 .miniCartBuyComplete {
-  background: #00994c;
+	background: #00994c;
 }
 
 .cart__refundInfo {
-  font-size: 1rem;
-  color: #000;
-  line-height: 1.4;
-  margin-top: 20px;
+	font-size: 1rem;
+	color: #000;
+	line-height: 1.4;
+	margin-top: 20px;
 }
 
 /***********************/
 .orderCart__total {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  padding: 10px 5px;
-  background: var(--brick);
-  margin-bottom: 1.875rem;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	padding: 10px 5px;
+	background: var(--color1);
+	margin-bottom: 1.875rem;
 }
 
 .orderCart__total span {
-  font-size: 18px;
-  color: #fff;
-  margin-left: 10px;
+	font-size: 18px;
+	color: #fff;
+	margin-left: 10px;
 }
 
 span.orderCart__totalTitle {
-  font-weight: 600;
-  font-size: 1.375rem;
+	font-weight: 600;
+	font-size: 1.375rem;
 }
 
 /**********************/
 
 .orderForm__wrapper {
-  width: 60%;
-  margin: 0 auto;
+	width: 60%;
+	margin: 0 auto;
 }
 
 .inputBox {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  margin-bottom: 1.25rem;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	margin-bottom: 1.25rem;
 }
 
 .inputBox label {
-  font-size: 0.875rem;
-  color: var(--tColor);
-  line-height: 1.2;
-  margin-bottom: 0.25rem;
+	font-size: 0.875rem;
+	color: var(--tColor);
+	line-height: 1.2;
+	margin-bottom: 0.25rem;
 }
 .orderForm__area span {
-  font-size: 0.875rem;
-  color: var(--tColor);
-  line-height: 1.2;
-  margin-bottom: 0.3125rem;
+	font-size: 0.875rem;
+	color: var(--tColor);
+	line-height: 1.2;
+	margin-bottom: 0.3125rem;
 }
 
 .inputBox input {
-  display: block;
-  width: 100%;
-  padding: 0.375rem 0.625rem;
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 1.5;
-  color: var(--tColor);
-  background-color: #fff;
-  background-clip: padding-box;
-  border: 1px solid var(--x1border);
-  border-radius: 0.25rem;
-  box-sizing: border-box;
+	display: block;
+	width: 100%;
+	padding: 0.375rem 0.625rem;
+	font-size: 1rem;
+	font-weight: 400;
+	line-height: 1.5;
+	color: var(--tColor);
+	background-color: #fff;
+	background-clip: padding-box;
+	border: 1px solid var(--x1border);
+	border-radius: 0.25rem;
+	box-sizing: border-box;
 }
 .inputBox textarea {
-  display: block;
-  width: 100%;
-  padding: 0.625rem;
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 1.5;
-  color: var(--tColor);
-  background-color: #fff;
-  background-clip: padding-box;
-  border: 1px solid var(--x1border);
-  border-radius: 0.25rem;
-  box-sizing: border-box;
+	display: block;
+	width: 100%;
+	padding: 0.625rem;
+	font-size: 1rem;
+	font-weight: 400;
+	line-height: 1.5;
+	color: var(--tColor);
+	background-color: #fff;
+	background-clip: padding-box;
+	border: 1px solid var(--x1border);
+	border-radius: 0.25rem;
+	box-sizing: border-box;
 }
 
 .radioBox__wrapper {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 20px;
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 20px;
 }
 
 .radioBox {
-  display: flex;
-  margin-bottom: 0.625rem;
-  align-items: center;
+	display: flex;
+	margin-bottom: 0.625rem;
+	align-items: center;
 }
 .radioBox input {
-  margin: 0 10px 0 0;
+	margin: 0 10px 0 0;
 }
 
 /**********************/
 .orderForm__orderBtn {
-  border-radius: 6px;
-  width: 100%;
-  max-width: 300px;
-  height: 56px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 20px;
-  color: #ffffff;
-  background: var(--brick);
-  cursor: pointer;
-  transition: all 0.3s;
-  border: none;
-  outline: none;
-  transition: all 0.3s;
+	border-radius: 6px;
+	width: 100%;
+	max-width: 300px;
+	height: 56px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 20px;
+	color: #ffffff;
+	background: var(--color1);
+	cursor: pointer;
+	transition: all 0.3s;
+	border: none;
+	outline: none;
+	transition: all 0.3s;
 
-  margin-left: auto;
+	margin-left: auto;
 }
 
 .orderForm__orderBtn:hover {
-  background: var(--reden);
+	background: var(--reden);
 }
 
 .orderForm__orderBtn i {
-  font-size: 1.75rem;
-  margin-right: 20px;
+	font-size: 1.75rem;
+	margin-right: 20px;
 }
 
 .orderForm__orderBtn span {
-  font-size: 1.75rem;
+	font-size: 1.75rem;
 }

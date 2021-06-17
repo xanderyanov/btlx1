@@ -1,193 +1,193 @@
 .news__area {
-  padding-top: 1.25rem;
+	padding-top: 1.25rem;
 }
 
 .news__outer {
-  position: relative;
+	position: relative;
 }
 
 .news {
-  display: flex;
-  flex-wrap: wrap;
-  /* margin: 0 -10px; */
+	display: flex;
+	flex-wrap: wrap;
+	/* margin: 0 -10px; */
 }
 
 .news__itemOuter {
-  width: 100%;
-  margin-bottom: 10px;
+	width: 100%;
+	margin-bottom: 10px;
 }
 
 .news__item {
-  display: flex;
-  /* flex-direction: column; */
-  text-decoration: none;
-  height: 100%;
-  flex-wrap: wrap;
+	display: flex;
+	/* flex-direction: column; */
+	text-decoration: none;
+	height: 100%;
+	flex-wrap: wrap;
 }
 
 .news__itemImg {
-  width: 20%;
+	width: 20%;
 }
 
 .news__itemImg img {
-  display: block;
-  width: 100%;
+	display: block;
+	width: 100%;
 }
 
 .news__itemInfo {
-  width: 80%;
-  flex-direction: column;
-  display: flex;
-  /* align-items: center; */
-  justify-content: center;
-  padding: 20px;
-  background: var(--x1greySuperLight);
+	width: 80%;
+	flex-direction: column;
+	display: flex;
+	/* align-items: center; */
+	justify-content: center;
+	padding: 20px;
+	background: var(--x1greySuperLight);
 }
 
 .news__itemDate {
-  font-size: 0.875rem;
-  color: var(--x1grey);
-  margin-bottom: 10px;
+	font-size: 0.875rem;
+	color: var(--x1grey);
+	margin-bottom: 10px;
 }
 
 .news__itemAuthor {
-  font-size: 1rem;
-  font-weight: 500;
-  color: var(--tc0);
-  margin-bottom: 10px;
+	font-size: 1rem;
+	font-weight: 500;
+	color: var(--tc0);
+	margin-bottom: 10px;
 }
 
 .news__itemDesc {
-  font-size: 0.875rem;
-  line-height: 1.3;
-  color: var(--tc0);
+	font-size: 0.875rem;
+	line-height: 1.3;
+	color: var(--tc0);
 }
 
 /**************** Слайдер новостей на главной ******************/
 .blogSlider__area {
-  width: 100%;
+	width: 100%;
 }
 
 .blogSlider__outer {
-  max-width: 1200px;
-  margin: 0 auto;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+	max-width: 1200px;
+	margin: 0 auto;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 .blogSliderCaroucel {
-  width: 100%;
-  position: relative;
-  padding: 10px 0 0;
+	width: 100%;
+	position: relative;
+	padding: 10px 0 0;
 }
 
 .imgSlider-slide {
-  height: auto;
+	height: auto;
 }
 
 .blogSlider-container {
-  position: relative;
-  /* width: 90%; */
-  margin: 0 auto;
-  /* padding: 0 20px; */
+	position: relative;
+	/* width: 90%; */
+	margin: 0 auto;
+	/* padding: 0 20px; */
 }
 
 .blogSlider-wrapper {
-  align-items: stretch;
-  /* padding: 0 0 10px 0; */
-  display: flex;
-  flex-wrap: wrap;
-  margin: 0 -10px;
-  width: auto;
+	align-items: stretch;
+	/* padding: 0 0 10px 0; */
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 -10px;
+	width: auto;
 }
 
 .blogSlider-slide {
-  height: auto;
-  width: 33.333%;
-  display: block;
-  padding: 10px;
+	height: auto;
+	width: 33.333%;
+	display: block;
+	padding: 10px;
 }
 
 .blogSlider-slide:nth-child(1),
 .blogSlider-slide:nth-child(2) {
-  width: 50%;
+	width: 50%;
 }
 
 .blogSlider-slideInner {
-  position: relative;
-  height: 100%;
+	position: relative;
+	height: 100%;
 }
 
 .blogSliderItem {
-  display: flex;
-  flex-direction: column;
-  text-decoration: none;
-  height: 100%;
-  transition: all 0.3s;
-  background: #fff;
+	display: flex;
+	flex-direction: column;
+	text-decoration: none;
+	height: 100%;
+	transition: all 0.3s;
+	background: #fff;
 }
 .blogSliderItem:hover {
-  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.08);
+	box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.08);
 }
 
 .blogSliderItem__cover {
-  width: 100%;
+	width: 100%;
 }
 
 .blogSliderItem__coverImg {
-  height: 0;
-  padding: 0 0 56.25% 0;
-  width: 100%;
-  position: relative;
+	height: 0;
+	padding: 0 0 56.25% 0;
+	width: 100%;
+	position: relative;
 }
 
 .blogSliderItem__coverImgInner {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
 }
 
 .blogSliderItem__info {
-  display: flex;
-  flex-direction: column;
-  padding: 50px 40px;
-  border: 1px solid #e0e0e0;
-  flex: 1;
+	display: flex;
+	flex-direction: column;
+	padding: 50px 40px;
+	border: 1px solid #e0e0e0;
+	flex: 1;
 }
 
 .blogSliderItem__title {
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 1.5;
-  color: var(--dark);
-  margin-bottom: 40px;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 1.5;
+	color: var(--dark);
+	margin-bottom: 40px;
 }
 
 .blogSliderItem__date {
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.5;
-  color: var(--dark);
-  margin-top: auto;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 1.5;
+	color: var(--dark);
+	margin-top: auto;
 }
 
 .blogSlider__pagination,
 .blogSlider__pagination:focus {
-  width: 100%;
-  display: none;
-  justify-content: center;
-  /* position: absolute; */
-  /* z-index: 20; */
-  /* bottom: 0 !important; */
-  outline: none !important;
-  padding: 30px 0 0;
+	width: 100%;
+	display: none;
+	justify-content: center;
+	/* position: absolute; */
+	/* z-index: 20; */
+	/* bottom: 0 !important; */
+	outline: none !important;
+	padding: 30px 0 0;
 }
 
 /* .blogSlider__minItem:focus {
@@ -201,39 +201,39 @@
 } */
 
 .blogSlider__pagination .swiper-pagination-bullet {
-  width: 16px;
-  height: 16px;
-  background-color: #fff;
-  border: 1px solid #d74d63;
-  border-radius: 50%;
-  outline: none;
-  margin: 0 5px;
+	width: 16px;
+	height: 16px;
+	background-color: #fff;
+	border: 1px solid #d74d63;
+	border-radius: 50%;
+	outline: none;
+	margin: 0 5px;
 }
 
 .blogSlider__pagination .swiper-pagination-bullet-active {
-  background-color: #d74d63;
+	background-color: #d74d63;
 }
 
 .blogSlider__pagination.swiper-pagination-lock {
-  display: none;
+	display: none;
 }
 
 .mainNews__redmore {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: 600;
-  font-size: 1rem;
-  line-height: 1.25rem;
-  background: var(--brick);
-  color: #fff;
-  padding: 0.75rem 2rem;
-  border-radius: 6px;
-  text-decoration: none;
-  margin: 50px 0 30px;
-  transition: all 0.3s;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-weight: 600;
+	font-size: 1rem;
+	line-height: 1.25rem;
+	background: var(--color1);
+	color: #fff;
+	padding: 0.75rem 2rem;
+	border-radius: 6px;
+	text-decoration: none;
+	margin: 50px 0 30px;
+	transition: all 0.3s;
 }
 
 .mainNews__redmore:hover {
-  background: var(--reden);
+	background: var(--reden);
 }

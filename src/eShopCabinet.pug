@@ -3,11 +3,11 @@
 - var seoDesc = 'Сео описание для страницы'
 
 include __const
-include __header3
+include __header
 include __menu
 include __eShopCabinet
 include __pagination
-include __mainTop4
+
 include __mainProblem
 include __breadcrumbs
 include __eShopCartPage
@@ -16,6 +16,9 @@ include __forms
 
 include __footer
 include __menuBottom1
+
+include __old
+include __popUpBlocks
 
 
 
@@ -26,7 +29,7 @@ html(lang="ru-RU")
 body
 
   .site__header
-    +header3
+    +header
 
   .site__center
     +breadcrumbs3
@@ -38,8 +41,6 @@ body
 
   +topMenuAdaptive
   +search1
-
-  +toUp
   
   +formCallBack
 
@@ -50,5 +51,6 @@ body
 
   //- +eFilerMobile
 
+  +popUpBlocks
   +scripts
   

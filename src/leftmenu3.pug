@@ -4,7 +4,7 @@
 
 include __const
 include __card
-include __header3
+include __header
 include __menu
 include __eShopMenu
 include __mainTop
@@ -17,6 +17,9 @@ include __forms
 include __footer
 include __menuBottom1
 
+include __old
+include __popUpBlocks
+
 
 
 
@@ -26,12 +29,12 @@ html(lang="ru-RU")
 body
 
   .site__header
-    +header3
+    +header
     //- +topMenu
 
 
   .site__center
-    +breadcrumbs3
+    +breadcrumbs4
     +wideBlock
     
     .dubleBox3__area 
@@ -42,7 +45,7 @@ body
         .dubleBox3__right
           .title0 
             h1 Заголовок страницы
-          +card3
+          +eCard
     +zBlock3
 
   .site__footer
@@ -52,7 +55,6 @@ body
   +topMenuAdaptive
   +search1
 
-  +toUp
   
   +formCallBack
 
@@ -60,6 +62,8 @@ body
 
   //- далее вывод не на главной
   +hideBox
-
+  
+  +toUp
+  +popUpBlocks
   +scripts
   

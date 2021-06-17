@@ -1,168 +1,168 @@
 .master__area {
-  padding: 10px 0 0 0;
-  width: 100%;
+	padding: 10px 0 0 0;
+	width: 100%;
 }
 
 .master__outer {
-  position: relative;
-  width: 100%;
-  margin: 0 auto;
-  max-width: 1200px;
+	position: relative;
+	width: 100%;
+	margin: 0 auto;
+	max-width: 1200px;
 }
 
 .master {
-  display: flex;
-  flex-direction: column;
+	display: flex;
+	flex-direction: column;
 }
 
 .master__top {
-  margin: 10px 0 0 0;
-  display: flex;
-  flex-wrap: wrap;
+	margin: 10px 0 0 0;
+	display: flex;
+	flex-wrap: wrap;
 }
 
 .master__intro {
-  width: 40%;
-  display: flex;
-  border: 10px solid var(--x1greyLight);
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
+	width: 40%;
+	display: flex;
+	border: 10px solid var(--x1greyLight);
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
 }
 
 .master__introHeader {
-  font-size: 1.125rem;
-  color: var(--x1grey);
-  font-weight: 700;
-  line-height: 1.4;
-  padding-bottom: 30px;
+	font-size: 1.125rem;
+	color: var(--x1grey);
+	font-weight: 700;
+	line-height: 1.4;
+	padding-bottom: 30px;
 }
 
 .master__introContent {
-  width: 100%;
+	width: 100%;
 }
 
 .master__face {
-  width: 30%;
-  padding: 0 10px;
+	width: 30%;
+	padding: 0 10px;
 }
 
 .master__face img {
-  display: block;
-  width: 100%;
+	display: block;
+	width: 100%;
 }
 
 .master__consForm {
-  width: 30%;
-  background: var(--brick);
-  padding: 30px;
+	width: 30%;
+	background: var(--color1);
+	padding: 30px;
 }
 
 .master__aboutContent {
-  margin: 20px 0 20px;
-  width: 100%;
+	margin: 20px 0 20px;
+	width: 100%;
 }
 
 .master__specialization {
-  margin-top: 20px;
-  width: 100%;
+	margin-top: 20px;
+	width: 100%;
 }
 
 .specialization__area {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 0 -5px;
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 -5px;
 }
 
 .specialization {
-  display: flex;
-  padding: 10px 30px;
-  margin: 5px;
-  text-decoration: none;
-  transition: all 0.3s;
-  border: 1px solid #e0e0e0;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 24px;
-  color: #4f4f4f;
-  border-radius: 50px;
+	display: flex;
+	padding: 10px 30px;
+	margin: 5px;
+	text-decoration: none;
+	transition: all 0.3s;
+	border: 1px solid #e0e0e0;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 24px;
+	color: #4f4f4f;
+	border-radius: 50px;
 }
 
 .specialization:hover {
-  background: var(--brick);
-  border: 1px solid var(--brick);
-  color: #fff;
+	background: var(--color1);
+	border: 1px solid var(--color1);
+	color: #fff;
 }
 
 .master__sertificats {
-  margin-top: 20px;
+	margin-top: 20px;
 }
 
 /**************************************************/
 
 .master3__page {
-  display: flex;
-  flex-direction: column;
+	display: flex;
+	flex-direction: column;
 }
 
 .master3__top {
-  width: 100%;
-  max-width: 1000px;
-  margin: 0 auto 20px;
-  background: #fff;
-  box-shadow: 0px 12px 25px rgb(0 0 0 / 8%);
-  padding: 40px 60px;
-  display: flex;
-  flex-direction: column;
+	width: 100%;
+	max-width: 1000px;
+	margin: 0 auto 20px;
+	background: #fff;
+	box-shadow: 0px 12px 25px rgb(0 0 0 / 8%);
+	padding: 40px 60px;
+	display: flex;
+	flex-direction: column;
 }
 
 .master3__topTitle {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
 }
 
 .master3__title {
-  margin-bottom: 10px;
+	margin-bottom: 10px;
 }
 
 .master3__title h1 {
-  font-style: normal;
-  font-weight: bold;
-  font-size: 2.25rem;
-  line-height: 3rem;
-  color: #333333;
-  margin: 0;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 2.25rem;
+	line-height: 3rem;
+	color: #333333;
+	margin: 0;
 }
 
 .master3__titleDesc {
-  color: #828282;
-  font-size: 1.125rem;
-  line-height: 1.5rem;
-  margin-bottom: 20px;
+	color: #828282;
+	font-size: 1.125rem;
+	line-height: 1.5rem;
+	margin-bottom: 20px;
 }
 
 .master3__topContent {
-  display: flex;
-  flex-wrap: wrap;
+	display: flex;
+	flex-wrap: wrap;
 }
 
 .master3__topContentLeft {
-  width: 50%;
-  padding: 0 20px 0 0;
+	width: 50%;
+	padding: 0 20px 0 0;
 }
 
 .master3__topContentLeft img {
-  width: 100%;
-  max-width: 360px;
+	width: 100%;
+	max-width: 360px;
 }
 
 .master3__topContentRight {
-  width: 50%;
-  padding: 0 0 0 20px;
+	width: 50%;
+	padding: 0 0 0 20px;
 }
 
 .master3__formOuter {
-  width: 100%;
-  max-width: 380px;
+	width: 100%;
+	max-width: 380px;
 }

@@ -259,11 +259,11 @@
 .mainTop4__hideBoxInnerTitle i {
 	font-size: 2rem;
 	margin-right: 10px;
-	color: var(--brick);
+	color: var(--color1);
 }
 .mainTop4__hideBoxInnerTitle span {
 	font-size: 2rem;
-	color: var(--brick);
+	color: var(--color1);
 }
 
 .mainTop4__hideBoxClose {
@@ -272,7 +272,7 @@
 
 .mainTop4__hideBoxClose i {
 	font-size: 2rem;
-	color: var(--brick);
+	color: var(--color1);
 }
 
 .mainTop4__hideBoxInnerContent {

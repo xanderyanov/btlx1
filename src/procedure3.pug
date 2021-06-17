@@ -3,7 +3,7 @@
 - var seoDesc = 'Сео описание для страницы'
 
 include __const
-include __header3
+include __header
 include __menu
 include __mainTop
 include __mainBox
@@ -17,6 +17,8 @@ include __footer
 
 include __menuBottom1
 
+include __old
+
 
 
 
@@ -26,7 +28,7 @@ html(lang="ru-RU")
 body
 
   .site__header
-    +header3
+    +header
 
 
 
@@ -195,7 +197,7 @@ body
           .card3__outer
             .title3
               h2 Альтернативные процедуры    
-            +card3
+            +eCard
     +zBlock3
 
   .site__footer

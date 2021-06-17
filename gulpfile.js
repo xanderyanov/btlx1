@@ -101,6 +101,7 @@ var myjsfiles = [
 	// "src/assets/js/__efilter.js",
 	// "src/assets/js/__eShopCabinet.js",
 	// "src/assets/js/__master4.js",
+	"src/assets/js/main_old.js",
 	"src/assets/js/main.js",
 	"src/assets/js/__resize.js",
 ];

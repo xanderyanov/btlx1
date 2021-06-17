@@ -9,18 +9,20 @@ $(".leftSlideMenu_js").on("click", function (e) {
 
 $(".leftSlideMenu__close").on("click", function (e) {
 	e.preventDefault();
-	$(".leftSlideMenu__wrapper").removeClass("leftSlideMenu__wrapper_open");
-	$(".leftSlideMenu__overlay").fadeOut();
-	$("body").removeClass("stop");
+	leftSlideMenuClose();
 });
 $(".leftSlideMenu__wrapper").on("click", function (e) {
 	e.stopPropagation();
 });
 $(".leftSlideMenu__overlay").on("click", function (e) {
 	e.preventDefault();
+	leftSlideMenuClose();
+});
+
+function leftSlideMenuClose() {
 	$(".leftSlideMenu__wrapper").removeClass("leftSlideMenu__wrapper_open");
 	$(".leftSlideMenu__overlay").fadeOut();
 	$("body").removeClass("stop");
-});
+}
 
 /*end-newSlideMobileMenu*/

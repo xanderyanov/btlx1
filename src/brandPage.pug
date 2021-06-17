@@ -4,7 +4,7 @@
 
 include __const
 include __card
-include __header3
+include __header
 include __menu
 include __eShopMenu
 include __eShopCatalog
@@ -20,9 +20,11 @@ include __services
 include __forms
 
 include __footer
-include __menuBottom1
 
 include __brandPage
+
+include __old
+include __popUpBlocks
 
 
 <!DOCTYPE html>
@@ -31,7 +33,7 @@ html(lang="ru-RU")
 body
 
   .site__header
-    +header3
+    +header
     //- +topMenu
 
 
@@ -96,7 +98,7 @@ body
   +topMenuAdaptive
   +search1
 
-  +toUp
+ 
   
   +formCallBack
 
@@ -107,5 +109,6 @@ body
 
   +eFilerMobile
 
+  +popUpBlocks
   +scripts
   

@@ -1,8 +1,12 @@
+/* @import url("https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,500i,600,700&display=swap&subset=cyrillic"); */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,400&display=swap&subset=cyrillic");
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap&subset=cyrillic");
 @import "../../../node_modules/sweetalert/dist/sweetalert.css";
 @import "../../../node_modules/nouislider/distribute/nouislider.css";
 
 @import "../../../node_modules/swiper/css/swiper.css";
+@import "../../../node_modules/slick-carousel/slick/slick";
+/* @import "../../../node_modules/slider-pro/dist/css/slider-pro.css"; */
 @import "../../../node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.css";
 
 @import "reset.css";
@@ -16,26 +20,17 @@
 @import "__header.css";
 @import "__header_media.css";
 
-@import "__leftSlideMenu.css";
-@import "__leftSlideMenu_media.css";
+@import "__header2.css";
+@import "__header2_media.css";
 
-@import "__mainTop.css";
-@import "__mainTop_media.css";
+@import "__header3.css";
+@import "__header3_media.css";
 
-@import "__card.css";
-@import "__card_media.css";
-
-@import "__overlay.css";
-@import "__overlay_media.css";
-
-@import "__price.css";
-@import "__price_media.css";
-
-/* Старые */
 @import "__menu.css";
 @import "__menu_media.css";
 
 @import "__promoLine.css";
+/* @import "__promoLine_media.css"; */
 
 @import "__callback.css";
 @import "__callback_media.css";
@@ -111,8 +106,20 @@
 @import "__mbMenu.css";
 @import "__mbMenu_media.css";
 
+/* @import "__index2.css"; */
+@import "__index2_media.css";
+
+@import "__mainTop2.css";
+@import "__mainTop2_media.css";
+
+@import "__mainTop4.css";
+@import "__mainTop4_media.css";
+
 @import "__mainProblem.css";
 @import "__mainProblem_media.css";
+
+@import "__card.css";
+@import "__card_media.css";
 
 @import "__menuBottom1.css";
 @import "__menuBottom1_media.css";
@@ -147,12 +154,14 @@
 @import "__eShopCabinet.css";
 @import "__eShopCabinet_media.css";
 
+@import "__eShopSlideLeftMenu.css";
+@import "__eShopSlideLeftMenu_media.css";
+
 @import "__brandPage.css";
 @import "__brandPage_media.css";
 
 @import "__pagination.css";
 @import "__pagination_media.css";
-/*        */
 
 /* в самом низу */
 @import "main.css";

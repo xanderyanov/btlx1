@@ -33,9 +33,9 @@ mixin head
 
 mixin scripts
   script(src='assets/js/vendors.js')
-  script(src='assets/js/slider.js')
+  //- script(src='assets/js/slider.js')
   script(src='assets/js/main.js')
-  script(src='assets/js/devjs.js')
+  //- script(src='assets/js/devjs.js')
 
 mixin toUp
   .toTop
@@ -199,3 +199,27 @@ mixin gallery
       .gallery__item
         a(href='assets/img/gal/04.jpg', data-fancybox='group', data-caption='002')
           img(src='assets/img/gal/04.jpg', alt='1')
+
+mixin search1
+  .search1__overlay
+  .search1__area
+    .search1__wrapper
+      .search1__close
+        i.icon-close2021
+      .search1__outer
+        .search1__box
+          form.search1(action='#', method='get')
+            input.search1__input(type='text', name='', value='', placeholder='Поиск по сайту...')
+            button.search1__btn(type='submit')
+              i.icon-search2
+
+mixin search2
+  .search1__wrapper
+    .search1__close
+      i.icon-close2021
+    .search1__outer
+      .search1__box
+        form.search1(action='#', method='get')
+          input.search1__input(type='text', name='', value='', placeholder='Поиск по сайту...')
+          button.search1__btn(type='submit')
+            i.icon-search2

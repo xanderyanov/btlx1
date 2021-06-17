@@ -1,40 +1,40 @@
 .mainProblem__area {
-  position: relative;
+	position: relative;
 }
 
 .mainProblem__outer {
-  position: relative;
+	position: relative;
 }
 
 .mainProblem {
-  display: flex;
-  margin: 0 -10px;
-  flex-wrap: wrap;
+	display: flex;
+	margin: 0 -10px;
+	flex-wrap: wrap;
 }
 
 .mainProblem__itemOuter {
-  width: 50%;
-  padding: 10px;
+	width: 50%;
+	padding: 10px;
 }
 
 .mainProblem__item {
-  text-decoration: none;
-  display: flex;
-  align-items: center;
-  background: #fff;
-  position: relative;
+	text-decoration: none;
+	display: flex;
+	align-items: center;
+	background: #fff;
+	position: relative;
 }
 
 .mainProblem__itemImg {
-  width: 50%;
-  order: 1;
-  padding: 5px;
-  overflow: hidden;
+	width: 50%;
+	order: 1;
+	padding: 5px;
+	overflow: hidden;
 }
 .mainProblem__itemImg img {
-  display: block;
-  width: 100%;
-  transition: all 0.3s;
+	display: block;
+	width: 100%;
+	transition: all 0.3s;
 }
 
 /* .mainProblem__item:hover img {
@@ -42,73 +42,73 @@
 } */
 
 .mainProblem__itemInfo {
-  width: 50%;
-  order: 2;
-  display: flex;
-  flex-direction: column;
-  padding: 0 20px 0 30px;
-  /* align-items: flex-end; */
+	width: 50%;
+	order: 2;
+	display: flex;
+	flex-direction: column;
+	padding: 0 20px 0 30px;
+	/* align-items: flex-end; */
 }
 
 .mainProblem__itemInfo_inPage {
-  width: 50%;
-  order: 2;
-  display: flex;
-  flex-direction: column;
-  padding: 0 10px 0 20px;
-  /* align-items: flex-end; */
+	width: 50%;
+	order: 2;
+	display: flex;
+	flex-direction: column;
+	padding: 0 10px 0 20px;
+	/* align-items: flex-end; */
 }
 
 .mainProblem__itemInfoTitle {
-  font-size: 1.5rem;
-  color: #000;
+	font-size: 1.5rem;
+	color: #000;
 }
 
 .mainProblem__itemInfoTitle_small {
-  font-size: 1.125rem;
-  color: #000;
-  font-weight: 500;
+	font-size: 1.125rem;
+	color: #000;
+	font-weight: 500;
 }
 
 .mainProblem__itemInfoContent {
-  margin: 20px 0 0 0;
-  font-size: 1rem;
-  color: #000;
+	margin: 20px 0 0 0;
+	font-size: 1rem;
+	color: #000;
 }
 
 .mainProblem__itemInfoContent ul {
-  padding: 0 0 0 10px;
+	padding: 0 0 0 10px;
 }
 
 .mainProblem__itemInfoContent li {
-  color: #000;
-  list-style: none;
-  position: relative;
-  padding: 0 0 0 10px;
+	color: #000;
+	list-style: none;
+	position: relative;
+	padding: 0 0 0 10px;
 }
 .mainProblem__itemInfoContent li:before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 0;
-  transform: translate3d(0, -50%, 0);
-  width: 4px;
-  height: 4px;
-  border-radius: 50%;
-  background: #000;
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 0;
+	transform: translate3d(0, -50%, 0);
+	width: 4px;
+	height: 4px;
+	border-radius: 50%;
+	background: #000;
 }
 
 .mainProblem__itemInfoContent p {
-  margin-bottom: 5px;
-  color: #000;
+	margin-bottom: 5px;
+	color: #000;
 }
 
 .mainProblem__itemInfoContent p:last-child,
 .mainProblem__itemInfoContent li:last-child {
-  margin: 0;
+	margin: 0;
 }
 
-.innerPriceBtn {
+/* .innerPriceBtn {
   position: absolute;
   bottom: 10px;
   right: 10px;
@@ -116,11 +116,6 @@
   height: 2rem;
   background: var(--color1);
   color: #fff;
-  /* border: 1px solid var(--color1);
-
-  background: #fff;
-  color: var(--color1); */
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -192,4 +187,4 @@
   flex-wrap: wrap;
   padding: 0 5px 0 0;
   max-height: 60vh;
-}
+} */

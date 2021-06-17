@@ -5,7 +5,7 @@
 include __const
 include __header
 //- include __header2
-include __header3
+include __header
 include __menu
 include __mainTop
 include __card
@@ -18,60 +18,60 @@ include __news
 include __newsInMain
 include __forms
 include __footer
-include __menuBottom1
+
+include __old
+include __popUpBlocks
 
 
 
 
 <!DOCTYPE html>
 html(lang="ru-RU")
-  +head
-  body
++head
+body
 
-    .site__header.mainPageIdx
-      +header3
-      //- +topMenu
-      //- +mbMenu-01-2021
+  .site__header.mainPageIdx
+    +header
+    //- +topMenu
+    //- +mbMenu-01-2021
 
-    .site__center
-      +mainTop
-      .wideBox3__area 
-        .wideBox3
-          .title3
-              h2 Популярные процедуры  
-          //- +card3
-          +eCard
-          +eCardApp
-      //- +mainProblem
-      //- +sliderSwiperInMain
-      //- +testBlock
-      //- +wideBlock
-      //- +mainBox
-      +mainContent
-      .wideBox3__area 
-        .wideBox3
-          .title3
-              h2 Блог нашего центра
-      +blogSlider
-      +mainForm_v3
-      //- +newsInMain
-      //- +zBlock1
+  .site__center
+    +mainTop
+    .wideBox3__area 
+      .wideBox3
+        .title3
+            h2 Популярные процедуры  
+        //- +card3
+        +eCard
+        +eCardApp
+    //- +mainProblem
+    //- +sliderSwiperInMain
+    //- +testBlock
+    //- +wideBlock
+    //- +mainBox
+    +mainContent
+    .wideBox3__area 
+      .wideBox3
+        .title3
+            h2 Блог нашего центра
+    +blogSlider
+    +mainForm_v3
+    //- +newsInMain
+    //- +zBlock1
 
-    .site__footer
-      +footer3 
+  .site__footer
+    +footer3 
 
 
-    +topMenuAdaptive
-    +search1
+  +topMenuAdaptive
+  +search1
 
-    +toUp
 
-    +formCallBack
+  +formCallBack
 
-    +formConsInMain
+  +formConsInMain
 
-    +menuBottom1_main
-    +hideBox
-    
-    +scripts
-    
+  +hideBox
+  
+  +popUpBlocks
+  +scripts

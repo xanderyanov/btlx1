@@ -1,0 +1,107 @@
+html,
+body {
+  color: #000;
+  /* font-family: "Open Sans", sans-serif; */
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.2;
+  position: relative;
+  height: 100%;
+  /* background: #fafafa; */
+  background: #fafafa;
+  display: flex;
+  flex-direction: column;
+}
+
+.site__header {
+  position: relative;
+}
+
+.site__center {
+  position: relative;
+  padding: 0 0 20px;
+}
+
+.site__footer {
+  position: relative;
+  margin-top: auto;
+}
+
+.mt20 {
+  margin-top: 20px;
+}
+
+.title {
+  margin-bottom: 1.25rem;
+}
+
+.title1 {
+  margin-bottom: 0.6125rem;
+  position: relative;
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+
+.title1margin0 {
+  position: relative;
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+
+.title1:after,
+.title1margin0:after {
+  content: "";
+  height: 1px;
+  margin-left: 15px;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  background-color: var(--bg2);
+}
+
+.title1 h1,
+.title1 h2,
+.title1 h3 {
+  margin: 0;
+}
+
+.title0 h1,
+.title0 h2,
+.title0 h3 {
+  margin: 0 0 20px;
+}
+
+.title2 h1,
+.title2 h2,
+.title2 h3 {
+  margin: 20px 0 0;
+}
+
+.title3_mt40 {
+  margin-top: 40px;
+}
+
+.title3 h1,
+.title3 h2,
+.title3 h3 {
+  margin: 0;
+}
+
+.title1margin0 h1,
+.title1margin0 h2,
+.title1margin0 h3 {
+  margin: 0;
+}
+
+.textPage__area {
+  margin: 5px 0 0 0;
+}
+
+.block__video,
+.block__photo {
+  margin: 20px 0 0 0;
+}
