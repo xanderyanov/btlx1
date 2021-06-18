@@ -1,10 +1,40 @@
 :root {
 	--color1: #534764;
+	/* --color1: #beb3c3; */
+	--color2: #5d4b62;
 	--red1: #d74d63;
 	--light1: #f4f4f4;
 
 	--t1: #4f4f4f;
 	--hover1: #754ab3;
+
+	--x1greySuperLight: #f4f4f4;
+
+	--colorFFF: #fff;
+	--color000: #000;
+	--colorLightGrey: #f6f6fa;
+	--colorGrey: #bebebe;
+	--colorDarkGrey: #6b6b6b;
+
+	/* --redFill: #f76060; */
+	--redFill: #ff4141;
+	--redFillhover: #ff2525;
+	--tColor: #413328;
+	--tColorLight: #574435;
+
+	--x1border: #e0e0e0;
+
+	--x1greyDark: #525252;
+	--title1bg: #e6e6e6;
+
+	--brown1: #514240;
+	/* --brick: #9f3125; */
+	--brick: #5d4b63;
+	--dark: #4f4f4f;
+
+	--reden: #d74d63;
+
+	--formBtn: #7b87dc;
 }
 
 .stop {

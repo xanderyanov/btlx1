@@ -131,7 +131,8 @@
 	letter-spacing: 0.04em;
 	text-transform: uppercase;
 	margin: auto 0;
-	transform: all 0.3s;
+	transition: all 0.3s;
+	text-decoration: none;
 }
 
 .btn1:hover {

@@ -52,3 +52,8 @@ body {
 	margin: 0;
 	padding: 0;
 }
+
+.title1_uppercase h2 {
+	text-transform: uppercase;
+	margin-bottom: 40px;
+}

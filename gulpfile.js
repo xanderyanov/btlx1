@@ -18,6 +18,7 @@ var postcss = require("gulp-postcss");
 var postcssImport = require("postcss-import");
 var data = require("gulp-data");
 var fs = require("fs");
+var rename = require("gulp-rename");
 // var path = require("path");
 
 gulp.task("pug", function () {
@@ -42,8 +43,20 @@ gulp.task("css", function () {
 		.pipe(sourcemaps.init())
 		.pipe(postcss([postcssImport()]))
 		.pipe(sourcemaps.write("."))
+		.pipe(gulp.dest("build/assets/css/"))
+		.pipe(rename("apps-x1.css"))
 		.pipe(gulp.dest("build/assets/css/"));
 });
+
+// gulp.task("css-x1", function () {
+// 	return gulp
+// 		.src("src/assets/css/apps.css")
+// 		.pipe(rename("apps-x1.css"))
+// 		.pipe(sourcemaps.init())
+// 		.pipe(postcss([postcssImport()]))
+// 		.pipe(sourcemaps.write("."))
+// 		.pipe(gulp.dest("build/assets/css/"));
+// });
 
 gulp.task("wysiwyg-css", function () {
 	return gulp
@@ -102,6 +115,7 @@ var myjsfiles = [
 	// "src/assets/js/__eShopCabinet.js",
 	// "src/assets/js/__master4.js",
 	"src/assets/js/main_old.js",
+	"src/assets/js/__bottomAdaptiveMenu.js",
 	"src/assets/js/main.js",
 	"src/assets/js/__resize.js",
 ];

@@ -54,19 +54,20 @@ mixin zBlock3
 
 mixin mainForm_v3
   .mainForm3__area
-    .mainForm3(style="background-image: url(assets/img/formbg.jpg)")
+    .mainForm3(style="background-image: url(assets/img/bg11.jpg)")
       .mainForm3__left
         .mainForm3__intro
-          h2 Запишитесь прямо сейчас на консультацию
+          .title1.title1_uppercase
+            h2 Запишитесь прямо сейчас на консультацию
           span по телефону 
             a(href='tel:+78452260000') +7 (8452) 26-00-00
           span или заполните форму ниже:
         form.form_m3(action='#')
-          label(for="name_m3") Ваше имя
-          input.name_m3(name='name_m3', type='text', placeholder='')
+          //- label(for="name_m3") Ваше имя
+          input.name_m3(name='name_m3', type='text', placeholder='Ваше имя')
 
           label(for="phone_m3") Ваш телефон
-          input.phone_m3(name='phone_m3', type='text', placeholder='')
+          input.phone_m3(name='phone_m3', type='text', placeholder='+7 (987) 654-32-10')
           //- input.email_m3(name='email_m3', type='text', placeholder='Email')
           input.work_email_m3(name='work_email_m3', type='text', placeholder='Рабочий email')
           //- textarea.message_m3(name='message_m3', cols='30', rows='10', placeholder='Ваше сообщение')

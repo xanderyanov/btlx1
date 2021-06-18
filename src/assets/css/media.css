@@ -30,6 +30,15 @@
 	.title1 h2 {
 		font-size: 1.875rem;
 	}
+	.content_xl p,
+	.content_xl ul,
+	.content_xl ol,
+	.content_xl blockquote,
+	.content_xl table {
+		font-size: 1rem;
+		line-height: 1.4;
+		font-weight: 300;
+	}
 }
 
 @media only screen and (max-width: 480px) {

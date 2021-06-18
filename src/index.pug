@@ -7,6 +7,9 @@ include __header
 include __popUpBlocks
 include __mainTop
 include __card
+include __mainBox
+include __news
+include __forms
 include __footer
 
 include __old
@@ -30,6 +33,15 @@ body
         .title.title1 
           h2 Популярные процедуры
         +eCard
+    .wideBlock__area
+      .wideBlock.wsite
+        +mainContent
+    .wideBlock__area
+      .wideBlock.wsite
+        .title.title1 
+          h2 Блог нашего центра
+    +blogSlider
+    +mainForm_v3
     
 
   .site__footer

@@ -258,7 +258,7 @@ li.endLeftBlock {
 	background-image: url(../img/logo100w.png);
 	background-position: bottom 1.5rem center;
 	background-repeat: no-repeat;
-	background-color: var(--x1greySuperLight);
+	background-color: #f4f4f4;
 }
 
 .search1__wrapper {
@@ -441,7 +441,7 @@ li.endLeftBlock {
 }
 
 .leftMenu li.lev1.active > .lev_a_wrapper > .openInner {
-	background: var(--reden);
+	background: var(--red1);
 	border-bottom: 1px solid #fff;
 }
 

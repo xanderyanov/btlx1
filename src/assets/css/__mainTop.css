@@ -60,6 +60,8 @@
 	border-radius: 6px;
 	padding: 10%;
 	position: relative;
+	display: block;
+	text-decoration: none;
 }
 
 .mainTop__rightBoxTitle {
@@ -68,7 +70,7 @@
 	line-height: 1.625rem;
 	letter-spacing: 0.04em;
 	text-transform: uppercase;
-	/* color: #333333; */
+	color: #333333;
 	/* margin: 0 0 20px 0; */
 }
 
@@ -81,7 +83,7 @@
 	font-size: 1rem;
 	line-height: 1.375rem;
 	letter-spacing: 0.04em;
-	/* color: var(--t1); */
+	color: var(--t1);
 }
 
 .mainTop__line {
@@ -108,12 +110,13 @@
 }
 
 .mainTop__shopLinkTitle {
-	font-weight: 300;
+	font-weight: 400;
 	font-size: 1.25rem;
 	line-height: 1.625rem;
 	letter-spacing: 0.04em;
 	text-transform: uppercase;
-	color: #333333;
+	/* color: #333333; */
+	color: var(--color1);
 	white-space: nowrap;
 }
 .mainTop__shopLinkDesc {
