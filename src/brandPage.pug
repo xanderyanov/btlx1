@@ -38,20 +38,18 @@ body
 
 
   .site__center
-    +breadcrumbs3
+    +breadcrumbs4
 
     +brandIntro
 
-    .split__area
-      .split_top
-        //- .split__wide
+    .floatBox__area 
+      .floatBox.clearfix 
         .eBrands__area
           .eBrands__overlay 
           .eBrands__btn Бренды
           .eBrands__content
             .eBrands__contentInner.eBrands__contentInner_scroll
               +brands
-
         .eGreyLine__mbBtnSortOuter
           .eGreyLine__mbBtnSort
             span Сортировать по
@@ -79,11 +77,11 @@ body
             .searchResult__counter 
               span Найдено товаров:
               span 256
-      .split 
-        .split__left 
+        .floatBox__left 
+          .floatBox__leftOverlay
           +eShopMenuCatalogOnly
           +eFilterArea
-        .split__right
+        .floatBox__right
           .eCatalog
             +eCatalog
             +pagiantion
@@ -93,21 +91,6 @@ body
 
   .site__footer
     +footer3
-
-
-  +topMenuAdaptive
-  +search1
-
- 
-  
-  +formCallBack
-
-  +menuBottom1_page
-
-  //- далее вывод не на главной
-  +hideBox2
-
-  +eFilerMobile
 
   +popUpBlocks
   +scripts

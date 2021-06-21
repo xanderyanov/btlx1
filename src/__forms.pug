@@ -8,7 +8,8 @@ mixin zBlock1
           |  или заполните форму ниже:
       form.form1(action='#')
         input.name1(name='name1', type='text', placeholder='Ваше имя')
-        input.phone1(name='phone1', type='text', placeholder='Контактный телефон')
+        label(for="phone1") Ваш телефон
+        input.phone1(name='phone1', type='text', placeholder='+7 (987) 654-32-10')
         //- input.email1(name='email1', type='text', placeholder='Email')
         input.work_email1(name='work_email1', type='text', placeholder='Рабочий email')
         //- textarea.message1(name='message1', cols='30', rows='10', placeholder='Ваше сообщение')
@@ -24,7 +25,7 @@ mixin zBlock1
 mixin zBlock3
   .zBlock3__area
     .zBlock3
-      .zBlock3__left(style="background-image: url(assets/img/proc1.jpg)")
+      .zBlock3__left(style="background-image: url(assets/img/formbg2.jpg)")
 
       .zBlock3__right
         .zBlock3__intro
@@ -33,11 +34,11 @@ mixin zBlock3
             a(href='tel:+78452260000') +7 (8452) 26-00-00
           span или заполните форму ниже:
         form.form13(action='#')
-          label(for="name13") Ваше имя
-          input.name13(name='name13', type='text', placeholder='')
+          //- label(for="name13") Ваше имя
+          input.name13(name='name13', type='text', placeholder='Ваше имя')
 
           label(for="phone13") Ваш телефон
-          input.phone13(name='phone13', type='text', placeholder='')
+          input.phone13(name='phone13', type='text', placeholder='+7 (987) 654-32-10')
           //- input.email13(name='email13', type='text', placeholder='Email')
           input.work_email13(name='work_email13', type='text', placeholder='Рабочий email')
           //- textarea.message13(name='message13', cols='30', rows='10', placeholder='Ваше сообщение')

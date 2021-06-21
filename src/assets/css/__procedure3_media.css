@@ -1,21 +1,21 @@
 @media only screen and (max-width: 1200px) {
-  .dubleBox3 {
-    padding: 0 10px 0;
-  }
-  .procedure3__introOuter {
-    padding: 0 10px 0;
-  }
-  .procedure3__intro {
-    padding: 0 0 30px 0;
-  }
-  .wideBox3 {
-    padding: 0 10px 0;
-  }
-  .price3__area {
-    margin: 50px auto;
-    width: 90%;
-    padding: 30px 50px;
-  }
+	.dubleBox3 {
+		padding: 0 10px 0;
+	}
+	.procedure3__introOuter {
+		padding: 0 10px 0;
+	}
+	.procedure3__intro {
+		padding: 0 0 30px 0;
+	}
+	.wideBox3 {
+		padding: 0 10px 0;
+	}
+	.price3__area {
+		margin: 50px auto;
+		width: 90%;
+		padding: 30px 50px;
+	}
 }
 
 @media only screen and (max-width: 1140px) {
@@ -28,171 +28,179 @@
 }
 
 @media only screen and (max-width: 920px) {
-  .dubleBox3__left {
-    display: none;
-  }
+	.dubleBox3__left {
+		display: none;
+	}
 
-  .dubleBox3__right {
-    width: 100%;
-    padding: 0;
-  }
+	.dubleBox3__right {
+		width: 100%;
+		padding: 0;
+	}
 }
 
 @media only screen and (max-width: 800px) {
 }
 
 @media only screen and (max-width: 768px) {
-  .procedure3__introLinks {
-    display: flex;
-    flex-direction: column;
-    margin-top: 10px;
-    padding: 0 0 0 20px;
-  }
-  a.aboutApparatus {
-    font-size: 1rem;
-    border-radius: 4px;
-    margin: 30px auto 0;
-    padding: 10px 30px;
-  }
+	.procedure3__introLinks {
+		display: flex;
+		flex-direction: column;
+		margin-top: 10px;
+		padding: 0 0 0 20px;
+	}
+	a.aboutApparatus {
+		font-size: 1rem;
+		border-radius: 4px;
+		margin: 30px auto 0;
+		padding: 10px 30px;
+	}
 }
 
 @media only screen and (max-width: 600px) {
-  .procedure__intro {
-    margin-top: 0;
-  }
-  .procedure__introImg__outer {
-    order: 0;
-    width: 100%;
-    margin-bottom: 10px;
-  }
-  .procedure__introText {
-    order: 1;
-    width: 100%;
-  }
-  .procedure__introImg {
-    padding: 10px 0;
-  }
-  /* .procedure__introLinks {
+	.procedure__intro {
+		margin-top: 0;
+	}
+	.procedure__introImg__outer {
+		order: 0;
+		width: 100%;
+		margin-bottom: 10px;
+	}
+	.procedure__introText {
+		order: 1;
+		width: 100%;
+	}
+	.procedure__introImg {
+		padding: 10px 0;
+	}
+	/* .procedure__introLinks {
     flex-direction: row;
     flex-wrap: wrap;
   } */
-  .link1 {
-    margin: 2px 10px 2px 0;
-    display: inline-block;
-  }
-  .procedure3__introText {
-    width: 100%;
-    order: 2;
-  }
-  .procedure3__introImg__outer {
-    width: 100%;
-    order: 1;
-    padding: 0 0 20px 0;
-  }
+	.link1 {
+		margin: 2px 10px 2px 0;
+		display: inline-block;
+	}
+	.procedure3__introText {
+		width: 100%;
+		order: 2;
+	}
+	.procedure3__introImg__outer {
+		width: 100%;
+		order: 1;
+		padding: 0 0 20px 0;
+	}
 
-  .videoPhotoBox {
-    margin: 0 auto 10px;
-  }
+	.videoPhotoBox {
+		margin: 0 auto 10px;
+	}
 
-  .videoPhotoBox__video {
-    width: 100%;
-    order: 0;
-  }
+	.videoPhotoBox__video {
+		width: 100%;
+		order: 0;
+	}
 
-  .videoPhotoBox__photo {
-    width: 100%;
-    padding: 10px 0 0 0;
-    flex-direction: row;
-    order: 1;
-    justify-content: space-between;
-    flex-wrap: wrap;
-  }
+	.videoPhotoBox__photo {
+		width: 100%;
+		padding: 10px 0 0 0;
+		flex-direction: row;
+		order: 1;
+		justify-content: space-between;
+		flex-wrap: wrap;
+	}
 
-  .videoPhotoBox:nth-child(odd) .videoPhotoBox__video {
-    order: 0;
-  }
+	.videoPhotoBox:nth-child(odd) .videoPhotoBox__video {
+		order: 0;
+	}
 
-  .videoPhotoBox:nth-child(odd) .videoPhotoBox__photo {
-    order: 1;
-    padding: 10px 0 0 0;
-  }
+	.videoPhotoBox:nth-child(odd) .videoPhotoBox__photo {
+		order: 1;
+		padding: 10px 0 0 0;
+	}
 
-  .videoPhotoBox__photoItemOuter {
-    width: 49%;
-  }
+	.videoPhotoBox__photoItemOuter {
+		width: 49%;
+	}
 
-  .videoPhotoBox__video .videoPhotoBox__photoItemOuter {
-    width: 100%;
-  }
-  .price3__area {
-    margin: 30px auto;
-    padding: 20px 40px;
-  }
+	.videoPhotoBox__video .videoPhotoBox__photoItemOuter {
+		width: 100%;
+	}
+	.price3__area {
+		margin: 30px auto;
+		padding: 20px 40px;
+	}
+
+	.procedure3__master {
+		padding: 8px 20px;
+		width: 100%;
+	}
 }
 
 @media only screen and (max-width: 480px) {
-  .priceBox table td {
-    padding: 5px;
-  }
+	.priceBox table td {
+		padding: 5px;
+	}
 
-  .priceBox table td:nth-child(1) {
-    width: 70%;
-  }
+	.priceBox table td:nth-child(1) {
+		width: 70%;
+	}
 
-  .priceBox table td:nth-child(2) {
-    width: 30%;
-  }
-  .procedure3__introLinks a {
-    margin-bottom: 5px;
-  }
-  .imgSlider__left,
-  .imgSlider__right {
-    width: 2rem;
-    height: 2rem;
-    margin-top: -1rem;
-  }
-  .imgSlider__left {
-    left: -2.5rem;
-  }
+	.priceBox table td:nth-child(2) {
+		width: 30%;
+	}
+	.procedure3__introLinks a {
+		margin-bottom: 5px;
+	}
+	.imgSlider__left,
+	.imgSlider__right {
+		width: 2rem;
+		height: 2rem;
+		margin-top: -1rem;
+	}
+	.imgSlider__left {
+		left: -2.5rem;
+	}
 
-  .imgSlider__right {
-    right: -2.5rem;
-  }
-  .imgSlider__outer {
-    padding: 1rem 2.5rem;
-  }
+	.imgSlider__right {
+		right: -2.5rem;
+	}
+	.imgSlider__outer {
+		padding: 1rem 2.5rem;
+	}
 }
 
 @media only screen and (max-width: 414px) {
-  .procedure__introLinks {
-    margin-top: 0;
-  }
-  .videoPhotoBox__photoItemOuter {
-    width: 100%;
-  }
-  .videoPhotoBox__photoItemOuter:first-child {
-    margin-bottom: 10px;
-  }
+	.procedure__introLinks {
+		margin-top: 0;
+	}
+	.videoPhotoBox__photoItemOuter {
+		width: 100%;
+	}
+	.videoPhotoBox__photoItemOuter:first-child {
+		margin-bottom: 10px;
+	}
 
-  .videoPhotoBox__video .videoPhotoBox__photoItemOuter:first-child {
-    margin-bottom: 0;
-  }
+	.videoPhotoBox__video .videoPhotoBox__photoItemOuter:first-child {
+		margin-bottom: 0;
+	}
 
-  .price3__area {
-    margin: 20px auto;
-    padding: 20px 10px;
-    width: 100%;
-  }
-  .priceBox3 table td {
-    font-size: 13px;
-  }
-  .priceBox3 table td:nth-child(1) {
-    width: 60%;
-  }
+	.price3__area {
+		margin: 10px auto;
+		padding: 20px;
+		width: 100%;
+	}
+	.priceBox3 table td {
+		font-size: 13px;
+	}
+	.priceBox3 table td:nth-child(1) {
+		width: 60%;
+	}
 
-  .priceBox3 table td:nth-child(2) {
-    width: 40%;
-  }
+	.priceBox3 table td:nth-child(2) {
+		width: 40%;
+	}
+	.procedure3__master {
+		font-size: 12px;
+	}
 }
 
 @media only screen and (max-width: 320px) {

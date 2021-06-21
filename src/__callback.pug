@@ -5,16 +5,16 @@ mixin callback
     .callBack__area
       .callBack__form
         .callBack__close
-          i.icon-close2021
+          i.icon-close1
         .callback__intro
           h2 Заказать обратный звонок
           span заполните поля:
         form.callback(action='#')
-          label(for="name_callback") Ваше имя
-          input.name_callback(name='name_callback', type='text', placeholder='')
+          //- label(for="name_callback") Ваше имя
+          input.name_callback(name='name_callback', type='text', placeholder='Ваше имя')
 
           label(for="phone_callback") Ваш телефон
-          input.phone_callback(name='phone_callback', type='text', placeholder='')
+          input.phone_callback(name='phone_callback', type='text', placeholder='+7-987-595-46-64')
           //- input.email_callback(name='email_callback', type='text', placeholder='Email')
           input.work_email_callback(name='work_email_callback', type='text', placeholder='Рабочий email')
           //- textarea.message_callback(name='message_callback', cols='30', rows='10', placeholder='Ваше сообщение')

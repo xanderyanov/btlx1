@@ -120,7 +120,8 @@
 
 .callback__intro h2 {
 	margin: 0 0 10px;
-	font-size: 1.75rem;
+	font-size: 2.125rem;
+	text-align: center;
 }
 
 .callback__intro span {
@@ -155,11 +156,13 @@
 }
 
 .callback input {
-	font-family: "Open Sans", sans-serif;
+	font-family: "Roboto Condensed", sans-serif;
 	font-size: 0.875rem;
-	border: 1px solid #bdbdbd;
-	line-height: 2.875rem;
-	padding: 0 10px;
+	border: none;
+	border-bottom: 1px solid #828282;
+	background: transparent;
+	line-height: 2rem;
+	padding: 0;
 	outline: none;
 	width: 100%;
 	box-sizing: border-box;
@@ -171,7 +174,7 @@ input.work_email_callback {
 }
 
 .submit_callback {
-	font-family: "Open Sans", sans-serif;
+	font-family: "Roboto Condensed", sans-serif;
 	outline: none;
 	cursor: pointer;
 	display: flex;

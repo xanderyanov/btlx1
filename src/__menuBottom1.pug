@@ -40,19 +40,19 @@ mixin menuBottom1_page
       .menuBottom1
         .menuBottom1__itemArea
           .menuBottom1__itemContent
-          .menuBottom1__item.menuBottom1__item_js.mColor1(data-id="menu1")
-            i.icon-menu
-            span Меню
+          a.menuBottom1__item.mColor1(href="#")
+            i.icon-eshopping-cart
+            span E-shop
         .menuBottom1__itemArea
           .menuBottom1__itemContent
-          .menuBottom1__item.menuBottom1__item_js.mColor2(data-id="menu2")
-            i.icon-smile
-            span Услуги
+          a.menuBottom1__item.mColor1(href="#")
+            i.icon-sad
+            span Проблемы
         .menuBottom1__itemArea
           .menuBottom1__itemContent
           .menuBottom1__item.menuBottom1__item_js.mColor3(data-id="menu3")
-            i.icon-question-round
-            span Проблемы
+            i.icon-paste
+            span Услуги
         //- .menuBottom1__itemArea
         //-   .menuBottom1__itemContent
         //-   .menuBottom1__item.mColor4
@@ -61,5 +61,32 @@ mixin menuBottom1_page
         .menuBottom1__itemArea
           .menuBottom1__itemContent
           a.menuBottom1__item.mColor5(href="tel:88452260000")
-            i.icon-phone-call
+            i.icon-telephone
+            span Позвонить
+
+
+mixin menuBottom_x1
+  .menuBottom1__areaFake
+  .menuBottom1__area.menuBottom1__area_page
+    .menuBottom1__outer
+      .menuBottom1
+        .menuBottom1__itemArea
+          .menuBottom1__itemContent
+          a.menuBottom1__item.mColor1(href="#")
+            i.icon-eshopping-cart
+            span E-shop
+        .menuBottom1__itemArea
+          .menuBottom1__itemContent
+          a.menuBottom1__item.mColor2(href="#")
+            i.icon-paste
+            span Услуги
+        .menuBottom1__itemArea
+          .menuBottom1__itemContent
+          a.menuBottom1__item.mColor3(href="#")
+            i.icon-sad
+            span Проблемы
+        .menuBottom1__itemArea
+          .menuBottom1__itemContent
+          a.menuBottom1__item.mColor5(href="tel:88452260000")
+            i.icon-telephone
             span Позвонить

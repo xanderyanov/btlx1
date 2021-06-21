@@ -1,127 +1,133 @@
-mixin blog
-  .blog__area.w0
-    .blog__outer.w1
-      .title 
-        h2 Блог
-      .blog
-        .blog__itemOuter
-          a.blog__item(href="#")
-            .blog__itemImg
-              img(src="assets/img/gal/11.jpg", alt="")
-            .blog__itemTitle
-              span.blogItem__date 26.06.2020
-              span.blogItem__author Лукьянова Наталья
-            .blogItem__intro Причины исключить полностью или ограничить потребление молочных продуктов.
-        .blog__itemOuter
-          a.blog__item(href="#")
-            .blog__itemImg
-              img(src="assets/img/gal/12.jpg", alt="")
-            .blog__itemTitle
-              span.blogItem__date 26.06.2020
-              span.blogItem__author Иванова Вероника
-            .blogItem__intro Новинки косметологии этого лета
-        .blog__itemOuter
-          a.blog__item(href="#")
-            .blog__itemImg
-              img(src="assets/img/gal/13.jpg", alt="")
-            .blog__itemTitle
-              span.blogItem__date 26.06.2020
-              //- span.blogItem__author Петрова Марина
-            .blogItem__intro Выбираем масло для массажа. Мнения наших экспертов
-        .blog__itemOuter
-          a.blog__item(href="#")
-            .blog__itemImg
-              img(src="assets/img/gal/14.jpg", alt="")
-            .blog__itemTitle
-              span.blogItem__date 26.06.2020
-              span.blogItem__author Кузнецова Светлана
-            .blogItem__intro Средства для загара. Консультация специалиста
-        
-        
+include __pagination
 
 mixin blogInBlogPage
   .blog__area.w0
-    .blog__outer.w1
+    .blog__outer.wsite
       .title 
         h2 Блог
       .blog
         .blog__itemOuter
-          a.blog__item(href="#")
-            .blog__itemImg
-              img(src="assets/img/gal/11.jpg", alt="")
-            .blog__itemTitle
-              span.blogItem__date 26.06.2020
-              span.blogItem__author Лукьянова Наталья
-            .blogItem__intro Причины исключить полностью или ограничить потребление молочных продуктов.
+          a.blog__item(href='#')
+            .blogSliderItem__cover
+              .blogSliderItem__coverImg
+                .blogSliderItem__coverImgInner(style='background-image: url(assets/img/gal/11.jpg)')
+            .blog__itemInfo
+              .blog__itemTitle
+                span.blogItem__date 18.05.2021
+              .blogItem__intro Коррекция фигуры на аппарате EmSculpt
         .blog__itemOuter
-          a.blog__item(href="#")
-            .blog__itemImg
-              img(src="assets/img/gal/12.jpg", alt="")
-            .blog__itemTitle
-              span.blogItem__date 26.06.2020
-              span.blogItem__author Иванова Вероника
-            .blogItem__intro Новинки косметологии этого лета
+          a.blog__item(href='#')
+            .blogSliderItem__cover
+              .blogSliderItem__coverVideo.videoBox_i
+                iframe(width='560' height='315' src='https://www.youtube.com/embed/rBCbrW23b-0' autoplay='1' frameborder='0' allow='accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen='')
+            .blog__itemInfo
+              .blog__itemTitle
+                span.blogItem__date 02.04.2021
+              .blogItem__intro Тренды в окрашивании: рассказывает стилист-колорист Анна Мещенко
         .blog__itemOuter
-          a.blog__item(href="#")
-            .blog__itemImg
-              img(src="assets/img/gal/13.jpg", alt="")
-            .blog__itemTitle
-              span.blogItem__date 26.06.2020
-              //- span.blogItem__author Петрова Марина
-            .blogItem__intro Выбираем масло для массажа. Мнения наших экспертов
+          a.blog__item(href='#')
+            .blogSliderItem__cover
+              .blogSliderItem__coverImg
+                .blogSliderItem__coverImgInner(style='background-image: url(assets/img/gal/11.jpg)')
+            .blog__itemInfo
+              .blog__itemTitle
+                span.blogItem__date 18.05.2021
+              .blogItem__intro Коррекция фигуры на аппарате EmSculpt
         .blog__itemOuter
-          a.blog__item(href="#")
-            .blog__itemImg
-              img(src="assets/img/gal/14.jpg", alt="")
-            .blog__itemTitle
-              span.blogItem__date 26.06.2020
-              span.blogItem__author Кузнецова Светлана
-            .blogItem__intro Средства для загара. Консультация специалиста
+          a.blog__item(href='#')
+            .blogSliderItem__cover
+              .blogSliderItem__coverVideo.videoBox_i
+                iframe(width='560' height='315' src='https://www.youtube.com/embed/rBCbrW23b-0' autoplay='1' frameborder='0' allow='accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen='')
+            .blog__itemInfo
+              .blog__itemTitle
+                span.blogItem__date 02.04.2021
+              .blogItem__intro Тренды в окрашивании: рассказывает стилист-колорист Анна Мещенко
         .blog__itemOuter
-          a.blog__item(href="#")
-            .blog__itemImg
-              img(src="assets/img/gal/12.jpg", alt="")
-            .blog__itemTitle
-              span.blogItem__date 26.06.2020
-              span.blogItem__author Иванова Вероника
-            .blogItem__intro Новинки косметологии этого лета
+          a.blog__item(href='#')
+            .blogSliderItem__cover
+              .blogSliderItem__coverImg
+                .blogSliderItem__coverImgInner(style='background-image: url(assets/img/gal/11.jpg)')
+            .blog__itemInfo
+              .blog__itemTitle
+                span.blogItem__date 18.05.2021
+              .blogItem__intro Коррекция фигуры на аппарате EmSculpt
         .blog__itemOuter
-          a.blog__item(href="#")
-            .blog__itemImg
-              img(src="assets/img/gal/13.jpg", alt="")
-            .blog__itemTitle
-              span.blogItem__date 26.06.2020
-              //- span.blogItem__author Петрова Марина
-            .blogItem__intro Выбираем масло для массажа. Мнения наших экспертов
+          a.blog__item(href='#')
+            .blogSliderItem__cover
+              .blogSliderItem__coverVideo.videoBox_i
+                iframe(width='560' height='315' src='https://www.youtube.com/embed/rBCbrW23b-0' autoplay='1' frameborder='0' allow='accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen='')
+            .blog__itemInfo
+              .blog__itemTitle
+                span.blogItem__date 02.04.2021
+              .blogItem__intro Тренды в окрашивании: рассказывает стилист-колорист Анна Мещенко
         .blog__itemOuter
-          a.blog__item(href="#")
-            .blog__itemImg
-              img(src="assets/img/gal/14.jpg", alt="")
-            .blog__itemTitle
-              span.blogItem__date 26.06.2020
-              span.blogItem__author Кузнецова Светлана
-            .blogItem__intro Средства для загара. Консультация специалиста
+          a.blog__item(href='#')
+            .blogSliderItem__cover
+              .blogSliderItem__coverImg
+                .blogSliderItem__coverImgInner(style='background-image: url(assets/img/gal/11.jpg)')
+            .blog__itemInfo
+              .blog__itemTitle
+                span.blogItem__date 18.05.2021
+              .blogItem__intro Коррекция фигуры на аппарате EmSculpt
         .blog__itemOuter
-          a.blog__item(href="#")
-            .blog__itemImg
-              img(src="assets/img/gal/13.jpg", alt="")
-            .blog__itemTitle
-              span.blogItem__date 26.06.2020
-              //- span.blogItem__author Петрова Марина
-            .blogItem__intro Выбираем масло для массажа. Мнения наших экспертов
-      .pagin
-        ul.pagination
-          li.control
-            a(href="#") &#9668;
-          li
-            a(href="#") 1
-          li
-            a(href="#") 2
-          li.active
-            a(href="#") 3
-          li
-            a(href="#") 4
-          li
-            a(href="#") 5
-          li.control
-            a(href="#") &#9658;
+          a.blog__item(href='#')
+            .blogSliderItem__cover
+              .blogSliderItem__coverVideo.videoBox_i
+                iframe(width='560' height='315' src='https://www.youtube.com/embed/rBCbrW23b-0' autoplay='1' frameborder='0' allow='accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen='')
+            .blog__itemInfo
+              .blog__itemTitle
+                span.blogItem__date 02.04.2021
+              .blogItem__intro Тренды в окрашивании: рассказывает стилист-колорист Анна Мещенко
+        .blog__itemOuter
+          a.blog__item(href='#')
+            .blogSliderItem__cover
+              .blogSliderItem__coverImg
+                .blogSliderItem__coverImgInner(style='background-image: url(assets/img/gal/11.jpg)')
+            .blog__itemInfo
+              .blog__itemTitle
+                span.blogItem__date 18.05.2021
+              .blogItem__intro Коррекция фигуры на аппарате EmSculpt
+        .blog__itemOuter
+          a.blog__item(href='#')
+            .blogSliderItem__cover
+              .blogSliderItem__coverVideo.videoBox_i
+                iframe(width='560' height='315' src='https://www.youtube.com/embed/rBCbrW23b-0' autoplay='1' frameborder='0' allow='accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen='')
+            .blog__itemInfo
+              .blog__itemTitle
+                span.blogItem__date 02.04.2021
+              .blogItem__intro Тренды в окрашивании: рассказывает стилист-колорист Анна Мещенко
+        .blog__itemOuter
+          a.blog__item(href='#')
+            .blogSliderItem__cover
+              .blogSliderItem__coverImg
+                .blogSliderItem__coverImgInner(style='background-image: url(assets/img/gal/11.jpg)')
+            .blog__itemInfo
+              .blog__itemTitle
+                span.blogItem__date 18.05.2021
+              .blogItem__intro Коррекция фигуры на аппарате EmSculpt
+        .blog__itemOuter
+          a.blog__item(href='#')
+            .blogSliderItem__cover
+              .blogSliderItem__coverVideo.videoBox_i
+                iframe(width='560' height='315' src='https://www.youtube.com/embed/rBCbrW23b-0' autoplay='1' frameborder='0' allow='accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen='')
+            .blog__itemInfo
+              .blog__itemTitle
+                span.blogItem__date 02.04.2021
+              .blogItem__intro Тренды в окрашивании: рассказывает стилист-колорист Анна Мещенко
+      +pagiantion
+      //- .pagin
+      //-   ul.pagination
+      //-     li.control
+      //-       a(href="#") &#9668;
+      //-     li
+      //-       a(href="#") 1
+      //-     li
+      //-       a(href="#") 2
+      //-     li.active
+      //-       a(href="#") 3
+      //-     li
+      //-       a(href="#") 4
+      //-     li
+      //-       a(href="#") 5
+      //-     li.control
+      //-       a(href="#") &#9658;

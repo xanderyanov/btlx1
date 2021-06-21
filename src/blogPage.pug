@@ -9,6 +9,8 @@ include __slider1
 include __mainBox
 include __blog
 include __newsInMain
+include __breadcrumbs
+include __wideBlock
 include __forms
 include __footer
 
@@ -25,22 +27,16 @@ body
 
   .site__header
     +header
-    +topMenu
 
   .site__center
+    +breadcrumbs4
+    +wideBlock
     +blogInBlogPage
-    +zBlock1
+    +zBlock3
 
   .site__footer
-    +footer
-
-
-  +topMenuAdaptive
-  +search1
-
-
-  +formCallBack
-
+    +footer3
+  
   +popUpBlocks
   +scripts
   

@@ -24,6 +24,10 @@
 	.title1 h2 {
 		font-size: 2.25rem;
 	}
+	.content blockquote {
+		margin: 40px 0;
+		padding: 30px 50px;
+	}
 }
 
 @media only screen and (max-width: 600px) {
@@ -39,6 +43,19 @@
 		line-height: 1.4;
 		font-weight: 300;
 	}
+	.content blockquote {
+		margin: 20px 0;
+		padding: 20px 30px;
+	}
+	h1 {
+		font-size: 2.5rem;
+		margin: 0 0 20px 0;
+	}
+
+	h2 {
+		font-size: 2.125rem;
+		margin: 15px 0 10px 0;
+	}
 }
 
 @media only screen and (max-width: 480px) {
@@ -46,9 +63,19 @@
 		font-size: 1.5rem;
 		text-transform: uppercase;
 	}
+	a.btn3 {
+		font-size: 14px;
+		line-height: 20px;
+		padding: 0.625rem 1rem;
+		margin: 20px auto 0;
+	}
 }
 
 @media only screen and (max-width: 414px) {
+	.content blockquote {
+		margin: 15px 0;
+		padding: 20px;
+	}
 }
 
 @media only screen and (max-width: 320px) {

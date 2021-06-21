@@ -4,8 +4,8 @@
 
 include __const
 include __header
+include __popUpBlocks
 include __menu
-include __mainTop
 include __mainBox
 include __breadcrumbs
 include __wideBlock
@@ -24,16 +24,13 @@ include __old
 
 <!DOCTYPE html>
 html(lang="ru-RU")
-  +head
++head
 body
 
   .site__header
     +header
-
-
-
   .site__center
-    +breadcrumbs3
+    +breadcrumbs4
     .procedure3__introArea
       .procedure3__introOuter
         .title0 
@@ -56,10 +53,10 @@ body
             p
               strong Эта методика эксклюзивна тем, что подходит для любых зон лица и тела.
             p Суть работы данного лазера такова. Лазерная энергия, излучаемая аппаратом и проходящая по всей длине волоса, трансформируется в тепловую. Она разрушает волосяной фолликул, но при этом кожа вокруг не повреждается. Волосяная же луковица сгорает, следовательно, прекращается и рост волос.
-            a.aboutApparatus(href="") Про аппарат Ultera
+            a.btn3(href="#") Про аппарат Ultera
 
 
-
+        .content
           h2 Как проходит процедура
           p <strong>Эпиляция александритовым лазером Candela GentleLasePro-U</strong> проходит в 3 этапа. От правильности подготовки, манипуляций врача и последующего ухода в период восстановления, зависит окончательный результат.
           
@@ -71,7 +68,8 @@ body
           strong Нежелательные волосы необходимо устранить при помощи станка или депиляционного крема за 24 часа до процедуры.
           h3 3. Завершающий уход
           p Клиенту необходимо исключить посещение солярия и принятие солнечных ванн, употребление алкогольных напитков и некоторых лекарственных препаратов.
-          
+
+        .content  
           .videoPhotoBox
             .videoPhotoBox__video
               .videoPhotoBox__photoItem
@@ -98,10 +96,6 @@ body
                 .videoPhotoBox__photoItem
                   a(href="assets/img/before-after/04.jpg" data-fancybox="group2" data-caption="002" style="background-image: url(assets/img/before-after/04.jpg)")
 
-
-
-
-
         .content
           h2 Показания / противопоказания
           h3 Показания к применению
@@ -120,6 +114,8 @@ body
             li темный окрас волос в сочетании со светлой кожей
             li повышенный рост волос из-за гормонального сбоя
             li необходимость удаления не только волос, но и устранения пигментации
+        
+        .content
           blockquote
             h2 наши преимущества
             p
@@ -202,17 +198,7 @@ body
 
   .site__footer
     +footer3
-
-
-  +topMenuAdaptive
-  +search1
-
-  +toUp
   
-  +formCallBack
-
-  +menuBottom1_main
-  +hideBox
-
+  +popUpBlocks
   +scripts
   

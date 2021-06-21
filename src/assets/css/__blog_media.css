@@ -8,25 +8,28 @@
 }
 
 @media only screen and (max-width: 1024px) {
-  .blog {
-    margin: 0 -5px;
-  }
+	.blog {
+		margin: 0 -5px;
+	}
 
-  .blog__itemOuter {
-    padding: 5px;
-  }
+	.blog__itemOuter {
+		padding: 5px;
+	}
 }
 
 @media only screen and (max-width: 920px) {
+	.blog__itemOuter {
+		width: 33.333%;
+	}
 }
 
 @media only screen and (max-width: 800px) {
 }
 
 @media only screen and (max-width: 768px) {
-  .blog__itemOuter {
-    width: 50%;
-  }
+	.blog__itemOuter {
+		width: 50%;
+	}
 }
 
 @media only screen and (max-width: 600px) {
@@ -36,9 +39,9 @@
 }
 
 @media only screen and (max-width: 400px) {
-  .blog__itemOuter {
-    width: 100%;
-  }
+	.blog__itemOuter {
+		width: 100%;
+	}
 }
 
 @media only screen and (max-width: 320px) {

@@ -153,13 +153,13 @@
 	.zBlock3__intro {
 		margin-bottom: 10px;
 	}
-	.form13 input {
+	/* .form13 input {
 		line-height: 2rem;
 		margin-bottom: 10px;
 	}
 	.form13 label {
 		margin-bottom: 5px;
-	}
+	} */
 	.mainForm3__left {
 		width: 100%;
 	}
@@ -185,7 +185,7 @@
 
 @media only screen and (max-width: 414px) {
 	.zBlock3__right {
-		padding: 0 20px 0 20px;
+		padding: 0;
 	}
 	.masterWindowForm {
 		padding: 15px 20px;
