@@ -814,9 +814,11 @@ input.work_email4 {
 .mf3 input {
 	font-family: "Roboto Condensed", sans-serif;
 	font-size: 0.875rem;
-	border: 2px solid #bdbdbd;
-	line-height: 2.875rem;
-	padding: 0 10px;
+	border: none;
+	border-bottom: 1px solid #828282;
+	background: transparent;
+	line-height: 2rem;
+	padding: 0;
 	outline: none;
 	width: 100%;
 	box-sizing: border-box;
@@ -824,11 +826,11 @@ input.work_email4 {
 }
 
 .mf3 input:focus {
-	border: 2px solid #5d4b62;
+	border-bottom: 2px solid #5d4b62;
 }
 
 .mf3 input.error {
-	border: 2px solid var(--reden);
+	border-bottom: 2px solid var(--red1);
 }
 
 input.work_email_mf3 {

@@ -309,18 +309,20 @@ span.orderCart__totalTitle {
 }
 
 .inputBox input {
-	display: block;
+	font-family: "Roboto Condensed", sans-serif;
+	font-size: 0.875rem;
+	border: none;
+	border-bottom: 1px solid #828282;
+	background: transparent;
+	line-height: 2rem;
+	padding: 0;
+	outline: none;
 	width: 100%;
-	padding: 0.375rem 0.625rem;
-	font-size: 1rem;
-	font-weight: 400;
-	line-height: 1.5;
-	color: var(--tColor);
-	background-color: #fff;
-	background-clip: padding-box;
-	border: 1px solid var(--x1border);
-	border-radius: 0.25rem;
 	box-sizing: border-box;
+	margin-bottom: 20px;
+}
+.inputBox input:focus {
+	border-bottom: 2px solid #4f4f4f;
 }
 .inputBox textarea {
 	display: block;
@@ -332,9 +334,15 @@ span.orderCart__totalTitle {
 	color: var(--tColor);
 	background-color: #fff;
 	background-clip: padding-box;
-	border: 1px solid var(--x1border);
-	border-radius: 0.25rem;
+	/* border: none; */
+	border: 1px solid #828282;
+	/* border-left: 1px solid #828282; */
 	box-sizing: border-box;
+	outline: none;
+}
+.inputBox textarea:focus {
+	/* border-left: 2px solid #4f4f4f; */
+	border: 2px solid #4f4f4f;
 }
 
 .radioBox__wrapper {

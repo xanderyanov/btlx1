@@ -332,67 +332,6 @@ $(function () {
 
 	//-END Сдайдеры похожих товаров
 
-	//- START Слайдеры сотрадника - сертификаты и портфолио
-
-	var optionsImgCaroucel1 = {};
-	// var elements = $(".imgCaroucel1-container .imgCaroucel-slide").not($(".swiper-slide-duplicate"));
-	var imgCaroucel1elements = $(".imgCaroucel1-container .imgCaroucel-slide");
-	if (imgCaroucel1elements.length) {
-		optionsImgCaroucel1 = {
-			slidesPerView: 6,
-			loop: false,
-			spaceBetween: 10,
-			centeredSlides: false,
-			speed: 600,
-			autoplay: {
-				delay: 15000,
-				disableOnInteraction: true,
-			},
-			navigation: {
-				nextEl: ".imgCaroucel1__right",
-				prevEl: ".imgCaroucel1__left",
-			},
-			keyboard: true,
-			watchOverflow: true,
-			pagination: {
-				el: ".imgCaroucel1__pagination",
-				type: "bullets",
-				dynamicBullets: false,
-				clickable: true,
-			},
-			breakpoints: {
-				0: {
-					slidesPerView: 2,
-				},
-				480: {
-					spaceBetween: 5,
-				},
-				600: {
-					slidesPerView: 3,
-					spaceBetween: 10,
-				},
-				768: {
-					slidesPerView: 4,
-					spaceBetween: 10,
-				},
-				1024: {
-					slidesPerView: 5,
-					spaceBetween: 15,
-				},
-				1080: {
-					spaceBetween: 20,
-					slidesPerView: 6,
-				},
-			},
-		};
-		if (imgCaroucel1elements.length < 6) {
-			$(".imgCaroucel").addClass("imgCaroucel_lock");
-		}
-	}
-	var swiper = new Swiper(".imgCaroucel1-container", optionsImgCaroucel1);
-
-	//- END  Слайдеры сотрадника - сертификаты и портфолио
-
 	//* Галерея на процедуре имидж*/
 
 	var options_gallery4 = {};

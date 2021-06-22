@@ -8,101 +8,98 @@
 }
 
 @media only screen and (max-width: 1024px) {
-  /* .mastersBox__itemOuter {
+	/* .mastersBox__itemOuter {
     width: 50%;
   } */
-  .mastersBox__outer {
-    width: 100%;
-    padding-left: 0;
-  }
+	.mastersBox__outer {
+		width: 100%;
+		padding-left: 0;
+	}
 }
 
 @media only screen and (max-width: 920px) {
-  .mastersBox__itemOuter {
-    width: 25%;
-  }
-  .mastersBox__itemInfo {
-    padding: 20px;
-  }
-  .mastersBox__itemInfoTitle {
-    font-size: 14px;
-    line-height: 1.5;
-  }
+	.mastersBox__itemOuter {
+		width: 33.333%;
+	}
+	.mastersBox__itemInfo {
+		padding: 20px;
+	}
+	.mastersBox__itemInfoTitle {
+		font-size: 14px;
+		line-height: 1.5;
+	}
 }
 
 @media only screen and (max-width: 800px) {
 }
 
 @media only screen and (max-width: 768px) {
-  .mastersBox__outer {
-    width: 100%;
-    padding: 0;
-  }
-  .mastersBox__info span {
-    margin-bottom: 5px;
-  }
-  .mastersBox__itemOuter {
-    width: 33.333%;
-  }
-  .mastersBox__info {
-    height: 20%;
-  }
+	.mastersBox__outer {
+		width: 100%;
+		padding: 0;
+	}
+	.mastersBox__info span {
+		margin-bottom: 5px;
+	}
+	.mastersBox__info {
+		height: 20%;
+	}
 
-  .mastersTagMenu__outer {
-    width: 100%;
-    padding: 20px 0;
-  }
-  .menuCategoryMastersLink {
-    padding: 5px 25px;
-    font-size: 1rem;
-    line-height: 1.5;
-    margin: 2px 5px;
-  }
+	.mastersTagMenu__outer {
+		width: 100%;
+		padding: 20px 0;
+	}
+	.menuCategoryMastersLink {
+		padding: 5px 25px;
+		font-size: 1rem;
+		line-height: 1.5;
+		margin: 2px 5px;
+	}
 }
 
 @media only screen and (max-width: 600px) {
-  .mastersBox {
-    margin: 0 -5px;
-  }
+	.mastersBox {
+		margin: 0 -5px;
+	}
 
-  .mastersBox__itemOuter {
-    padding: 5px;
-  }
-  .mastersBox__info {
-    height: 30%;
-  }
-  .mastersBox__itemInfo {
-    padding: 10px;
-  }
+	.mastersBox__itemOuter {
+		width: 50%;
+	}
+	.mastersBox__info {
+		height: 30%;
+	}
+	.mastersBox__itemInfo {
+		padding: 10px;
+	}
 }
 
 @media only screen and (max-width: 480px) {
-  .mastersBox__itemOuter {
-    width: 50%;
-  }
-  .mastersBox__info {
-    height: 25%;
-  }
-  .mastersBox__info span {
-    font-size: 0.875rem;
-    margin-bottom: 3px;
-  }
+	.mastersBox__itemOuter {
+		padding: 5px;
+	}
+	.mastersBox__info {
+		height: 25%;
+	}
+	.mastersBox__info span {
+		font-size: 0.875rem;
+		margin-bottom: 3px;
+	}
 }
 
 @media only screen and (max-width: 414px) {
-  .mastersBox__info {
-    height: 30%;
-  }
-  .mastersTagMenu__outer {
-    padding: 10px 0;
-  }
+	.mastersBox__info {
+		height: 30%;
+	}
+	.mastersTagMenu__outer {
+		padding: 10px 0;
+	}
 }
 
 @media only screen and (max-width: 320px) {
-  .mastersBox__itemOuter {
-    width: 100%;
-  }
-  .mastersBox__info {
-    height: 35%;
-  }
+	.mastersBox__itemOuter {
+		width: 100%;
+	}
+	.mastersBox__info {
+		height: 35%;
+	}
 }

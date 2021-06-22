@@ -28,6 +28,12 @@
 		margin: 40px 0;
 		padding: 30px 50px;
 	}
+	.title1_uppercase h2 {
+		margin-bottom: 20px;
+	}
+	.btn2 {
+		margin: 20px 0 0;
+	}
 }
 
 @media only screen and (max-width: 600px) {
@@ -56,6 +62,9 @@
 		font-size: 2.125rem;
 		margin: 15px 0 10px 0;
 	}
+	.title1_uppercase h2 {
+		margin-bottom: 10px;
+	}
 }
 
 @media only screen and (max-width: 480px) {
@@ -68,6 +77,10 @@
 		line-height: 20px;
 		padding: 0.625rem 1rem;
 		margin: 20px auto 0;
+	}
+	.toTop {
+		width: 2rem;
+		height: 2rem;
 	}
 }
 

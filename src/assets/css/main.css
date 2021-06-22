@@ -41,6 +41,7 @@ body {
 
 .title1 {
 	position: relative;
+	width: 100%;
 }
 
 .title1 h2 {
@@ -56,6 +57,11 @@ body {
 .title1_uppercase h2 {
 	text-transform: uppercase;
 	margin-bottom: 40px;
+}
+
+.titleTAL {
+	position: relative;
+	width: 100%;
 }
 
 .btn2 {
@@ -108,4 +114,23 @@ a.btn3 {
 a.btn3:hover {
 	color: var(--red1);
 	border: 2px solid var(--red1);
+}
+
+.mt0 {
+	margin-top: 0;
+}
+.mb0 {
+	margin-bottom: 0;
+}
+.pt0 {
+	padding-top: 0;
+}
+.pb0 {
+	padding-bottom: 0;
+}
+
+.title0 h1,
+.title0 h2,
+.title0 h3 {
+	margin: 0 0 20px;
 }

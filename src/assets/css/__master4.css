@@ -105,9 +105,13 @@
 }
 
 .portfolio__outer {
-	width: 100%;
-	max-width: 1200px;
-	margin: 35px auto 0;
+	/* width: 100%;
+	max-width: 1200px; */
+	/* margin: 35px auto 0; */
+	padding: 35px 0 0 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 .portfolio {
