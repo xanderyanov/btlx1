@@ -8,50 +8,53 @@
 }
 
 @media only screen and (max-width: 1024px) {
-  .servBox__outer {
-    width: 100%;
-    padding: 0;
-  }
+	.servBox__outer {
+		width: 100%;
+		padding: 0;
+	}
+	.serv {
+		margin: 0 -5px;
+	}
 }
 
 @media only screen and (max-width: 920px) {
 }
 
 @media only screen and (max-width: 800px) {
-  .serv__item span {
-    height: 60px;
-  }
+	.serv__item span {
+		height: 60px;
+	}
 }
 
 @media only screen and (max-width: 768px) {
-  .serv {
-    margin: 0 -5px;
-  }
-  .serv__itemOuter {
-    padding: 5px;
-  }
+	.serv {
+		margin: 0 -5px;
+	}
+	.serv__itemOuter {
+		padding: 5px;
+	}
 }
 
 @media only screen and (max-width: 600px) {
-  .serv {
-    margin: 0 -5px;
-  }
-  .serv__itemOuter {
-    padding: 5px;
-  }
+	.serv {
+		margin: 0 -5px;
+	}
+	.serv__itemOuter {
+		padding: 5px;
+	}
 }
 
 @media only screen and (max-width: 480px) {
-  .serv__itemOuter {
-    width: 50%;
-  }
+	.serv__itemOuter {
+		width: 50%;
+	}
 }
 
 @media only screen and (max-width: 400px) {
 }
 
 @media only screen and (max-width: 320px) {
-  .serv__itemOuter {
-    width: 100%;
-  }
+	.serv__itemOuter {
+		width: 100%;
+	}
 }

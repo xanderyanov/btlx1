@@ -2,8 +2,10 @@ html,
 body {
 	color: #000;
 	font-family: "Roboto Condensed", sans-serif;
+	/* font-family: "Open Sans", serif; */
+	/* font-family: "Roboto", sans-serif; */
 	font-size: 16px;
-	font-weight: 400;
+	font-weight: 300;
 	line-height: 1.2;
 	position: relative;
 	height: 100%;
@@ -89,12 +91,17 @@ body {
 	border: 2px solid var(--red1);
 }
 
+.btn3_centredWrapper {
+	display: flex;
+	justify-content: center;
+}
+
 a.btn3 {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	width: 90%;
-	max-width: 240px;
+	/* width: 90%; */
+	/* max-width: 240px; */
 	font-weight: bold;
 	font-size: 16px;
 	line-height: 24px;
@@ -109,6 +116,8 @@ a.btn3 {
 	margin: 30px auto 0;
 	transition: all 0.3s;
 	text-decoration: none;
+	/* white-space: nowrap; */
+	text-align: center;
 }
 
 a.btn3:hover {

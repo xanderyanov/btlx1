@@ -1,7 +1,7 @@
 @media only screen and (max-width: 1200px) {
 	.wsite {
-		padding-right: 10px;
-		padding-left: 10px;
+		padding-right: 15px;
+		padding-left: 15px;
 	}
 }
 
@@ -26,13 +26,24 @@
 	}
 	.content blockquote {
 		margin: 40px 0;
-		padding: 30px 50px;
+		padding: 25px 25px;
 	}
 	.title1_uppercase h2 {
 		margin-bottom: 20px;
 	}
 	.btn2 {
 		margin: 20px 0 0;
+	}
+	a.btn3 {
+		font-size: 14px;
+		line-height: 20px;
+		border-radius: 4px;
+		padding: 10px 24px;
+		margin: 20px auto 0;
+	}
+
+	.breadcrumbsCurrent {
+		display: none;
 	}
 }
 
@@ -49,7 +60,7 @@
 		line-height: 1.4;
 		font-weight: 300;
 	}
-	.content blockquote {
+	/* .content blockquote {
 		margin: 20px 0;
 		padding: 20px 30px;
 	}
@@ -61,9 +72,53 @@
 	h2 {
 		font-size: 2.125rem;
 		margin: 15px 0 10px 0;
-	}
+	} */
 	.title1_uppercase h2 {
 		margin-bottom: 10px;
+	}
+
+	h1 {
+		font-size: 26px;
+		/* font-size: 2.875rem; */
+		margin: 0 0 20px 0;
+	}
+	h2 {
+		font-size: 24px;
+		/* font-size: 2.625rem; */
+		margin: 14px 0 10px 0;
+	}
+	h3 {
+		font-size: 22px;
+		/* font-size: 2.375rem; */
+		margin: 14px 0 10px 0;
+	}
+	h4 {
+		font-size: 20px;
+		/* font-size: 2.125rem; */
+		margin: 14px 0 10px 0;
+	}
+	h5 {
+		font-size: 18px;
+		/* font-size: 2rem; */
+		margin: 14px 0 10px 0;
+	}
+	h6 {
+		font-size: 16px;
+		/* font-size: 1.875rem; */
+		margin: 14px 0 10px 0;
+	}
+	.content p,
+	.content ul,
+	.content ol,
+	.content blockquote,
+	.content table {
+		font-size: 0.875rem;
+		font-weight: 300;
+		line-height: 1.2rem;
+		margin: 0 0 10px 0;
+	}
+	.content ul li {
+		font-size: 0.875rem;
 	}
 }
 
@@ -73,10 +128,10 @@
 		text-transform: uppercase;
 	}
 	a.btn3 {
-		font-size: 14px;
+		font-size: 12px;
 		line-height: 20px;
 		padding: 0.625rem 1rem;
-		margin: 20px auto 0;
+		margin: 15px auto 0;
 	}
 	.toTop {
 		width: 2rem;
@@ -85,10 +140,10 @@
 }
 
 @media only screen and (max-width: 414px) {
-	.content blockquote {
+	/* .content blockquote {
 		margin: 15px 0;
 		padding: 20px;
-	}
+	} */
 }
 
 @media only screen and (max-width: 320px) {

@@ -32,7 +32,7 @@
 }
 
 .procedure3__introLinks a {
-	font-weight: 600;
+	font-weight: 400;
 	font-size: 1rem;
 	line-height: 1.4;
 	text-decoration: none;
@@ -257,9 +257,13 @@
 .videoPhotoBox {
 	width: 100%;
 	max-width: 1200px;
-	margin: 0 auto 30px;
+	margin: 30px auto 0;
 	display: flex;
 	flex-wrap: wrap;
+}
+
+.videoPhotoBox:last-child {
+	margin: 30px auto 30px;
 }
 
 .videoPhotoBox__video {
@@ -341,8 +345,8 @@
 	padding: 0.625rem 1.875rem;
 	text-decoration: none;
 	width: 100%;
-	font-size: 14px;
-	font-weight: 600;
+	font-size: 16px;
+	font-weight: 400;
 	line-height: 1.3;
 	color: var(--color1);
 	/* border: 1px solid #e0e0e0; */
@@ -370,10 +374,10 @@
 	flex-direction: column;
 	margin: 20px 0 0 0;
 }
-.priceBox3__title {
+/* .priceBox3__title {
 	padding: 0 0 10px 0;
-}
-.priceBox3__title h3 {
+} */
+/* .priceBox3__title h3 {
 	margin: 0;
 	line-height: 1.4;
 
@@ -381,7 +385,7 @@
 	font-size: 20px;
 	line-height: 32px;
 	color: #333333;
-}
+} */
 
 .priceBox3 {
 	position: relative;
@@ -415,7 +419,7 @@
 	width: 30%;
 	text-align: right;
 	white-space: nowrap;
-	font-weight: bold;
+	font-weight: 400;
 }
 
 .outerLink3__area {

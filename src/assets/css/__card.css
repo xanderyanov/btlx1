@@ -129,8 +129,8 @@
 	height: 100%;
 	display: flex;
 	flex-direction: column;
-	padding: 10px 20px 10px 5%;
-	justify-content: center;
+	padding: 20px 20px 10px 5%;
+	/* justify-content: center; */
 }
 
 .eCard__itemInnerLeft_app {
@@ -144,10 +144,11 @@
 .eCard__itemTitle {
 	font-weight: normal;
 	font-size: 1.25rem;
-	line-height: 1.1;
+	line-height: 1.4;
 	letter-spacing: 0.04em;
 	text-transform: uppercase;
 	color: #000;
+	margin-bottom: 5px;
 }
 
 .eCard__itemContent {
@@ -157,10 +158,10 @@
 }
 
 .eCard__itemContent p {
-	margin-bottom: 10px;
+	margin-bottom: 5px;
 	font-weight: 300;
-	font-size: 1rem;
-	line-height: 1.4;
+	font-size: 14px;
+	line-height: 1.3;
 	letter-spacing: 0.04em;
 	color: #4f4f4f;
 }
@@ -173,8 +174,8 @@
 
 .eCard__itemContent li {
 	font-weight: 300;
-	font-size: 1rem;
-	line-height: 1.4;
+	font-size: 14px;
+	line-height: 1.3;
 	letter-spacing: 0.04em;
 	color: #4f4f4f;
 }

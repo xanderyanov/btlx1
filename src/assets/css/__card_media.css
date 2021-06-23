@@ -50,8 +50,14 @@
 	.eCard__itemOuter {
 		width: 100%;
 	}
-	.eCard__itemOuter {
-		width: 100%;
+	.eCard__item {
+		padding-top: 45%;
+	}
+	.eCard__itemInnerLeft {
+		width: 35%;
+	}
+	.eCard__itemInnerRight {
+		width: 65%;
 	}
 	.eCard__itemTitle {
 		font-size: 18px;
@@ -126,6 +132,9 @@
 	.innerPriceBox3__content {
 		padding: 0 10px 0 0;
 	}
+	.eCard__itemInnerRight {
+		padding: 20px 10px 10px 20px;
+	}
 }
 
 @media only screen and (max-width: 414px) {
@@ -188,14 +197,14 @@
 	.eCard__itemContent ul {
 		padding: 0;
 	}
-	.eCard__itemContent li {
+	/* .eCard__itemContent li {
 		font-style: normal;
 		font-weight: 300;
 		font-size: 10px;
 		line-height: 14px;
 		letter-spacing: 0.04em;
 		color: #000;
-	}
+	} */
 	.innerPriceBox3__title {
 		font-size: 18px;
 	}
