@@ -1,14 +1,14 @@
 .wideBlock {
-  position: relative;
+	position: relative;
 }
 
 .wideBlock__link {
-  display: block;
-  width: 100%;
-  text-decoration: none;
-  margin: 0 0 10px;
+	display: block;
+	width: 100%;
+	text-decoration: none;
+	margin: 0 0 25px;
 }
 
 .wideBlock img {
-  width: 100%;
+	width: 100%;
 }

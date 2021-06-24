@@ -8,13 +8,13 @@
 }
 
 @media only screen and (max-width: 1024px) {
-	.eCard {
+	/* .eCard {
 		margin: 5px -5px 0;
 	}
 
 	.eCard__itemOuter {
 		padding: 5px;
-	}
+	} */
 
 	.eCard__itemContent p {
 		font-size: 12px;
@@ -49,6 +49,7 @@
 	}
 	.eCard__itemOuter {
 		width: 100%;
+		padding: 10px 5px;
 	}
 	.eCard__item {
 		padding-top: 45%;
@@ -58,6 +59,12 @@
 	}
 	.eCard__itemInnerRight {
 		width: 65%;
+	}
+	.eCard__itemInnerLeft_app {
+		width: 28%;
+	}
+	.eCard__itemInnerRight_app {
+		width: 72%;
 	}
 	.eCard__itemTitle {
 		font-size: 18px;
@@ -134,6 +141,16 @@
 	}
 	.eCard__itemInnerRight {
 		padding: 20px 10px 10px 20px;
+	}
+
+	.eCard__priceBtn {
+		position: absolute;
+		bottom: 12px;
+		right: 12px;
+	}
+
+	.eCard__priceBtn i {
+		font-size: 1.625rem;
 	}
 }
 

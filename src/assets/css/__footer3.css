@@ -27,12 +27,12 @@
 }
 
 .footer3__tm {
-	font-style: normal;
-	font-weight: 600;
-	font-size: 14px;
-	line-height: 20px;
 	color: #fff;
 	margin-bottom: 2.5rem;
+	font-weight: normal;
+	font-size: 1rem;
+	line-height: 1.5rem;
+	letter-spacing: 0.04em;
 }
 .footer3__tm_first {
 	margin-bottom: 10px;
@@ -50,12 +50,15 @@
 }
 
 .footer3__menuTitle {
-	font-size: 16px;
-	line-height: 1.5rem;
-	color: #fff;
-	font-weight: 700;
 	padding: 0 0 20px 0;
 	border-bottom: 1px solid #e0e0e0;
+
+	font-weight: normal;
+	font-size: 1.25rem;
+	line-height: 1.75rem;
+	letter-spacing: 0.04em;
+	text-transform: uppercase;
+	color: #ffffff;
 }
 
 .footer3__menu {
@@ -71,7 +74,8 @@
 
 .footer3__menu li a {
 	text-decoration: none;
-	font-size: 14px;
+	font-size: 1rem;
+	/* font-weight: 400; */
 	line-height: 1;
 	color: #fff;
 }
@@ -81,12 +85,12 @@
 }
 
 .footer__linksTitle {
-	font-weight: bold;
-	font-size: 16px;
-	line-height: 1.5rem;
-	/* color: #fff; */
-	color: #d74d63;
 	margin-bottom: 1.25rem;
+	font-weight: normal;
+	font-size: 1rem;
+	line-height: 1.5rem;
+	letter-spacing: 0.04em;
+	color: #d74d63;
 }
 
 .footerSGlinks {
@@ -111,10 +115,12 @@
 }
 
 .footerSGlinks a p {
-	font-size: 14px;
-	line-height: 1.5rem;
-	color: #fff;
+	line-height: 1.375rem;
 	text-align: left;
+	font-weight: 300;
+	font-size: 1rem;
+	letter-spacing: 0.04em;
+	color: #ffffff;
 }
 
 .footerSGlinks a span {
@@ -160,20 +166,25 @@
 
 .oferta {
 	text-decoration: none;
-	font-size: 14px;
-	line-height: 1.125rem;
-	color: #fff;
 	margin: 0;
+	font-weight: normal;
+	font-size: 1rem;
+	line-height: 1.2;
+	letter-spacing: 0.04em;
+	color: #ffffff;
+	text-align: center;
 }
 
 a.policy1 {
 	text-decoration: none;
-	font-size: 14px;
-	line-height: 1.125rem;
 	margin: 0;
+	font-weight: normal;
+	font-size: 1rem;
+	line-height: 1.2;
+	letter-spacing: 0.04em;
+	color: #ffffff;
 	text-transform: capitalize;
-	color: #fff;
-	text-decoration: underline;
+	text-align: center;
 }
 
 a.policy1:hover {

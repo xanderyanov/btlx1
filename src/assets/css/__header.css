@@ -27,6 +27,7 @@
 	font-size: 0.875rem;
 	letter-spacing: 0.04em;
 	margin: 0 0 0 0.875rem;
+	font-weight: 400;
 }
 
 .topLine__menuArea {
@@ -52,6 +53,7 @@
 	font-size: 0.875rem;
 	letter-spacing: 0.04em;
 	text-decoration: none;
+	font-weight: 400;
 }
 .topLine__menu li a:hover {
 	color: var(--hover1);
@@ -77,6 +79,15 @@
 
 .header__area {
 	background: var(--color1);
+	transition: all 0.3s ease;
+	z-index: 2400;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
+.out {
+	transform: translateY(0%);
+	position: fixed;
 }
 
 .header {

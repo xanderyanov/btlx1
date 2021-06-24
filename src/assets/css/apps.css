@@ -63,8 +63,8 @@
 @import "__sevices.css";
 @import "__services_media.css";
 
-@import "__procedure.css"; /*старая но пока тут*/
-@import "__procedure_media.css";
+/* @import "__procedure.css"; старая но пока тут */
+/* @import "__procedure_media.css"; */
 
 @import "__procedure3.css";
 @import "__procedure3_media.css";

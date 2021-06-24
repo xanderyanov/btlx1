@@ -659,7 +659,7 @@ li.endLeftBlock {
 
 .mastersTagMenu__outer {
 	width: 100%;
-	padding: 40px 0;
+	padding: 25px 0;
 }
 
 .mastersTagMenu {
@@ -674,7 +674,7 @@ li.endLeftBlock {
 	text-decoration: none;
 	transition: all 0.3s;
 	border: 1px solid #e0e0e0;
-	font-weight: 600;
+	font-weight: 400;
 	font-size: 16px;
 	line-height: 24px;
 	color: #4f4f4f;

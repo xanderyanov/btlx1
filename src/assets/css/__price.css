@@ -17,16 +17,10 @@
 }
 
 .priceBox__title {
-	padding: 0 0 10px 0;
+	padding: 0;
 }
 .priceBox__title h3 {
 	margin: 0;
-	line-height: 1.4;
-
-	font-weight: 600;
-	font-size: 20px;
-	line-height: 32px;
-	color: #333333;
 }
 
 .priceBox {
@@ -61,5 +55,5 @@
 	width: 30%;
 	text-align: right;
 	white-space: nowrap;
-	font-weight: bold;
+	font-weight: 400;
 }
