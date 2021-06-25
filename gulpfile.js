@@ -43,9 +43,9 @@ gulp.task("css", function () {
 		.pipe(sourcemaps.init())
 		.pipe(postcss([postcssImport()]))
 		.pipe(sourcemaps.write("."))
-		.pipe(gulp.dest("build/assets/css/"))
-		.pipe(rename("apps-x1.css"))
 		.pipe(gulp.dest("build/assets/css/"));
+	// .pipe(rename("apps-x1.css"))
+	// .pipe(gulp.dest("build/assets/css/"));
 });
 
 // gulp.task("css-x1", function () {
