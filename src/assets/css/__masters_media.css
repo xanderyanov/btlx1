@@ -8,9 +8,9 @@
 }
 
 @media only screen and (max-width: 1024px) {
-	/* .mastersBox__itemOuter {
-    width: 50%;
-  } */
+	.mastersBox__itemOuter {
+		width: 25%;
+	}
 	.mastersBox__outer {
 		width: 100%;
 		padding-left: 0;
@@ -95,7 +95,7 @@
 	}
 }
 
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 360px) {
 	.mastersBox__itemOuter {
 		width: 100%;
 	}
