@@ -5,6 +5,9 @@
 }
 
 @media only screen and (max-width: 1080px) {
+	.eCard__itemTitle {
+		font-size: 1.125rem;
+	}
 }
 
 @media only screen and (max-width: 1024px) {
@@ -15,6 +18,9 @@
 	.eCard__itemOuter {
 		padding: 5px;
 	} */
+	.eCard__itemContent {
+		margin: 7px 0 0 0;
+	}
 
 	.eCard__itemContent p {
 		font-size: 12px;
@@ -35,12 +41,36 @@
 	/* .eCard__itemInfoTitle {
     font-size: 1.25rem;
   } */
+	/* .eCard__itemInnerRight {
+		padding: 20px 20px 10px 20px;
+	} */
+	.eCard__itemTitle {
+		line-height: 1.2;
+	}
+	.eCard__itemContent {
+		margin: 10px 0 0 0;
+	}
+
+	.eCard__itemContent p {
+		font-size: 14px;
+	}
+
+	.eCard__itemContent li {
+		font-size: 14px;
+	}
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 820px) {
 	/* .eCard__itemInfoTitle {
     font-size: 1.125rem;
   } */
+	.eCard__itemContent p {
+		font-size: 12px;
+	}
+
+	.eCard__itemContent li {
+		font-size: 12px;
+	}
 }
 
 @media only screen and (max-width: 768px) {
@@ -67,14 +97,17 @@
 	.eCard__itemInnerRight_app {
 		width: 72%;
 	}
+	.eCard__itemInnerRight {
+		padding: 20px 20px 10px 20px;
+	}
 	.eCard__itemTitle {
-		font-size: 18px;
+		font-size: 1.375rem;
 	}
 	.eCard__itemContent p {
-		font-size: 14px;
+		font-size: 1rem;
 	}
 	.eCard__itemContent li {
-		font-size: 14px;
+		font-size: 1rem;
 	}
 	.eCard__itemImg {
 		width: 40%;
@@ -108,6 +141,19 @@
 	.innerPriceBox3__title {
 		font-size: 24px;
 	}
+
+	/* .eCard__itemInnerRight {
+		padding: 15px 15px 10px 15px;
+	} */
+	.eCard__itemTitle {
+		font-size: 1.25rem;
+	}
+	.eCard__itemContent p {
+		font-size: 0.875rem;
+	}
+	.eCard__itemContent li {
+		font-size: 0.875rem;
+	}
 }
 
 @media only screen and (max-width: 480px) {
@@ -125,23 +171,23 @@
 		width: 90%;
 		padding: 20px 10px 20px 20px;
 	}
+	/* .eCard__itemInnerRight {
+		padding: 15px 15px 10px 15px;
+	} */
 	.eCard__itemTitle {
-		font-size: 16px;
+		font-size: 1.125rem;
 	}
 	.eCard__itemContent p {
-		font-size: 12px;
+		font-size: 0.75rem;
 	}
 	.eCard__itemContent li {
-		font-size: 12px;
+		font-size: 0.75rem;
 	}
 	.eCard__itemContent {
 		margin: 5px 0 0 0;
 	}
 	.innerPriceBox3__content {
 		padding: 0 10px 0 0;
-	}
-	.eCard__itemInnerRight {
-		padding: 20px 10px 10px 20px;
 	}
 
 	.eCard__priceBtn {
@@ -200,7 +246,22 @@
 	.eCard__itemInfo_ap {
 		padding: 20px 10px;
 	}
+
+	/* .eCard__itemInnerRight {
+		padding: 10px 10px 10px 10px;
+	} */
+
 	.eCard__itemTitle {
+		font-size: 1rem;
+	}
+	.eCard__itemContent p {
+		font-size: 0.75rem;
+	}
+	.eCard__itemContent li {
+		font-size: 0.75rem;
+	}
+
+	/* .eCard__itemTitle {
 		font-size: 14px;
 		line-height: 1.2;
 		letter-spacing: 0.02em;
@@ -211,7 +272,7 @@
 		font-size: 12px;
 		margin-bottom: 5px;
 		line-height: 1.2;
-	}
+	} */
 	.eCard__itemContent ul {
 		padding: 0;
 	}
@@ -248,6 +309,9 @@
 	/* .eCard__itemContent {
     display: none;
   } */
+	.eCard__itemContent ul {
+		display: none;
+	}
 }
 
 @media only screen and (max-width: 320px) {

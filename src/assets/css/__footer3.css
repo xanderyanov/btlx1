@@ -183,7 +183,7 @@ a.policy1 {
 	line-height: 1.2;
 	letter-spacing: 0.04em;
 	color: #ffffff;
-	text-transform: capitalize;
+	/* text-transform: capitalize; */
 	text-align: center;
 }
 

@@ -138,7 +138,7 @@
 	height: 100%;
 	display: flex;
 	flex-direction: column;
-	padding: 20px 20px 10px 5%;
+	padding: 15px 15px 10px 15px;
 	/* justify-content: center; */
 }
 
@@ -161,7 +161,6 @@
 	letter-spacing: 0.04em;
 	text-transform: uppercase;
 	color: #000;
-	margin-bottom: 5px;
 }
 
 .eCard__itemContent {
