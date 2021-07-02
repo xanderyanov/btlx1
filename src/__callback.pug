@@ -9,7 +9,7 @@ mixin callback
         .callback__intro
           h2 Заказать обратный звонок
           span заполните поля:
-        form.callback(action='#')
+        form.callback.xForm(action='#')
           //- label(for="name_callback") Ваше имя
           input.name_callback(name='name_callback', type='text', placeholder='Ваше имя')
 
@@ -23,7 +23,7 @@ mixin callback
           //-   a(href='privacy-policy/', target='_blank')
           //-     | политики
           //-     | конфиденциальности
-          .form_callbackalrightBox
+          .form_callbackalrightBox.xFormCheck
             input.checkbox_callback(type='checkbox' required='')
             span Согласен на обработку персональных данных
           button.submit_callback(type='submit', name='submit_callback')
