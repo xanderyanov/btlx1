@@ -854,7 +854,7 @@ $(function () {
 
 	$(".form13").on("click", ".submit13", function (e) {
 		e.preventDefault();
-		var subj = "Горизонтальная форма внизу страницы";
+		var subj = $(".subj13").text();
 		var name = $(".name13").val();
 		var phone = $(".phone13").val();
 		var checkbox = $(".checkbox13");

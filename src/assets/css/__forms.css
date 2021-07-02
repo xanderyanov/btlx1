@@ -6,6 +6,10 @@
 	margin-bottom: 10px;
 }
 
+.xsubj {
+	display: none;
+}
+
 .xForm input {
 	font-family: "Roboto Condensed", sans-serif;
 	font-size: 0.875rem;
