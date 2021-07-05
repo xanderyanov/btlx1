@@ -117,11 +117,12 @@ mixin formInMaster3
         a(href='tel:+78452260000') +7 (8452) 26-00-00
       span или заполните форму ниже:
     form.mf3.xForm(action='#')
-      label(for="name_mf3") Ваше имя
-      input.name_mf3(name='name_mf3', type='text', placeholder='Ваше имя')
-
-      label(for="phone_mf3") Ваш телефон
-      input.phone_mf3(name='phone_mf3', type='text', placeholder='Ваш телефон')
+      .xInputWrapper
+        input.name_mf3(name='name_mf3' type='text' placeholder='Ваше имя')
+        label(for="name_mf3") Ваше имя
+      .xInputWrapper
+        input.phone_mf3(name='phone_mf3' type='text' placeholder='Ваш телефон')
+        label(for="phone_mf3") Ваш телефон
       //- input.email_mf3(name='email_mf3', type='text', placeholder='Email')
       input.work_email_mf3(name='work_email_mf3', type='text', placeholder='Рабочий email')
       //- textarea.message_mf3(name='message_mf3', cols='30', rows='10', placeholder='Ваше сообщение')

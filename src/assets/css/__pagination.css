@@ -31,8 +31,7 @@ a.pag__item {
 }
 
 a.pag__item:hover {
-	color: #fff;
-	background: var(--color1);
+	background: rgba(196, 187, 234, 0.35);
 }
 
 a.pag__item.active {
@@ -45,7 +44,6 @@ a.pag__item i {
 	color: #000;
 }
 
-a.pag__item.active i,
-a.pag__item:hover i {
+a.pag__item.active i {
 	color: #fff;
 }

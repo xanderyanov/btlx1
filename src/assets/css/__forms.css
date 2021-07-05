@@ -39,20 +39,32 @@
 	display: block;
 }
 
+.xForm input::-webkit-input-placeholder {
+	color: #868686;
+}
+.xForm input::-moz-placeholder {
+	color: #868686;
+}
+.xForm input:-moz-placeholder {
+	color: #868686;
+}
+.xForm input:-ms-input-placeholder {
+	color: #868686;
+}
+.xForm input::placeholder {
+	color: #868686;
+}
+
 .xForm input:focus::-webkit-input-placeholder {
-	/* WebKit browsers */
 	color: transparent;
 }
 .xForm input:focus:-moz-placeholder {
-	/* Mozilla Firefox 4 to 18 */
 	color: transparent;
 }
 .xForm input:focus::-moz-placeholder {
-	/* Mozilla Firefox 19+ */
 	color: transparent;
 }
 .xForm input:focus:-ms-input-placeholder {
-	/* Internet Explorer 10+ */
 	color: transparent;
 }
 .xForm input:focus::placeholder {
@@ -972,31 +984,6 @@ input.work_email4 {
 	display: none;
 }
 
-/* .mf3 label {
-	font-size: 0.875rem;
-	line-height: 1.4;
-	color: var(--dark);
-	margin-bottom: 10px;
-}
-
-.mf3 input {
-	font-family: "Roboto Condensed", sans-serif;
-	font-size: 0.875rem;
-	border: none;
-	border-bottom: 1px solid #828282;
-	background: transparent;
-	line-height: 2rem;
-	padding: 0;
-	outline: none;
-	width: 100%;
-	box-sizing: border-box;
-	margin-bottom: 20px;
-}
-
-.mf3 input:focus {
-	border-bottom: 2px solid #5d4b62;
-} */
-
 .mf3 input.error {
 	border-bottom: 2px solid var(--red1);
 }
@@ -1005,71 +992,8 @@ input.work_email_mf3 {
 	display: none;
 }
 
-/* .submit_mf3,
-.submit_mf3_popup {
-	font-family: "Roboto Condensed", sans-serif;
-	outline: none;
-	cursor: pointer;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	color: #fff;
-	background: var(--color1);
-	padding: 0.75rem 2rem;
-	height: 56px;
-	border-radius: 6px;
-	text-decoration: none;
-	border: none;
-	transition: all 0.3s;
-	text-transform: uppercase;
-	font-size: 1rem;
-}
-
-.submit_mf3:hover,
-.submit_mf3_popup:hover {
-	background: var(--reden);
-} */
-
-/* .submit_mf3 i,
-.submit_mf3_popup i {
-	font-size: 20px;
-	margin: 0 20px 0 0;
-}
-
-.submit_mf3 span,
-.submit_mf3_popup span {
-	text-transform: uppercase;
-	font-weight: bold;
-	font-size: 14px;
-	line-height: 20px;
-	color: #ffffff;
-} */
-
 .form_mf3alrightBox {
 	display: flex;
 	align-items: center;
 	margin-bottom: 20px;
 }
-
-/* .form_mf3alrightBox input {
-	font-size: 0.875rem;
-	border: none;
-	line-height: auto;
-	padding: 0;
-	outline: none;
-	width: auto;
-	margin: 0;
-}
-
-.form_mf3alrightBox span {
-	padding-left: 10px;
-	font-size: 0.875rem;
-	line-height: 1.4;
-	color: var(--dark);
-}
-
-.form_mf3alrightBox.error span {
-	color: var(--reden);
-} */
-
-/*******************************************/

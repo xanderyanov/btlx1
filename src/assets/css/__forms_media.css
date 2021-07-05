@@ -73,44 +73,36 @@
 }
 
 @media only screen and (min-width: 600px) {
-	.mf3 input::-webkit-input-placeholder {
-		/* WebKit browsers */
+	/* .mf3 input::-webkit-input-placeholder {
 		color: transparent;
 	}
 	.mf3 input:-moz-placeholder {
-		/* Mozilla Firefox 4 to 18 */
 		color: transparent;
 	}
 	.mf3 input::-moz-placeholder {
-		/* Mozilla Firefox 19+ */
 		color: transparent;
 	}
 	.mf3 input:-ms-input-placeholder {
-		/* Internet Explorer 10+ */
 		color: transparent;
 	}
 	.mf3 input::placeholder {
 		color: transparent;
 	}
 	.mf3 textarea::-webkit-input-placeholder {
-		/* WebKit browsers */
 		color: transparent;
 	}
 	.mf3 textarea:-moz-placeholder {
-		/* Mozilla Firefox 4 to 18 */
 		color: transparent;
 	}
 	.mf3 textarea::-moz-placeholder {
-		/* Mozilla Firefox 19+ */
 		color: transparent;
 	}
 	.mf3 textarea:-ms-input-placeholder {
-		/* Internet Explorer 10+ */
 		color: transparent;
 	}
 	.mf3 textarea::placeholder {
 		color: transparent;
-	}
+	} */
 }
 
 @media only screen and (max-width: 600px) {
