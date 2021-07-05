@@ -176,6 +176,9 @@
 	.imgSlider__outer {
 		padding: 1rem 2.5rem;
 	}
+	.dubleBox3__area {
+		padding-top: 0;
+	}
 }
 
 @media only screen and (max-width: 414px) {

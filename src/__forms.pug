@@ -65,11 +65,12 @@ mixin mainForm_v3
             a(href='tel:+78452260000') +7 (8452) 26-00-00
           span или заполните форму ниже:
         form.form_m3.xForm(action='#')
-          //- label(for="name_m3") Ваше имя
-          input.name_m3(name='name_m3', type='text', placeholder='Ваше имя')
-
-          label(for="phone_m3") Ваш телефон
-          input.phone_m3(name='phone_m3', type='text', placeholder='+7 (987) 654-32-10')
+          .xInputWrapper
+            input.name_m3(name='name_m3', type='text', placeholder='Ваше имя')
+            label(for="name_m3") Ваше имя
+          .xInputWrapper
+            input.phone_m3(name='phone_m3', type='text', placeholder='+7 (987) 654-32-10')
+            label(for="phone_m3") Ваш телефон
           //- input.email_m3(name='email_m3', type='text', placeholder='Email')
           input.work_email_m3(name='work_email_m3', type='text', placeholder='Рабочий email')
           //- textarea.message_m3(name='message_m3', cols='30', rows='10', placeholder='Ваше сообщение')
@@ -78,7 +79,7 @@ mixin mainForm_v3
           //-   a(href='privacy-policy/', target='_blank')
           //-     | политики
           //-     | конфиденциальности
-          .form_m3alrightBox
+          .form_m3alrightBox.xFormCheck
             input.checkbox_m3(type='checkbox' required='')
             span Согласен на обработку персональных данных
           button.submit_m3(type='submit', name='submit_m3')
@@ -129,7 +130,7 @@ mixin formInMaster3
       //-   a(href='privacy-policy/', target='_blank')
       //-     | политики
       //-     | конфиденциальности
-      .form_mf3alrightBox
+      .form_mf3alrightBox.xFormCheck
         input.checkbox_mf3(type='checkbox' required='')
         span Согласен на обработку персональных данных
       button.submit_mf3(type='submit', name='submit_mf3')
@@ -169,8 +170,8 @@ mixin formInContactsPage
         a(href='tel:+78452260000') +7 (8452) 26-00-00
         |  или заполните форму ниже:
 
-    form.form3(action='#')
-        input.name3.xForm(name='name3', type='text', placeholder='Ваше имя')
+    form.form3.xForm(action='#')
+        input.name3(name='name3', type='text', placeholder='Ваше имя')
         input.surname3(name='surname3', type='text', placeholder='Ваша Фамилия')
         input.phone3(name='phone3', type='text', placeholder='Контактный телефон')
         input.email3(name='email3', type='text', placeholder='Email')

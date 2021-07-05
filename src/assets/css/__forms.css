@@ -1,9 +1,16 @@
+.xInputWrapper {
+	display: flex;
+	width: 100%;
+	flex-direction: column-reverse;
+}
+
 .xForm label {
 	font-size: 0.875rem;
 	line-height: 1.4;
 	letter-spacing: 0.04em;
 	color: var(--dark);
 	margin-bottom: 10px;
+	display: none;
 }
 
 .xsubj {
@@ -13,6 +20,7 @@
 .xForm input {
 	font-family: "Roboto Condensed", sans-serif;
 	font-size: 0.875rem;
+	letter-spacing: 0.04em;
 	border: none;
 	border-bottom: 1px solid #828282;
 	background: transparent;
@@ -27,6 +35,30 @@
 	border-bottom: 2px solid #4f4f4f;
 }
 
+.xForm input:focus ~ label {
+	display: block;
+}
+
+.xForm input:focus::-webkit-input-placeholder {
+	/* WebKit browsers */
+	color: transparent;
+}
+.xForm input:focus:-moz-placeholder {
+	/* Mozilla Firefox 4 to 18 */
+	color: transparent;
+}
+.xForm input:focus::-moz-placeholder {
+	/* Mozilla Firefox 19+ */
+	color: transparent;
+}
+.xForm input:focus:-ms-input-placeholder {
+	/* Internet Explorer 10+ */
+	color: transparent;
+}
+.xForm input:focus::placeholder {
+	color: transparent;
+}
+
 .xForm input.error {
 	border-bottom: 2px solid red;
 }
@@ -34,6 +66,7 @@
 .xForm textarea {
 	font-family: "Roboto Condensed", sans-serif;
 	font-size: 0.875rem;
+	letter-spacing: 0.04em;
 	border: none;
 	border: 1px solid #828282;
 	background: transparent;
