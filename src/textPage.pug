@@ -16,6 +16,7 @@ include __footer
 include __old
 
 include __popUpBlocks
+include __procedure4
 
 
 
@@ -36,25 +37,22 @@ body
     
     .textPage__area
       .textPage__outer.wsite
-        //- .title1
-        //-   h1 Лазерная эпиляция
         .textPage.clearfix
           .content
+            .summaryBlock.summaryBlock_video 
+              .summaryBlock__inner
+                .summaryBlock__introImg.videoBox.videoBox_i
+                  iframe(width='560' height='315' src='https://www.youtube.com/embed/RzKRSJkuWnM' autoplay='1' frameborder='0' allow='accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen='')
+            //- .summaryBlock.summaryBlock_img 
+            //-   .summaryBlock__inner
+            //-     .summaryBlock__introImg
+            //-       img(src='assets/img/sotr/malishko-marina1.jpg' alt='[[*pagetitle]]')
             +tempContent
-        //- +promoTovar
-        //- .textPage.clearfix
-        //-   .content
-        //-     +tempContent
-        //- +outerLinkBox
-        //- +pageContainer
-        //- .block__video
-        //-   .title1
-        //-     h2 Видео
-        //-   +videogallery
-        //- .block__photo
-        //-   .title1
-        //-     h2 Фото
-        //-   +gallery
+
+
+        +videogallery
+        //- +gallery
+        +ProcedureImageGallery
 
     
     //- +zBlock1

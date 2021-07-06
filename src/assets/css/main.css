@@ -153,3 +153,31 @@ a.btn3:hover {
 .block__photo {
 	margin: 20px 0 0 0;
 }
+
+.summaryBlock {
+	float: right;
+}
+
+.summaryBlock_video {
+	width: 50%;
+}
+
+.summaryBlock_img {
+	width: auto;
+}
+
+.summaryBlock__inner {
+	padding: 0 0 20px 20px;
+}
+
+.summaryBlock__introImg {
+	width: 100%;
+	background: #4f4f4f;
+}
+
+.summaryBlock img {
+	max-width: 100%;
+	display: block;
+	margin: 0;
+	height: auto;
+}
