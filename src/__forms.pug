@@ -172,16 +172,25 @@ mixin formInContactsPage
         |  или заполните форму ниже:
 
     form.form3.xForm(action='#')
-        input.name3(name='name3', type='text', placeholder='Ваше имя')
-        input.surname3(name='surname3', type='text', placeholder='Ваша Фамилия')
-        input.phone3(name='phone3', type='text', placeholder='Контактный телефон')
-        input.email3(name='email3', type='text', placeholder='Email')
+        .xInputWrapper
+          input.name3(name='name3', type='text', placeholder='Ваше имя:')
+          label(for="name3") Ваше имя:
+        .xInputWrapper
+          input.surname3(name='surname3', type='text', placeholder='Ваша Фамилия:')
+          label(for="surname3") Ваша Фамилия:
+        .xInputWrapper
+          input.phone3(name='phone3', type='text', placeholder='Контактный телефон:')
+          label(for="phone3") Контактный телефон:
+        .xInputWrapper
+          input.email3(name='email3', type='text', placeholder='Email:')
+          label(for="email3") Email:
         input.work_email3(name='work_email3', type='text', placeholder='Рабочий email')
-        textarea.message3(name='message3', cols='30', rows='10', placeholder='Ваше сообщение')
-        .formPolycy__text
-          | *Отправляя сообщение Вы соглашаетесь с условиями 
-          a(href='#', target='_blank')
-          | политики конфиденциальности
+        .xInputWrapper
+          textarea.message3(name='message3', cols='30', rows='10', placeholder='Ваше сообщение:')
+          label(for="message3") Ваше сообщение:
+        .form_mf3alrightBox.xFormCheck
+          input.checkbox3(type='checkbox' required='')
+          span Согласен на обработку персональных данных
         button.submit3(type='submit', name='submit3')
           i.icon-diamond
           span Записаться

@@ -1084,6 +1084,7 @@ $(function () {
 		var email = $(".email3").val();
 		var workemail = $(".work_email3").val();
 		var message = $(".message3").val();
+		var checkbox = $(".checkbox3");
 		var r = /^[\w\.\d-_]+@[\w\.\d-_]+\.\w{2,4}$/i;
 		// var recaptcha = grecaptcha.getResponse();
 		if (name == "") {
@@ -1148,16 +1149,14 @@ $(function () {
 				type: "error",
 				confirmButtonText: "ок",
 			});
-		}
-		// else if (!recaptcha) {
-		//   swal({
-		//     title: "поставьте галочку",
-		//     text: "при проверке на спам",
-		//     type: "error",
-		//     confirmButtonText: "ок",
-		//   });
-		// }
-		else {
+		} else if (checkbox.is(":checked") == false) {
+			swal({
+				title: "Отметьте чекбокс",
+				text: "Дайте свое согласие на обработку данных!",
+				type: "error",
+				confirmButtonText: "ок",
+			});
+		} else {
 			$.post(
 				"mail.php",
 				{
@@ -1180,6 +1179,7 @@ $(function () {
 					$(".phone3").val("").removeClass("error");
 					$(".email3").val("").removeClass("error");
 					$(".message3").val("").removeClass("error");
+					$(".checkbox3:checked").prop("checked", false);
 				}
 			);
 		}
@@ -1373,7 +1373,7 @@ if ($(".map__area").length) {
 					'<div class="baloon__top">"БЬЮТИ Лаунж"</div>' +
 					'<div class="baloon__description">Центр косметологии и красоты</div>',
 				balloonContentBody:
-					'<div class="baloon__content"><img src="assets/img/logo-map2.png">' +
+					'<div class="baloon__content"><img src="/btlassets/img/logo-map2.png">' +
 					'<a href="tel:88452260000">8(8452) 26-00-00</a>',
 				balloonContentFooter: '<div class="baloon__footer">Саратов, ул. Московская д.117, <br>ТК «Мир», 2 этаж.</div>',
 				clusterCaption: "Косметология <br>салон массажа<br>HAIR услуги<br>NAIL-BAR<br>профессиональная косметика",
@@ -1381,7 +1381,7 @@ if ($(".map__area").length) {
 			},
 			{
 				iconLayout: "default#image",
-				iconImageHref: "assets/img/marker.png",
+				iconImageHref: "/btlassets/img/marker.png",
 				iconImageSize: [30, 48],
 				iconImageOffset: [-15, -48],
 			}

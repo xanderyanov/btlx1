@@ -39,6 +39,10 @@
 	display: block;
 }
 
+.xForm textarea:focus ~ label {
+	display: block;
+}
+
 .xForm input::-webkit-input-placeholder {
 	color: #868686;
 }
@@ -55,24 +59,33 @@
 	color: #868686;
 }
 
-.xForm input:focus::-webkit-input-placeholder {
+.xForm input:focus::-webkit-input-placeholder,
+.xForm textarea:focus::-webkit-input-placeholder {
 	color: transparent;
 }
-.xForm input:focus:-moz-placeholder {
+.xForm input:focus:-moz-placeholder,
+.xForm textarea:focus:-moz-placeholder {
 	color: transparent;
 }
-.xForm input:focus::-moz-placeholder {
+.xForm input:focus::-moz-placeholder,
+.xForm textarea:focus::-moz-placeholder {
 	color: transparent;
 }
-.xForm input:focus:-ms-input-placeholder {
+.xForm input:focus:-ms-input-placeholder,
+.xForm textarea:focus:-ms-input-placeholder {
 	color: transparent;
 }
-.xForm input:focus::placeholder {
+.xForm input:focus::placeholder,
+.xForm textarea:focus::placeholder {
 	color: transparent;
 }
 
 .xForm input.error {
 	border-bottom: 2px solid red;
+}
+
+.xForm textarea.error {
+	border-bottom: 1px solid red;
 }
 
 .xForm textarea {
