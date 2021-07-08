@@ -130,6 +130,25 @@
 	background-position: center center;
 }
 
+.eCatalog__itemDiscount {
+	position: absolute;
+	top: 30px;
+	left: 30px;
+	background: #d54c64;
+	border-radius: 4px;
+	padding: 5px 5px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 16px;
+	letter-spacing: 0.04em;
+	text-transform: uppercase;
+	color: #ffffff;
+}
+
 .eCatalog__itemInfo {
 	width: 100%;
 	padding: 10px 30px 30px;
@@ -159,8 +178,31 @@
 	color: #df2f4e;
 }
 
-.eCatalog__itemPrice {
+.eCatalog__itemPriceArea {
 	margin-top: auto;
+	display: flex;
+	align-items: flex-end;
+}
+
+.eCatalog__itemOldPrice {
+	display: flex;
+	align-items: center;
+	margin: 0 12px 0 0;
+}
+
+.eCatalog__itemOldPrice span {
+	font-size: 14px;
+	line-height: 20px;
+	letter-spacing: 0.02em;
+	text-decoration-line: line-through;
+	color: #828282;
+}
+
+.eCatalog__itemOldPrice span:last-child {
+	margin: 0 0 0 6px;
+}
+
+.eCatalog__itemPrice {
 	display: flex;
 	align-items: center;
 }

@@ -7,9 +7,10 @@ mixin eShopTovar
         .eShopTovar__art 
           span Артикул:
           span 12673832
-        .eShopTovar__title
-          h1 Kerastase Paris
-        .eShopTovar__titleDesc Шампунь-ванна для светлых и окрашенных волос Blond Absolu Lumiere Shampoo
+        .eShopTovar__titleBrand
+          span Kerastase Paris
+        .eShopTovar__title 
+          h1 Шампунь-ванна для светлых и окрашенных волос Blond Absolu Lumiere Shampoo
       .eShopTovar__descArea
         .eShopTovar__desc.eShopTovar__desc_80
           .eShopTovar__descTitle
@@ -94,12 +95,17 @@ mixin tovarSimilarCaroucel
                       i.icon-eheart1.iconInFav
                     .eCatalog__itemImgOuter 
                       .eCatalog__itemImg(style='background-image: url(' + item.img + ');')
+                      .eCatalog__itemDiscount!= item.discount 
                     .eCatalog__itemInfo_inSlider 
                       .eCatalog__itemTitle!= item.title 
                       .eCatalog__itemDesc!= item.content 
-                      .eCatalog__itemPrice
-                        span!= item.price 
-                        span ₽
+                      .eCatalog__itemPriceArea 
+                        .eCatalog__itemOldPrice
+                          span!= item.oldPrice 
+                          span ₽  
+                        .eCatalog__itemPrice
+                          span!= item.price 
+                          span ₽
         .tsc1__left.tovarSimilarCaroucel__left
           i.icon-arr-left1
         .tsc1__right.tovarSimilarCaroucel__right
@@ -124,12 +130,17 @@ mixin tovarSimilarCaroucel2
                       i.icon-favorit2.iconInFav
                     .eCatalog__itemImgOuter 
                       .eCatalog__itemImg(style='background-image: url(' + item.img + ');')
+                      .eCatalog__itemDiscount!= item.discount 
                     .eCatalog__itemInfo_inSlider 
                       .eCatalog__itemTitle!= item.title 
                       .eCatalog__itemDesc!= item.content 
-                      .eCatalog__itemPrice
-                        span!= item.price 
-                        span ₽
+                      .eCatalog__itemPriceArea 
+                        .eCatalog__itemOldPrice
+                          span!= item.oldPrice 
+                          span ₽  
+                        .eCatalog__itemPrice
+                          span!= item.price 
+                          span ₽
         .tsc2__left.tovarSimilarCaroucel__left
           i.icon-arr-left1
         .tsc2__right.tovarSimilarCaroucel__right

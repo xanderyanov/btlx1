@@ -39,11 +39,11 @@
 	margin-right: 5px;
 }
 
-.eShopTovar__title {
+.eShopTovar__titleBrand {
 	margin-bottom: 8px;
 }
 
-.eShopTovar__title h1 {
+.eShopTovar__titleBrand span {
 	font-family: "Open Sans";
 	font-weight: 800;
 	font-size: 28px;
@@ -52,11 +52,17 @@
 	margin: 0;
 }
 
-.eShopTovar__titleDesc {
+.eShopTovar__title {
+	position: relative;
+}
+
+.eShopTovar__title h1 {
 	font-weight: 600;
 	font-size: 16px;
 	line-height: 24px;
 	color: #333333;
+	margin: 0;
+	letter-spacing: 0;
 }
 
 .eShopTovar__descArea {

@@ -126,6 +126,30 @@
 	color: #df2f4e;
 }
 
+.eCatalog__itemPriceArea {
+	margin-top: auto;
+	display: flex;
+	align-items: center;
+}
+
+.eCatalog__itemOldPrice {
+	margin-top: auto;
+	display: flex;
+	align-items: center;
+}
+
+.eCatalog__itemOldPrice span {
+	font-size: 14px;
+	line-height: 20px;
+	letter-spacing: 0.02em;
+	text-decoration-line: line-through;
+	color: #828282;
+}
+
+.eCatalog__itemOldPrice span:last-child {
+	margin: 0 0 0 6px;
+}
+
 .eCatalog__itemPrice {
 	margin-top: auto;
 	display: flex;
@@ -133,7 +157,6 @@
 }
 
 .eCatalog__itemPrice span {
-	margin-top: auto;
 	font-weight: bold;
 	font-size: 20px;
 	line-height: 26px;
