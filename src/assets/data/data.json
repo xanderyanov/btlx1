@@ -14,6 +14,24 @@
       "message": "<p>Неправильно набран адрес, или такой страницы больше не существует.</p><p>Чтобы продолжить работу с сайтом <a href='/'>вернитесь на главную страницу.</a></p>"
     }
   },
+  "eCatalogBaseSlider": [
+    {
+      "id": "321321321",
+      "title": "Sebastian Professional",
+      "content": "Кондиционер Dark Oil Lightweight Conditioner",
+      "discount": "-50%",
+      "price": "2500",
+      "oldPrice": "3500",
+      "img": "assets/img/ecatalog/01.jpg"
+    }
+    
+    
+  ],
+
+
+
+
+
   "eCatalogBase": [
     {
       "id": "321321321",

@@ -54,7 +54,7 @@ mixin eShopTovarSlider
   .eShopTovarSlider.clearfix
     .swiper-container.eShopTovarSlider__container_image
       .swiper-wrapper.eShopTovarSlider__wrapper_image 
-        each item in eCatalogBase
+        each item in eCatalogBaseSlider
           .swiper-slide.eShopTovarSlider__slide_image
             a(href=item.img, data-fancybox='group1', data-caption='001')
               img.swiper-lazy(data-src=item.img, alt="")
@@ -63,7 +63,7 @@ mixin eShopTovarSlider
     .eShopTovarSlider__container_thumb_outer
       .swiper-container.eShopTovarSlider__container_thumb
         .swiper-wrapper.eShopTovarSlider__wrapper_thumb
-          each item in eCatalogBase
+          each item in eCatalogBaseSlider
             .swiper-slide.eShopTovarSlider__slide_thumb
               .eShopTovarSlider__slide_thumb_inner
                 img(src=item.img, alt="")
