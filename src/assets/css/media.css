@@ -45,6 +45,9 @@
 	.breadcrumbsCurrent {
 		display: none;
 	}
+	.pageTitle {
+		margin: 0 0 20px 0;
+	}
 }
 
 @media only screen and (max-width: 600px) {
@@ -178,6 +181,9 @@
 
 	.summaryBlock__inner {
 		padding: 0 0 10px 0;
+	}
+	.pageTitle {
+		margin: 0 0 10px 0;
 	}
 }
 

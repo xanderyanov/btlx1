@@ -47,7 +47,7 @@
 
 	.mastersTagMenu__outer {
 		width: 100%;
-		padding: 20px 0;
+		padding: 0 0 20px;
 	}
 	.menuCategoryMastersLink {
 		padding: 5px 25px;
@@ -91,7 +91,7 @@
 		height: 30%;
 	}
 	.mastersTagMenu__outer {
-		padding: 10px 0;
+		padding: 0 0 10px;
 	}
 }
 

@@ -168,14 +168,13 @@ $(function () {
 	// Слайдер товара
 
 	if ($(".eShopTovarSlider").length) {
-		// if ($(".eShopTovarSlider1__img .eShopTovarSlider1__imgItem").length === 1) {
-		//   $("eShopTovarSlider1__imgItem .swiper-wrapper").addClass("disabled");
-		//   $(".eShopTovarSlider1__pagination").addClass("disabled");
-		//   $(".eShopTovarSlider1__Prev").addClass("disabled");
-		//   $(".eShopTovarSlider1__Next").addClass("disabled");
-		//   $(".eShopTovarSlider1__min").hide();
+		// if ($(".eShopTovarSlider__slide_image").length === 1) {
+		// 	$("eShopTovarSlider__wrapper_image").addClass("disabled");
+		// 	$(".eShopTovarSlider__pagination").addClass("disabled");
+		// 	$(".eShopTovarSlider__prev").addClass("disabled");
+		// 	$(".eShopTovarSlider__next").addClass("disabled");
+		// 	$(".eShopTovarSlider__container_thumb_outer").hide();
 		// } else {
-
 		var eShopTovarSlider1Thumbs = new Swiper(".eShopTovarSlider__container_thumb", {
 			autoHeight: false,
 			spaceBetween: 5,
@@ -227,6 +226,7 @@ $(function () {
 			},
 		});
 	}
+	// }
 
 	//-START Сладйре похожих товаров на странице VARIANTS
 

@@ -71,6 +71,15 @@ body {
 	margin: 0;
 }
 
+.pageTitle {
+	margin: 0 0 25px 0;
+}
+.pageTitle h1,
+.pageTitle h2,
+.pageTitle h3 {
+	margin: 0;
+}
+
 .btn2 {
 	display: flex;
 	justify-content: center;

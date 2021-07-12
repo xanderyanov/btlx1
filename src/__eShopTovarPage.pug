@@ -52,6 +52,10 @@ mixin eShopTovar
 
 mixin eShopTovarSlider 
   .eShopTovarSlider.clearfix
+    //- если товар один - выводится этот блок вместо слайдерного - условие прописывается в C#
+    //- .eShopTovarSlider_onlyOneImg 
+    //-   a(href="assets/img/ecatalog/01.jpg", data-fancybox='group1', data-caption='001')
+    //-     img(src="assets/img/ecatalog/01.jpg", alt="")
     .swiper-container.eShopTovarSlider__container_image
       .swiper-wrapper.eShopTovarSlider__wrapper_image 
         each item in eCatalogBaseSlider

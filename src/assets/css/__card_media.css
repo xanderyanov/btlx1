@@ -75,8 +75,7 @@
 
 @media only screen and (max-width: 768px) {
 	.eCard {
-		padding: 20px 0 0 0;
-		margin: 0 -5px;
+		margin: -10px -5px 0;
 	}
 	.eCard__itemOuter {
 		width: 100%;
@@ -157,10 +156,9 @@
 }
 
 @media only screen and (max-width: 480px) {
-	.eCard {
-		padding: 10px 0 0 0;
-		margin: 0 -5px 0;
-	}
+	/* .eCard {
+		margin: -5px -5px 0;
+	} */
 	.eCard__itemInfoContent {
 		margin: 5px 0 0 0;
 	}
@@ -311,6 +309,18 @@
   } */
 	.eCard__itemContent ul {
 		display: none;
+	}
+}
+
+@media only screen and (max-width: 360px) {
+	.eCard__itemInnerRight {
+		padding: 12px 12px 10px 12px;
+	}
+	.eCard {
+		margin: -5px -5px 0;
+	}
+	.eCard__itemOuter {
+		padding: 5px;
 	}
 }
 
