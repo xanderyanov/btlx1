@@ -88,9 +88,17 @@
 	margin: -15px -15px 0;
 }
 
+.eCatalog_wide {
+	position: relative;
+}
+
 .eCatalog__itemArea {
 	padding: 15px;
 	width: 33.333%;
+}
+
+.eCatalog_wide .eCatalog__itemArea {
+	width: 25%;
 }
 
 .eCatalog__itemAreaInWide {

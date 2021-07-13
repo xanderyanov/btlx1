@@ -1,7 +1,9 @@
+include __eShopCatalogFloat
+
 mixin cabinet2
   .cabinet2__area
     .cabinet2__outer.wsite
-      .title.title_flex
+      .pageTitle.title_flex
         h1= pageTitle
         //- a.profil2__exit(href="", title="Выйти")
         //-   span Выйти
@@ -10,14 +12,27 @@ mixin cabinet2
         ul.cab2__tabs
           li.cab2__tab
             a.cab2__tabTitle.active(href='#')
-              i.icon-calculator
-              span Мои заказы
+              //- i.icon-calculator
+              span Избранное
+              span.favorInTab 10
             section.open
+              .favTopLine 
+                h2 Избранное
+                .favTopLine__btns   
+                  .favTotalCount 10 товаров
+                  .favClear Очистить все
+              .eCatalog.eCatalog_wide
+                +eCatalogFav
+          li.cab2__tab
+            a.cab2__tabTitle(href='#')
+              //- i.icon-calculator
+              span Мои заказы
+            section
               +order2
           li.cab2__tab
             a.cab2__tabTitle(href='#')
-              i.icon-avatar1
-              span Профиль
+              //- i.icon-avatar1
+              span Личные данные
             section
               +profile2
 

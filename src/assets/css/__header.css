@@ -267,6 +267,7 @@
 	position: relative;
 	margin: 0 2rem 0 0;
 	cursor: pointer;
+	text-decoration: none;
 }
 .iBtn:last-child {
 	margin: 0;
@@ -291,4 +292,15 @@
 	font-weight: 700;
 	font-size: 0.75rem;
 	color: #fff;
+}
+
+#topLine_CartContainer .cartBarUnits {
+	display: none;
+}
+#topLine_CartContainer.topLine__item_active .cartBarUnits {
+	display: flex;
+}
+
+#topLine_CartContainer.miniCartBuyComplete .cartBarUnits {
+	background: #00994c;
 }

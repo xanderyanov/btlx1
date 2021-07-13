@@ -14,7 +14,7 @@
 	padding: 20px 0 0;
 }
 
-.eShopCart__ {
+.eShopCart {
 	width: 100%;
 	display: flex;
 	flex-direction: column;
@@ -249,9 +249,9 @@ a.eShopCart__title {
 	background: #00994c;
 }
 
-.miniCartBuyComplete {
+/* .miniCartBuyComplete {
 	background: #00994c;
-}
+} */
 
 .cart__refundInfo {
 	font-size: 1rem;

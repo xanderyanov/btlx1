@@ -29,6 +29,66 @@
   ],
 
 
+  "eCatalogBaseFav": [
+    {
+      "id": "321321321",
+      "title": "Sebastian Professional",
+      "content": "Кондиционер Dark Oil Lightweight Conditioner",
+      "discount": "-50%",
+      "price": "2500",
+      "oldPrice": "3500",
+      "img": "assets/img/ecatalog/01.jpg"
+    },
+    {
+      "id": "321321322",
+      "title": "Guinot",
+      "content": "Омолаживающий тональный крем Youth Time №4",
+      "discount": "-30%",
+      "price": "2500",
+      "oldPrice": "3000",
+      "img": "assets/img/ecatalog/02.jpg"
+    },
+    {
+      "id": "321321323",
+      "title": "Nioxin",
+      "content": "Очищающий шампунь Система 1",
+      "discount": "",
+      "price": "2500",
+      "oldPrice": "",
+      "img": "assets/img/ecatalog/03.jpg"
+    },
+    {
+      "id": "321321324",
+      "title": "Oribe",
+      "content": "Шампунь для блеска «Драгоценное сияние» Shampoo for Brilliance & Shine",
+      "discount": "-50%",
+      "price": "2500",
+      "oldPrice": "3500",
+      "img": "assets/img/ecatalog/04.jpg"
+    },
+    {
+      "id": "321321325",
+      "title": "Smith & Cult",
+      "content": "Лак для ногтей «Шаг вперед» Mannequin Moves Nail Lacquer ",
+      "discount": "-50%",
+      "price": "2500",
+      "oldPrice": "3500",
+      "img": "assets/img/ecatalog/05.jpg"
+    },
+    {
+      "id": "321321322",
+      "title": "Guinot",
+      "content": "Омолаживающий тональный крем Youth Time №4",
+      "discount": "-30%",
+      "price": "2500",
+      "oldPrice": "3000",
+      "img": "assets/img/ecatalog/06.jpg"
+    }
+    
+    
+  ],
+
+
 
 
 
@@ -77,8 +137,7 @@
       "price": "2500",
       "oldPrice": "3500",
       "img": "assets/img/ecatalog/05.jpg"
-    }
-    ,
+    },
     {
       "id": "321321322",
       "title": "Guinot",

@@ -21,6 +21,29 @@ mixin eCatalog
               span ₽
 
 
+mixin eCatalogFav 
+  //- импорт из data.json (подключается через gulp task)
+  each item in eCatalogBaseFav
+    .eCatalog__itemArea(id=item.id)
+      a.eCatalog__item(href="")
+        .eCatalog__itemFav
+          i.icon-eheart1.iconNoFav
+          i.icon-eheart1.iconInFav
+        .eCatalog__itemImgOuter 
+          .eCatalog__itemImg(style='background-image: url(' + item.img + ');')
+            .eCatalog__itemDiscount!= item.discount 
+        .eCatalog__itemInfo 
+          .eCatalog__itemTitle!= item.title 
+          .eCatalog__itemDesc!= item.content 
+          .eCatalog__itemPriceArea 
+            .eCatalog__itemOldPrice
+              span!= item.oldPrice 
+              span ₽  
+            .eCatalog__itemPrice
+              span!= item.price 
+              span ₽
+
+
 mixin brands 
   .aShops__az
     .aShops__azLetterBox
