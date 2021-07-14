@@ -3,7 +3,8 @@ mixin eFilterArea
     +eFilter1
     +eFilter2
     +eFilter3
-    +eFilterPrice
+    //- +eFilterPrice
+    .eFilterActionBtn Сбросить фильтры
 
 
 mixin eFilter1
@@ -18,6 +19,7 @@ mixin eFilter1
       .eFilterCheckbox
         input(id="2-dt" type="checkbox" data-id="" data-val="filter")
         label(for="2-dt") Для мужчин
+      .eFilterActionBtn Применить
 
 
 
@@ -51,7 +53,7 @@ mixin eFilter2
       .eFilterCheckbox
         input(id="28-dt" type="checkbox" data-id="" data-val="filter")
         label(for="28-dt") Шея
-
+      .eFilterActionBtn Применить
 
 mixin eFilter3
   .eFilter
@@ -83,7 +85,8 @@ mixin eFilter3
       .eFilterCheckbox
         input(id="38-dt" type="checkbox" data-id="" data-val="filter")
         label(for="38-dt") Защта цвета
-
+      .eFilterActionBtn Применить
+      
 mixin eFilterPrice 
   .eFilter
     .eFilter__title 
