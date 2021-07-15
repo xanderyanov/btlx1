@@ -6,8 +6,9 @@ $(function () {
 		console.log(menuBottom1_height);
 		$(".menuBottom1__areaFake").css({ height: menuBottom1_height });
 
+		var bottomMenu = $(".menuBottom1__area");
+
 		if ($(".mainPageIdx").length) {
-			var bottomMenu = $(".menuBottom1__area");
 			bottomMenu.css({ bottom: -menuBottom1_height });
 
 			var topScrollCount = $(".mainTop__area").outerHeight();

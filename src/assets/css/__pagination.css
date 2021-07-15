@@ -2,6 +2,11 @@
 	width: 100%;
 }
 
+.blog__outer .pag__area {
+	width: 100%;
+	padding-top: 20px;
+}
+
 .pag__outer {
 	width: 100%;
 	display: flex;
