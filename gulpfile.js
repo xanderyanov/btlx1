@@ -113,6 +113,7 @@ gulp.task("js", function () {
 var myjsfiles = [
 	"src/assets/js/__globalVar.js",
 	"src/assets/js/__leftSlideMenu.js",
+	// "src/assets/js/__form.js",
 	"src/assets/js/__eSearch.js",
 	"src/assets/js/__overlay.js",
 	"src/assets/js/__blogSlider.js",

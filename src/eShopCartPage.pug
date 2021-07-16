@@ -38,7 +38,11 @@ body
       .eShopCart__pageOuter
         .title
           h1 Корзина
-        +eShopCart
+        .eShopCart__split
+          .eShopCart__splitLeft
+            +eShopCart
+          .eShopCart__splitRight
+        
         .cart__refundInfo
         +order
 

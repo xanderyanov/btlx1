@@ -1,0 +1,82 @@
+- var pageTitle = 'Просто текстовая страница'
+- var seoKeywords = 'Ключевые слова для страницы'
+- var seoDesc = 'Сео описание для страницы'
+
+include __const
+include __header
+include __menu
+include __breadcrumbs
+include __wideBlock
+include __procedure
+include __newBlocks
+
+include __forms
+include __footer
+
+include __old
+
+include __popUpBlocks
+include __procedure4
+
+
+
+
+<!DOCTYPE html>
+html(lang="ru-RU")
+  +head
+body
+
+  .site__header
+    +header
+    //- +topMenu
+
+
+  .site__center
+    +breadcrumbs4
+    //- +wideBlock
+    
+    .textPage__area
+      .textPage__outer.wsite
+        .textPage.clearfix
+          .searchResults__area
+            .pageTitle
+              h1 Результаты поиска
+            .searchResults
+              each item in eCatalogBaseFav
+                .searchResult__outer
+                  a.searchResult(href="#")
+                    .searchResult__img
+                      img(src=item.img, alt="")
+                    .searchResult__info 
+                      span= item.content 
+                      span= item.title
+                    .searchResult__priceArea
+                      if item.oldPrice
+                        span.searchResult__OldPrice= item.oldPrice + '₽'
+                      span.searchResult__Price= item.price + '₽'
+                  
+          .content
+            .summaryBlock.summaryBlock_video 
+              .summaryBlock__inner
+                .summaryBlock__introImg.videoBox.videoBox_i
+                  iframe(width='560' height='315' src='https://www.youtube.com/embed/RzKRSJkuWnM' autoplay='1' frameborder='0' allow='accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen='')
+            //- .summaryBlock.summaryBlock_img 
+            //-   .summaryBlock__inner
+            //-     .summaryBlock__introImg
+            //-       img(src='assets/img/sotr/malishko-marina1.jpg' alt='[[*pagetitle]]')
+            +tempContent
+
+
+        +videogallery
+        //- +gallery
+        +ProcedureImageGallery
+
+    
+    //- +zBlock1
+
+  .site__footer
+    +footer3
+
+  +popUpBlocks
+  +scripts
+  

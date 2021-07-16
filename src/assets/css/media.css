@@ -166,6 +166,30 @@
 	.summaryBlock img {
 		width: 100%;
 	}
+
+	.searchResult__outer {
+		padding: 15px 0;
+	}
+
+	.searchResult__img {
+		width: 30%;
+		max-width: 150px;
+	}
+	.searchResult__info {
+		width: 70%;
+		padding: 0 0 0 10px;
+	}
+	.searchResult__priceArea {
+		margin: 20px 0 0 0;
+		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+	}
+	.searchResult__info span {
+		font-size: 0.875rem;
+		line-height: 1.3rem;
+	}
 }
 
 @media only screen and (max-width: 414px) {
@@ -184,6 +208,10 @@
 	}
 	.pageTitle {
 		margin: 0 0 10px 0;
+	}
+
+	.searchResult__outer {
+		padding: 10px 0;
 	}
 }
 
