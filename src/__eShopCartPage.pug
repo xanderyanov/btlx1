@@ -46,6 +46,24 @@ mixin eShopCart
       //-   span.orderCart__totalPriceTitle на сумму: 
       //-   span.orderCart__totalPrice 12500 руб.  
   
+mixin eShopCartTotalInfo
+  .eShopCartTotalInfo
+    .eShopCartTotalInfo__title Ваш заказ
+    .eShopCartTotalInfo__table 
+      .eShopCartTotalInfo__raw 
+        .eShopCartTotalInfo__td1 Стоимость товаров
+        .eShopCartTotalInfo__td2 221 800 ₽
+      .eShopCartTotalInfo__raw 
+        .eShopCartTotalInfo__td1 Ваша скидка
+        .eShopCartTotalInfo__td2 78 900 ₽
+      .eShopCartTotalInfo__raw 
+        .eShopCartTotalInfo__td1 Основная скидка
+        .eShopCartTotalInfo__td2 7 900 ₽
+    .eShopCartTotalInfo__sum
+      .eShopCartTotalInfo__sumTitle Итого к оплате
+      .eShopCartTotalInfo__sumValue 221 800 ₽
+    a.eShopCartTotalInfo__btn(href="#") Перейти к оформлению
+
   
 mixin order  
   .orderForm__wrapper

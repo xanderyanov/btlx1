@@ -304,8 +304,110 @@ a.eShopCart__title {
 	color: var(--red1);
 }
 
+/*************************/
+.eShopCartTotalInfo {
+	background: rgba(179, 145, 227, 0.15);
+	padding: 50px 40px 30px;
+	border-radius: 6px;
+	width: 100%;
+}
+
+.eShopCartTotalInfo__title {
+	font-style: normal;
+	font-weight: 300;
+	font-size: 1.875rem;
+	line-height: 2.25rem;
+	letter-spacing: 0.04em;
+	text-transform: uppercase;
+	color: #5e4d79;
+	margin-bottom: 30px;
+}
+.eShopCartTotalInfo__table {
+	display: flex;
+	flex-direction: column;
+	padding: 0 0 30px 0;
+}
+.eShopCartTotalInfo__raw {
+	display: flex;
+	align-items: center;
+	width: 100%;
+	padding: 0 0 12px 0;
+}
+
+.eShopCartTotalInfo__raw:last-child {
+	padding: 0;
+}
+
+.eShopCartTotalInfo__td1 {
+	width: 70%;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 1rem;
+	line-height: 1.5rem;
+	letter-spacing: 0.02em;
+	color: #5e4d79;
+	padding: 0 10px 0 0;
+}
+.eShopCartTotalInfo__td2 {
+	width: 30%;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 1rem;
+	line-height: 1.5rem;
+	letter-spacing: 0.02em;
+	color: #5e4d79;
+	white-space: nowrap;
+}
+
+.eShopCartTotalInfo__sum {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	margin-bottom: 30px;
+}
+
+.eShopCartTotalInfo__sumTitle {
+	width: 70%;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 1.375rem;
+	line-height: 1.75rem;
+	letter-spacing: 0.02em;
+	color: #5e4d79;
+}
+
+.eShopCartTotalInfo__sumValue {
+	width: 30%;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 1.375rem;
+	line-height: 1.75rem;
+	letter-spacing: 0.02em;
+	text-transform: uppercase;
+	white-space: nowrap;
+	color: #5e4d79;
+}
+
+.eShopCartTotalInfo__btn {
+	width: 100%;
+	height: 60px;
+	text-decoration: none;
+	background: #d54c64;
+	border-radius: 6px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 1rem;
+	line-height: 1.5rem;
+	letter-spacing: 0.04em;
+	text-transform: uppercase;
+	color: #ffffff;
+}
+
 /***********************/
-.orderCart__total {
+/* .orderCart__total {
 	display: flex;
 	justify-content: flex-end;
 	align-items: center;
@@ -323,7 +425,7 @@ a.eShopCart__title {
 span.orderCart__totalTitle {
 	font-weight: 600;
 	font-size: 1.375rem;
-}
+} */
 
 /**********************/
 

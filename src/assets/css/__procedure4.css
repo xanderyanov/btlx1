@@ -134,6 +134,11 @@
 	height: auto;
 }
 
+.gallery4-slide img {
+	display: block;
+	width: 100%;
+}
+
 .gallery4__item {
 	text-decoration: none;
 	display: block;
