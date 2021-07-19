@@ -8,14 +8,16 @@ mixin eCatalog
           i.icon-eheart1.iconInFav
         .eCatalog__itemImgOuter 
           .eCatalog__itemImg(style='background-image: url(' + item.img + ');')
-            .eCatalog__itemDiscount!= item.discount 
+            if item.oldPrice
+              .eCatalog__itemDiscount!= item.discount 
         .eCatalog__itemInfo 
           .eCatalog__itemTitle!= item.title 
           .eCatalog__itemDesc!= item.content 
           .eCatalog__itemPriceArea 
-            .eCatalog__itemOldPrice
-              span!= item.oldPrice 
-              span ₽  
+            if item.oldPrice
+              .eCatalog__itemOldPrice
+                span!= item.oldPrice 
+                span ₽  
             .eCatalog__itemPrice
               span!= item.price 
               span ₽

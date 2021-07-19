@@ -257,18 +257,15 @@ $(function () {
 				0: {
 					slidesPerView: 1,
 				},
-				480: {
-					spaceBetween: 5,
+				340: {
+					slidesPerView: 2,
+					spaceBetween: 0,
 				},
 				600: {
-					slidesPerView: 2,
-					spaceBetween: 10,
-				},
-				768: {
 					slidesPerView: 3,
-					spaceBetween: 5,
+					spaceBetween: 0,
 				},
-				1024: {
+				920: {
 					slidesPerView: 4,
 					spaceBetween: 5,
 				},
@@ -307,18 +304,15 @@ $(function () {
 				0: {
 					slidesPerView: 1,
 				},
-				480: {
-					spaceBetween: 5,
+				340: {
+					slidesPerView: 2,
+					spaceBetween: 0,
 				},
 				600: {
-					slidesPerView: 2,
-					spaceBetween: 10,
-				},
-				768: {
 					slidesPerView: 3,
-					spaceBetween: 5,
+					spaceBetween: 0,
 				},
-				1024: {
+				920: {
 					slidesPerView: 4,
 					spaceBetween: 5,
 				},

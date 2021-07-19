@@ -170,3 +170,7 @@
 	background: #5d4b62;
 	opacity: 1;
 }
+
+.swiper-pagination-lock {
+	display: none;
+}

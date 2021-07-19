@@ -2,6 +2,13 @@
 	.eCatalog__itemInfo_inSlider {
 		padding: 10px 20px 20px;
 	}
+	.tovarSimilarCaroucel__left {
+		left: 0px;
+	}
+
+	.tovarSimilarCaroucel__right {
+		right: 0px;
+	}
 }
 
 @media only screen and (max-width: 1140px) {
@@ -35,6 +42,12 @@
 }
 
 @media only screen and (max-width: 600px) {
+	.eCatalog__itemArea_inSlider {
+		padding: 5px;
+	}
+	.eCatalog__itemInfo_inSlider {
+		padding: 10px 15px 15px;
+	}
 }
 
 @media only screen and (max-width: 480px) {
