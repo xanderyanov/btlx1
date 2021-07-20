@@ -1,3 +1,5 @@
+include __eShopCartPage
+
 mixin menuBottom1_main
   .menuBottom1__areaFake
   .menuBottom1__area.menuBottom1__area_main
@@ -68,6 +70,7 @@ mixin menuBottom1_page
 mixin menuBottom_x1
   .menuBottom1__areaFake
   .menuBottom1__area
+    +floatOrderBtn
     .menuBottom1__outer
       .menuBottom1
         .menuBottom1__itemArea

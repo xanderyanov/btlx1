@@ -163,6 +163,7 @@
 	display: flex;
 	flex-direction: column;
 	flex: 1;
+	position: relative;
 }
 
 .eCatalog__itemTitle {
@@ -188,6 +189,12 @@
 
 .eCatalog__itemPriceArea {
 	margin-top: auto;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.eCatalog__itemPriceBox {
 	display: flex;
 	align-items: flex-end;
 }
@@ -225,6 +232,25 @@
 
 .eCatalog__itemPrice span:last-child {
 	margin: 0 0 0 6px;
+}
+
+.eCatalog__itemByBtn {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: var(--color1);
+	width: 2.625rem;
+	height: 2.625rem;
+	border-radius: 50%;
+	transition: all 0.3s;
+}
+.eCatalog__itemByBtn:hover {
+	background: var(--red1);
+}
+
+.eCatalog__itemByBtn i {
+	font-size: 1.25rem;
+	color: #fff;
 }
 
 .eCatalog__itemFav {

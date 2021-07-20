@@ -68,6 +68,15 @@ mixin eShopCartTotalInfo
   .eraseCart Очистить корзину
   .cartLookOutInfo Обращаем Ваше внимание, что окончательная стоимость и состав заказа, если в нем присутствуют товары и/или услуги, участвующие в акции, будет подтверждена после обработки заказа.
 
+mixin floatOrderBtn 
+  .floatOrder__outer
+    .floatOrder
+      .floatOrder__left
+        .floatOrder__title Итого к оплате
+        .floatOrder__value 221 800 ₽
+      .floatOrder__right
+        a.floatOrderBtn(href="#")  Оформить заказ
+
   
 mixin order  
   .orderForm__wrapper

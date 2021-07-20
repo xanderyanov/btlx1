@@ -115,6 +115,7 @@ var myjsfiles = [
 	"src/assets/js/__leftSlideMenu.js",
 	// "src/assets/js/__form.js",
 	"src/assets/js/__eSearch.js",
+	"src/assets/js/__eCart.js",
 	"src/assets/js/__overlay.js",
 	"src/assets/js/__blogSlider.js",
 	"src/assets/js/__efilter.js",

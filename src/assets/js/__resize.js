@@ -38,6 +38,10 @@ function siteResizeFunction() {
 	if (prevWindowWidth <= 1080 && windowWidth > 1080) {
 		leftSlideMenuClose();
 	}
+
+	if ($(window).width() <= 600) {
+		floatOrderBtn();
+	}
 }
 
 $(function () {

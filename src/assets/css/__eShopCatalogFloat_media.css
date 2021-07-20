@@ -114,6 +114,10 @@
 		justify-content: center;
 		align-items: center;
 	}
+	.eCatalog__itemPriceBox {
+		flex-direction: column;
+		align-items: flex-start;
+	}
 }
 
 @media only screen and (max-width: 920px) {

@@ -93,5 +93,6 @@
 
 .xScroll2::-webkit-scrollbar-thumb {
 	border-radius: 8px;
-	background-color: #f6e5e4;
+	/* background-color: #f6e5e4; */
+	background: rgba(173, 136, 184, 0.35);
 }

@@ -1,6 +1,6 @@
 mixin eShopTovar 
   .eShopTovar__area 
-    .eShopTovar.clearfix
+    .eShopTovar.clearfix.wsite
       .eShopTovar__sliderArea
         +eShopTovarSlider
       .eShopTovar__titleArea 
@@ -84,7 +84,7 @@ mixin catalogSlider
 
 mixin tovarSimilarCaroucel
   .tovarSimilarCaroucel__area
-    .tovarSimilarCaroucel__outer.wsite
+    .tovarSimilarCaroucel__outer
       .tovarSimilarCaroucel__title
         h2 С этим товаром покупают
       .tovarSimilarCaroucel
@@ -99,17 +99,22 @@ mixin tovarSimilarCaroucel
                       i.icon-eheart1.iconInFav
                     .eCatalog__itemImgOuter 
                       .eCatalog__itemImg(style='background-image: url(' + item.img + ');')
-                      .eCatalog__itemDiscount!= item.discount 
-                    .eCatalog__itemInfo_inSlider 
+                      if item.oldPrice  
+                        .eCatalog__itemDiscount!= item.discount 
+                    .eCatalog__itemInfo.eCatalog__itemInfo_inSlider 
                       .eCatalog__itemTitle!= item.title 
                       .eCatalog__itemDesc!= item.content 
                       .eCatalog__itemPriceArea 
-                        .eCatalog__itemOldPrice
-                          span!= item.oldPrice 
-                          span ₽  
-                        .eCatalog__itemPrice
-                          span!= item.price 
-                          span ₽
+                        .eCatalog__itemPriceBox
+                          if item.oldPrice
+                            .eCatalog__itemOldPrice
+                              span!= item.oldPrice 
+                              span ₽  
+                          .eCatalog__itemPrice
+                            span!= item.price 
+                            span ₽
+                        .eCatalog__itemByBtn 
+                          i.icon-eshopping-cart
         .tsc1__left.tovarSimilarCaroucel__left
           i.icon-arr-left1
         .tsc1__right.tovarSimilarCaroucel__right
@@ -119,7 +124,7 @@ mixin tovarSimilarCaroucel
 
 mixin tovarSimilarCaroucel2
   .tovarSimilarCaroucel__area
-    .tovarSimilarCaroucel__outer.wsite
+    .tovarSimilarCaroucel__outer
       .tovarSimilarCaroucel__title
         h2 Похожие товары
       .tovarSimilarCaroucel
@@ -134,17 +139,22 @@ mixin tovarSimilarCaroucel2
                       i.icon-favorit2.iconInFav
                     .eCatalog__itemImgOuter 
                       .eCatalog__itemImg(style='background-image: url(' + item.img + ');')
-                      .eCatalog__itemDiscount!= item.discount 
-                    .eCatalog__itemInfo_inSlider 
+                      if item.oldPrice
+                        .eCatalog__itemDiscount!= item.discount 
+                    .eCatalog__itemInfo.eCatalog__itemInfo_inSlider 
                       .eCatalog__itemTitle!= item.title 
                       .eCatalog__itemDesc!= item.content 
                       .eCatalog__itemPriceArea 
-                        .eCatalog__itemOldPrice
-                          span!= item.oldPrice 
-                          span ₽  
-                        .eCatalog__itemPrice
-                          span!= item.price 
-                          span ₽
+                        .eCatalog__itemPriceBox
+                          if item.oldPrice
+                            .eCatalog__itemOldPrice
+                              span!= item.oldPrice 
+                              span ₽  
+                          .eCatalog__itemPrice
+                            span!= item.price 
+                            span ₽
+                        .eCatalog__itemByBtn 
+                          i.icon-eshopping-cart
         .tsc2__left.tovarSimilarCaroucel__left
           i.icon-arr-left1
         .tsc2__right.tovarSimilarCaroucel__right

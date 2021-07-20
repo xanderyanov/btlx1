@@ -14,13 +14,16 @@ mixin eCatalog
           .eCatalog__itemTitle!= item.title 
           .eCatalog__itemDesc!= item.content 
           .eCatalog__itemPriceArea 
-            if item.oldPrice
-              .eCatalog__itemOldPrice
-                span!= item.oldPrice 
-                span ₽  
-            .eCatalog__itemPrice
-              span!= item.price 
-              span ₽
+            .eCatalog__itemPriceBox
+              if item.oldPrice
+                .eCatalog__itemOldPrice
+                  span!= item.oldPrice 
+                  span ₽  
+              .eCatalog__itemPrice
+                span!= item.price 
+                span ₽
+            .eCatalog__itemByBtn 
+              i.icon-eshopping-cart
 
 
 mixin eCatalogFav 
@@ -38,12 +41,16 @@ mixin eCatalogFav
           .eCatalog__itemTitle!= item.title 
           .eCatalog__itemDesc!= item.content 
           .eCatalog__itemPriceArea 
-            .eCatalog__itemOldPrice
-              span!= item.oldPrice 
-              span ₽  
-            .eCatalog__itemPrice
-              span!= item.price 
-              span ₽
+            .eCatalog__itemPriceBox
+              if item.oldPrice
+                .eCatalog__itemOldPrice
+                  span!= item.oldPrice 
+                  span ₽  
+              .eCatalog__itemPrice
+                span!= item.price 
+                span ₽
+            .eCatalog__itemByBtn 
+              i.icon-eshopping-cart
 
 
 mixin brands 
