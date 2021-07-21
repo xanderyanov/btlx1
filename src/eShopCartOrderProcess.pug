@@ -1,0 +1,63 @@
+- var pageTitle = 'Оформление заказа'
+- var seoKeywords = 'Ключевые слова для страницы'
+- var seoDesc = 'Сео описание для страницы'
+
+include __const
+include __header
+include __menu
+include __eShopTovarPage
+include __eShopCartOrderProcess
+include __pagination
+include __breadcrumbs
+include __eShopCartPage
+include __services
+include __forms
+
+include __footer
+
+include __old
+
+include __popUpBlocks
+
+
+
+
+<!DOCTYPE html>
+html(lang="ru-RU")
+  +head
+body
+
+  .site__header
+    +header
+
+  .site__center
+    +breadcrumbs4
+ 
+    .eShopCart__pageArea.wsite
+      .eShopCart__pageOuter
+        .pageTitle
+          h1 Оформление заказа
+        .eShopCart__split
+          .eShopCart__splitLeft
+            +contactsName
+            +orderDeliveryType
+            
+          .eShopCart__splitRight
+
+            
+        
+        .cart__refundInfo
+
+        
+
+        
+
+  .site__footer
+    +footer3
+
+
+  +popUpBlocks
+
+  script(src='https://api-maps.yandex.ru/2.1/?lang=ru_RU')
+  +scripts
+  

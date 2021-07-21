@@ -39,9 +39,12 @@ function siteResizeFunction() {
 		leftSlideMenuClose();
 	}
 
-	if ($(window).width() <= 600) {
-		floatOrderBtn();
-	}
+	// if ($(window).width() <= 600) {
+	// 	floatOrderBtn();
+	// 	console.log("ресайз");
+	// }
+
+	floatOrderBtn();
 }
 
 $(function () {

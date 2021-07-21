@@ -1,33 +1,19 @@
 $(function () {
-	//-START Адаптивное меню на главной - появление самого меню
-	if ($(window).width() <= 600) {
-		floatOrderBtn();
-	}
+	$(window).on("scroll", floatOrderBtn);
+	floatOrderBtn();
 });
 function floatOrderBtn() {
-	var y = $(".eShopCartTotalInfo").offset().top;
-	var h = $(".eShopCartTotalInfo").outerHeight();
-	console.log("Высота до блока " + y);
-	console.log("Высота блока " + h);
-	var s = y + h;
-	console.log("Высота до нижнего края блока " + s);
-
-	// $(window).on("scroll", function () {
-	// 	if ($(".eShopCartTotalInfo").is(":visible")) {
-	// 		$(".floatOrder__outer").css({ display: "block" });
-	// 	}
-	// });
-
-	$(window).on("scroll", function () {
+	if ($(window).width() <= 600) {
 		var wt = $(window).scrollTop();
 		var wh = $(window).height();
 		var et = $(".eShopCartTotalInfo").offset().top;
 		var eh = $(".eShopCartTotalInfo").outerHeight();
-		var dh = $(document).height();
-		if (wt + wh >= et || wh + wt == dh || eh + et < wh) {
-			console.log("Элемент показан");
+		if (wt + wh >= et && wt < et + eh) {
+			// console.log("Элемент на экране");
+			$(".floatOrder__outer").slideUp();
 		} else {
-			console.log("Элемент не показан");
+			// console.log("Элемент не показан");
+			$(".floatOrder__outer").slideDown();
 		}
-	});
+	}
 }

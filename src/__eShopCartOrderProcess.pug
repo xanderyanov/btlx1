@@ -1,0 +1,49 @@
+mixin contactsName 
+  .orderBox 
+    .orderBox__title 1.Контактные данные
+    .orderBox__title2 Получатель
+    .orderBox__inner.xForm
+      .xInputWrapper.xInputWrapper_50
+        input.name_order(name='name_order', type='text', placeholder='Ваше имя')
+        label(for="name_order") Ваше имя:
+      .xInputWrapper.xInputWrapper_50
+        input.surname_order(name='surname_order', type='text', placeholder='Ваша фамилия')
+        label(for="surname_order") Ваша фамилия:
+      .xInputWrapper.xInputWrapper_50
+        input.phone_order(name='phone_order', type='text', placeholder='Ваш телефон')
+        label(for="phone_order") Телефон:
+      .xInputWrapper.xInputWrapper_50
+        input.phone2_order(name='phone2_order', type='text', placeholder='Телефон, если не дозвониться')
+        label(for="phone2_order") Телефон, если не дозвониться:
+
+mixin orderDeliveryType 
+  .orderBox 
+    .pageTitle 
+      .orderBox__title 2.Способ получения
+    .orderBox__inner
+      ul.order__tabs
+        li.order__tab
+          a.order__tabTitle.active(href='#')
+            span Самовывоз
+          section
+            .order__tabContent
+              .order__pickup 
+                .order__pickupLeft
+                  .pickup__point Магазин «Бьюти Лаундж»
+                  .pickup__pointAddress ТК МИР. г. Саратов, ул. Московская, 113/117
+                  .pickup__work Работает
+                  .pickup__workTime С 09:00 до 21:00.
+                  .pickup__preservationTitle Срок хранения
+                  .pickup__preservationValue 3 дня
+                  .pickup__out Забрать 17 июля после 12:00
+                .order__pickupRight
+                  .deliveryMap
+                    img(src="https://static-maps.yandex.ru/1.x/?ll=51.53610819276442,46.021623291773395&z=4&l=map&size=200,200")
+
+        li.order__tab
+          a.order__tabTitle(href='#')
+            span Доставка
+          section
+            .order__tabContent
+              span Доставка
+        

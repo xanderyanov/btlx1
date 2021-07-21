@@ -157,6 +157,9 @@
 @import "__eShopCartPage.css";
 @import "__eShopCartPage_media.css";
 
+@import "__eShopCartOrderProcess.css";
+@import "__eShopCartOrderProcess_media.css";
+
 @import "__eShopOrderDetails.css";
 @import "__eShopOrderDetails_media.css";
 
