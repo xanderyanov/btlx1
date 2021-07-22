@@ -2,19 +2,19 @@ mixin contactsName
   .orderBox 
     .orderBox__title 1.Контактные данные
     .orderBox__title2 Получатель
-    .orderBox__inner.xForm
-      .xInputWrapper.xInputWrapper_50
-        input.name_order(name='name_order', type='text', placeholder='Ваше имя')
+    .orderBox__inner
+      .zInputWrapper.zInputWrapper_50
         label(for="name_order") Ваше имя:
-      .xInputWrapper.xInputWrapper_50
-        input.surname_order(name='surname_order', type='text', placeholder='Ваша фамилия')
+        input.name_order(name='name_order', type='text', placeholder='')
+      .zInputWrapper.zInputWrapper_50
         label(for="surname_order") Ваша фамилия:
-      .xInputWrapper.xInputWrapper_50
-        input.phone_order(name='phone_order', type='text', placeholder='Ваш телефон')
+        input.surname_order(name='surname_order', type='text', placeholder='')
+      .zInputWrapper.zInputWrapper_50
         label(for="phone_order") Телефон:
-      .xInputWrapper.xInputWrapper_50
-        input.phone2_order(name='phone2_order', type='text', placeholder='Телефон, если не дозвониться')
+        input.phone_order(name='phone_order', type='text', placeholder='')
+      .zInputWrapper.zInputWrapper_50
         label(for="phone2_order") Телефон, если не дозвониться:
+        input.phone2_order(name='phone2_order', type='text', placeholder='')
 
 mixin orderDeliveryType 
   .orderBox 
@@ -29,21 +29,85 @@ mixin orderDeliveryType
             .order__tabContent
               .order__pickup 
                 .order__pickupLeft
-                  .pickup__point Магазин «Бьюти Лаундж»
+                  .pickup__point Центр Косметологии и красоты «Бьюти Лаундж»
                   .pickup__pointAddress ТК МИР. г. Саратов, ул. Московская, 113/117
-                  .pickup__work Работает
+                  .pickup__work Режим работы
                   .pickup__workTime С 09:00 до 21:00.
                   .pickup__preservationTitle Срок хранения
-                  .pickup__preservationValue 3 дня
+                  .pickup__preservationValue 7 дней
                   .pickup__out Забрать 17 июля после 12:00
                 .order__pickupRight
-                  .deliveryMap
-                    img(src="https://static-maps.yandex.ru/1.x/?ll=51.53610819276442,46.021623291773395&z=4&l=map&size=200,200")
-
+                  .deliveryMap(style="background-image: url(assets/img/delivery.jpg)")
+                  a.deliveryMapLink(href="https://yandex.ru/maps/org/byuti_launzh/93968635977/?ll=46.021643%2C51.535923&utm_source=main_stripe_big&z=15.79" target="_blank") Кликните, чтобы увеличить
+            
         li.order__tab
           a.order__tabTitle(href='#')
             span Доставка
           section
-            .order__tabContent
-              span Доставка
+            .deliveryAddress__info 
+              .zInputWrapper.w49
+                label(for="town_order") Город*:
+                input.town_order(name='town_order', type='text', placeholder='')
+              .zInputWrapper.w49
+                label(for="street_order") Улица*:
+                input.comment_order(name='comment_order', type='text', placeholder='')
+              .zInputWrapper.w37
+                label(for="house_order") Дом*:
+                input.house_order(name='house_order', type='text', placeholder='')
+              .zInputWrapper.w37
+                label(for="building_order") Строение:
+                input.building_order(name='building_order', type='text', placeholder='')
+              .zInputWrapper.w22
+                label(for="housing_order") Корпус:
+                input.housing_order(name='housing_order', type='text', placeholder='')
+              .zInputWrapper.w37
+                label(for="entrance_order") Подъезд:
+                input.entrance_order(name='entrance_order', type='text', placeholder='')
+              .zInputWrapper.w37
+                label(for="floor_order") Этаж:
+                input.floor_order(name='floor_order', type='text', placeholder='')
+              .zInputWrapper.w22
+                label(for="flat_order") Квартира:
+                input.flat_order(name='flat_order', type='text', placeholder='')
+            .deliveryType__area 
+              .deliveryType__title Вид доставки
+              .zRadio.zRadioMore.active
+                input(name="color" type="radio" id="zr1" value="standart" checked)
+                label(for="zr1") Стандартная доставка 
+                .deliveryType__price 150 ₽
+              .zRadio.zRadioMore
+                input(name="color" type="radio" id="zr2" value="standart")
+                label(for="zr2") Быстрая доставка 
+                .deliveryType__price 350 ₽
+              .zRadio.zRadioMore
+                input(name="color" type="radio" id="zr3" value="standart")
+                label(for="zr3") Хочу прямо сейчас
+                .deliveryType__price 5000 ₽
+    .zInputWrapper
+      label(for="comment_order") Комментарий к заказу:
+      input.comment_order(name='comment_order', type='text', placeholder='')
+
+mixin confirmation
+  .orderBox 
+    .pageTitle 
+      .orderBox__title 3. Подтверждение и оплата
+    .orderBox__inner
+      .confirmation__area
+        .confirmationTitle Оплата банковской картой онлайн
+        .zCheckbox__area.orderCheckboxArea
+          .zCheckbox
+            input(id="zcb1" type="checkbox" data-id="" data-val="filter")
+            label(for="zcb1") Прислать SMS с номером заказа на телефон получателя
+          .zCheckbox
+            input(id="zcb2" type="checkbox" data-id="" data-val="filter")
+            label(for="zcb2") Прислать SMS-уведомление о поступлении заказа
+        .totalWare
+          span 7
+          span товаров
+        .totalCost 
+          | Итого
+          span 28 000
+          | ₽
+
+        a.orderBtnFinish.floatOrder__js(href="#") Оплатить заказ
         

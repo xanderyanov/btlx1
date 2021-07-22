@@ -1,5 +1,13 @@
 $(function () {
 	orderTabs();
+
+	$(".zRadioMore input[type='radio']").on("click", function () {
+		var radioValue = $("input:checked").val();
+		if (radioValue) {
+			$(".zRadioMore").removeClass("active");
+			$(this).parent().addClass("active");
+		}
+	});
 });
 
 function orderTabs() {
