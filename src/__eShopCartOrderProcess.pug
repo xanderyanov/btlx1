@@ -45,28 +45,28 @@ mixin orderDeliveryType
             span Доставка
           section
             .deliveryAddress__info 
-              .zInputWrapper.w49
+              .zInputWrapper.w48.w100xs
                 label(for="town_order") Город*:
                 input.town_order(name='town_order', type='text', placeholder='')
-              .zInputWrapper.w49
+              .zInputWrapper.w48.w100xs
                 label(for="street_order") Улица*:
                 input.comment_order(name='comment_order', type='text', placeholder='')
-              .zInputWrapper.w37
+              .zInputWrapper.w48
                 label(for="house_order") Дом*:
                 input.house_order(name='house_order', type='text', placeholder='')
-              .zInputWrapper.w37
-                label(for="building_order") Строение:
-                input.building_order(name='building_order', type='text', placeholder='')
-              .zInputWrapper.w22
-                label(for="housing_order") Корпус:
-                input.housing_order(name='housing_order', type='text', placeholder='')
-              .zInputWrapper.w37
-                label(for="entrance_order") Подъезд:
-                input.entrance_order(name='entrance_order', type='text', placeholder='')
-              .zInputWrapper.w37
-                label(for="floor_order") Этаж:
-                input.floor_order(name='floor_order', type='text', placeholder='')
-              .zInputWrapper.w22
+              //- .zInputWrapper.w37
+              //-   label(for="building_order") Строение:
+              //-   input.building_order(name='building_order', type='text', placeholder='')
+              //- .zInputWrapper.w22
+              //-   label(for="housing_order") Корпус:
+              //-   input.housing_order(name='housing_order', type='text', placeholder='')
+              //- .zInputWrapper.w37
+              //-   label(for="entrance_order") Подъезд:
+              //-   input.entrance_order(name='entrance_order', type='text', placeholder='')
+              //- .zInputWrapper.w37
+              //-   label(for="floor_order") Этаж:
+              //-   input.floor_order(name='floor_order', type='text', placeholder='')
+              .zInputWrapper.w48
                 label(for="flat_order") Квартира:
                 input.flat_order(name='flat_order', type='text', placeholder='')
             .deliveryType__area 
@@ -110,4 +110,41 @@ mixin confirmation
           | ₽
 
         a.orderBtnFinish.floatOrder__js(href="#") Оплатить заказ
+
+
+mixin orderSuccess
+  .orderSuccess__area 
+    .orderSuccess
+      .orderSuccess__title 
+        h1 Заказ успешно создан!
+        span Мы отправили вам письмо со всей информацией о заказе на
+        | <strong> user_007@mail.ru</strong> 
+      .orderSuccess__info
+        .orderSuccess__infoRow 
+          .orderSuccess__article Заказ V9777834
+          .orderSuccess__totalCost 221 800 ₽
+        .orderSuccess__infoRow 
+          .orderSuccess__pickupInfo 
+            span Товар зарезервирован <strong>до 20 июля</strong> 
+            span Будет готов к открузке <strong>17 июля после 12:00</strong> 
+          .orderSuccess__printBtn Распечатать бланк заказа
+      .orderSuccess__text 
+        span Вы выбрали способ получения товара  — <strong>«Самовывоз».</strong> 
+        span Товар автоматически зарезервируется и будет готов к получению, 17 июля
+
+        span Вы выбрали способ получения товара  — <strong>«Доставка».</strong> 
+        span <strong>Получатель:</strong> Иванов Сергей Александрович
+        span <strong>Доставка по адресу:</strong> Санкт-Петербург
+        span <strong>Комментарий:</strong> Тестовое оформление заказа
+        span <strong>Контактные данные:</strong> Sergio Black, +7 987 654 32 10
         
+        span Подписывайтесь на Бьюти Лаундж в социальных сетях, и узнаете о самых выгодных предложениях!
+      .orderSuccess__socialLInks 
+        a(href="#" target="_blank")
+          i.icon-instagram3
+        a(href="#" target="_blank")
+          i.icon-youtube3
+
+      a.orderSuccess__backToShop(href="#") 
+        i.icon-eshopping-cart
+        span Продолжить покупки

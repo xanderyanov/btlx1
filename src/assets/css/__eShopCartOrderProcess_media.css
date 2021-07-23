@@ -54,6 +54,12 @@
 		line-height: 1.625rem;
 		padding-bottom: 8px;
 	}
+	.orderSuccess__infoRow {
+		flex-direction: column;
+	}
+	.orderSuccess__printBtn {
+		margin-top: 20px;
+	}
 }
 
 @media only screen and (max-width: 480px) {
@@ -63,9 +69,66 @@
 		width: 100%;
 		padding: 0;
 	}
+	.w100xs {
+		width: 100%;
+	}
+
+	.deliveryAddress__info {
+		margin-bottom: 20px;
+	}
+	a.order__tabTitle {
+		padding: 12px 32px;
+	}
+	.zRadioMore {
+		width: 100%;
+	}
+	.order__tabs {
+		margin-bottom: 20px;
+	}
+	.orderBox {
+		margin: 0 0 40px;
+	}
+	.orderBox:first-child {
+		margin: 20px 0 40px;
+	}
+	.orderCheckboxArea {
+		margin-bottom: 40px;
+	}
+	.orderSuccess__title h1 {
+		font-size: 2rem;
+		line-height: 2.125rem;
+		margin-bottom: 16px;
+	}
+	.orderSuccess__title {
+		margin: 0 0 30px;
+	}
+	.orderSuccess__info {
+		margin-bottom: 20px;
+	}
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 414px) {
+	a.order__tabTitle {
+		padding: 8px 24px;
+	}
+	.order__tabTitle span {
+		font-size: 0.75rem;
+		line-height: 1.25rem;
+	}
+	.order__tab section {
+		padding: 1.25rem 0 0 0;
+	}
+	.order__pickupLeft {
+		padding: 30px 20px 20px 20px;
+	}
+	.zInputWrapper {
+		margin-bottom: 20px;
+	}
+	.zInputWrapper input {
+		font-size: 1rem;
+		line-height: 1.25rem;
+		padding-bottom: 5px;
+	}
 }
 
 @media only screen and (max-width: 320px) {

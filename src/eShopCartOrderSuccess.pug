@@ -1,4 +1,4 @@
-- var pageTitle = 'Корзина'
+- var pageTitle = 'Успешный заказ'
 - var seoKeywords = 'Ключевые слова для страницы'
 - var seoDesc = 'Сео описание для страницы'
 
@@ -6,9 +6,8 @@ include __const
 include __header
 include __menu
 include __eShopTovarPage
+include __eShopCartOrderProcess 
 include __pagination
-include __mainTop
-include __mainProblem
 include __breadcrumbs
 include __eShopCartPage
 include __services
@@ -20,7 +19,7 @@ include __old
 
 include __popUpBlocks
 
-- var floatBlock = 'cart'
+- var floatBlock = 'allright'
 
 
 <!DOCTYPE html>
@@ -34,29 +33,17 @@ body
   .site__center
     +breadcrumbs4
  
-    .eShopCart__pageArea.wsite
-      .eShopCart__pageOuter
-        .title
-          h1 Корзина
-        .eShopCart__split
-          .eShopCart__splitLeft
-            +eShopCart
-          .eShopCart__splitRight
-            +eShopCartTotalInfo
-            //- +floatOrderBtn
+    +orderSuccess
         
-        .cart__refundInfo
 
-        +tovarSimilarCaroucel
-        +tovarSimilarCaroucel2
-
-        +advantage
-        //- +order
+        
 
   .site__footer
     +footer3
 
 
   +popUpBlocks
+
+  script(src='https://api-maps.yandex.ru/2.1/?lang=ru_RU')
   +scripts
   
