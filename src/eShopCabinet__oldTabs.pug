@@ -1,0 +1,43 @@
+- var pageTitle = 'Страница заказа'
+- var seoKeywords = 'Ключевые слова для страницы'
+- var seoDesc = 'Сео описание для страницы'
+
+include __const
+include __header
+include __menu
+include __eShopCabinet
+include __pagination
+
+include __mainProblem
+include __breadcrumbs
+include __eShopCartPage
+include __services
+include __forms
+
+include __footer
+include __menuBottom1
+
+include __old
+include __popUpBlocks
+
+
+
+
+<!DOCTYPE html>
+html(lang="ru-RU")
+  +head
+body
+
+  .site__header
+    +header
+
+  .site__center
+    +breadcrumbs4
+ 
+    +cabinet2
+
+  .site__footer
+    +footer3
+
+  +popUpBlocks
+  +scripts

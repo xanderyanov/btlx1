@@ -3,7 +3,7 @@ $(function () {
 	floatOrderBtn();
 });
 function floatOrderBtn() {
-	if ($(window).width() <= 600) {
+	if ($(window).width() <= 600 && $(".floatOrder__js").length) {
 		var wt = $(window).scrollTop();
 		var wh = $(window).height();
 		var et = $(".floatOrder__js").offset().top;
