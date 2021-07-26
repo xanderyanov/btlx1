@@ -240,7 +240,7 @@ mixin profileZ
           .profileZinputWrapper
             label(for="cab_town") Город
             input#cab_town(name='cab_town', type='text', placeholder='')
-        .profileZ__inputArea 
+        .profileZ__inputArea.profileZ__inputArea_radio
           .profileZ__inputAreaTitle Пол
           .profileZradioWrapper
             .zRadio
@@ -250,10 +250,12 @@ mixin profileZ
               input(name="color" type="radio" id="zr11" value="man")
               label(for="zr11") Мужской
       .profileZ__right
-        .profileZ__addressArea 
-          span Саратов, ул. Большая Садовая, д.150 А, кв.15
-        .profileZ__addressInputArea  
-          input#cab_address_1(name='cab_address_1', type='text', placeholder='')
-        .profileZ__addressAreaAdd 
-          i.icon-plus
-          span Добавить адрес доставки
+        .profileZ__rightInner
+          .profileZ__addressTitle Адреса доставки
+          .profileZ__addressArea 
+            span Саратов, ул. Большая Садовая, д.150 А, кв.15
+          .profileZ__addressInputArea  
+            input#cab_address_1(name='cab_address_1', type='text', placeholder='')
+          .profileZ__addressAreaAdd 
+            i.icon-plus
+            span Добавить адрес доставки

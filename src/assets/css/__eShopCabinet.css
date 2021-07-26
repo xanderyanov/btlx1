@@ -403,6 +403,11 @@ a.profil2__exit:hover span {
 	display: flex;
 	flex-direction: column;
 }
+.profileZ__right {
+	width: 40%;
+	display: flex;
+	flex-direction: column;
+}
 
 .profileZ__inputArea {
 	display: flex;
@@ -468,6 +473,27 @@ a.profil2__exit:hover span {
 }
 .profileZradioWrapper .zRadio:first-child {
 	margin-left: 0;
+}
+
+.profileZ__rightInner {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	background: #ffffff;
+	border: 1px solid #d9d9d9;
+	box-sizing: border-box;
+	border-radius: 6px;
+	padding: 50px;
+}
+
+.profileZ__addressTitle {
+	font-style: normal;
+	font-weight: 300;
+	font-size: 30px;
+	line-height: 36px;
+	letter-spacing: 0.04em;
+	color: #333333;
+	margin-bottom: 40px;
 }
 
 .profileZ__addressArea {

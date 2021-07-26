@@ -27,6 +27,12 @@
 	.order2 {
 		padding: 30px 30px 30px 30px;
 	}
+	.profileZ__left {
+		width: 48%;
+	}
+	.profileZ__right {
+		width: 48%;
+	}
 }
 
 @media only screen and (max-width: 920px) {
@@ -97,6 +103,13 @@
 	.order2Thumbs__itemArea {
 		width: 120px;
 	}
+
+	.profileZ__left {
+		width: 100%;
+	}
+	.profileZ__right {
+		width: 100%;
+	}
 }
 
 @media only screen and (max-width: 600px) {
@@ -128,6 +141,10 @@
 	}
 	.order2__item {
 		padding: 5px 10px;
+	}
+
+	.profileZ__rightInner {
+		padding: 40px;
 	}
 }
 
@@ -177,11 +194,25 @@
 	.favTopLine h2 {
 		display: none;
 	}
+	.profileZ__rightInner {
+		padding: 30px;
+	}
+	.profileZ__inputArea_radio {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+	.profileZradioWrapper {
+		padding-top: 12px;
+		width: auto;
+	}
 }
 
 @media only screen and (max-width: 414px) {
 	.order2Thumbs__itemArea {
 		width: 70px;
+	}
+	.profileZ__rightInner {
+		padding: 20px;
 	}
 }
 
