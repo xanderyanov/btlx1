@@ -1,11 +1,13 @@
 mixin orderDetails2
   .orderDetails2__area
-    .orderDetails2__outer
+    .orderDetails2__outer.wsite
       .orderDetails2__titleOuter
         .orderDetails2__mainTitle
           h1 Заказ
           span 20-01-2021 16:45
-        .orderDetails2__mainTitleStatus Ожидает оплаты
+        .orderDetails2__mainTitleStatus.order-status-1 Ожидает оплаты
+        .orderDetails2__mainTitleStatus.order-status-11 Оплачен
+        .orderDetails2__mainTitleStatus.order-status-10 Исполнен
       .eCatalog
         each item in caroucel1
           .eCatalog__itemArea.eCatalog__itemAreaInWide(id=item.id)
@@ -25,21 +27,35 @@ mixin orderDetails2
         .orderDetailsInfo
           .orderDetailsInfo1
             .orderDetailsInfo__title
-              h3 Контактные данные
-            span Иван Аксенов
-            span 8(987)999-99-99
-            span ivan@tcmir.ru
+              h3 Информация о заказе
+            .orderDetailsInfoBox 
+              span Получатель:
+              span Иванов Сергей Александрович
+            .orderDetailsInfoBox 
+              span Доставка:
+              span Санкт-Петербург, ул.Васильевского островского, 25/4
+            .orderDetailsInfoBox 
+              span Комментарий:
+              span Тестовое оформление заказа
           .orderDetailsInfo2
             .orderDetailsInfo__title
-              h3 Информация о заказе
-            span <strong>Получатель:</strong> Петров Владимир Васильевич
-            span <strong>Самовывоз:</strong> Пункт выдачи: ТК МИР, г. Саратов, ул. Московская, 113/117, 1 этаж, с 10:00 до 21:00. Для получения сообщите Ваш номер телефона, код из сообщения и номер заказа. 
-            span <strong>Комментарий:</strong> Lorem ipsum dolor sit amet ipsum dolor sit amet.
-          .orderDetailsInfo3
-            .orderDetailsInfo__price Сумма заказа:   6800 ₽
-            .orderDetails2__orderText Пока заказ находится на обработке у менеджера, Вы ничего не можете делать с этим заказом.
-            form.orderDetails2__form(action="", metod="post")
-              input.orderDetails2__btn.orderDetails2__btn_btn1(type="submit", value="Оплатить картой")
-            form.orderDetails2__form(action="", metod="post")
-              input.orderDetails2__btn.orderDetails2__btn_btn2(type="submit", value="Редактировать заказ") 
+              h3 Контактные данные
+            .orderDetailsInfoBox 
+              span Логин:
+              span Sergio
+            .orderDetailsInfoBox 
+              span Телефон получателя:
+              span +7 (987) 654-32-10
+            .orderDetailsInfoBox 
+              span E-mail:
+              span user_007@gmail.com
+        .orderDetailsInfoFinish
+          .orderDetailsInfoFinish__totalCount 4 товара
+          .orderDetailsInfoFinish__totalCost Итого: 221 800 ₽
+          //- .orderDetailsInfoFinish__text Пока заказ находится на обработке у менеджера, Вы ничего не можете делать с этим заказом.
+          
+          .orderDetailsInfoFinish__btn Оплатить картой
+          .orderDetailsInfoFinish__btnBack 
+            i.icon-leftss2
+            span Вернуться к редактированию заказа
 

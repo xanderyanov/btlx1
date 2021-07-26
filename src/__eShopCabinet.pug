@@ -34,7 +34,7 @@ mixin cabinet2
               //- i.icon-avatar1
               span Личные данные
             section
-              +profile2
+              +profileZ
 
 
 
@@ -197,3 +197,63 @@ mixin profile2
         .profile2__row
           .profile2__rowTitle Аккаунт создан:
           .profile2__rowContent 18.08.2020
+
+
+mixin profileZ 
+  .profileZ__area 
+    .profileZ 
+      .profileZ__left 
+        .pageTitle
+          h2 Личные данные
+        .profileZ__inputArea 
+          .profileZ__inputAreaTitle Электронная почта
+          .profileZinputWrapper
+            //- label(for="cab_email") Электронная почта
+            input#cab_email(name='cab_email', type='text', placeholder='')
+        .profileZ__inputArea 
+          .profileZ__inputAreaTitle Текущий пароль
+          .profileZinputWrapper
+            label(for="cab_pass") Пароль
+            input#cab_pass(name='cab_pass', type='text', placeholder='')
+        .profileZ__inputArea 
+          .profileZ__inputAreaTitle Ваше имя
+          .profileZinputWrapper
+            label(for="cab_name") Имя
+            input#cab_name(name='cab_name', type='text', placeholder='')
+        .profileZ__inputArea 
+          .profileZ__inputAreaTitle Ваша фамилия
+          .profileZinputWrapper
+            label(for="cab_surname") Фамилия
+            input#cab_surname(name='cab_surname', type='text', placeholder='')
+        .profileZ__inputArea 
+          .profileZ__inputAreaTitle Ваш телефон
+          .profileZinputWrapper
+            label(for="cab_phone") Телефон
+            input#cab_phone(name='cab_phone', type='text', placeholder='')
+        .profileZ__inputArea 
+          .profileZ__inputAreaTitle Дата рождения
+          .profileZinputWrapper
+            label(for="cab_birthday") Дата рождения
+            input#cab_birthday(name='cab_birthday', type='text', placeholder='')
+        .profileZ__inputArea 
+          .profileZ__inputAreaTitle Мой город
+          .profileZinputWrapper
+            label(for="cab_town") Город
+            input#cab_town(name='cab_town', type='text', placeholder='')
+        .profileZ__inputArea 
+          .profileZ__inputAreaTitle Пол
+          .profileZradioWrapper
+            .zRadio
+              input(name="color" type="radio" id="zr10" value="woman"  checked)
+              label(for="zr10") Женский
+            .zRadio
+              input(name="color" type="radio" id="zr11" value="man")
+              label(for="zr11") Мужской
+      .profileZ__right
+        .profileZ__addressArea 
+          span Саратов, ул. Большая Садовая, д.150 А, кв.15
+        .profileZ__addressInputArea  
+          input#cab_address_1(name='cab_address_1', type='text', placeholder='')
+        .profileZ__addressAreaAdd 
+          i.icon-plus
+          span Добавить адрес доставки
