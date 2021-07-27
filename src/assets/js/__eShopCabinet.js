@@ -2,9 +2,9 @@ $(function () {
 	if ($window.width() <= 768) {
 		$(".cab2__tab > a").removeClass("active");
 		$(".cab2__tab > section").removeClass("openSection").slideUp();
-		$(".cab2__tabs").children("li").first().children("a").removeClass("active").next().removeClass("open").hide();
+		$(".cab2__tabs").children("li").first().children("a").addClass("active").next().show();
 	} else {
-		$(".cab2__tabs").children("li").first().children("a").addClass("active").next().addClass("open").show();
+		$(".cab2__tabs").children("li").first().children("a").addClass("active").next().addClass("openSection").show();
 	}
 
 	// function eShopCabTabDesktop() {
@@ -28,6 +28,12 @@ $(function () {
 				$(this).next().addClass("openSection").show();
 			}
 		}
+	});
+
+	$(".mobileTabs").on("change", function () {
+		var id = $(this).find(":selected").data("tab_mb"); // 1
+		content = $('.cab2__tabTitle[data-tab_dt="' + id + '"]'); // 2
+		content.trigger("click");
 	});
 	// }
 	// eShopCabTabDesktop();

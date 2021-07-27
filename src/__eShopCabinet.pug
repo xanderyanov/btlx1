@@ -9,13 +9,27 @@ mixin cabinet2
         //-   span Выйти
         //-   i.icon-exit
       .cab2__tabsArea
+        .mobileTabs__area 
+          //- .mobileTabs__title 
+          select.mobileTabs 
+            //- option.mobileTab(disabled selected) Выберите раздел
+            option.mobileTab(data-tab_mb=0) Мои заказы
+            option.mobileTab(data-tab_mb=1) Избранное
+            option.mobileTab(data-tab_mb=2) Личные данные
         ul.cab2__tabs
           li.cab2__tab
-            a.cab2__tabTitle.active(href='#')
+            a.cab2__tabTitle.active(href='#' data-tab_dt=0)
+              //- i.icon-calculator
+              span Мои заказы
+            section
+              //- +noOrder
+              +order2
+          li.cab2__tab
+            a.cab2__tabTitle(href='#' data-tab_dt=1)
               //- i.icon-calculator
               span Избранное
               span.favorInTab 10
-            section.open
+            section
               .favTopLine 
                 h2 Избранное
                 .favTopLine__btns   
@@ -23,24 +37,45 @@ mixin cabinet2
                   .favClear Очистить все
               .eCatalog.eCatalog_wide
                 +eCatalogFav
+          
           li.cab2__tab
-            a.cab2__tabTitle(href='#')
-              //- i.icon-calculator
-              span Мои заказы
-            section
-              +order2
-          li.cab2__tab
-            a.cab2__tabTitle(href='#')
+            a.cab2__tabTitle(href='#' data-tab_dt=2)
               //- i.icon-avatar1
               span Личные данные
             section
               +profileZ
 
 
+mixin noOrder 
+  .noOrder__area 
+    .noOrder.pt-4
+      .pageTitle 
+        h2 Мои заказы
+        p Вы пока не совершили ни одного заказа, и это кажется нам странным, ведь у нас есть 
+          | <span class="red">замечательные скидки</span>
+          | и <span class="red">крутые гаджеты.</span>
+      .container 
+        .row 
+          .col-md.d-flex.flex-column.py-2.py-sm-4.pr-xl-5
+            img.mb-2(src="assets/img/adv/account.svg", alt="", width="76")
+            span.mb-2 Заполните профиль
+            p.mb-4 Это займет всего 2-3 минуты, но позволит оформлять заказы гораздо быстрее.
+            .noOrder__btn 
+              span.mr-2 Приступить
+              i.icon-rightss2
+          .col-md.d-flex.flex-column.py-2.py-sm-4.pr-xl-5
+            img.mb-2(src="assets/img/adv/shopping-cart.svg", alt="", width="76")
+            span.mb-2 Укажите Ваши любимые адреса доставки
+            p.mb-4 А потом просто выберите подходящий при оформлении заказа.
+            .noOrder__btn 
+              span.mr-2 Добавить адрес
+              i.icon-rightss2
+
+
 
 mixin order2
   .order2__area
-
+    h2 Мои заказы
     .order2__outer
       .order2__item
         a.order2(href="#")

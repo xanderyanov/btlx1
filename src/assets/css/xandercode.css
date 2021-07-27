@@ -38,6 +38,10 @@
 	--formBtn: #7b87dc;
 }
 
+.red {
+	color: var(--red1);
+}
+
 .stop {
 	overflow: hidden;
 	padding-right: 0;

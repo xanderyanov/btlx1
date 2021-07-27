@@ -91,7 +91,7 @@ var jsfiles = [
 	"node_modules/nouislider/distribute/nouislider.min.js",
 	// "node_modules/bootstrap/dist/js/bootstrap.min.js",
 	// "node_modules/@popperjs/core/dist/umd/popper.min.js",
-	"node_modules/summernote/dist/summernote-lite.js",
+	// "node_modules/summernote/dist/summernote-lite.js",
 	// "node_modules/tinymce/tinymce.min.js",
 	// "node_modules/tinymce/themes/silver/theme.js",
 ];

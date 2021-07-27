@@ -110,6 +110,12 @@
 	.profileZ__right {
 		width: 100%;
 	}
+	a.cab2__tabTitle {
+		display: none;
+	}
+	.mobileTabs__area {
+		display: flex;
+	}
 }
 
 @media only screen and (max-width: 600px) {

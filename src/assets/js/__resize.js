@@ -19,12 +19,16 @@ function siteResizeFunction() {
 	if (prevWindowWidth <= 768 && windowWidth > 768) {
 		$(".cab2__tab > a").removeClass("active");
 		$(".cab2__tab > section").removeClass("openSection").hide();
-		$(".cab2__tabs").children("li").first().children("a").addClass("active").next().addClass("open").show();
+		$(".cab2__tabs").children("li").first().children("a").addClass("active").next().addClass("openSection").show();
 	}
 	if (prevWindowWidth > 768 && windowWidth <= 768) {
-		$(".cab2__tab > a").removeClass("active");
-		$(".cab2__tab > section").removeClass("openSection").slideUp();
-		$(".cab2__tabs").children("li").first().children("a").removeClass("active").next().removeClass("open").hide();
+		$(".cab2__tab:not(:first) > a").removeClass("active");
+		$(".cab2__tab:not(:first) > section").removeClass("openSection").slideUp();
+
+		$(".cab2__tabs").children("li").first().children("a").addClass("active").next().addClass("openSection").slideDown();
+		// $(".cab2__tabs").children("li").first().children("a").removeClass("active").next().removeClass("open").hide();
+
+		$(".mobileTabs option:first").prop("selected", true);
 	}
 	//* end - cabinetTabs **/
 
