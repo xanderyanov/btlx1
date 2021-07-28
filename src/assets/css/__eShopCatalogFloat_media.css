@@ -199,9 +199,6 @@
 }
 
 @media only screen and (max-width: 400px) {
-	.eCatalog_wide .eCatalog__itemArea {
-		width: 100%;
-	}
 	.eCatalog__itemInfo {
 		padding: 10px 15px 15px;
 	}
@@ -213,6 +210,9 @@
 
 @media only screen and (max-width: 340px) {
 	.eCatalog__itemArea {
+		width: 100%;
+	}
+	.eCatalog_wide .eCatalog__itemArea {
 		width: 100%;
 	}
 	.eCatalog__itemInfo {

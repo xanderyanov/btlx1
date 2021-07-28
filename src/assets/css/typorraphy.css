@@ -40,6 +40,9 @@ h6 {
 	font-size: 1.125rem;
 	margin: 15px 0 10px 0;
 }
+a:hover {
+	text-decoration: none !important;
+}
 
 .content p,
 .content ul,

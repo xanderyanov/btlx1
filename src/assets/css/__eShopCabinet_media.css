@@ -116,6 +116,11 @@
 	.mobileTabs__area {
 		display: flex;
 	}
+	.title_flexColum {
+		padding: 30px 15px;
+		background: #fff;
+		box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.08);
+	}
 }
 
 @media only screen and (max-width: 600px) {
@@ -210,6 +215,18 @@
 	.profileZradioWrapper {
 		padding-top: 12px;
 		width: auto;
+	}
+	.profileZ__inputAreaTitle {
+		width: 100%;
+		padding: 0 0 0 0;
+		font-size: 14px;
+	}
+	.profileZinputWrapper label {
+		padding: 12px 0 0 0;
+	}
+
+	.profileZinputWrapper {
+		width: 100%;
 	}
 }
 

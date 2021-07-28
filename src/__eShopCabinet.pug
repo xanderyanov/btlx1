@@ -1,21 +1,14 @@
 include __eShopCatalogFloat
 
 mixin cabinet2
+  .pageTitle.title_flexColum.wsite
+    h1= pageTitle
+    +mobilTabs
   .cabinet2__area
     .cabinet2__outer.wsite
-      .pageTitle.title_flex
-        h1= pageTitle
-        //- a.profil2__exit(href="", title="Выйти")
-        //-   span Выйти
-        //-   i.icon-exit
+      
       .cab2__tabsArea
-        .mobileTabs__area 
-          //- .mobileTabs__title 
-          select.mobileTabs 
-            //- option.mobileTab(disabled selected) Выберите раздел
-            option.mobileTab(data-tab_mb=0) Мои заказы
-            option.mobileTab(data-tab_mb=1) Избранное
-            option.mobileTab(data-tab_mb=2) Личные данные
+        
         ul.cab2__tabs
           li.cab2__tab
             a.cab2__tabTitle.active(href='#' data-tab_dt=0)
@@ -45,6 +38,12 @@ mixin cabinet2
             section
               +profileZ
 
+mixin mobilTabs 
+  .mobileTabs__area 
+    select.mobileTabs 
+      option.mobileTab(data-tab_mb=0) Мои заказы
+      option.mobileTab(data-tab_mb=1) Избранное
+      option.mobileTab(data-tab_mb=2) Личные данные
 
 mixin noOrder 
   .noOrder__area 
