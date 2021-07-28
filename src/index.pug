@@ -1,6 +1,7 @@
 - var pageTitle = 'Главная страница'
 - var seoKeywords = 'Ключевые слова для страницы'
 - var seoDesc = 'Сео описание для страницы'
+- var sliderTitle1 = 'Популярные товары'
 
 include __const
 include __header
@@ -9,6 +10,8 @@ include __mainTop
 include __card
 include __mainBox
 include __news
+include __actions
+include __eShopTovarPage
 include __forms
 include __footer
 
@@ -27,17 +30,25 @@ body
     +mainTop
     .wideBlock__area
       .wideBlock.wsite
-        .title.title1 
+        .xTitle 
           h2 Популярные процедуры
         +eCard_inMain
     .wideBlock__area
       .wideBlock.wsite
-        +mainContent
+        +tovarSimilarCaroucel
+    
+    //- .wideBlock__area
+    //-   .wideBlock.wsite
+    //-     .title.title1 
+    //-       h2 Блог нашего центра
+    //- +blogSlider
     .wideBlock__area
       .wideBlock.wsite
-        .title.title1 
-          h2 Блог нашего центра
-    +blogSlider
+        +actions
+    .wideBlock__area
+      .wideBlock.wsite
+        +mainContent
+    
     +mainForm_v3
     
 
