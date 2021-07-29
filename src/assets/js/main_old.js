@@ -236,6 +236,7 @@ $(function () {
 			slidesPerView: 4,
 			loop: false,
 			spaceBetween: 10,
+			// centeredSlides: true,
 			speed: 600,
 			autoplay: {
 				delay: 15000,
@@ -255,7 +256,7 @@ $(function () {
 			},
 			breakpoints: {
 				0: {
-					slidesPerView: 1,
+					slidesPerView: 1.5,
 				},
 				340: {
 					slidesPerView: 2,

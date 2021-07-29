@@ -17,12 +17,58 @@
 }
 
 @media only screen and (max-width: 768px) {
+	.actions {
+		justify-content: center;
+	}
+	.action__outer {
+		padding: 0 15px 30px;
+		width: 80%;
+	}
+}
+
+@media screen and (orientation: landscape) and (max-device-width: 920px) {
+	.action__infoBox {
+		padding: 40px 10px 20px 20px;
+		max-height: 80vh;
+		width: 55%;
+	}
+	.action__infoBoxClose {
+		position: absolute;
+		top: 10px;
+		right: 10px;
+		font-size: 1rem;
+	}
+	.action__infoBoxImg {
+		margin: 0 0 20px;
+	}
 }
 
 @media only screen and (max-width: 600px) {
+	.action__infoBox {
+		padding: 40px 10px 20px 20px;
+	}
+	.action__infoBoxClose {
+		position: absolute;
+		top: 10px;
+		right: 10px;
+		font-size: 1rem;
+	}
+	.action__infoBoxImg {
+		margin: 0 0 20px;
+	}
+}
+
+@media screen and (orientation: landscape) and (max-device-width: 600px) {
+	.action__infoBox {
+		width: 95%;
+	}
 }
 
 @media only screen and (max-width: 480px) {
+	.action__outer {
+		padding: 0 15px 20px;
+		width: 100%;
+	}
 }
 
 @media only screen and (max-width: 414px) {

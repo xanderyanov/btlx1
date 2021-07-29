@@ -24,7 +24,70 @@
 	bottom: 0;
 	left: 0;
 	background-color: var(--color1);
-	background-image: url(../img/portfolio/01.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
+}
+
+.action__infoBoxOverlay {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 2480;
+	background: rgba(0, 0, 0, 0.8);
+	display: none;
+}
+
+.action__infoBoxWrapper {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.action__infoBox {
+	position: relative;
+	background: #fff;
+	padding: 70px 40px 50px 50px;
+	display: flex;
+	flex-direction: column;
+	width: 95%;
+	max-width: 640px;
+	border-radius: 6px;
+	max-height: 60vh;
+}
+
+.action__infoBoxInner {
+	overflow-y: scroll;
+	padding: 0 10px 0 0;
+}
+
+.action__infoBoxClose {
+	position: absolute;
+	top: 30px;
+	right: 30px;
+	font-size: 1.5rem;
+	color: #000;
+}
+.action__infoBoxClose:hover {
+	color: var(--red1);
+}
+
+.action__infoBoxImg {
+	width: 100%;
+	margin: 0 0 50px;
+}
+
+.action__infoBoxImg img {
+	width: 100%;
+	display: block;
+}
+
+.action__infoBoxText {
+	width: 100%;
 }

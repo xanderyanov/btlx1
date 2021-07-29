@@ -196,6 +196,12 @@
 	padding: 14px 0 0 0;
 }
 
+.eShopTovar__descContent {
+	font-size: 14px;
+	line-height: 22px;
+	color: #4f4f4f;
+}
+
 .eShopTovar__descContent p {
 	font-size: 14px;
 	line-height: 22px;
