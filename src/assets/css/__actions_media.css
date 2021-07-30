@@ -24,6 +24,12 @@
 		padding: 0 15px 30px;
 		width: 80%;
 	}
+	.action__outer:last-child {
+		padding: 0 15px 0;
+	}
+	.actions__wrapper {
+		padding: 20px 0 10px;
+	}
 }
 
 @media screen and (orientation: landscape) and (max-device-width: 920px) {
@@ -69,6 +75,9 @@
 		padding: 0 15px 20px;
 		width: 100%;
 	}
+	/* .actions__wrapper {
+		padding: 20px 0 0px;
+	} */
 }
 
 @media only screen and (max-width: 414px) {

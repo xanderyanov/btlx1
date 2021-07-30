@@ -29,6 +29,15 @@ if (priceSlider1) {
 }
 
 $(function () {
+	$(".eFilter__title").each(function (index, element) {
+		var $element = $(element);
+		if ($element.hasClass("active")) {
+			console.log("Есть активный фильтр");
+			$element.addClass("eFilter__title_open").closest(".eFilter").find(".eFilter__content").show();
+			$element.children(".eFilter__openBtn").addClass("eFilter__openBtn_open");
+		}
+	});
+
 	$(".eFilter__title").on("click", function (e) {
 		// раскрытие и закрытие еФильтра по клику на галку
 		e.preventDefault();

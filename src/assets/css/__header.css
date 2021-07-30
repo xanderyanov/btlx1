@@ -30,6 +30,22 @@
 	font-weight: 400;
 }
 
+a.topLine__instagram {
+	text-decoration: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-right: 30px;
+	color: var(--color1);
+	transition: all 0.3s;
+}
+a.topLine__instagram:hover {
+	color: var(--red1);
+}
+.topLine__instagram i {
+	font-size: 1rem;
+}
+
 .topLine__menuArea {
 	position: relative;
 }
@@ -80,7 +96,7 @@
 .header__area {
 	background: var(--color1);
 	transition: all 0.3s ease;
-	z-index: 2400;
+	/* z-index: 2400; */
 	top: 0;
 	left: 0;
 	width: 100%;
@@ -183,6 +199,10 @@
 	display: flex;
 	align-items: center;
 	height: 100%;
+}
+
+.header__menu li a:hover {
+	color: #ffffff;
 }
 
 .header__menu > li.active > a:after {

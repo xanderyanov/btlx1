@@ -20,6 +20,9 @@
 	.header__menuArea {
 		display: none;
 	}
+	a.topLine__instagram {
+		margin: 0 auto;
+	}
 }
 
 @media only screen and (max-width: 1024px) {
@@ -54,6 +57,9 @@
 	}
 	.logo1 {
 		width: 74px;
+	}
+	a.topLine__instagram {
+		margin: 0 0 0 auto;
 	}
 }
 

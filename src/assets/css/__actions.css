@@ -10,11 +10,29 @@
 	width: 50%;
 }
 
+.actions__wrapper {
+	padding: 40px 0 10px;
+	background: var(--color1);
+}
+
 .action {
 	display: block;
 	position: relative;
 	width: 100%;
 	padding-top: 45%;
+	box-shadow: 0px 6px 15px rgb(0 0 0 / 8%);
+	transition: all 0.3s;
+	cursor: pointer;
+	-webkit-border-top-right-radius: 6px;
+	-webkit-border-bottom-right-radius: 6px;
+	-moz-border-radius-topright: 6px;
+	-moz-border-radius-bottomright: 6px;
+	border-top-right-radius: 6px;
+	border-bottom-right-radius: 6px;
+	overflow: hidden;
+}
+.action:hover {
+	box-shadow: 0px 10px 20px rgb(196 187 234 / 45%);
 }
 
 .action__inner {
