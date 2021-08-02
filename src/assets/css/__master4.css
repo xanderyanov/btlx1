@@ -94,10 +94,32 @@
 	text-decoration: underline;
 	font-style: italic;
 	transition: all 0.3s;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.master4top__info a span {
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 20px;
+	color: #9b9b9b;
+	text-decoration: underline;
+	font-style: italic;
+}
+.master4top__info a img {
+	margin-top: 10px;
+	display: block;
+	width: 100%;
+	max-width: 150px;
+	/* filter: grayscale(50%); */
+	opacity: 0.54;
+	transition: all 0.3s;
 }
 
-.master4top__info a:hover {
-	color: var(--reden);
+.master4top__info a:hover img {
+	/* filter: none; */
+	opacity: 1;
 }
 
 .portfolio__area {

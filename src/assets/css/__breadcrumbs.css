@@ -135,3 +135,38 @@
 	line-height: 1.5rem;
 	margin-left: 10px;
 }
+
+/******************************/
+.breadcrumbsLine__area {
+	width: 100%;
+	padding: 20px 0 20px;
+}
+
+.breadcrumbsLine {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.breadcrumbsLine__left {
+	display: flex;
+	align-items: center;
+
+	/* width: 60%; */
+}
+
+.breadcrumbsLine__right {
+	/* width: 40%; */
+	text-align: right;
+}
+
+.breadcrumbsLine__right h1 {
+	font-weight: 300;
+	font-size: 3rem;
+	line-height: 1.2;
+	letter-spacing: 0.04em;
+	color: #333333;
+	margin: 0;
+	padding: 0;
+	white-space: nowrap;
+}

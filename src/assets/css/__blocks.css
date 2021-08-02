@@ -1,0 +1,54 @@
+.vlim__area {
+	position: relative;
+	width: 100%;
+}
+
+.vlim__outer {
+	position: relative;
+}
+
+.vlim {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 -15px;
+}
+
+.vlim__itemOuter {
+	width: 33.333%;
+	padding: 0 15px;
+}
+
+.vlim__item {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background: #ffffff;
+	border: 1px solid #d9d9d9;
+	box-sizing: border-box;
+	box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.08);
+	border-radius: 6px;
+	height: 100%;
+	padding: 40px 20px;
+	transition: all 0.3s;
+}
+
+.vlim__item:hover {
+	box-shadow: 0px 10px 20px rgb(196 187 234 / 45%);
+}
+
+.vlim__item img {
+	width: 76px;
+	margin-bottom: 20px;
+}
+
+.vlim__item span {
+	font-style: normal;
+	font-weight: 300;
+	font-size: 26px;
+	line-height: 36px;
+	text-align: center;
+	letter-spacing: 0.02em;
+	text-transform: uppercase;
+	color: #4f4f4f;
+	padding: 0 20%;
+}

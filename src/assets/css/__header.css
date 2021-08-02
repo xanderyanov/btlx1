@@ -36,11 +36,12 @@ a.topLine__instagram {
 	justify-content: center;
 	align-items: center;
 	margin-right: 30px;
-	color: var(--color1);
+	color: var(--red1);
 	transition: all 0.3s;
 }
 a.topLine__instagram:hover {
-	color: var(--red1);
+	/* color: var(--red1); */
+	box-shadow: 0px 10px 20px rgb(196 187 234 / 90%);
 }
 .topLine__instagram i {
 	font-size: 1rem;

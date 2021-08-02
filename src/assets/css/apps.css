@@ -172,6 +172,9 @@
 @import "__actions.css";
 @import "__actions_media.css";
 
+@import "__blocks.css";
+@import "__blocks_media.css";
+
 @import "__pagination.css";
 @import "__pagination_media.css";
 /*        */

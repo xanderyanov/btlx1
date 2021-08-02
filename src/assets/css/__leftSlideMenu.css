@@ -88,6 +88,7 @@
 
 .leftSlideMenu__item a {
 	display: block;
+	font-weight: 600;
 	font-size: 14px;
 	line-height: 20px;
 	color: #4f4f4f;

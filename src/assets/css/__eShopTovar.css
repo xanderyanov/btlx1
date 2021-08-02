@@ -44,12 +44,24 @@
 }
 
 .eShopTovar__titleBrand span {
-	font-family: "Open Sans";
-	font-weight: 800;
-	font-size: 28px;
-	line-height: 1.3;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 36px;
+	line-height: 42px;
+	letter-spacing: 0.04em;
+	text-transform: uppercase;
 	color: #333333;
-	margin: 0;
+}
+
+.eShopTovar__titleBrand a {
+	font-style: normal;
+	font-weight: 300;
+	font-size: 36px;
+	line-height: 42px;
+	letter-spacing: 0.04em;
+	text-transform: uppercase;
+	color: #333333;
+	text-decoration: none;
 }
 
 .eShopTovar__title {
@@ -174,6 +186,14 @@
 
 .eShopTovar__addToCartBtn:hover {
 	background: var(--reden);
+}
+
+.eShopTovar__onlyOffLine {
+	width: 100%;
+	font-weight: 300;
+	font-size: 14px;
+	line-height: 20px;
+	margin: 0 20px 0 0;
 }
 
 .eShopTovar__favBtn {

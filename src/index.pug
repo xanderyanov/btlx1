@@ -16,6 +16,7 @@ include __forms
 include __footer
 
 include __old
+include __blocks
 
 
 <!DOCTYPE html>
@@ -42,9 +43,10 @@ body
     //-     .title.title1 
     //-       h2 Блог нашего центра
     //- +blogSlider
-    .wideBlock__area
+    .wideBlock__area.actions__wrapper
       .wideBlock.wsite
         +actions
+    +videoLinksInMain
     .wideBlock__area
       .wideBlock.wsite
         +mainContent

@@ -81,6 +81,13 @@
 	.masterWindowForm__info span:first-child {
 		font-size: 18px;
 	}
+	.master4top__info a {
+		align-items: flex-start;
+	}
+	.master4top__info a img {
+		/* filter: none; */
+		opacity: 1;
+	}
 }
 
 @media only screen and (max-width: 480px) {
