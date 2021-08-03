@@ -175,6 +175,9 @@
 @import "__blocks.css";
 @import "__blocks_media.css";
 
+@import "__comments.css";
+@import "__comments_media.css";
+
 @import "__pagination.css";
 @import "__pagination_media.css";
 /*        */

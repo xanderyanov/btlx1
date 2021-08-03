@@ -2,6 +2,7 @@
 - var seoKeywords = 'Ключевые слова для страницы'
 - var seoDesc = 'Сео описание для страницы'
 - var sliderTitle1 = 'Популярные товары'
+- var commentsTitle = 'Отзывы'
 
 include __const
 include __header
@@ -17,6 +18,7 @@ include __footer
 
 include __old
 include __blocks
+include __comments
 
 
 <!DOCTYPE html>
@@ -50,6 +52,7 @@ body
     .wideBlock__area
       .wideBlock.wsite
         +mainContent
+    +commentsCaroucel
     
     +mainForm_v3
     

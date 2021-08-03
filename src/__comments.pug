@@ -1,0 +1,29 @@
+mixin commentsCaroucel
+  .commentsCaroucel__area
+    .commentsCaroucel__outer.wsite
+      .commentsCaroucel__title.title1
+        h2=commentsTitle
+      .commentsCaroucel
+        .swiper-container.commentsCaroucel-container
+          .swiper-wrapper.commentsCaroucel-wrapper
+            each item in comments
+              .swiper-slide.commentsCaroucel-slide
+                .commentsCard__outer(id=item.id)
+                  .commentsCard 
+                    .commentsCard__inner
+                      .commentsCard__top 
+                        .commentsCard__img(style='background-image: url(' + item.avatar + ');') 
+                        .commentsCard__info 
+                          .commentsCard__name!= item.Name
+                          .commentsCard__date
+                            span!= item.date + ' / '
+                            span!= item.time  
+                      .commentsCard__text.cutLongString150!= item.text
+                      .commentsCard__doktor
+                        .commentsCard__doktorName!= item.doktorName
+                        .commentsCard__doctorPosition!= item.doktorPosition
+        .commentsCaroucel__left
+          i.icon-arr-left1
+        .commentsCaroucel__right
+          i.icon-arr-right1
+        .swiper-pagination.commentsCaroucel__pagination
