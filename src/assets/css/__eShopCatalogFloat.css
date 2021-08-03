@@ -283,7 +283,12 @@
 	width: 23%;
 	padding: 0;
 	float: left;
+	transition: all 0.3s;
 }
+
+/* .eBrands__area_100 {
+	width: 100% !important;
+} */
 
 .eBrands__overlay {
 	position: fixed;
@@ -312,6 +317,8 @@
 	cursor: pointer;
 	transition: all 0.3s;
 	position: relative;
+	transition: all 0.3s;
+	width: 100%;
 	/* z-index: 2100; */
 }
 
@@ -324,6 +331,9 @@
 	color: #fff;
 	background: var(--color1);
 	z-index: 2100;
+}
+.eBrands__btn_100 {
+	width: calc(200% + 20px);
 }
 
 .eBrands__content {
@@ -339,6 +349,11 @@
 	box-shadow: 0px 10px 20px rgba(206, 203, 218, 0.55);
 	border-radius: 0px 0px 6px 6px;
 	display: none;
+	/* transition: all 0.3s; */
+}
+
+.eBrands__content_100 {
+	width: calc(200% - 20px);
 }
 
 .eBrands__contentInner {
@@ -588,4 +603,95 @@
 .searchResult__counter span:last-child {
 	margin: 0 0 0 10px;
 	font-weight: 700;
+}
+
+/********************/
+.eFilter2mb__area {
+	margin-bottom: 30px;
+	position: relative;
+	padding: 0 10px 10px;
+	background: none;
+	margin: 0;
+	width: 50%;
+	float: none;
+	transition: all 0.3s;
+	order: 3;
+	display: none;
+}
+
+/* .eBrands__area_100 {
+	width: 100% !important;
+} */
+
+.eFilter2mb__overlay {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 2090;
+	display: none;
+	background: rgba(0, 0, 0, 0.5);
+}
+
+.eFilter2mb__btn {
+	border: 2px solid var(--color1);
+	box-sizing: border-box;
+	border-radius: 6px;
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 20px;
+	color: var(--color1);
+	background: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 42px;
+	cursor: pointer;
+	transition: all 0.3s;
+	position: relative;
+	transition: all 0.3s;
+	width: calc(100% - 20px);
+
+	position: absolute;
+	right: 10px;
+	top: 0;
+	/* z-index: 2100; */
+}
+
+.eFilter2mb__btn:hover {
+	color: #fff;
+	background: var(--color1);
+}
+
+.eFilter2mb__btn_active {
+	color: #fff;
+	background: var(--color1);
+	z-index: 2100;
+}
+.eFilter2mb__btn_100 {
+	width: calc(200% - 20px);
+	/* position: absolute;
+	right: 10px;
+	top: 0; */
+	/* left: calc(-100% - 20px); */
+}
+
+.eFilter2mb__content {
+	position: absolute;
+	right: 10px;
+	top: 40px;
+	z-index: 2095;
+	padding: 40px 3px 40px 30px;
+	background: #fff;
+	border: 1px solid #cecbda;
+	box-sizing: border-box;
+	box-shadow: 0px 10px 20px rgba(206, 203, 218, 0.55);
+	border-radius: 0px 0px 6px 6px;
+	display: none;
+	/* transition: all 0.3s; */
+}
+
+.eFilter2mb__content_100 {
+	width: calc(200% - 20px);
 }

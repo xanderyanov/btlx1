@@ -188,6 +188,10 @@
 	.eGreyLine__outer {
 		padding: 5px 10px;
 	}
+
+	.eFilter2mb__area {
+		display: block;
+	}
 }
 
 @media only screen and (max-width: 480px) {
@@ -237,12 +241,12 @@
 		top: 20px;
 		right: 20px;
 	}
-	.eBrands__area {
+	/* .eBrands__area {
 		width: 100%;
 	}
 	.eGreyLine__mbBtnFiltrOuter {
 		width: 100%;
-	}
+	} */
 	.eGreyLine__outer {
 		padding: 0 10px;
 	}

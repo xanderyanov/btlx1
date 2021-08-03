@@ -36,11 +36,19 @@ $(function () {
 		var $this = $(this);
 		var thisBrandsContent = $this.closest(".eBrands__area").find(".eBrands__content");
 		if ($this.hasClass("eBrands__btn_active")) {
-			$this.removeClass("eBrands__btn_active");
 			thisBrandsContent.slideUp(300);
-			$(".eBrands__overlay").fadeOut(300);
-			$("body").removeClass("stop");
+			setTimeout(function () {
+				$this.removeClass("eBrands__btn_active");
+				$this.removeClass("eBrands__btn_100");
+				$this.next(".eBrands__content").removeClass("eBrands__content_100");
+				$(".eBrands__overlay").fadeOut(300);
+				$("body").removeClass("stop");
+			}, 300);
 		} else {
+			if ($(window).width() <= 600) {
+				$this.next(".eBrands__content").addClass("eBrands__content_100");
+				$this.addClass("eBrands__btn_100");
+			}
 			$this.addClass("eBrands__btn_active");
 			$(".eBrands__overlay").fadeIn(300);
 			thisBrandsContent.slideDown(300);
@@ -50,11 +58,60 @@ $(function () {
 	$(".eBrands__overlay").on("click", function (e) {
 		e.preventDefault();
 		e.stopPropagation();
-		$(".eBrands__btn").removeClass("eBrands__btn_active");
+
 		$(".eBrands__content").slideUp(300);
-		$(".eBrands__overlay").fadeOut(300);
-		$("body").removeClass("stop");
+		setTimeout(function () {
+			$(".eBrands__btn").removeClass("eBrands__btn_100");
+			$(".eBrands__btn").removeClass("eBrands__btn_active");
+			$(".eBrands__content").removeClass("eBrands__content_100");
+			$(".eBrands__btn").removeClass("eBrands__btn_active");
+			$(".eBrands__overlay").fadeOut(300);
+			$("body").removeClass("stop");
+		}, 300);
 	});
+
+	/*********/
+	$(".eFilter2mb__btn").on("click", function (e) {
+		// раскрытие и закрытие еБрендов по клику на кнопку
+		e.preventDefault();
+		e.stopPropagation();
+		var $this = $(this);
+		var thisBrandsContent = $this.closest(".eFilter2mb__area").find(".eFilter2mb__content");
+		if ($this.hasClass("eFilter2mb__btn_active")) {
+			thisBrandsContent.slideUp(300);
+			setTimeout(function () {
+				$this.removeClass("eFilter2mb__btn_active");
+				$this.removeClass("eFilter2mb__btn_100");
+				$this.next(".eFilter2mb__content").removeClass("eFilter2mb__content_100");
+				$(".eFilter2mb__overlay").fadeOut(300);
+				$("body").removeClass("stop");
+			}, 300);
+		} else {
+			if ($(window).width() <= 600) {
+				$this.next(".eFilter2mb__content").addClass("eFilter2mb__content_100");
+				$this.addClass("eFilter2mb__btn_100");
+			}
+			$this.addClass("eFilter2mb__btn_active");
+			$(".eFilter2mb__overlay").fadeIn(300);
+			thisBrandsContent.slideDown(300);
+			$("body").addClass("stop");
+		}
+	});
+	$(".eFilter2mb__overlay").on("click", function (e) {
+		e.preventDefault();
+		e.stopPropagation();
+
+		$(".eFilter2mb__content").slideUp(300);
+		setTimeout(function () {
+			$(".eFilter2mb__btn").removeClass("eFilter2mb__btn_100");
+			$(".eFilter2mb__btn").removeClass("eFilter2mb__btn_active");
+			$(".eFilter2mb__content").removeClass("eFilter2mb__content_100");
+			$(".eFilter2mb__btn").removeClass("eFilter2mb__btn_active");
+			$(".eFilter2mb__overlay").fadeOut(300);
+			$("body").removeClass("stop");
+		}, 300);
+	});
+	/*********/
 
 	$(".eShopMenu__mobileBtn").on("click", function (e) {
 		// раскрытие и закрытие каталога товаров по клику на кнопку каталог в мобиле
