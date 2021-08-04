@@ -5,6 +5,15 @@
 	background: #fff;
 }
 
+.eFilter__area_float {
+	position: relative;
+	background: #fff;
+	width: 23%;
+	padding: 0;
+	float: left;
+	transition: all 0.3s;
+}
+
 .eFilter {
 	display: flex;
 	flex-direction: column;

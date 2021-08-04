@@ -1,0 +1,21 @@
+.catalogX__area {
+	position: relative;
+}
+
+.catalogX {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.catalogX__left {
+	width: 23%;
+	display: flex;
+	flex-direction: column;
+}
+
+.catalogX__right {
+	width: 77%;
+	padding: 0 0 0 30px;
+	display: flex;
+	flex-direction: column;
+}

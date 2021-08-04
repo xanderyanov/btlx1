@@ -1,0 +1,74 @@
+- var pageTitle = 'Каталог товаров'
+- var seoKeywords = 'Ключевые слова для страницы'
+- var seoDesc = 'Сео описание для страницы'
+
+include __const
+include __card
+include __header
+include __menu
+include __eShopMenu
+include __eShopCatalogFloat
+
+include __eFilter
+
+include __pagination
+
+include __mainProblem
+include __breadcrumbs
+include __wideBlock
+include __services
+include __forms
+
+include __footer
+
+
+include __popUpBlocks
+
+include __old
+
+
+
+
+<!DOCTYPE html>
+html(lang="ru-RU")
+  +head
+body
+
+  .site__header
+    +header
+    //- +topMenu
+
+
+  .site__center
+    +breadcrumbs5
+
+    .catalogX__area
+      .catalogX.wsite 
+        .catalogX__left 
+          .eBrands__area
+            .eBrands__overlay 
+            .eBrands__btn Бренды
+            .eBrands__content
+              .eBrands__contentInner.eBrands__contentInner_scroll
+                +brands
+          +eShopMenuCatalogOnly
+          +eFilterArea
+          
+        .catalogX__right 
+          .eGreyLine__outer
+            .eGreyLine
+              .searchResult__counter 
+                span Найдено товаров:
+                span 256
+          .eCatalog
+            +eCatalog
+            +pagiantion
+   
+    +zBlock3
+
+  .site__footer
+    +footer3
+
+  +popUpBlocks
+  +scripts
+  
