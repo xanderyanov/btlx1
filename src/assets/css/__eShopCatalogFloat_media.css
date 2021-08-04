@@ -58,16 +58,16 @@
 		padding: 10px;
 		width: 100%;
 		float: none;
-		order: 4;
+		/* order: 4; */
 	}
 	.floatBox__right {
 		padding: 0 0 0 0;
 		width: 100%;
 		float: none;
-		order: 5;
+		/* order: 5; */
 	}
 	.eCatalog {
-		margin: 0;
+		margin: 0 -10px;
 	}
 	.eCatalog_wide {
 		margin: -10px -10px 0;

@@ -9,7 +9,22 @@
 
 @media only screen and (max-width: 1024px) {
 	.eFilterActionBtn {
-		margin: 20px 0 30px;
+		margin: 20px 0 0;
+	}
+	.eFilter__area {
+		display: none;
+		z-index: 2095;
+		position: absolute;
+		right: 10px;
+		left: 10px;
+		top: 40px;
+		margin: 0;
+	}
+	.eFilter__areaInner {
+		max-height: calc(60vh - 150px);
+	}
+	.eFilterCheckbox {
+		padding: 10px 10px 10px 0;
 	}
 }
 

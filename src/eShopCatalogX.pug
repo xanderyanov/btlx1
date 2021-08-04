@@ -45,22 +45,30 @@ body
     .catalogX__area
       .catalogX.wsite 
         .catalogX__left 
-          .eBrands__area
-            .eBrands__overlay 
-            .eBrands__btn Бренды
-            .eBrands__content
-              .eBrands__contentInner.eBrands__contentInner_scroll
-                +brands
-          +eShopMenuCatalogOnly
-          +eFilterArea
+          .catalogX__leftInner
+            .eBrands__area.eBrands__area_x
+              .eBrands__overlay 
+              .eBrands__btn Бренды
+              .eBrands__content
+                .eBrands__contentInner.eBrands__contentInner_scroll
+                  +brands
+            .eShopMenuCatalog__wrapper
+              +eShopMenuCatalogOnly
+            .eFilterArea__wrapper 
+              .eFilter__overlay
+              .eFilter__mbBtn 
+                span Фильтры
+                i.icon-filter
+              +eFilterArea
           
         .catalogX__right 
-          .eGreyLine__outer
+          .eGreyLine__outer.eGreyLine__outer_x
             .eGreyLine
               .searchResult__counter 
                 span Найдено товаров:
                 span 256
           .eCatalog
+            
             +eCatalog
             +pagiantion
    

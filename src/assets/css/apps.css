@@ -139,9 +139,6 @@
 @import "__eShopCatalogFloat.css";
 @import "__eShopCatalogFloat_media.css";
 
-@import "__eShopCatalogX.css";
-@import "__eShopCatalogX.css";
-
 @import "__eFilter.css";
 @import "__eFilter_media.css";
 
@@ -183,6 +180,10 @@
 
 @import "__pagination.css";
 @import "__pagination_media.css";
+
+@import "__eShopCatalogX.css";
+@import "__eShopCatalogX_media.css";
+
 /*        */
 
 /* в самом низу */

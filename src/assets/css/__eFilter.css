@@ -1,8 +1,18 @@
+.eFilterArea__wrapper {
+	position: relative;
+	transition: all 0.3s;
+}
+
 .eFilter__area {
 	box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.08);
 	margin-top: 40px;
-	padding: 40px 30px;
+	padding: 40px 10px 40px 30px;
 	background: #fff;
+}
+
+.eFilter__areaInner {
+	overflow-y: scroll;
+	padding: 0 20px 0 0;
 }
 
 .eFilter__area_float {
@@ -96,6 +106,8 @@
 
 .eFilterCheckbox:last-child {
 	margin-bottom: 0;
+	border: none;
+	padding: 15px 10px 0 0;
 }
 
 .eFilterCheckbox input[type="checkbox"] {
@@ -362,3 +374,5 @@
 	color: #4f4f4f;
 	position: relative;
 }
+
+/********************/

@@ -36,38 +36,58 @@ $(function () {
 		var $this = $(this);
 		var thisBrandsContent = $this.closest(".eBrands__area").find(".eBrands__content");
 		if ($this.hasClass("eBrands__btn_active")) {
-			thisBrandsContent.slideUp(300);
-			setTimeout(function () {
+			if ($(window).width() <= 600) {
+				thisBrandsContent.slideUp(300);
+				setTimeout(function () {
+					$this.removeClass("eBrands__btn_active");
+					$(".eBrands__overlay").fadeOut(300);
+					$("body").removeClass("stop");
+					$(".eBrands__area_x").removeClass("mbBtn_100");
+				}, 300);
+			} else {
+				thisBrandsContent.slideUp(300);
 				$this.removeClass("eBrands__btn_active");
-				$this.removeClass("eBrands__btn_100");
-				$this.next(".eBrands__content").removeClass("eBrands__content_100");
 				$(".eBrands__overlay").fadeOut(300);
 				$("body").removeClass("stop");
-			}, 300);
+				$(".eBrands__area_x").removeClass("mbBtn_100");
+			}
 		} else {
 			if ($(window).width() <= 600) {
-				$this.next(".eBrands__content").addClass("eBrands__content_100");
-				$this.addClass("eBrands__btn_100");
+				$(".eBrands__area_x").addClass("mbBtn_100");
+				$this.addClass("eBrands__btn_active");
+				$(".eBrands__overlay").fadeIn(300);
+				$("body").addClass("stop");
+				setTimeout(function () {
+					thisBrandsContent.slideDown(300);
+				}, 300);
+			} else {
+				$this.addClass("eBrands__btn_active");
+				$(".eBrands__overlay").fadeIn(300);
+				$("body").addClass("stop");
+				thisBrandsContent.slideDown(300);
 			}
-			$this.addClass("eBrands__btn_active");
-			$(".eBrands__overlay").fadeIn(300);
-			thisBrandsContent.slideDown(300);
-			$("body").addClass("stop");
 		}
 	});
 	$(".eBrands__overlay").on("click", function (e) {
 		e.preventDefault();
 		e.stopPropagation();
-
-		$(".eBrands__content").slideUp(300);
-		setTimeout(function () {
-			$(".eBrands__btn").removeClass("eBrands__btn_100");
+		if ($(window).width() <= 600) {
+			$(".eBrands__content").slideUp(300);
+			setTimeout(function () {
+				$(".eBrands__btn").removeClass("eBrands__btn_active");
+				$(".eBrands__btn").removeClass("eBrands__btn_active");
+				$(".eBrands__overlay").fadeOut(300);
+				$("body").removeClass("stop");
+				$(".eBrands__area_x").removeClass("mbBtn_100");
+			}, 300);
+		} else {
+			$(".eBrands__content").slideUp(300);
 			$(".eBrands__btn").removeClass("eBrands__btn_active");
-			$(".eBrands__content").removeClass("eBrands__content_100");
 			$(".eBrands__btn").removeClass("eBrands__btn_active");
 			$(".eBrands__overlay").fadeOut(300);
 			$("body").removeClass("stop");
-		}, 300);
+			$(".eBrands__area_x").removeClass("mbBtn_100");
+		}
 	});
 
 	/*********/
@@ -113,30 +133,58 @@ $(function () {
 	});
 	/*********/
 
+	// Скрипт для страницы CatalogFloat - ниже будет переделанный для CayalogX
+	// $(".eShopMenu__mobileBtn").on("click", function (e) {
+	// 	// раскрытие и закрытие каталога товаров по клику на кнопку каталог в мобиле
+	// 	e.preventDefault();
+	// 	e.stopPropagation();
+	// 	var $this = $(this);
+	// 	var thisCatalogContent = $this.closest(".floatBox__left").find(".eShopMenu__outer_catalogOnly");
+	// 	if ($this.hasClass("eShopMenu__mobileBtn_active")) {
+	// 		$this.removeClass("eShopMenu__mobileBtn_active");
+	// 		thisCatalogContent.slideUp(300);
+	// 		$(".floatBox__leftOverlay").fadeOut(300);
+	// 		$("body").removeClass("stop");
+	// 	} else {
+	// 		$this.addClass("eShopMenu__mobileBtn_active");
+	// 		$(".floatBox__leftOverlay").fadeIn(300);
+	// 		thisCatalogContent.slideDown(300);
+	// 		$("body").addClass("stop");
+	// 	}
+	// });
+	// $(".floatBox__leftOverlay").on("click", function (e) {
+	// 	e.preventDefault();
+	// 	e.stopPropagation();
+	// 	$(".eShopMenu__mobileBtn").removeClass("eShopMenu__mobileBtn_active");
+	// 	$(".eShopMenu__outer_catalogOnly").slideUp(300);
+	// 	$(".floatBox__leftOverlay").fadeOut(300);
+	// 	$("body").removeClass("stop");
+	// });
+
 	$(".eShopMenu__mobileBtn").on("click", function (e) {
 		// раскрытие и закрытие каталога товаров по клику на кнопку каталог в мобиле
 		e.preventDefault();
 		e.stopPropagation();
 		var $this = $(this);
-		var thisCatalogContent = $this.closest(".floatBox__left").find(".eShopMenu__outer_catalogOnly");
+		var thisCatalogContent = $this.closest(".eShopMenuCatalog__wrapper").find(".eShopMenu__outer_catalogOnly");
 		if ($this.hasClass("eShopMenu__mobileBtn_active")) {
 			$this.removeClass("eShopMenu__mobileBtn_active");
 			thisCatalogContent.slideUp(300);
-			$(".floatBox__leftOverlay").fadeOut(300);
+			$(".eShopMenu__overlay").fadeOut(300);
 			$("body").removeClass("stop");
 		} else {
 			$this.addClass("eShopMenu__mobileBtn_active");
-			$(".floatBox__leftOverlay").fadeIn(300);
+			$(".eShopMenu__overlay").fadeIn(300);
 			thisCatalogContent.slideDown(300);
 			$("body").addClass("stop");
 		}
 	});
-	$(".floatBox__leftOverlay").on("click", function (e) {
+	$(".eShopMenu__overlay").on("click", function (e) {
 		e.preventDefault();
 		e.stopPropagation();
 		$(".eShopMenu__mobileBtn").removeClass("eShopMenu__mobileBtn_active");
 		$(".eShopMenu__outer_catalogOnly").slideUp(300);
-		$(".floatBox__leftOverlay").fadeOut(300);
+		$(".eShopMenu__overlay").fadeOut(300);
 		$("body").removeClass("stop");
 	});
 

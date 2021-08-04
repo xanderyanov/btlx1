@@ -37,9 +37,7 @@
 		overflow-y: scroll;
 		padding: 0 10px 0 0;
 	}
-	.eFilter__area {
-		display: none;
-	}
+
 	.eBrands__area {
 		float: none;
 	}

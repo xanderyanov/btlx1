@@ -74,6 +74,65 @@ $(function () {
 		}
 	});
 
+	// поведение(раскрытие) фильтров на мобильном - так же как каталог и бренды
+	$(".eFilter__mbBtn").on("click", function (e) {
+		e.preventDefault();
+		e.stopPropagation();
+		var $this = $(this);
+		var thisFilterContent = $this.closest(".eFilterArea__wrapper").find(".eFilter__area");
+		if ($this.hasClass("eFilter__mbBtn_active")) {
+			if ($(window).width() <= 600) {
+				thisFilterContent.slideUp(300);
+				setTimeout(function () {
+					$this.removeClass("eFilter__mbBtn_active");
+					$(".eFilter__overlay").fadeOut(300);
+					$("body").removeClass("stop");
+					$(".eFilterArea__wrapper").removeClass("mbBtn_100");
+				}, 300);
+			} else {
+				thisFilterContent.slideUp(300);
+				$this.removeClass("eFilter__mbBtn_active");
+				$(".eFilter__overlay").fadeOut(300);
+				$("body").removeClass("stop");
+				$(".eFilterArea__wrapper").removeClass("mbBtn_100");
+			}
+		} else {
+			if ($(window).width() <= 600) {
+				$(".eFilterArea__wrapper").addClass("mbBtn_100");
+				$this.addClass("eFilter__mbBtn_active");
+				$(".eFilter__overlay").fadeIn(300);
+				$("body").addClass("stop");
+				setTimeout(function () {
+					thisFilterContent.slideDown(300);
+				}, 300);
+			} else {
+				$this.addClass("eFilter__mbBtn_active");
+				$(".eFilter__overlay").fadeIn(300);
+				$("body").addClass("stop");
+				thisFilterContent.slideDown(300);
+			}
+		}
+	});
+	$(".eFilter__overlay").on("click", function (e) {
+		e.preventDefault();
+		e.stopPropagation();
+		if ($(window).width() <= 600) {
+			$(".eFilter__area").slideUp(300);
+			setTimeout(function () {
+				$(".eFilter__mbBtn").removeClass("eFilter__mbBtn_active");
+				$(".eFilter__overlay").fadeOut(300);
+				$("body").removeClass("stop");
+				$(".eFilterArea__wrapper").removeClass("mbBtn_100");
+			}, 300);
+		} else {
+			$(".eFilter__area").slideUp(300);
+			$(".eFilter__mbBtn").removeClass("eFilter__mbBtn_active");
+			$(".eFilter__overlay").fadeOut(300);
+			$("body").removeClass("stop");
+			$(".eFilterArea__wrapper").removeClass("mbBtn_100");
+		}
+	});
+
 	/*START   eFilterMpobile*/
 	$(".eGreyLine__mbBtnFiltr").on("click", function (e) {
 		e.preventDefault();
