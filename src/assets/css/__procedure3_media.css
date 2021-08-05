@@ -30,6 +30,20 @@
 }
 
 @media only screen and (max-width: 1080px) {
+	.procedure__infoIcon img {
+		width: 60px;
+		margin-bottom: 16px;
+	}
+
+	.procedure__infoIcon span {
+		font-size: 18px;
+		line-height: 24px;
+	}
+
+	.procedure__infoIcon span:last-child {
+		font-size: 14px;
+		line-height: 20px;
+	}
 }
 
 @media only screen and (max-width: 1024px) {
@@ -43,6 +57,14 @@
 	.dubleBox3__right {
 		width: 100%;
 		padding: 0;
+	}
+
+	.procedure__infoIcon {
+		width: 50%;
+		padding-bottom: 20px;
+	}
+	.procedureX__masterCardOuter {
+		width: 25%;
 	}
 }
 
@@ -144,6 +166,15 @@
 		padding: 8px 20px;
 		width: 100%;
 	}
+
+	.procedure__infoIcon {
+		width: 25%;
+		padding-bottom: 0;
+	}
+
+	.procedureX__masterCardOuter {
+		width: 33.333%;
+	}
 }
 
 @media only screen and (max-width: 480px) {
@@ -185,6 +216,20 @@
 	.procedure3__masters {
 		margin: 20px 0 20px 0;
 	}
+
+	.procedure__infoIcon {
+		width: 50%;
+		padding-bottom: 15px;
+	}
+
+	.simpleProcedureGallery {
+		margin: 0;
+		padding: 20px 0 0;
+	}
+	.simpleProcedureGallery__item {
+		width: 100%;
+		padding: 0 0 20px;
+	}
 }
 
 @media only screen and (max-width: 414px) {
@@ -219,6 +264,18 @@
 	}
 	.procedure3__master {
 		font-size: 14px;
+	}
+
+	.procedure__infoIcon img {
+		width: 50px;
+		margin-bottom: 8px;
+	}
+	.procedure__infoIcon span {
+		font-size: 16px;
+		line-height: 20px;
+	}
+	.procedureX__masterCardOuter {
+		width: 50%;
 	}
 }
 

@@ -39,7 +39,7 @@ body
     +wideBlock
 
     .wideBox3__area 
-      .wideBox3
+      .wideBox3.wsite
         .content 
           h2 Результат лечения
           p
@@ -70,32 +70,44 @@ body
           h3 3. Завершающий уход
           p Клиенту необходимо исключить посещение солярия и принятие солнечных ванн, употребление алкогольных напитков и некоторых лекарственных препаратов.
 
-        .content  
-          .videoPhotoBox
-            .videoPhotoBox__video
-              .videoPhotoBox__photoItem
-                  a(href="assets/img/before-after/05.jpg" data-fancybox="group2" data-caption="002" style="background-image: url(assets/img/before-after/05.jpg)")
+        
+        .simpleProcedureGallery 
+          .simpleProcedureGallery__item 
+            a(href="assets/img/before-after/05.jpg" data-fancybox="group2" data-caption="002")
+              img(src="assets/img/before-after/05.jpg", alt="")
+          .simpleProcedureGallery__item 
+            a(href="assets/img/before-after/05.jpg" data-fancybox="group2" data-caption="002")
+              img(src="assets/img/before-after/04.jpg", alt="")
+          //- .simpleProcedureGallery__item 
+          //-   a(href="assets/img/before-after/05.jpg" data-fancybox="group2" data-caption="002")
+          //-     img(src="assets/img/before-after/05.jpg", alt="")
+        
+        //- .content  
+        //-   .videoPhotoBox
+        //-     .videoPhotoBox__video
+        //-       .videoPhotoBox__photoItem
+        //-           a(href="assets/img/before-after/05.jpg" data-fancybox="group2" data-caption="002" style="background-image: url(assets/img/before-after/05.jpg)")
               
-              //- .videoPhotoBox__videoItem.videoBox_i
-              //-   iframe(width='560' height='315' src='https://www.youtube.com/embed/YCF6qjf1-h8' autoplay='1' frameborder='0' allow='accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen='')
-            .videoPhotoBox__photo
-              .videoPhotoBox__photoItemOuter
-                .videoPhotoBox__photoItem
-                  a(href="assets/img/before-after/05.jpg" data-fancybox="group2" data-caption="002" style="background-image: url(assets/img/before-after/05.jpg)")
-              .videoPhotoBox__photoItemOuter
-                .videoPhotoBox__photoItem
-                  a(href="assets/img/before-after/04.jpg" data-fancybox="group2" data-caption="002" style="background-image: url(assets/img/before-after/04.jpg)")
-          .videoPhotoBox
-            .videoPhotoBox__video
-              .videoPhotoBox__videoItem.videoBox_i
-                iframe(width='560' height='315' src='https://www.youtube.com/embed/YCF6qjf1-h8' autoplay='1' frameborder='0' allow='accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen='')
-            .videoPhotoBox__photo
-              .videoPhotoBox__photoItemOuter
-                .videoPhotoBox__photoItem
-                  a(href="assets/img/before-after/05.jpg" data-fancybox="group2" data-caption="002" style="background-image: url(assets/img/before-after/05.jpg)")
-              .videoPhotoBox__photoItemOuter
-                .videoPhotoBox__photoItem
-                  a(href="assets/img/before-after/04.jpg" data-fancybox="group2" data-caption="002" style="background-image: url(assets/img/before-after/04.jpg)")
+        //-       //- .videoPhotoBox__videoItem.videoBox_i
+        //-       //-   iframe(width='560' height='315' src='https://www.youtube.com/embed/YCF6qjf1-h8' autoplay='1' frameborder='0' allow='accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen='')
+        //-     .videoPhotoBox__photo
+        //-       .videoPhotoBox__photoItemOuter
+        //-         .videoPhotoBox__photoItem
+        //-           a(href="assets/img/before-after/05.jpg" data-fancybox="group2" data-caption="002" style="background-image: url(assets/img/before-after/05.jpg)")
+        //-       .videoPhotoBox__photoItemOuter
+        //-         .videoPhotoBox__photoItem
+        //-           a(href="assets/img/before-after/04.jpg" data-fancybox="group2" data-caption="002" style="background-image: url(assets/img/before-after/04.jpg)")
+        //-   .videoPhotoBox
+        //-     .videoPhotoBox__video
+        //-       .videoPhotoBox__videoItem.videoBox_i
+        //-         iframe(width='560' height='315' src='https://www.youtube.com/embed/YCF6qjf1-h8' autoplay='1' frameborder='0' allow='accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen='')
+        //-     .videoPhotoBox__photo
+        //-       .videoPhotoBox__photoItemOuter
+        //-         .videoPhotoBox__photoItem
+        //-           a(href="assets/img/before-after/05.jpg" data-fancybox="group2" data-caption="002" style="background-image: url(assets/img/before-after/05.jpg)")
+        //-       .videoPhotoBox__photoItemOuter
+        //-         .videoPhotoBox__photoItem
+        //-           a(href="assets/img/before-after/04.jpg" data-fancybox="group2" data-caption="002" style="background-image: url(assets/img/before-after/04.jpg)")
 
         .content
           h2 Показания / противопоказания
@@ -124,20 +136,63 @@ body
             p В нашем салоне доступен александритовый лазер Candela GentleLasePro-U – самый современный и эффективный из них.
             p Врачи-косметологи нашего центра, работающие по телу, обладают огромным опытом проведения процедуры и индивидуально подбирают мощность воздействия лазера для максимально быстрого и безопасного результата.
         
-        .procedure3__masters
-          .title3
+        
+        .procedureX__mastersArea 
+          .pageTitle.title1
             h2 Наши специалисты
-          .procedure3__masterscontent
-            .procedure3__masterOuter
-              a.procedure3__master(href="") Лукьянова Наталья
-            .procedure3__masterOuter
-              a.procedure3__master(href="") Лукьянова Наталья
-            .procedure3__masterOuter
-              a.procedure3__master(href="") Лукьянова Наталья
-            .procedure3__masterOuter
-              a.procedure3__master(href="") Лукьянова Наталья
-            .procedure3__masterOuter
-              a.procedure3__master(href="") Лукьянова Наталья
+          .procedureX__masters
+            .procedureX__masterCardOuter
+              a.procedureX__masterCard(href="") 
+                .procedureX__masterCardImg 
+                  img(src="assets/img/masterx/01.png", alt="")
+                .procedureX__masterCardName Жукова Светлана Юрьевна
+                .procedureX__masterCardPosition Врач-косметолог
+            .procedureX__masterCardOuter
+              a.procedureX__masterCard(href="") 
+                .procedureX__masterCardImg 
+                  img(src="assets/img/masterx/02.png", alt="")
+                .procedureX__masterCardName Жукова Светлана Юрьевна
+                .procedureX__masterCardPosition Врач-косметолог
+            .procedureX__masterCardOuter
+              a.procedureX__masterCard(href="") 
+                .procedureX__masterCardImg 
+                  img(src="assets/img/masterx/03.png", alt="")
+                .procedureX__masterCardName Жукова Светлана Юрьевна
+                .procedureX__masterCardPosition Врач-косметолог
+            .procedureX__masterCardOuter
+              a.procedureX__masterCard(href="") 
+                .procedureX__masterCardImg 
+                  img(src="assets/img/masterx/04.png", alt="")
+                .procedureX__masterCardName Жукова Светлана Юрьевна
+                .procedureX__masterCardPosition Врач-косметолог
+            .procedureX__masterCardOuter
+              a.procedureX__masterCard(href="") 
+                .procedureX__masterCardImg 
+                  img(src="assets/img/masterx/05.png", alt="")
+                .procedureX__masterCardName Жукова Светлана Юрьевна
+                .procedureX__masterCardPosition Врач-косметолог
+            .procedureX__masterCardOuter
+              a.procedureX__masterCard(href="") 
+                .procedureX__masterCardImg 
+                  img(src="assets/img/masterx/06.png", alt="")
+                .procedureX__masterCardName Жукова Светлана Юрьевна
+                .procedureX__masterCardPosition Врач-косметолог
+        
+        
+        //- .procedure3__masters
+        //-   .title3
+        //-     h2 Наши специалисты
+        //-   .procedure3__masterscontent
+        //-     .procedure3__masterOuter
+        //-       a.procedure3__master(href="") Лукьянова Наталья
+        //-     .procedure3__masterOuter
+        //-       a.procedure3__master(href="") Лукьянова Наталья
+        //-     .procedure3__masterOuter
+        //-       a.procedure3__master(href="") Лукьянова Наталья
+        //-     .procedure3__masterOuter
+        //-       a.procedure3__master(href="") Лукьянова Наталья
+        //-     .procedure3__masterOuter
+        //-       a.procedure3__master(href="") Лукьянова Наталья
         //- .procedure__video
         //-   +videogallery
         //- .procedure__photo

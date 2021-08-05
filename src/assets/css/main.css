@@ -42,7 +42,7 @@ body {
 	margin-bottom: 30px;
 }
 
-.xTitle {
+/* .xTitle {
 	position: relative;
 	width: 100%;
 	margin-bottom: 30px;
@@ -112,7 +112,7 @@ body {
 .pageTitle h2,
 .pageTitle h3 {
 	margin: 0;
-}
+} */
 
 .btn2 {
 	display: flex;
@@ -186,11 +186,11 @@ a.btn3:hover {
 	padding-bottom: 0;
 }
 
-.title0 h1,
+/* .title0 h1,
 .title0 h2,
 .title0 h3 {
 	margin: 0 0 20px;
-}
+} */
 
 .block__video,
 .block__photo {

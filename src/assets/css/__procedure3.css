@@ -474,3 +474,123 @@ a.aboutApparatus:hover {
 	border: 2px solid var(--reden);
 	background: var(--reden);
 }
+
+/**********************************/
+
+.procedure__infoIconArea {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding-top: 40px;
+	margin: 0 -15px;
+}
+
+.procedure__infoIcon {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 25%;
+	padding: 0 15px;
+}
+
+.procedure__infoIcon img {
+	width: 76px;
+	flex-shrink: 0;
+	margin-bottom: 20px;
+}
+
+.procedure__infoIcon span {
+	font-style: normal;
+	font-weight: normal;
+	font-size: 20px;
+	line-height: 28px;
+	letter-spacing: 0.04em;
+	color: #4f4f4f;
+	text-align: center;
+	margin-bottom: 6px;
+}
+
+.procedure__infoIcon span:last-child {
+	font-size: 16px;
+	line-height: 24px;
+	margin: auto 0 0;
+}
+
+/************************************/
+
+.simpleProcedureGallery {
+	display: flex;
+	margin: 0 -15px;
+	padding: 30px 0 0;
+	flex-wrap: wrap;
+}
+
+.simpleProcedureGallery__item {
+	width: 50%;
+	padding: 0 15px 30px;
+}
+
+.simpleProcedureGallery__item a {
+	display: block;
+}
+
+.simpleProcedureGallery__item img {
+	display: block;
+	width: 100%;
+}
+
+/***************************************/
+
+.procedureX__mastersArea {
+	width: 100%;
+	padding: 30px 0;
+}
+
+.procedureX__masters {
+	display: flex;
+	margin: 30px -15px 0;
+	flex-wrap: wrap;
+}
+
+.procedureX__masterCardOuter {
+	padding: 0 15px 30px;
+	width: 16.666%;
+}
+
+.procedureX__masterCard {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.procedureX__masterCardImg {
+	width: 100%;
+	margin-bottom: 20px;
+	border-radius: 50%;
+	flex-shrink: 0;
+	overflow: hidden;
+}
+
+.procedureX__masterCardImg img {
+	width: 100%;
+	display: block;
+}
+
+.procedureX__masterCardName {
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 24px;
+	text-align: center;
+	color: #4f4f4f;
+	margin-bottom: 5px;
+}
+
+.procedureX__masterCardPosition {
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 20px;
+	text-align: center;
+	color: #bdbdbd;
+}
