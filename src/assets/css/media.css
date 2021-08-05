@@ -51,6 +51,14 @@
 	.xTitle {
 		text-align: center;
 	}
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		text-align: center;
+	}
 }
 
 @media only screen and (max-width: 600px) {

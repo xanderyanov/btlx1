@@ -19,9 +19,12 @@
 		left: 10px;
 		top: 40px;
 		margin: 0;
+		padding: 40px 10px 40px 30px;
 	}
 	.eFilter__areaInner {
 		max-height: calc(60vh - 150px);
+		overflow-y: scroll;
+		padding: 0 20px 0 0;
 	}
 	.eFilterCheckbox {
 		padding: 10px 10px 10px 0;

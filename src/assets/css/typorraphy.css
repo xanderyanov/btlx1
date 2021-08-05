@@ -6,7 +6,7 @@ h5,
 h6 {
 	color: #4f4f4f;
 	line-height: 1.2;
-	font-weight: 400;
+	font-weight: 300;
 	letter-spacing: 0.04em;
 }
 
@@ -51,7 +51,7 @@ h6 {
 .xTitle h4,
 .xTitle h5,
 .xTitle h6 {
-	margin: 0;
+	margin-top: 0;
 }
 
 a:hover {
