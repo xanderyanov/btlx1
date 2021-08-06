@@ -520,7 +520,7 @@ a.aboutApparatus:hover {
 
 .simpleProcedureGallery {
 	display: flex;
-	margin: 0 -15px;
+	margin: 0 -15px -30px;
 	padding: 30px 0 0;
 	flex-wrap: wrap;
 }
@@ -543,7 +543,7 @@ a.aboutApparatus:hover {
 
 .procedureX__mastersArea {
 	width: 100%;
-	padding: 30px 0;
+	/* padding: 30px 0; */
 }
 
 .procedureX__masters {

@@ -173,6 +173,43 @@ $(function () {
 		}
 	});
 
+	var talkShowOptions = {};
+	if ($(".talkShowSlider-container .talkShow__outer").length) {
+		talkShowOptions = {
+			slidesPerView: 2,
+			loop: false,
+			spaceBetween: 0,
+			speed: 600,
+			autoplay: {
+				delay: 1500000,
+				disableOnInteraction: true,
+			},
+			navigation: {
+				nextEl: ".talkShowSlider__right",
+				prevEl: ".talkShowSlider__left",
+			},
+			keyboard: true,
+			watchOverflow: true,
+			pagination: {
+				el: ".talkShow__pagination",
+				type: "bullets",
+				dynamicBullets: false,
+				clickable: true,
+			},
+			breakpoints: {
+				0: {
+					slidesPerView: 1,
+				},
+				768: {
+					slidesPerView: 2,
+				},
+			},
+		};
+	} else {
+		$(".talkShowSlider__area").addClass("talkShowSlider__area_lock");
+	}
+	var swiper = new Swiper(".talkShowSlider-container", talkShowOptions);
+
 	// Карусель сертификатов
 
 	var optionsImgCaroucel1 = {};
@@ -182,7 +219,7 @@ $(function () {
 		optionsImgCaroucel1 = {
 			slidesPerView: 6,
 			loop: false,
-			spaceBetween: 10,
+			spaceBetween: 20,
 			centeredSlides: false,
 			speed: 600,
 			autoplay: {
@@ -204,24 +241,26 @@ $(function () {
 			breakpoints: {
 				0: {
 					slidesPerView: 2,
+					spaceBetween: 10,
 				},
 				480: {
-					spaceBetween: 5,
+					slidesPerView: 2,
+					spaceBetween: 20,
 				},
 				600: {
 					slidesPerView: 3,
-					spaceBetween: 10,
+					spaceBetween: 20,
 				},
 				768: {
 					slidesPerView: 4,
-					spaceBetween: 10,
-				},
-				1024: {
-					slidesPerView: 5,
-					spaceBetween: 15,
-				},
-				1080: {
 					spaceBetween: 20,
+				},
+				1200: {
+					spaceBetween: 30,
+					slidesPerView: 5,
+				},
+				1440: {
+					spaceBetween: 30,
 					slidesPerView: 6,
 				},
 			},

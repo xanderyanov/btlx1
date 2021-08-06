@@ -3,12 +3,18 @@
 		padding-right: 15px;
 		padding-left: 15px;
 	}
+	.xBlock {
+		margin-bottom: 50px;
+	}
 }
 
 @media only screen and (max-width: 1140px) {
 }
 
 @media only screen and (max-width: 1080px) {
+	.xBlock {
+		margin-bottom: 40px;
+	}
 }
 
 @media only screen and (max-width: 920px) {
@@ -18,18 +24,12 @@
 }
 
 @media only screen and (max-width: 768px) {
-	.title1 {
-		text-align: center;
-	}
 	.title1 h2 {
 		font-size: 2.25rem;
 	}
 	.content blockquote {
 		margin: 40px 0;
 		padding: 25px 25px;
-	}
-	.title1_uppercase h2 {
-		margin-bottom: 20px;
 	}
 	.btn2 {
 		margin: 20px 0 0;
@@ -45,19 +45,16 @@
 	.breadcrumbsCurrent {
 		display: none;
 	}
-	.pageTitle {
-		margin: 0 0 20px 0;
-	}
 	.xTitle {
 		text-align: center;
 	}
 	h1,
 	h2,
-	h3,
-	h4,
-	h5,
-	h6 {
+	h3 {
 		text-align: center;
+	}
+	.xBlock {
+		margin-bottom: 30px;
 	}
 }
 
@@ -92,34 +89,28 @@
 	}
 
 	h1 {
-		font-size: 26px;
-		/* font-size: 2.875rem; */
-		margin: 0 0 20px 0;
+		font-size: 36px;
+		margin: 0 0 25px 0;
 	}
 	h2 {
-		font-size: 24px;
-		/* font-size: 2.625rem; */
-		margin: 14px 0 10px 0;
+		font-size: 32px;
+		margin: 25px 0 20px 0;
 	}
 	h3 {
-		font-size: 22px;
-		/* font-size: 2.375rem; */
-		margin: 14px 0 10px 0;
+		font-size: 28px;
+		margin: 20px 0 15px 0;
 	}
 	h4 {
-		font-size: 20px;
-		/* font-size: 2.125rem; */
-		margin: 14px 0 10px 0;
+		font-size: 24px;
+		margin: 15px 0 10px 0;
 	}
 	h5 {
-		font-size: 18px;
-		/* font-size: 2rem; */
-		margin: 14px 0 10px 0;
+		font-size: 20px;
+		margin: 15px 0 10px 0;
 	}
 	h6 {
-		font-size: 16px;
-		/* font-size: 1.875rem; */
-		margin: 14px 0 10px 0;
+		font-size: 18px;
+		margin: 15px 0 10px 0;
 	}
 	.content p,
 	.content ul,
@@ -203,52 +194,43 @@
 	}
 
 	h1 {
-		/* font-size: 30px; */
-		font-size: 1.875rem;
+		font-size: 32px;
 		margin: 0 0 20px 0;
 	}
 	h2 {
-		/* font-size: 24px; */
-		font-size: 1.5rem;
-		margin: 15px 0 15px 0;
+		font-size: 28px;
+		margin: 20px 0 15px 0;
 	}
 	h3 {
-		/* font-size: 20px; */
-		font-size: 1.25rem;
+		font-size: 24px;
 		margin: 15px 0 10px 0;
 	}
 	h4 {
-		/* font-size: 16px; */
-		font-size: 1rem;
-		margin: 10px 0 10px 0;
+		font-size: 20px;
+		margin: 15px 0 10px 0;
 	}
 	h5 {
-		/* font-size: 14px; */
-		font-size: 0.875rem;
-		margin: 10px 0 10px 0;
+		font-size: 18px;
+		margin: 15px 0 10px 0;
 	}
 	h6 {
-		/* font-size: 12px; */
-		font-size: 0.75rem;
-		margin: 10px 0 10px 0;
+		font-size: 18px;
+		margin: 15px 0 10px 0;
 	}
 
-	.xTitle {
+	/* .xTitle {
 		margin-bottom: 20px;
 	}
 
 	.xTitle h1 {
-		/* font-size: 30px; */
 		font-size: 1.875rem;
 	}
 	.xTitle h2 {
-		/* font-size: 24px; */
 		font-size: 1.5rem;
 	}
 	.xTitle h3 {
-		/* font-size: 20px; */
 		font-size: 1.25rem;
-	}
+	} */
 }
 
 @media only screen and (max-width: 414px) {

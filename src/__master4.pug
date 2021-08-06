@@ -151,8 +151,12 @@ mixin master4
           +eShopMenu
         .flexBox__right
           +master4top
-          .master__specialization
-            .title
+          .xBlock 
+            .xTitle
+              h2 Интервью со специалистом
+            +imgSlider-2pic-inMaster_interview
+          .master__specialization.xBlock
+            .xTitle
               h2 Специализация
             .specialization__area
               a.specialization(href="") Эпиляция
@@ -200,7 +204,7 @@ mixin master4
 
 
 mixin master4top
-  .master4top
+  .master4top.xBlock
     .master4top__left
       .master4top__inner
         .master4top__img 
@@ -310,5 +314,36 @@ mixin masterWindowForm
             span Врач-косметолог
         .masterWindowForm__right 
           +formInMaster3
+
+
+mixin imgSlider-2pic-inMaster_interview
+  .talkShowSlider__area
+    .talkShowSlider__outer
+      .talkShowSliderCaroucel
+        .swiper-container.talkShowSlider-container
+          .swiper-wrapper.talkShowSlider-wrapper
+            .swiper-slide.talkShow__outer 
+              .talkShow 
+                .talkShow__video 
+                  .videoBox.videoBox_i
+                    iframe(width='560' height='315' src='https://www.youtube.com/embed/YCF6qjf1-h8' autoplay='1' frameborder='0' allow='accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen='')
+                .talkShow__info Правильная косметология
+            .swiper-slide.talkShow__outer 
+              .talkShow 
+                .talkShow__video 
+                  .videoBox.videoBox_i
+                    iframe(width='560' height='315' src='https://www.youtube.com/embed/YCF6qjf1-h8' autoplay='1' frameborder='0' allow='accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen='')
+                .talkShow__info Правильная косметология
+            .swiper-slide.talkShow__outer 
+              .talkShow 
+                .talkShow__video 
+                  .videoBox.videoBox_i
+                    iframe(width='560' height='315' src='https://www.youtube.com/embed/YCF6qjf1-h8' autoplay='1' frameborder='0' allow='accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen='')
+                .talkShow__info Правильная косметология
+        .talkShowSlider__left
+          i.icon-arr-left1
+        .talkShowSlider__right
+          i.icon-arr-right1
+        .swiper-pagination.talkShow__pagination 
           
 

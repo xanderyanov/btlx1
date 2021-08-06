@@ -1,7 +1,7 @@
 @media only screen and (max-width: 1200px) {
-  .imgCaroucel__area {
-    padding: 0 10px;
-  }
+	.imgCaroucel__area {
+		padding: 0 15px;
+	}
 }
 
 @media only screen and (max-width: 1140px) {
@@ -11,7 +11,7 @@
 }
 
 @media only screen and (max-width: 1024px) {
-  /* .imgCaroucel__pagination {
+	/* .imgCaroucel__pagination {
     display: flex;
   }
   .imgCaroucel__left {

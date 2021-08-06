@@ -114,6 +114,10 @@ body {
 	margin: 0;
 } */
 
+.xBlock {
+	margin-bottom: 70px;
+}
+
 .btn2 {
 	display: flex;
 	justify-content: center;
