@@ -465,3 +465,36 @@ a.btn3:hover {
 .zRadio input:disabled + label::before {
 	background-color: #e9ecef;
 }
+
+.xIntro__area {
+	width: 100%;
+}
+
+.xIntroImg {
+	width: 50%;
+	float: right;
+	padding: 0 0 0 40px;
+}
+
+.xIntroImg img {
+	display: block;
+	width: 100%;
+	margin: 0;
+}
+
+.xIntro {
+	position: relative;
+	margin-bottom: 20px;
+}
+
+.xMore {
+	margin-bottom: 20px;
+	display: none;
+}
+
+.xIntro__more {
+	display: inline-block;
+	font-size: 1rem;
+	line-height: 1.5;
+	color: var(--color1);
+}
