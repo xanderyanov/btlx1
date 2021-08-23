@@ -136,6 +136,13 @@ b {
 	box-sizing: border-box;
 }
 
+.content_xl ul li {
+	font-size: 1.25rem;
+}
+.content_xl ul li:before {
+	top: 12px;
+}
+
 .content blockquote h2,
 .content blockquote h3,
 .content blockquote h4,

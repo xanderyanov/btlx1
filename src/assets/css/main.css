@@ -497,4 +497,8 @@ a.btn3:hover {
 	font-size: 1rem;
 	line-height: 1.5;
 	color: var(--color1);
+	cursor: pointer;
+}
+.xIntro__more:hover {
+	text-decoration: underline;
 }

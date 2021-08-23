@@ -32,7 +32,7 @@ $(function () {
 	if ($(".xIntro__area").length) {
 		$(".xIntro__more").on("click", function () {
 			if ($(this).hasClass("xIntro__more_active")) {
-				$(this).removeClass("xIntro__more_active").text("Показать");
+				$(this).removeClass("xIntro__more_active").text("Подробнее...");
 				$(".xMore").removeClass("xMore_active").slideUp();
 			} else {
 				$(this).addClass("xIntro__more_active").text("Скрыть");

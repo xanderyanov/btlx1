@@ -121,6 +121,22 @@
 		line-height: 1.2rem;
 		margin: 0 0 10px 0;
 	}
+	.content ul li {
+		padding: 0 0 0 15px;
+	}
+	.content_xl p,
+	.content_xl ul,
+	.content_xl ol,
+	.content_xl ul li,
+	.content_xl ol li,
+	.content_xl table {
+		font-size: 1rem;
+		line-height: 1.4;
+		font-weight: 400;
+	}
+	.content_xl ul li:before {
+		top: 6px;
+	}
 	.content blockquote {
 		margin: 20px 0;
 	}
@@ -139,6 +155,35 @@
 	}
 	.summaryBlock__inner {
 		padding: 0 0 20px 0;
+	}
+
+	.xIntro__area {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.xIntro__area .xTitle {
+		order: 0;
+	}
+
+	.xIntroImg {
+		width: 100%;
+		padding: 0 0 20px 0;
+		order: 1;
+	}
+
+	.xIntro {
+		width: 100%;
+		order: 2;
+	}
+
+	.xMore {
+		width: 100%;
+		order: 3;
+	}
+
+	.xIntro__more {
+		order: 4;
 	}
 }
 
