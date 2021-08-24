@@ -141,7 +141,7 @@ gulp.task("myJs", function () {
 			.pipe(plumber())
 			.pipe(sourcemaps.init()) //Инициализируем sourcemap
 			.pipe(concat("main.js")) // в какой файл объединить
-			.pipe(uglify()) //Сожмем наш js
+			// .pipe(uglify()) //Сожмем наш js
 			.pipe(sourcemaps.write("."))
 			.pipe(gulp.dest("build/assets/js"))
 	);

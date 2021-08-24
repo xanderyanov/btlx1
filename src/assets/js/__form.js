@@ -77,12 +77,7 @@ function validateWorkEmail(selector) {
 function validateCheckbox(selector) {
 	var elem = $(selector);
 	if (!elem.is(":checked")) {
-		swal({
-			title: "Отметьте чекбокс",
-			text: "Дайте свое согласие на обработку данных!",
-			type: "error",
-			confirmButtonText: "ок",
-		});
+		swal({ title: "Отметьте чекбокс", text: "Дайте свое согласие на обработку данных!", type: "error", confirmButtonText: "ок" });
 		return false;
 	}
 	return true;
@@ -97,17 +92,14 @@ $(function () {
 
 		var data = { subj: "Форма главной страницы" };
 
-		if (
-			validateName(".name_m3", data) &&
-			validatePhone(".phone_m3", data) &&
-			validateWorkEmail(".work_email_m3") &&
-			validateCheckbox(".checkbox_m3")
-		) {
-			$.post(mailUrl, data, function () {
-				swal({ title: "Спасибо", text: "Ваше сообщение отправлено", type: "success", confirmButtonText: "ок" });
-				$(".name_m3, .phone_m3").val("");
-				$(".checkbox_m3:checked").prop("checked", false);
-			});
+		if (validateName(".name_m3", data) && validatePhone(".phone_m3", data) && validateWorkEmail(".work_email_m3") && validateCheckbox(".checkbox_m3")) {
+			$.post(mailUrl, data,
+				function () {
+					swal({ title: "Спасибо", text: "Ваше сообщение отправлено", type: "success", confirmButtonText: "ок" });
+					$(".name_m3, .phone_m3").val("");
+					$(".checkbox_m3:checked").prop("checked", false);
+				}
+			);
 		}
 	});
 
@@ -117,17 +109,14 @@ $(function () {
 
 		var data = { subj: $(".subj13").text() };
 
-		if (
-			validateName(".name13", data) &&
-			validatePhone(".phone13", data) &&
-			validateWorkEmail(".work_email13") &&
-			validateCheckbox(".checkbox13")
-		) {
-			$.post(mailUrl, data, function () {
-				swal({ title: "Спасибо", text: "Ваше сообщение отправлено", type: "success", confirmButtonText: "ок" });
-				$(".name13, .phone13").val("");
-				$(".checkbox13:checked").prop("checked", false);
-			});
+		if (validateName(".name13", data) && validatePhone(".phone13", data) && validateWorkEmail(".work_email13") && validateCheckbox(".checkbox13")) {
+			$.post(mailUrl, data,
+				function () {
+					swal({ title: "Спасибо", text: "Ваше сообщение отправлено", type: "success", confirmButtonText: "ок" });
+					$(".name13, .phone13").val("");
+					$(".checkbox13:checked").prop("checked", false);
+				}
+			);
 		}
 	});
 
@@ -137,20 +126,17 @@ $(function () {
 
 		var data = { subj: "Сообщение со страницы контактов" };
 
-		if (
-			validateName(".name3", data) &&
-			validatePhone(".phone3", data) &&
-			validateEmail(".email3", data) &&
-			validateWorkEmail(".work_email3") &&
-			validateMessage(".message3", data) &&
-			validateCheckbox(".checkbox3")
+		if (validateName(".name3", data) && validatePhone(".phone3", data) && validateEmail(".email3", data) && validateWorkEmail(".work_email3")
+			&& validateMessage(".message3", data) && validateCheckbox(".checkbox3")
 		) {
 			data.name += " " + $(".surname3").val();
-			$.post(mailUrl, data, function () {
-				swal({ title: "Спасибо", text: "Ваше сообщение отправлено", type: "success", confirmButtonText: "ок" });
-				$(".name3, .surname3, .phone3, .email3, .message3").val("");
-				$(".checkbox3:checked").prop("checked", false);
-			});
+			$.post(mailUrl, data,
+				function () {
+					swal({ title: "Спасибо", text: "Ваше сообщение отправлено", type: "success", confirmButtonText: "ок" });
+					$(".name3, .surname3, .phone3, .email3, .message3").val("");
+					$(".checkbox3:checked").prop("checked", false);
+				}
+			);
 		}
 	});
 
@@ -161,27 +147,19 @@ $(function () {
 
 		var data = { subj: "Форма заказа обратного звонка" };
 
-		if (
-			validateName(".name_callback", data) &&
-			validatePhone(".phone_callback", data) &&
-			validateWorkEmail(".work_email_callback") &&
-			validateCheckbox(".checkbox_callback")
-		) {
-			$.post(mailUrl, data, function () {
-				swal({
-					title: "Спасибо",
-					text: "Заказ обратного звонка отправлен, наши менеджеры свяжутся с Вами в ближайшее время",
-					type: "success",
-					confirmButtonText: "ок",
-				});
-				$(".name_callback, .phone_callback").val("");
-				$(".checkbox_callback:checked").prop("checked", false);
-				$(".callBackBtn").removeClass("active");
-				$(".callBack__form").addClass("bounceOutUp").removeClass("bounceInDown").fadeOut(600);
-				setTimeout(function () {
-					$(".callBack__overlay").fadeOut();
-				}, 800);
-			});
+		if (validateName(".name_callback", data) && validatePhone(".phone_callback", data) && validateWorkEmail(".work_email_callback") && validateCheckbox(".checkbox_callback")) {
+			$.post(mailUrl, data,
+				function () {
+					swal({ title: "Спасибо", text: "Заказ обратного звонка отправлен, наши менеджеры свяжутся с Вами в ближайшее время", type: "success", confirmButtonText: "ок" });
+					$(".name_callback, .phone_callback").val("");
+					$(".checkbox_callback:checked").prop("checked", false);
+					$(".callBackBtn").removeClass("active");
+					$(".callBack__form").addClass("bounceOutUp").removeClass("bounceInDown").fadeOut(600);
+					setTimeout(function () {
+						$(".callBack__overlay").fadeOut();
+					}, 800);
+				}
+			);
 		}
 	});
 
@@ -191,17 +169,14 @@ $(function () {
 		var masterName = $(".mf3_subj").text();
 		var data = { subj: "Форма со страницы мастера" + masterName };
 
-		if (
-			validateName(".name_mf3", data) &&
-			validatePhone(".phone_mf3", data) &&
-			validateWorkEmail(".work_email_mf3") &&
-			validateCheckbox(".checkbox_mf3")
-		) {
-			$.post(mailUrl, data, function () {
-				swal({ title: "Спасибо", text: "Ваше сообщение отправлено", type: "success", confirmButtonText: "ок" });
-				$(".name_mf3, .phone_mf3").val("");
-				$(".checkbox_mf3:checked").prop("checked", false);
-			});
+		if (validateName(".name_mf3", data) && validatePhone(".phone_mf3", data) && validateWorkEmail(".work_email_mf3") && validateCheckbox(".checkbox_mf3")) {
+			$.post(mailUrl, data,
+				function () {
+					swal({ title: "Спасибо", text: "Ваше сообщение отправлено", type: "success", confirmButtonText: "ок" });
+					$(".name_mf3, .phone_mf3").val("");
+					$(".checkbox_mf3:checked").prop("checked", false);
+				}
+			);
 		}
 	});
 
@@ -211,17 +186,21 @@ $(function () {
 		var masterName = $(".mf3_subj_popup").text();
 		var data = { subj: "Форма со страницы мастера" + masterName };
 
-		if (
-			validateName(".name_mf3_popup", data) &&
-			validatePhone(".phone_mf3_popup", data) &&
-			validateWorkEmail(".work_email_mf3_popup") &&
-			validateCheckbox(".checkbox_mf3_popup")
-		) {
-			$.post(mailUrl, data, function () {
-				swal({ title: "Спасибо", text: "Ваше сообщение отправлено", type: "success", confirmButtonText: "ок" });
-				$(".name_mf3_popup, .phone_mf3_popup").val("");
-				$(".checkbox_mf3_popup:checked").prop("checked", false);
-			});
+		if (validateName(".name_mf3_popup", data) && validatePhone(".phone_mf3_popup", data) && validateWorkEmail(".work_email_mf3_popup") && validateCheckbox(".checkbox_mf3_popup")) {
+			$.post(mailUrl, data,
+				function () {
+					swal({ title: "Спасибо", text: "Ваше сообщение отправлено", type: "success", confirmButtonText: "ок" });
+					$(".name_mf3_popup, .phone_mf3_popup").val("");
+					$(".checkbox_mf3_popup:checked").prop("checked", false);
+					$(".name_mf3_popup").val("").removeClass("error");
+					$(".phone_mf3_popup").val("").removeClass("error");
+					$(".form_mf3alrightBox_popup").val("").removeClass("error");
+					$(".checkbox_mf3_popup:checked").prop("checked", false);
+					$(".masterWindowForm__overlay").fadeOut(300);
+					$("body").removeClass("stop");
+				}
+			);
 		}
 	});
+
 });

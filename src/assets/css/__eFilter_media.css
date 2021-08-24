@@ -27,7 +27,46 @@
 		padding: 0 20px 0 0;
 	}
 	.eFilterCheckbox {
-		padding: 10px 10px 10px 0;
+		padding: 5px 5px 5px 0;
+		display: inline-block;
+	}
+
+	.eFilterCheckbox:last-child {
+		padding: 5px 5px 0 0;
+	}
+
+	.eFilterCheckbox label {
+		padding: 8px 16px 8px 16px;
+		border: 1px solid var(--color1);
+		border-radius: 4px;
+		letter-spacing: 0.02em;
+		text-transform: uppercase;
+	}
+
+	.eFilterCheckbox label::before {
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		margin-top: 0;
+		content: "";
+		display: block;
+		height: auto;
+		width: auto;
+		border: none;
+		box-sizing: border-box;
+		border-radius: 2px;
+		z-index: -1;
+	}
+
+	.eFilterCheckbox label::after {
+		opacity: 0;
+	}
+
+	.eFilterCheckbox input[type="checkbox"]:checked + label {
+		color: #fff;
+		background: var(--color1);
 	}
 }
 
