@@ -12,7 +12,7 @@ function siteResizeFunction() {
 		$("body").removeClass("stop");
 	}
 	if (prevWindowWidth > 1024 && windowWidth <= 1024) {
-		$(".eShopMenu__outer_catalogOnly").hide();
+		$(".eShopMenu__outer_catalogOnly").hide().removeClass("eShopMenu__outer_catalogOnly_active");
 	}
 
 	//* start - cabinetTabs **/ + __eShopCabinet.js

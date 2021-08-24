@@ -81,11 +81,12 @@ $(function () {
 		var $this = $(this);
 		var thisFilterContent = $this.closest(".eFilterArea__wrapper").find(".eFilter__area");
 		if ($this.hasClass("eFilter__mbBtn_active")) {
-			if ($(window).width() <= 600) {
+			if ($(window).width() <= 768) {
 				thisFilterContent.slideUp(300);
 				setTimeout(function () {
 					$this.removeClass("eFilter__mbBtn_active");
 					$(".eFilter__overlay").fadeOut(300);
+					$(".JS_Filters_reset").hide();
 					$("body").removeClass("stop");
 					$(".eFilterArea__wrapper").removeClass("mbBtn_100");
 				}, 300);
@@ -93,14 +94,16 @@ $(function () {
 				thisFilterContent.slideUp(300);
 				$this.removeClass("eFilter__mbBtn_active");
 				$(".eFilter__overlay").fadeOut(300);
+				$(".JS_Filters_reset").hide();
 				$("body").removeClass("stop");
 				$(".eFilterArea__wrapper").removeClass("mbBtn_100");
 			}
 		} else {
-			if ($(window).width() <= 600) {
+			if ($(window).width() <= 768) {
 				$(".eFilterArea__wrapper").addClass("mbBtn_100");
 				$this.addClass("eFilter__mbBtn_active");
 				$(".eFilter__overlay").fadeIn(300);
+				$(".JS_Filters_reset").show();
 				$("body").addClass("stop");
 				setTimeout(function () {
 					thisFilterContent.slideDown(300);
@@ -108,6 +111,7 @@ $(function () {
 			} else {
 				$this.addClass("eFilter__mbBtn_active");
 				$(".eFilter__overlay").fadeIn(300);
+				$(".JS_Filters_reset").show();
 				$("body").addClass("stop");
 				thisFilterContent.slideDown(300);
 			}
@@ -116,11 +120,12 @@ $(function () {
 	$(".eFilter__overlay").on("click", function (e) {
 		e.preventDefault();
 		e.stopPropagation();
-		if ($(window).width() <= 600) {
+		if ($(window).width() <= 768) {
 			$(".eFilter__area").slideUp(300);
 			setTimeout(function () {
 				$(".eFilter__mbBtn").removeClass("eFilter__mbBtn_active");
 				$(".eFilter__overlay").fadeOut(300);
+				$(".JS_Filters_reset").hide();
 				$("body").removeClass("stop");
 				$(".eFilterArea__wrapper").removeClass("mbBtn_100");
 			}, 300);
@@ -128,6 +133,7 @@ $(function () {
 			$(".eFilter__area").slideUp(300);
 			$(".eFilter__mbBtn").removeClass("eFilter__mbBtn_active");
 			$(".eFilter__overlay").fadeOut(300);
+			$(".JS_Filters_reset").hide();
 			$("body").removeClass("stop");
 			$(".eFilterArea__wrapper").removeClass("mbBtn_100");
 		}
@@ -181,4 +187,12 @@ $(function () {
 			$(this).closest(".eFilerMobile__item").find(".eFilerMobile__itemLev1").removeClass("active");
 		}
 	});
+
+	var filterChecked = $('.eFilterCheckbox input[type="checkbox"]:checked').length / 2;
+	console.log("Выбрано " + filterChecked + " фильтров");
+	if (filterChecked > 0) {
+		$(".eFilter__selectedCount").show().text(filterChecked);
+	} else {
+		$(".eFilter__selectedCount").hide();
+	}
 });
