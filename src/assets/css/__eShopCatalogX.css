@@ -197,6 +197,19 @@
 	margin-left: 10px;
 }
 
+.eFilter__mbBtn .eFilter__selectedCount {
+	font-size: 10px;
+	margin-left: 5px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+	background: var(--red1);
+	color: #fff;
+	width: 18px;
+	height: 18px;
+}
+
 /*****************/
 .eGreyLine__outer {
 	padding: 0 0 0 30px;
