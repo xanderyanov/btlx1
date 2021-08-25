@@ -4,14 +4,14 @@ mixin contactsName
     .orderBox__title2 Получатель
     .orderBox__inner
       .zInputWrapper.zInputWrapper_100
-        label(for="ContactPerson") ФИО (как в паспорте):
-        input.surname_order(name='ContactPerson', type='text', placeholder='')
-      //- .zInputWrapper.zInputWrapper_50
-      //-   label(for="name_order") Ваше имя:
-      //-   input.name_order(name='name_order', type='text', placeholder='')
-      //- .zInputWrapper.zInputWrapper_50
-      //-   label(for="middleName_order") Ваше отчество:
-      //-   input.name_order(name='middleName_order', type='text', placeholder='')
+        label(for="ContactPersonLastName") Фамилия:
+        input.ContactPersonLastName(name='ContactPersonLastName', type='text', placeholder='')
+      .zInputWrapper.zInputWrapper_50
+        label(for="ContactPersonFirstName") Имя:
+        input.ContactPersonFirstName(name='ContactPersonFirstName', type='text', placeholder='')
+      .zInputWrapper.zInputWrapper_50
+        label(for="ContactPersonMiddleName") Отчество:
+        input.ContactPersonMiddleName(name='ContactPersonMiddleName', type='text', placeholder='')
       
       .zInputWrapper.zInputWrapper_50
         label(for="ContactPhone") Телефон:
