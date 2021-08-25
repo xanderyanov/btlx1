@@ -196,7 +196,7 @@
 .eShopMenu li.lev2 > .esli_inner a {
 	display: flex;
 	align-items: center;
-	padding: 10px 10px 10px 30px;
+	padding: 10px 30px 10px 20px;
 	text-decoration: none;
 	width: 100%;
 	transition: all 0.3s;
@@ -212,7 +212,7 @@
 .eShopMenu li.lev2 > .esli_inner > .openInner {
 	position: absolute;
 	top: 0;
-	left: 0;
+	right: 0;
 	height: 100%;
 	width: 30px;
 	background: transparent;
@@ -220,7 +220,7 @@
 	transition: all 0.3s;
 	display: flex;
 	align-items: center;
-	/* justify-content: center; */
+	justify-content: flex-end;
 }
 
 .eShopMenu li.lev2 > .esli_inner > .openInner:after {
@@ -297,7 +297,7 @@
 .eShopMenu li.lev3 > .esli_inner a {
 	display: flex;
 	align-items: center;
-	padding: 5px 10px 5px 40px;
+	padding: 5px 30px 5px 40px;
 	text-decoration: none;
 	width: 100%;
 	transition: all 0.3s;
@@ -323,7 +323,7 @@
 .eShopMenu li.lev3 > .esli_inner > .openInner {
 	position: absolute;
 	top: 0;
-	left: 20px;
+	right: 0;
 	height: 100%;
 	width: 30px;
 	background: transparent;
@@ -331,7 +331,7 @@
 	transition: all 0.3s;
 	display: flex;
 	align-items: center;
-	/* justify-content: center; */
+	justify-content: flex-end;
 }
 
 .eShopMenu li.lev3 > .esli_inner > .openInner:after {

@@ -10,9 +10,24 @@ function siteResizeFunction() {
 		$(".eShopMenu__outer_catalogOnly").show();
 		$(".floatBox__leftOverlay").fadeOut(300);
 		$("body").removeClass("stop");
+
+		//закрываем всплывашки брендов, фильтров и каталога при смене режима с мобильного на десктопный
+		$(".eFilter__area").slideUp(300);
+		$(".eFilter__mbBtn").removeClass("eFilter__mbBtn_active");
+		$(".eFilter__overlay").fadeOut(300);
+		$(".JS_Filters_reset").hide();
+		$("body").removeClass("stop");
+		$(".eFilterArea__wrapper").removeClass("mbBtn_100");
+		setTimeout(function () {
+			$(".eFilter__area").show();
+		}, 300);
+		$(".eShopMenu__overlay").fadeOut(300);
 	}
 	if (prevWindowWidth > 1024 && windowWidth <= 1024) {
 		$(".eShopMenu__outer_catalogOnly").hide().removeClass("eShopMenu__outer_catalogOnly_active");
+
+		//коррекция всплывашки брендов, фильтров и каталога при смене режима с мобильного на десктопный
+		$(".eFilter__area").hide();
 	}
 
 	//* start - cabinetTabs **/ + __eShopCabinet.js

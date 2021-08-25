@@ -36,11 +36,12 @@
 @media only screen and (max-width: 768px) {
 	.zInputWrapper_50:nth-child(odd) {
 		width: 50%;
-		padding: 0 15px 0 0;
+		padding: 0 0 0 15px;
 	}
 	.zInputWrapper_50:nth-child(even) {
 		width: 50%;
-		padding: 0 0 0 15px;
+
+		padding: 0 15px 0 0;
 	}
 }
 

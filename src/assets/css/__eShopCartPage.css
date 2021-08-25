@@ -358,6 +358,7 @@ a.eShopCart__title {
 	letter-spacing: 0.02em;
 	color: #5e4d79;
 	white-space: nowrap;
+	text-align: right;
 }
 
 .eShopCartTotalInfo__sum {
@@ -410,6 +411,7 @@ a.eShopCart__title {
 }
 .eShopCartTotalInfo__btn:hover {
 	background: var(--color1);
+	color: #fff;
 }
 
 .addAllToFavBtn {

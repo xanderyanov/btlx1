@@ -3,18 +3,22 @@ mixin contactsName
     .orderBox__title 1.Контактные данные
     .orderBox__title2 Получатель
     .orderBox__inner
+      .zInputWrapper.zInputWrapper_100
+        label(for="ContactPerson") ФИО (как в паспорте):
+        input.surname_order(name='ContactPerson', type='text', placeholder='')
+      //- .zInputWrapper.zInputWrapper_50
+      //-   label(for="name_order") Ваше имя:
+      //-   input.name_order(name='name_order', type='text', placeholder='')
+      //- .zInputWrapper.zInputWrapper_50
+      //-   label(for="middleName_order") Ваше отчество:
+      //-   input.name_order(name='middleName_order', type='text', placeholder='')
+      
       .zInputWrapper.zInputWrapper_50
-        label(for="name_order") Ваше имя:
-        input.name_order(name='name_order', type='text', placeholder='')
+        label(for="ContactPhone") Телефон:
+        input.phone_order(name='ContactPhone', type='text', placeholder='')
       .zInputWrapper.zInputWrapper_50
-        label(for="surname_order") Ваша фамилия:
-        input.surname_order(name='surname_order', type='text', placeholder='')
-      .zInputWrapper.zInputWrapper_50
-        label(for="phone_order") Телефон:
-        input.phone_order(name='phone_order', type='text', placeholder='')
-      .zInputWrapper.zInputWrapper_50
-        label(for="phone2_order") Телефон, если не дозвониться:
-        input.phone2_order(name='phone2_order', type='text', placeholder='')
+        label(for="Email") Email:
+        input.Email(name='Email', type='email', placeholder='')
 
 mixin orderDeliveryType 
   .orderBox 
@@ -29,7 +33,7 @@ mixin orderDeliveryType
             .order__tabContent
               .order__pickup 
                 .order__pickupLeft
-                  .pickup__point Центр Косметологии и красоты «Бьюти Лаундж»
+                  .pickup__point Центр Косметологии и красоты «Бьюти Лаунж»
                   .pickup__pointAddress ТК МИР. г. Саратов, ул. Московская, 113/117
                   .pickup__work Режим работы
                   .pickup__workTime С 09:00 до 21:00.
@@ -46,14 +50,14 @@ mixin orderDeliveryType
           section
             .deliveryAddress__info 
               .zInputWrapper.w48.w100xs
-                label(for="town_order") Город*:
-                input.town_order(name='town_order', type='text', placeholder='')
+                label(for="DeliveryAddressCity") Город*:
+                input.DeliveryAddressCity(name='DeliveryAddressCity', type='text', placeholder='')
               .zInputWrapper.w48.w100xs
-                label(for="street_order") Улица*:
-                input.comment_order(name='comment_order', type='text', placeholder='')
+                label(for="DeliveryAddressStreet") Улица*:
+                input.DeliveryAddressStreet(name='DeliveryAddressStreet', type='text', placeholder='')
               .zInputWrapper.w48
-                label(for="house_order") Дом*:
-                input.house_order(name='house_order', type='text', placeholder='')
+                label(for="DeliveryAddressHouse") Дом*:
+                input.DeliveryAddressHouse(name='DeliveryAddressHouse', type='text', placeholder='')
               //- .zInputWrapper.w37
               //-   label(for="building_order") Строение:
               //-   input.building_order(name='building_order', type='text', placeholder='')
@@ -67,9 +71,9 @@ mixin orderDeliveryType
               //-   label(for="floor_order") Этаж:
               //-   input.floor_order(name='floor_order', type='text', placeholder='')
               .zInputWrapper.w48
-                label(for="flat_order") Квартира:
-                input.flat_order(name='flat_order', type='text', placeholder='')
-            .deliveryType__area 
+                label(for="DeliveryAddressApartment") Квартира:
+                input.DeliveryAddressApartment(name='DeliveryAddressApartment', type='text', placeholder='')
+            //- .deliveryType__area 
               .deliveryType__title Вид доставки
               .zRadio.zRadioMore.active
                 input(name="color" type="radio" id="zr1" value="standart" checked)
@@ -84,8 +88,8 @@ mixin orderDeliveryType
                 label(for="zr3") Хочу прямо сейчас
                 .deliveryType__price 5000 ₽
     .zInputWrapper
-      label(for="comment_order") Комментарий к заказу:
-      input.comment_order(name='comment_order', type='text', placeholder='')
+      label(for="Comment") Комментарий к заказу:
+      textarea.Comment(name='Comment', type='text', placeholder='' maxlength="300")
 
 mixin confirmation
   .orderBox 
