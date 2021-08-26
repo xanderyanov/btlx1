@@ -1,0 +1,61 @@
+- var pageTitle = 'Категории'
+- var seoKeywords = 'Ключевые слова для страницы'
+- var seoDesc = 'Сео описание для страницы'
+
+include __const
+include __card
+include __header
+include __menu
+include __eShopMenu
+include __mainTop
+include __mainProblem
+include __breadcrumbs
+include __wideBlock
+include __services
+include __forms
+
+include __footer
+include __menuBottom1
+
+include __old
+include __popUpBlocks
+include __eVideoPage
+include __pagination
+
+
+
+
+<!DOCTYPE html>
+html(lang="ru-RU")
+  +head
+body
+
+  .site__header
+    +header
+    //- +topMenu
+
+
+  .site__center
+    +breadcrumbs5
+    .dubleBox3__area 
+      .dubleBox3.wsite
+        .dubleBox3__left 
+          //- +leftMenuSuperTree
+          +eShopMenu
+        .dubleBox3__right
+          //- .xTitle 
+          //-   h1 Видео процедуры
+          +jsFilterMobile
+          +jsFilter
+          +eVideoGallery
+          +pagiantion
+          +wideBlock
+
+    //- +zBlock3
+
+  .site__footer
+    +footer3
+
+  +popUpBlocks
+  +scripts
+  

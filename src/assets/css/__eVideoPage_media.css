@@ -1,0 +1,50 @@
+@media only screen and (max-width: 1200px) {
+}
+
+@media only screen and (max-width: 1140px) {
+}
+
+@media only screen and (max-width: 1080px) {
+}
+
+@media only screen and (max-width: 1024px) {
+}
+
+@media only screen and (max-width: 920px) {
+}
+
+@media only screen and (max-width: 820px) {
+}
+
+@media only screen and (max-width: 768px) {
+	.eVideoGallery__itemInfo {
+		padding: 10px 20px;
+	}
+	.eVideoGallery__itemTitle {
+		font-size: 1rem;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	.eVideoGallery__itemOuter {
+		width: 100%;
+	}
+	.filterTagMenu__outer {
+		display: none;
+	}
+	.filterTagMenuMobile__area {
+		display: block;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+}
+
+@media only screen and (max-width: 414px) {
+}
+
+@media only screen and (max-width: 400px) {
+}
+
+@media only screen and (max-width: 320px) {
+}

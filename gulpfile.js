@@ -126,6 +126,7 @@ var myjsfiles = [
 	"src/assets/js/__bottomAdaptiveMenu.js",
 	"src/assets/js/__actions.js",
 	"src/assets/js/__comments.js",
+	"src/assets/js/__jsFilter.js",
 	// "src/assets/js/__headerScroll.js",
 	"src/assets/js/__callBack.js",
 	"src/assets/js/main.js",

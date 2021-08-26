@@ -1,0 +1,209 @@
+.eVideoGallery__area {
+	width: 100%;
+	position: relative;
+}
+
+.eVideoGallery {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 -15px;
+}
+
+.eVideoGallery__itemOuter {
+	padding: 0 15px 30px;
+	width: 50%;
+}
+
+.eVideoGallery__item {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+}
+
+.eVideoGallery__itemVideo {
+	border-radius: 6px 6px 0px 0px;
+	overflow: hidden;
+}
+
+.eVideoGallery__itemInfo {
+	background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #f0f0f0 100%), #ffffff;
+	border: 1px solid #e0e0e0;
+	box-sizing: border-box;
+	border-radius: 0px 0px 6px 6px;
+	padding: 20px 30px;
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+}
+
+.eVideoGallery__itemInfoTop {
+	background: #f2f2f2;
+	border: 1px solid #e0e0e0;
+	border-radius: 16px;
+	display: flex;
+	align-items: center;
+	margin: 0 auto 12px 0;
+	padding: 3px 20px;
+}
+.eVideoGallery__itemInfoTop_new {
+	border-radius: 6px 16px 16px 6px;
+	padding: 3px 20px 3px 3px;
+}
+
+.eVideoGallery__itemFlag {
+	width: 57px;
+	height: 26px;
+	background-image: url("data:image/svg+xml,%3Csvg width='57' height='26' viewBox='0 0 57 26' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 6.4c0-2.24 0-3.36.436-4.216A4 4 0 0 1 2.184.436C3.04 0 4.16 0 6.4 0h45.554c1.961 0 2.942 0 3.478.408a2 2 0 0 1 .787 1.486c.035.673-.516 1.484-1.619 3.105l-2.745 4.037c-.852 1.253-1.278 1.88-1.451 2.56a4 4 0 0 0-.033 1.838c.15.687.553 1.328 1.36 2.61l3.18 5.051c1.008 1.6 1.512 2.4 1.46 3.06a2 2 0 0 1-.8 1.45C55.04 26 54.094 26 52.204 26H6.4c-2.24 0-3.36 0-4.216-.436a4 4 0 0 1-1.748-1.748C0 22.96 0 21.84 0 19.6V6.4z' fill='%23D54C64'/%3E%3C/svg%3E");
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 16px;
+	letter-spacing: 0.04em;
+	text-transform: uppercase;
+	color: #ffffff;
+	margin-right: 6px;
+}
+
+.eVideoGallery__itemDate {
+	font-style: normal;
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 20px;
+	letter-spacing: 0.04em;
+	color: #4f4f4f;
+}
+
+.eVideoGallery__itemTitle {
+	font-style: normal;
+	font-weight: normal;
+	font-size: 1.125rem;
+	line-height: 1.3;
+	letter-spacing: 0.04em;
+	color: #4f4f4f;
+}
+
+/**************jsFilter**************/
+
+.filterTagMenu__outer {
+	width: 100%;
+	padding: 0 0 25px;
+}
+
+.filterTagMenu {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 -5px;
+}
+
+.filterTagMenuLink {
+	padding: 10px 30px;
+	margin: 5px;
+	text-decoration: none;
+	transition: all 0.3s;
+	border: 1px solid #e0e0e0;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 24px;
+	color: #4f4f4f;
+	border-radius: 50px;
+	list-style: none;
+	cursor: pointer;
+}
+
+.filterTagMenuLink:hover {
+	box-shadow: 0px 10px 20px rgb(196 187 234 / 45%);
+}
+
+.filterTagMenuLink.active {
+	background: var(--color1);
+	color: #fff;
+}
+
+.jsFilterResultItem.hidden {
+	display: none;
+}
+
+.jsFilterResultItem.visible {
+	display: block;
+}
+
+/**************mobile*********************/
+.filterTagMenuMobile__area {
+	position: relative;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	display: none;
+	padding-top: 1rem;
+	margin-bottom: 20px;
+}
+
+.filterTagMenuMobile {
+	display: block;
+
+	font-family: Roboto Condensed;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 24px;
+	letter-spacing: 0.06em;
+	text-transform: uppercase;
+	color: #4f4f4f;
+
+	padding: 0.6em 1.4em 0.5em 0.8em;
+	width: 100%;
+	max-width: 100%;
+	box-sizing: border-box;
+	margin: 0;
+	border: 1px solid #bdbdbd;
+
+	border-radius: 6px;
+	box-shadow: 0 1px 0 1px rgba(0, 0, 0, 0.04);
+
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	appearance: none;
+	background-color: #fff;
+	/* background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23007CB2%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E"); */
+	background-image: url(../img/svg/chevron-down.svg);
+	background-repeat: no-repeat, repeat;
+	background-position: right 0.7em top 50%, 0 0;
+	background-size: 0.65em auto, 100%;
+}
+.filterTagMenuMobile::-ms-expand {
+	display: none;
+}
+.filterTagMenuMobile:hover {
+	border-color: #888;
+}
+.filterTagMenuMobile:focus {
+	border-color: #aaa;
+
+	box-shadow: 0px 15px 30px rgb(196 187 234 / 45%);
+
+	box-shadow: 0 0 0 3px -moz-mac-focusring;
+	color: #222;
+	outline: none;
+}
+.filterTagMenuMobile option {
+	font-weight: normal;
+}
+*[dir="rtl"] .filterTagMenuMobile,
+:root:lang(ar) .filterTagMenuMobile,
+:root:lang(iw) .filterTagMenuMobile {
+	background-position: left 0.7em top 50%, 0 0;
+	padding: 0.6em 0.8em 0.5em 1.4em;
+}
+
+.filterTagMenuLink_mb {
+	font-size: 1.125rem;
+	padding-bottom: 10px;
+}
+.filterTagMenuLink_mb:last-child {
+	padding-bottom: 0;
+}

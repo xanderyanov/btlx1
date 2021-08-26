@@ -1,0 +1,101 @@
+mixin eVideoGallery
+  .eVideoGallery__area 
+    .eVideoGallery
+      .eVideoGallery__itemOuter.jsFilterResultItem(data-sid='62') 
+        .eVideoGallery__item
+          .eVideoGallery__itemVideo.videoBox_i
+            iframe(width='560' height='315' src='https://www.youtube.com/embed/YCF6qjf1-h8' autoplay='1' frameborder='0' allow='accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen='')
+          .eVideoGallery__itemInfo
+            .eVideoGallery__itemInfoTop.eVideoGallery__itemInfoTop_new
+              .eVideoGallery__itemFlag New 
+              .eVideoGallery__itemDate 12.08.2021
+            .eVideoGallery__itemTitle  Лазерная эпиляция - интервью с нашим ведущим специалистом в этой области
+      .eVideoGallery__itemOuter.jsFilterResultItem(data-sid='17,18,19,21') 
+        .eVideoGallery__item
+          .eVideoGallery__itemVideo.videoBox_i
+            iframe(width='560' height='315' src='https://www.youtube.com/embed/mkzVw60JBrs' autoplay='1' frameborder='0' allow='accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen='')
+          .eVideoGallery__itemInfo
+            .eVideoGallery__itemInfoTop.eVideoGallery__itemInfoTop_new
+              .eVideoGallery__itemFlag New 
+              .eVideoGallery__itemDate 20.08.2021
+            .eVideoGallery__itemTitle  SMAS-лифтинг лица Альтера-терапия
+      .eVideoGallery__itemOuter.jsFilterResultItem(data-sid='17,18,19,20,21') 
+        .eVideoGallery__item
+          .eVideoGallery__itemVideo.videoBox_i
+            iframe(width='560' height='315' src='https://www.youtube.com/embed/YCF6qjf1-h8' autoplay='1' frameborder='0' allow='accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen='')
+          .eVideoGallery__itemInfo
+            .eVideoGallery__itemInfoTop.eVideoGallery__itemInfoTop_new
+              .eVideoGallery__itemFlag New 
+              .eVideoGallery__itemDate 12.08.2021
+            .eVideoGallery__itemTitle  Лазерная эпиляция - интервью с нашим ведущим специалистом в этой области
+      .eVideoGallery__itemOuter.jsFilterResultItem(data-sid='17,18,19,20,21') 
+        .eVideoGallery__item
+          .eVideoGallery__itemVideo.videoBox_i
+            iframe(width='560' height='315' src='https://www.youtube.com/embed/mkzVw60JBrs' autoplay='1' frameborder='0' allow='accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen='')
+          .eVideoGallery__itemInfo
+            .eVideoGallery__itemInfoTop.eVideoGallery__itemInfoTop_new
+              .eVideoGallery__itemFlag New 
+              .eVideoGallery__itemDate 20.08.2021
+            .eVideoGallery__itemTitle  SMAS-лифтинг лица Альтера-терапия
+      .eVideoGallery__itemOuter.jsFilterResultItem(data-sid='17,18,19,20,21') 
+        .eVideoGallery__item
+          .eVideoGallery__itemVideo.videoBox_i
+            iframe(width='560' height='315' src='https://www.youtube.com/embed/YCF6qjf1-h8' autoplay='1' frameborder='0' allow='accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen='')
+          .eVideoGallery__itemInfo
+            .eVideoGallery__itemInfoTop.eVideoGallery__itemInfoTop_new
+              .eVideoGallery__itemFlag New 
+              .eVideoGallery__itemDate 12.08.2021
+            .eVideoGallery__itemTitle  Лазерная эпиляция - интервью с нашим ведущим специалистом в этой области
+      .eVideoGallery__itemOuter.jsFilterResultItem(data-sid='17,18,19,21,22') 
+        .eVideoGallery__item
+          .eVideoGallery__itemVideo.videoBox_i
+            iframe(width='560' height='315' src='https://www.youtube.com/embed/mkzVw60JBrs' autoplay='1' frameborder='0' allow='accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen='')
+          .eVideoGallery__itemInfo
+            .eVideoGallery__itemInfoTop.eVideoGallery__itemInfoTop_new
+              .eVideoGallery__itemFlag New 
+              .eVideoGallery__itemDate 20.08.2021
+            .eVideoGallery__itemTitle  SMAS-лифтинг лица Альтера-терапия
+
+
+
+
+mixin jsFilter 
+  nav.filterTagMenu__outer
+    ul.filterTagMenu
+      li.filterTagMenuLink.menuCategoryMastersLink__all.active(data-id='all')
+        span Все видео
+      li.filterTagMenuLink(data-id='17')
+        span Ulthera System
+      li.filterTagMenuLink(data-id='201')
+        span Emsculpt (Эмскульпт)
+      li.filterTagMenuLink(data-id='18')
+        span  MJoule BBL HERO
+      li.filterTagMenuLink(data-id='21')
+        span ZLipo Med
+      li.filterTagMenuLink(data-id='19')
+        span Endospheres Therapy
+      li.filterTagMenuLink(data-id='20')
+        span Fotona
+      li.filterTagMenuLink(data-id='25')
+        span DEKA SmartXide 2
+      li.filterTagMenuLink(data-id='24')
+        span Emsella
+      li.filterTagMenuLink(data-id='23')
+        span Exilis Ultra 360
+      li.filterTagMenuLink(data-id='62')
+        span HydraFacial MD
+
+mixin jsFilterMobile 
+  .filterTagMenuMobile__area 
+    select.filterTagMenuMobile 
+      option.filterTagMenuLink_mb.menuCategoryMastersLink__all(data-mb-id='all') Все видео
+      option.filterTagMenuLink_mb(data-mb-id='17') Ulthera System
+      option.filterTagMenuLink_mb(data-mb-id='201') Emsculpt (Эмскульпт)
+      option.filterTagMenuLink_mb(data-mb-id='18')  MJoule BBL HERO
+      option.filterTagMenuLink_mb(data-mb-id='21') ZLipo Med
+      option.filterTagMenuLink_mb(data-mb-id='19') Endospheres Therapy
+      option.filterTagMenuLink_mb(data-mb-id='20') Fotona
+      option.filterTagMenuLink_mb(data-mb-id='25') DEKA SmartXide 2
+      option.filterTagMenuLink_mb(data-mb-id='24') Emsella
+      option.filterTagMenuLink_mb(data-mb-id='23') Exilis Ultra 360
+      option.filterTagMenuLink_mb(data-mb-id='62') HydraFacial MD
