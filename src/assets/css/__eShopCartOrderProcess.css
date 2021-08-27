@@ -72,6 +72,12 @@
 	color: #4f4f4f;
 }
 
+.zInputWrapper input.error,
+.zInputWrapper textarea.error {
+	border-bottom: 1px solid var(--red1);
+	background: rgb(247, 213, 213);
+}
+
 .zInputWrapper textarea {
 	/* resize: none; */
 	background: #fff;
@@ -360,6 +366,8 @@ a.order__tabTitle {
 	text-transform: uppercase;
 	color: #ffffff;
 	transition: all 0.3s;
+	border: none;
+	outline: none;
 }
 .orderBtnFinish:hover {
 	background: var(--color1);

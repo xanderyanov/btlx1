@@ -693,3 +693,16 @@ a.profil2__exit:hover span {
 .mobileTab:last-child {
 	padding-bottom: 0;
 }
+
+.profil__exitArea {
+	position: relative;
+}
+
+a.profil__exit {
+	text-decoration: none;
+	color: #4f4f4f;
+}
+
+a.profil__exit i {
+	font-size: 1.5rem;
+}

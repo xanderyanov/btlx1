@@ -8,7 +8,7 @@ $(function () {
 		$("body").addClass("stop");
 	});
 
-	$(".leftSlideMenu__close").on("click", function (e) {
+	$(".leftSlideMenu__close_JS").on("click", function (e) {
 		e.preventDefault();
 		leftSlideMenuClose();
 	});
