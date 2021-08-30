@@ -53,6 +53,7 @@
 	letter-spacing: 0.04em;
 	color: #4f4f4f;
 	margin-bottom: 30px;
+	text-align: center;
 }
 
 .xModal__header a {
@@ -89,7 +90,7 @@ button.simpleRegBtn {
 button.simpleRegBtn.simpleRegBtn1 {
 	color: #ffffff;
 	background: #f0536c;
-	width: 30%;
+	width: 48%;
 }
 button.simpleRegBtn.simpleRegBtn2 {
 	white-space: nowrap;
@@ -99,7 +100,7 @@ button.simpleRegBtn.simpleRegBtn2 {
 }
 
 button.simpleRegBtn.simpleRegBtn3 {
-	border: 2px solid #534764;
+	/* border: 2px solid #534764;
 	box-sizing: border-box;
 	border-radius: 4px;
 	font-style: normal;
@@ -110,8 +111,24 @@ button.simpleRegBtn.simpleRegBtn3 {
 	text-transform: uppercase;
 	color: #534764;
 	padding: 16px 24px;
-	width: 90%;
-	margin: 0 auto;
+	margin: 0 auto; */
+
+	border-radius: 6px;
+	padding: 10px 15px;
+	width: 48%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-weight: bold;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	font-weight: 300;
+	cursor: pointer;
+	transition: all 0.3s;
+	text-transform: uppercase;
+	border: none;
+	outline: none;
+	white-space: nowrap;
 }
 
 button.simpleRegBtn.hidden {
@@ -152,7 +169,7 @@ button.simpleRegBtn.hidden {
 .regInputWrapper {
 	display: flex;
 	flex-direction: column;
-	margin-bottom: 40px;
+	/* margin-bottom: 40px; */
 }
 .regInputWrapper:last-child {
 	margin-bottom: 0;
@@ -173,7 +190,7 @@ button.simpleRegBtn.hidden {
 	border-bottom: 1px solid #828282;
 	margin-bottom: 1px;
 	background: transparent;
-	padding: 10px 0 10px;
+	padding: 10px 10px 10px;
 	outline: none;
 	width: 100%;
 	box-sizing: border-box;
@@ -220,5 +237,5 @@ button.simpleRegBtn.hidden {
 }
 
 input.simpleReg__code {
-	width: 30%;
+	width: 48%;
 }

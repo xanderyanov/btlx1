@@ -306,6 +306,8 @@ a.orderDetails2__item:hover,
 	margin-bottom: 48px;
 	cursor: pointer;
 	transition: all 0.3s;
+	border: none;
+	outline: none;
 }
 .orderDetailsInfoFinish__btn:hover {
 	background: var(--color1);
@@ -316,6 +318,9 @@ a.orderDetails2__item:hover,
 	align-items: center;
 	cursor: pointer;
 	color: #828282;
+	background: transparent;
+	border: none;
+	outline: none;
 }
 .orderDetailsInfoFinish__btnBack:hover {
 	color: var(--red1);

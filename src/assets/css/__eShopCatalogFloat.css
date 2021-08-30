@@ -166,6 +166,14 @@
 	position: relative;
 }
 
+.eCatalog__itemArt {
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 24px;
+	color: #4f4f4f;
+	margin-bottom: 8px;
+}
+
 .eCatalog__itemTitle {
 	font-weight: bold;
 	font-size: 16px;

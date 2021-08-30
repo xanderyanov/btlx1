@@ -29,16 +29,21 @@
 }
 
 @media only screen and (max-width: 480px) {
-	.simpleRegBtn3 {
-		width: 100%;
-	}
-
-	button.simpleRegBtn2 {
-		order: 3;
+	button.simpleRegBtn.simpleRegBtn2 {
 		width: 40%;
-		margin: 10px auto 0;
+		/* margin: 10px auto 0; */
 	}
-
+	button.simpleRegBtn.simpleRegBtn3 {
+		font-size: 0.875rem;
+		font-weight: normal;
+		padding: 10px 12px;
+		width: 100%;
+		max-width: none;
+		margin-bottom: 16px;
+	}
+	button.simpleRegBtn.simpleRegBtn3:last-child {
+		margin-bottom: 0;
+	}
 	button.simpleRegBtn.simpleRegBtn1 {
 		width: 48%;
 	}
@@ -46,12 +51,6 @@
 		width: 48%;
 	}
 
-	button.simpleRegBtn.simpleRegBtn3 {
-		font-size: 0.875rem;
-		font-weight: normal;
-		padding: 10px 12px;
-		width: 100%;
-	}
 	.xModal__headerTitle {
 		font-size: 32px;
 		line-height: 40px;
@@ -61,6 +60,14 @@
 		font-size: 18px;
 		line-height: 22px;
 	}
+	button.simpleRegBtn.simpleRegBtn1 {
+		width: 100%;
+		margin: 16px 0 0 0;
+		max-width: none;
+	}
+	input.simpleReg__code {
+		width: 100%;
+	}
 }
 
 @media only screen and (max-width: 414px) {
@@ -68,10 +75,23 @@
 		font-size: 26px;
 		line-height: 32px;
 	}
+	.xModal__header {
+		font-size: 0.875rem;
+		line-height: 1.3rem;
+	}
 	.xModal__close {
 		font-size: 1.25rem;
 		top: 20px;
 		right: 20px;
+	}
+
+	.simpleReg__text3 {
+		font-size: 16px;
+	}
+
+	button.simpleRegBtn.simpleRegBtn2 {
+		width: 100%;
+		max-width: none;
 	}
 }
 

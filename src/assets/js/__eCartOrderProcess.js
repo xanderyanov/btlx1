@@ -11,15 +11,16 @@ $(function () {
 });
 
 function orderTabs() {
-	$(".order__tabs")
-		.children("li")
-		.first()
-		.addClass("active")
-		.children("a")
-		.addClass("active")
-		.next()
-		.addClass("openSection")
-		.show();
+	// ушло в студию
+	// $(".order__tabs")
+	// 	.children("li")
+	// 	.first()
+	// 	.addClass("active")
+	// 	.children("a")
+	// 	.addClass("active")
+	// 	.next()
+	// 	.addClass("openSection")
+	// 	.show();
 
 	$(".order__tabs").on("click", "li > a", function (e) {
 		e.preventDefault();

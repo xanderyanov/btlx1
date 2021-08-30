@@ -56,10 +56,11 @@ body
               +eShopMenuCatalogOnly
             .eFilterArea__wrapper 
               .eFilter__overlay
-              .eFilter__mbBtn 
+              .eFilter__mbBtn.eFilter__mbBtn_active 
                 span Фильтры
                 i.icon-filter
                 .eFilter__selectedCount 5
+                .eFilterActionBtn.JS_Filters_reset Сбросить
               +eFilterArea
           
         .catalogX__right 
@@ -68,6 +69,27 @@ body
               .searchResult__counter 
                 span Найдено товаров:
                 span 256
+          .efilterSelected__outer.xScroll2
+            .efilterSelected
+              .efilterSelected__item 
+                span Очищение 
+                i.icon-close
+              .efilterSelected__item 
+                span Омоложение
+                i.icon-close
+              .efilterSelected__item 
+                span Ноги
+                i.icon-close
+              .efilterSelected__item 
+                span Руки
+                i.icon-close
+              .efilterSelected__item 
+                span Для мужчин
+                i.icon-close
+              .efilterSelected__item 
+                span Волосы
+                i.icon-close
+
           .eCatalog
             
             +eCatalog
