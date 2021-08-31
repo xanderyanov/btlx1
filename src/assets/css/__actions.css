@@ -111,3 +111,67 @@
 .action__infoBoxText {
 	width: 100%;
 }
+
+.actionImgFlag {
+	position: absolute;
+	right: 3rem;
+	top: 50%;
+	margin-top: -2rem;
+	background: var(--color1);
+	height: 4rem;
+	width: 4rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 3rem;
+	border: 2px solid #fff;
+	box-shadow: 0px 0px 20px 5px rgba(58, 0, 54, 0.21);
+
+	-webkit-animation: b 1.5s infinite;
+	animation: b 1.5s infinite;
+
+	transition: all 0.3s;
+	cursor: pointer;
+	z-index: 1000;
+}
+.actionImgFlag:hover {
+	height: 5rem;
+	width: 5rem;
+	right: 2.5rem;
+	margin-top: -2.5rem;
+}
+
+@-webkit-keyframes b {
+	0% {
+		opacity: 1;
+		background: var(--color1);
+	}
+	50% {
+		opacity: 0.9;
+		background: var(--red1);
+	}
+	to {
+		opacity: 1;
+		background: var(--color1);
+	}
+}
+
+@keyframes b {
+	0% {
+		opacity: 1;
+		background: var(--color1);
+	}
+	50% {
+		opacity: 0.9;
+		background: var(--red1);
+	}
+	to {
+		opacity: 1;
+		background: var(--color1);
+	}
+}
+
+.actionImgFlag i {
+	color: #fff;
+	font-size: 1.5rem;
+}

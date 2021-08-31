@@ -35,6 +35,25 @@ function siteResizeFunction() {
 		$(".cab2__tab > a").removeClass("active");
 		$(".cab2__tab > section").removeClass("openSection").hide();
 		$(".cab2__tabs").children("li").first().children("a").addClass("active").next().addClass("openSection").show();
+
+		//Закрываем бренды
+		$(".eBrands__content").slideUp(300);
+		$(".eBrands__btn").removeClass("eBrands__btn_active");
+		$(".eBrands__btn").removeClass("eBrands__btn_active");
+		$(".eBrands__overlay").fadeOut(300);
+		$("body").removeClass("stop");
+		$(".eBrands__area_x").removeClass("mbBtn_100");
+		//закрываем фильтры
+		$(".eFilter__area").slideUp(300);
+		$(".eFilter__mbBtn").removeClass("eFilter__mbBtn_active");
+		$(".eFilter__overlay").fadeOut(300);
+		$(".JS_Filters_reset").hide();
+		// $("body").removeClass("stop");
+		$(".eFilterArea__wrapper").removeClass("mbBtn_100");
+		//закрываем открытое меню
+		$(".eShopMenu__mobileBtn").removeClass("eShopMenu__mobileBtn_active");
+		$(".eShopMenu__outer_catalogOnly").slideUp(300).removeClass("eShopMenu__outer_catalogOnly_active");
+		$(".eShopMenu__overlay").fadeOut(300);
 	}
 	if (prevWindowWidth > 768 && windowWidth <= 768) {
 		$(".cab2__tab:not(:first) > a").removeClass("active");

@@ -75,7 +75,8 @@
 		font-size: 26px;
 		line-height: 32px;
 	}
-	.xModal__header {
+	.xModal__header,
+	.xModal__header a {
 		font-size: 0.875rem;
 		line-height: 1.3rem;
 	}

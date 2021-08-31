@@ -129,6 +129,9 @@ button.simpleRegBtn.simpleRegBtn3 {
 	border: none;
 	outline: none;
 	white-space: nowrap;
+
+	border: 2px solid #534764;
+	background: transparent;
 }
 
 button.simpleRegBtn.hidden {

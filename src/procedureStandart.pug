@@ -11,6 +11,7 @@ include __breadcrumbs
 include __wideBlock
 include __procedure3
 include __card
+include __actions
 
 include __forms
 include __footer
@@ -35,6 +36,8 @@ body
       .procedure3__introOuter.wsite
         .xTitle 
           h1 Лазерная эпиляция Candela
+          .actionImgFlag.action_js
+            i.icon-percentage
         +procedure3__intro
     +wideBlock
 
@@ -255,6 +258,7 @@ body
   .site__footer
     +footer3
   
+  +actionPopUp
   +popUpBlocks
   +scripts
   

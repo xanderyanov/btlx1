@@ -127,6 +127,29 @@
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;
+	position: relative;
+}
+
+.eCard__itemActionIco {
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	width: 76px;
+	height: 26px;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-image: url(../img/svg/actionflag.svg);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 16px;
+	letter-spacing: 0.04em;
+	text-transform: uppercase;
+	color: #ffffff;
 }
 
 .eCard__itemInnerLeft_inMain {

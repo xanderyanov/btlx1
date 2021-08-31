@@ -42,14 +42,14 @@
 }
 
 .eFilter__title span {
-	font-weight: bold;
+	font-weight: 400;
 	font-size: 16px;
-	line-height: 20px;
-	color: #333333;
+	line-height: 22px;
+	color: #4f4f4f;
 }
 
 .eFilter__title.active span {
-	color: var(--red1);
+	/* color: var(--red1); */
 }
 
 .eFilter__openBtn {
@@ -81,20 +81,21 @@
 
 .eFilter__content {
 	width: 100%;
-	padding: 20px 0 0;
-	display: none;
+	padding: 5px 0 0;
+	/* display: none; */
+	display: block;
 }
 
 .eFilter__content_open {
 	width: 100%;
-	padding: 20px 0 0;
+	padding: 0 0 0;
 }
 
 .eFilterCheckbox {
 	position: relative;
 	display: flex;
 	align-items: center;
-	padding: 15px 10px 15px 0;
+	padding: 15px 0 15px 0;
 	min-height: 20px;
 	border-bottom: 1px solid #f2f2f2;
 }
@@ -102,7 +103,7 @@
 .eFilterCheckbox:last-child {
 	margin-bottom: 0;
 	border: none;
-	padding: 15px 10px 0 0;
+	padding: 15px 0 0 0;
 }
 
 .eFilterCheckbox input[type="checkbox"] {
@@ -116,8 +117,8 @@
 	padding: 0;
 	cursor: pointer;
 	font-style: normal;
-	font-weight: normal;
-	font-size: 14px;
+	font-weight: 300;
+	font-size: 16px;
 	line-height: 20px;
 	color: #4f4f4f;
 	width: 100%;
@@ -161,8 +162,8 @@
 }
 
 .eFilterCheckbox input[type="checkbox"]:checked + label::before {
-	border: 1px solid #d74d63;
-	background: #d74d63;
+	border: 1px solid #5d4b62;
+	background: #5d4b62;
 }
 
 .eFilterCheckbox input[type="checkbox"]:checked + label {
@@ -355,7 +356,7 @@
 	justify-content: center;
 	align-items: center;
 	font-size: 1rem;
-	font-weight: 300;
+	font-weight: 400;
 	background: var(--color1);
 	color: #fff;
 	border-radius: 4px;

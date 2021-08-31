@@ -106,6 +106,15 @@
 	.orderSuccess__info {
 		margin-bottom: 20px;
 	}
+	.orderBox__inner {
+		width: 100%;
+	}
+	.confirmation__area {
+		width: 100%;
+	}
+	.orderBtnFinish {
+		max-width: none;
+	}
 }
 
 @media only screen and (max-width: 414px) {

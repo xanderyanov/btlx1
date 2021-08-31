@@ -112,8 +112,8 @@
 	position: relative;
 	padding: 12px 0;
 	font-weight: normal;
-	font-size: 20px;
-	line-height: 28px;
+	font-size: 16px;
+	line-height: 22px;
 	letter-spacing: 0.04em;
 	color: #333333;
 }
@@ -201,11 +201,10 @@
 	width: 100%;
 	transition: all 0.3s;
 	position: relative;
-	font-weight: normal;
+	font-weight: 300;
 	font-size: 16px;
-	line-height: 24px;
+	line-height: 22px;
 	letter-spacing: 0.04em;
-	text-transform: uppercase;
 	color: #4f4f4f;
 }
 
@@ -303,9 +302,9 @@
 	transition: all 0.3s;
 	position: relative;
 
-	font-weight: normal;
+	font-weight: 300;
 	font-size: 16px;
-	line-height: 24px;
+	line-height: 22px;
 	letter-spacing: 0.04em;
 	color: #4f4f4f;
 

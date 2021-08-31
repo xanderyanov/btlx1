@@ -22,7 +22,7 @@
 		left: 10px;
 		top: 40px;
 		z-index: 2095;
-		padding: 20px 5px 20px 10px;
+		padding: 20px 15px 20px 20px;
 		background: #fff;
 		border: 1px solid #cecbda;
 		box-sizing: border-box;
@@ -43,6 +43,10 @@
 	}
 	.eGreyLine__outer {
 		float: none;
+	}
+
+	.eShopMenu li.lev2 > .esli_inner a {
+		font-weight: 400;
 	}
 }
 

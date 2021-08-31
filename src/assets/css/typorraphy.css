@@ -43,6 +43,7 @@ h6 {
 
 .xTitle {
 	text-align: left;
+	position: relative;
 }
 
 .xTitle h1,

@@ -1,5 +1,5 @@
 $(function () {
-	$(".action").on("click", function (e) {
+	$(".action_js").on("click", function (e) {
 		console.log(1231321321);
 		e.preventDefault();
 		$(this).children(".action__infoBoxOverlay").fadeIn();

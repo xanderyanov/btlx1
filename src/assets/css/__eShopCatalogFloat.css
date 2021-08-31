@@ -126,6 +126,7 @@
 	height: 0;
 	padding-top: 80%;
 	position: relative;
+	margin-top: 10px;
 }
 .eCatalog__itemImg {
 	position: absolute;
@@ -200,7 +201,7 @@
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	padding: 20px 30px 30px;
+	padding: 20px 30px 20px;
 }
 
 .eCatalog__itemPriceBox {
@@ -296,7 +297,7 @@
 }
 .aShops__azLetterBox {
 	width: 100%;
-	padding: 10px 0;
+	padding: 16px 0 0;
 	display: flex;
 	border-bottom: 1px solid #f2f2f2;
 }
@@ -308,9 +309,10 @@
 .aShops__azLetterBoxTitle {
 	width: 12%;
 	font-weight: bold;
-	font-size: 14px;
-	line-height: 20px;
-	color: #9462a2;
+	font-size: 16px;
+	line-height: 24px;
+	/* color: #9462a2; */
+	color: #d54c64;
 }
 
 .aShops__azLetterBoxContent {
@@ -335,10 +337,10 @@
 	text-decoration: none;
 	font-style: normal;
 	font-weight: normal;
-	font-size: 14px;
-	line-height: 20px;
+	font-size: 16px;
+	line-height: 24px;
 	color: #4f4f4f;
-	margin-bottom: 5px;
+	margin-bottom: 16px;
 }
 
 .aShops__azItem:hover,

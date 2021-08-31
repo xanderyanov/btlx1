@@ -27,8 +27,6 @@ include __popUpBlocks
 include __old
 
 
-
-
 <!DOCTYPE html>
 html(lang="ru-RU")
   +head
@@ -42,58 +40,7 @@ body
   .site__center
     +breadcrumbs5
 
-    .catalogX__area
-      .catalogX.wsite 
-        .catalogX__left 
-          .catalogX__leftInner
-            .eBrands__area.eBrands__area_x
-              .eBrands__overlay 
-              .eBrands__btn Бренды
-              .eBrands__content
-                .eBrands__contentInner.eBrands__contentInner_scroll
-                  +brands
-            .eShopMenuCatalog__wrapper
-              +eShopMenuCatalogOnly
-            .eFilterArea__wrapper 
-              .eFilter__overlay
-              .eFilter__mbBtn.eFilter__mbBtn_active 
-                span Фильтры
-                i.icon-filter
-                .eFilter__selectedCount 5
-                .eFilterActionBtn.JS_Filters_reset Сбросить
-              +eFilterArea
-          
-        .catalogX__right 
-          .eGreyLine__outer.eGreyLine__outer_x
-            .eGreyLine
-              .searchResult__counter 
-                span Найдено товаров:
-                span 256
-          .efilterSelected__outer.xScroll2
-            .efilterSelected
-              .efilterSelected__item 
-                span Очищение 
-                i.icon-close
-              .efilterSelected__item 
-                span Омоложение
-                i.icon-close
-              .efilterSelected__item 
-                span Ноги
-                i.icon-close
-              .efilterSelected__item 
-                span Руки
-                i.icon-close
-              .efilterSelected__item 
-                span Для мужчин
-                i.icon-close
-              .efilterSelected__item 
-                span Волосы
-                i.icon-close
-
-          .eCatalog
-            
-            +eCatalog
-            +pagiantion
+    +catalogX
    
     +zBlock3
 
@@ -103,3 +50,4 @@ body
   +popUpBlocks
   +scripts
   
+

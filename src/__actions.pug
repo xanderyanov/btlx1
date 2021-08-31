@@ -4,31 +4,36 @@ mixin actions
       h2 Акции компании
     .actions 
       .action__outer 
-        .action
+        .action.action_js
           .action__inner(style="background-image: url(assets/img/portfolio/01.jpg)")
-          .action__infoBoxOverlay
-            .action__infoBoxWrapper 
-              .action__infoBox
-                .action__infoBoxClose 
-                  i.icon-close
-                .action__infoBoxInner.xScroll2
-                  .action__infoBoxImg 
-                    img(src="assets/img/portfolio/01.jpg", alt="")
-                  .action__infoBoxText.content
-                    h3 Условия Акции
-                    ul
-                      li Книги в чеке располагаются в порядке убывания цены, разных наименований и в одном экземпляре.
-                      li В акции участвуют чеки с количеством книг до 2 до 5.
-                      li Акция действует только на текущий ассортимент магазина и не распространяется на коллективные заказы.
-                      li В акции не участвуют товары из категорий «Учебная литература», «Канцтовары», «Открытки», «Игры», «Раскраски», «Творчество».
-                      li Скидки по данной акции не суммируются со скидками по другим акциям и дисконтным картам.
+          +actionPopUp
       .action__outer 
-        .action(href="#") 
+        .action.action_js
           .action__inner(style="background-image: url(assets/img/portfolio/02.jpg)")
       .action__outer 
-        .action(href="#") 
+        .action.action_js
           .action__inner(style="background-image: url(assets/img/portfolio/03.jpg)")
       .action__outer 
-        .action(href="#") 
+        .action.action_js
           .action__inner(style="background-image: url(assets/img/portfolio/04.jpg)")
+
+
+
+mixin actionPopUp 
+  .action__infoBoxOverlay
+    .action__infoBoxWrapper 
+      .action__infoBox
+        .action__infoBoxClose 
+          i.icon-close
+        .action__infoBoxInner.xScroll2
+          .action__infoBoxImg 
+            img(src="assets/img/portfolio/01.jpg", alt="")
+          .action__infoBoxText.content
+            h3 Условия Акции
+            ul
+              li Книги в чеке располагаются в порядке убывания цены, разных наименований и в одном экземпляре.
+              li В акции участвуют чеки с количеством книг до 2 до 5.
+              li Акция действует только на текущий ассортимент магазина и не распространяется на коллективные заказы.
+              li В акции не участвуют товары из категорий «Учебная литература», «Канцтовары», «Открытки», «Игры», «Раскраски», «Творчество».
+              li Скидки по данной акции не суммируются со скидками по другим акциям и дисконтным картам.
       

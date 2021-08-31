@@ -211,10 +211,16 @@
 }
 
 @media only screen and (max-width: 414px) {
+	.eCatalog__itemPrice span {
+		font-size: 16px;
+	}
 }
 
 @media only screen and (max-width: 400px) {
 	.eCatalog__itemInfo {
+		padding: 10px 15px 15px;
+	}
+	.eCatalog__itemPriceArea {
 		padding: 10px 15px 15px;
 	}
 	.eCatalog__itemDesc {
@@ -224,6 +230,9 @@
 }
 
 @media only screen and (max-width: 340px) {
+	.eCatalog__itemPrice span {
+		font-size: 20px;
+	}
 	.eCatalog__itemArea {
 		width: 100%;
 	}

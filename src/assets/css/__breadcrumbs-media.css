@@ -40,12 +40,15 @@
 		text-align: center;
 	}
 	.breadcrumbsLine__right h1 {
-		font-size: 3rem;
+		font-size: 2.25rem;
 		white-space: normal;
 	}
 }
 
 @media only screen and (max-width: 600px) {
+	.breadcrumbsLine__area {
+		padding: 10px 0 10px;
+	}
 }
 
 @media only screen and (max-width: 480px) {

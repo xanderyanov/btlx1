@@ -36,7 +36,7 @@ $(function () {
 		var $this = $(this);
 		var thisBrandsContent = $this.closest(".eBrands__area").find(".eBrands__content");
 		if ($this.hasClass("eBrands__btn_active")) {
-			if ($(window).width() <= 600) {
+			if ($(window).width() <= 768) {
 				thisBrandsContent.slideUp(300);
 				setTimeout(function () {
 					$this.removeClass("eBrands__btn_active");
@@ -52,7 +52,7 @@ $(function () {
 				$(".eBrands__area_x").removeClass("mbBtn_100");
 			}
 		} else {
-			if ($(window).width() <= 600) {
+			if ($(window).width() <= 768) {
 				$(".eBrands__area_x").addClass("mbBtn_100");
 				$this.addClass("eBrands__btn_active");
 				$(".eBrands__overlay").fadeIn(300);
@@ -71,7 +71,7 @@ $(function () {
 	$(".eBrands__overlay").on("click", function (e) {
 		e.preventDefault();
 		e.stopPropagation();
-		if ($(window).width() <= 600) {
+		if ($(window).width() <= 768) {
 			$(".eBrands__content").slideUp(300);
 			setTimeout(function () {
 				$(".eBrands__btn").removeClass("eBrands__btn_active");

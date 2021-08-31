@@ -17,30 +17,30 @@
 }
 
 @media only screen and (max-width: 768px) {
+	.aShops__azItemOuter {
+		width: 50%;
+	}
 }
 
 @media only screen and (max-width: 600px) {
-  .eFilerMobile__wrapper {
+	/* .eFilerMobile__wrapper {
     width: 70%;
-  }
-  .aShops__azItemOuter {
-    width: 50%;
-  }
+  } */
 }
 
 @media only screen and (max-width: 480px) {
-  .eFilerMobile__wrapper {
-    width: 80%;
-  }
+	.eFilerMobile__wrapper {
+		width: 80%;
+	}
 }
 
 @media only screen and (max-width: 414px) {
-  .eFilerMobile__wrapper {
-    width: 90%;
-  }
-  .aShops__azItemOuter {
-    width: 100%;
-  }
+	.eFilerMobile__wrapper {
+		width: 90%;
+	}
+	.aShops__azItemOuter {
+		width: 100%;
+	}
 }
 
 @media only screen and (max-width: 320px) {

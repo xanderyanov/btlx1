@@ -140,6 +140,18 @@
 }
 
 @media only screen and (max-width: 480px) {
+	.eShopMenuCatalog__wrapper {
+		margin-bottom: 10px;
+	}
+	.catalogX__left {
+		height: 106px;
+	}
+	.eBrands__area_x {
+		top: 52px;
+	}
+	.eFilterArea__wrapper {
+		top: 52px;
+	}
 }
 
 @media only screen and (max-width: 414px) {
