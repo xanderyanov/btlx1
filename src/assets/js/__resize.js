@@ -83,6 +83,10 @@ function siteResizeFunction() {
 	// }
 
 	floatOrderBtn();
+
+	if (prevWindowWidth > 600 && windowWidth <= 600) {
+		floatActionOpen();
+	}
 }
 
 $(function () {

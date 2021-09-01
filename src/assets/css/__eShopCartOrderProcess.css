@@ -685,3 +685,13 @@ a.order__tabTitle {
 	text-transform: uppercase;
 	color: #ffffff;
 }
+
+.deliveryRequiredMessage {
+	margin-bottom: 20px;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 1rem;
+	line-height: 1.5rem;
+	letter-spacing: 0.04em;
+	text-transform: uppercase;
+}

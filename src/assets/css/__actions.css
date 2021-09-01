@@ -44,6 +44,8 @@
 	background-color: var(--color1);
 	background-repeat: no-repeat;
 	background-size: cover;
+	border-top-right-radius: 6px;
+	border-bottom-right-radius: 6px;
 }
 
 .action__infoBoxOverlay {
@@ -112,11 +114,18 @@
 	width: 100%;
 }
 
-.actionImgFlag {
-	position: absolute;
+.actionImgFlag__outer {
+	/* position: absolute;
 	right: 3rem;
 	top: 50%;
 	margin-top: -2rem;
+	z-index: 1010; */
+	margin: 0 20px 0 0;
+	height: 4rem;
+	width: 4rem;
+}
+
+.actionImgFlag {
 	background: var(--color1);
 	height: 4rem;
 	width: 4rem;
@@ -126,19 +135,13 @@
 	border-radius: 3rem;
 	border: 2px solid #fff;
 	box-shadow: 0px 0px 20px 5px rgba(58, 0, 54, 0.21);
-
 	-webkit-animation: b 1.5s infinite;
 	animation: b 1.5s infinite;
-
 	transition: all 0.3s;
 	cursor: pointer;
-	z-index: 1000;
 }
 .actionImgFlag:hover {
-	height: 5rem;
-	width: 5rem;
-	right: 2.5rem;
-	margin-top: -2.5rem;
+	transform: rotate(360deg);
 }
 
 @-webkit-keyframes b {
@@ -174,4 +177,117 @@
 .actionImgFlag i {
 	color: #fff;
 	font-size: 1.5rem;
+}
+
+.eCard__itemActionIco_inPage {
+	width: 152px;
+	height: 52px;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-image: url(../img/svg/actionflag.svg);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 20px;
+	letter-spacing: 0.04em;
+	text-transform: uppercase;
+	color: #ffffff;
+	cursor: pointer;
+}
+
+/******************************/
+
+.floatAction__outer {
+	/* position: fixed;
+	left: 0;
+	bottom: 100px; */
+	width: 100%;
+	padding: 5px 5px 0 5px;
+	margin: 0 0 -10px 0;
+	display: none;
+	position: relative;
+}
+
+.floatAction__outer_open {
+	display: block;
+}
+
+.floatAction {
+	background: #f0ebf7;
+	border-radius: 4px 4px 0px 0px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 12px 20px;
+	position: relative;
+}
+
+.floatAction__left {
+	display: flex;
+}
+
+.floatAction__left i {
+	font-size: 2rem;
+}
+
+.floatAction__right {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	padding: 0 0 0 12px;
+}
+
+.floatAction__rightTop {
+	font-style: normal;
+	font-weight: normal;
+	font-size: 22px;
+	line-height: 28px;
+	letter-spacing: 0.02em;
+	color: #5e4d79;
+	margin-bottom: 4px;
+}
+
+.floatAction__rightBottom {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.floatAction__rightBottom span {
+	font-style: normal;
+	font-weight: normal;
+	font-size: 12px;
+	line-height: 16px;
+	letter-spacing: 0.02em;
+	color: #5e4d79;
+}
+
+.floatActionBtn {
+	font-style: normal;
+	font-weight: normal;
+	font-size: 12px;
+	line-height: 16px;
+	letter-spacing: 0.02em;
+	color: #5e4d79;
+	text-decoration: none;
+}
+
+.floatAction__close {
+	position: absolute;
+	right: 12px;
+	top: 12px;
+	height: 8px;
+	width: 8px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.floatAction__close i {
+	font-size: 8px;
+	line-height: 8px;
 }

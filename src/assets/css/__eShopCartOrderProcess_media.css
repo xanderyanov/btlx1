@@ -55,6 +55,11 @@
 		line-height: 1.625rem;
 		padding-bottom: 8px;
 	}
+	.zInputWrapper textarea {
+		font-size: 1.375rem;
+		line-height: 1.625rem;
+		padding-bottom: 8px;
+	}
 	.orderSuccess__infoRow {
 		flex-direction: column;
 	}

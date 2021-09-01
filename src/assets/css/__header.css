@@ -79,6 +79,7 @@ a.topLine__instagram:hover {
 	letter-spacing: 0.04em;
 	text-decoration: none;
 	font-weight: 400;
+	display: block;
 }
 .topLine__menu li a:hover {
 	color: var(--hover1);
@@ -98,8 +99,8 @@ a.topLine__instagram:hover {
 	font-size: 1rem;
 }
 .topLine__login span {
-	font-weight: 300;
-	font-size: 0.75rem;
+	font-weight: 400;
+	font-size: 0.875rem;
 	margin: 0 0 0 0.75rem;
 }
 

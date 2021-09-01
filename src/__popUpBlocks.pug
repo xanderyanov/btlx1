@@ -12,3 +12,44 @@ mixin popUpBlocks
     +menuBottom_x1
     +callback
     //- +eFilerMobile
+
+
+mixin floatOrderBtn 
+  case floatBlock
+    when 'cart'
+      .floatOrder__outer
+        .floatOrder
+          .floatOrder__left
+            .floatOrder__title Итого к оплате
+            .floatOrder__value 221 800 ₽
+          .floatOrder__right
+            a.floatOrderBtn(href="#")  Оформить заказ
+    when 'process'
+      .floatOrder__outer
+        .floatOrder
+          .floatOrder__left
+            .floatOrder__title Итого к оплате
+            .floatOrder__value 221 800 ₽
+          .floatOrder__right
+            a.floatOrderBtn(href="#")  Оплатить заказ
+    when 'actionInProcedure'
+      .floatAction__outer.floatAction__js
+        .floatAction
+          .floatAction__close 
+            i.icon-close
+          .floatAction__left
+            i.icon-discount
+          .floatAction__right
+            .floatAction__rightTop.action_js_inProcedure Участвует в акции
+            //- .floatAction__rightBottom 
+            //-   span Участвует в акции
+            //-   .floatActionBtn.action_js_inProcedure Подробнее
+    when 'allright' 
+      - break
+    //-   .floatOrder__outer
+    //-     .floatOrder
+    //-       .floatOrder__left
+    //-         .floatOrder__title Итого к оплате
+    //-         .floatOrder__value 221 800 ₽
+    //-       .floatOrder__right
+    //-         a.floatOrderBtn(href="#")  Оплатить заказ!!!!!!

@@ -46,6 +46,16 @@ h6 {
 	position: relative;
 }
 
+.xTitle_actions {
+	display: flex;
+	align-items: center;
+	margin-bottom: 30px;
+}
+
+.xTitle_actions h1 {
+	margin: 0;
+}
+
 .xTitle h1,
 .xTitle h2,
 .xTitle h3,

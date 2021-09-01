@@ -11,7 +11,7 @@ include __breadcrumbs
 include __wideBlock
 include __procedure3
 include __card
-include __actions
+
 
 include __forms
 include __footer
@@ -19,8 +19,9 @@ include __footer
 include __menuBottom1
 
 include __old
+include __actions
 
-
+- var floatBlock = 'actionInProcedure'
 
 
 <!DOCTYPE html>
@@ -34,10 +35,13 @@ body
     +breadcrumbs4
     .procedure3__introArea
       .procedure3__introOuter.wsite
-        .xTitle 
+        .xTitle.xTitle_actions
+          .actionImgFlag__outer.action_js_inProcedure
+            //- .eCard__itemActionIco_inPage Акция
+            .actionImgFlag
+              i.icon-discount
+            
           h1 Лазерная эпиляция Candela
-          .actionImgFlag.action_js
-            i.icon-percentage
         +procedure3__intro
     +wideBlock
 
@@ -259,6 +263,7 @@ body
     +footer3
   
   +actionPopUp
+
   +popUpBlocks
   +scripts
   

@@ -1,8 +1,12 @@
 $(function () {
 	$(".action_js").on("click", function (e) {
-		console.log(1231321321);
 		e.preventDefault();
 		$(this).children(".action__infoBoxOverlay").fadeIn();
+		$("body").addClass("stop");
+	});
+	$(".action_js_inProcedure").on("click", function (e) {
+		e.preventDefault();
+		$(".action__infoBoxOverlay").fadeIn();
 		$("body").addClass("stop");
 	});
 	$(".action__infoBox").on("click", function (e) {
@@ -20,4 +24,18 @@ $(function () {
 		$("body").removeClass("stop");
 		$(".action__infoBoxOverlay").fadeOut();
 	});
+
+	if ($(window).width() <= 600 && $(".floatAction__js").length) {
+		floatActionOpen();
+	}
+
+	$(".floatAction__close").on("click", function () {
+		$(".floatAction__js").slideUp();
+	});
 });
+
+function floatActionOpen() {
+	setTimeout(function () {
+		$(".floatAction__js").slideDown();
+	}, 3000);
+}
