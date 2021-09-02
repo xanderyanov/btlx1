@@ -14,9 +14,16 @@
 }
 
 @media only screen and (max-width: 800px) {
+	.brandIntro__area {
+		margin-bottom: 15px;
+	}
 	.brandIntro__left {
 		width: 100%;
 		padding: 0;
+	}
+
+	.brandIntro__left h2 {
+		margin: 0 0 20px 0;
 	}
 
 	.brandIntro__right {
@@ -32,6 +39,16 @@
 }
 
 @media only screen and (max-width: 480px) {
+	.brandIntro__left h2 {
+		margin: 0 0 10px 0;
+	}
+
+	.brandIntro__area .xIntro {
+		margin-bottom: 10px;
+	}
+	.brandIntro__area .xMore {
+		margin-bottom: 10px;
+	}
 }
 
 @media only screen and (max-width: 414px) {
