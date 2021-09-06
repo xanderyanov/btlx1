@@ -453,6 +453,50 @@
 	background: var(--link1hov);
 }
 
+.actionBtn__area {
+	width: 100%;
+	display: flex;
+	margin-top: 2.5rem;
+	align-items: center;
+}
+
+.actionBtn__area_inEcard {
+	width: 100%;
+	display: flex;
+	margin-top: 2.5rem;
+	align-items: center;
+}
+
+.actionBtn__inPrice {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	/* width: 90%; */
+	/* max-width: 240px; */
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 24px;
+	letter-spacing: 0.06em;
+	text-transform: uppercase;
+	color: var(--red1);
+	background: #fafafa;
+	border: 2px solid var(--red1);
+	box-sizing: border-box;
+	border-radius: 6px;
+	padding: 0.75rem 2rem;
+	margin: 0 auto;
+	transition: all 0.3s;
+	text-decoration: none;
+	/* white-space: nowrap; */
+	text-align: center;
+	cursor: pointer;
+}
+
+.actionBtn__inPrice:hover {
+	background: var(--red1);
+	color: #fff;
+}
+
 a.aboutApparatus {
 	border: 2px solid var(--color1);
 	color: var(--color1);

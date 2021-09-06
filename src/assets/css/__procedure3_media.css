@@ -175,6 +175,19 @@
 	.procedureX__masterCardOuter {
 		width: 33.333%;
 	}
+	.actionBtn__area {
+		display: none;
+	}
+
+	.actionBtn__area_inEcard {
+		margin-top: 1.5rem;
+	}
+
+	.actionBtn__inPrice {
+		font-size: 14px;
+		line-height: 20px;
+		padding: 0.5rem 1rem;
+	}
 }
 
 @media only screen and (max-width: 480px) {

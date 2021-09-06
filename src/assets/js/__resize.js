@@ -70,6 +70,18 @@ function siteResizeFunction() {
 		$(".masterWindowForm__overlay").fadeOut(300);
 		$("body").removeClass("stop");
 	}
+
+	if (prevWindowWidth <= 800 && windowWidth > 800) {
+		$(".xIntro__more").removeClass("xIntro__more_active").text("Подробнее...");
+		$(".xMore").removeClass("xMore_active").hide();
+		$(".brandIntro__right").show();
+	}
+	if (prevWindowWidth > 800 && windowWidth <= 800) {
+		$(".xIntro__more").removeClass("xIntro__more_active").text("Подробнее...");
+		$(".xMore").removeClass("xMore_active").hide();
+		$(".brandIntro__right").hide();
+	}
+
 	// if (prevWindowWidth > 600 && windowWidth <= 600) {
 	//   $(".eShopMenu__outer_catalogOnly").hide();
 	// }

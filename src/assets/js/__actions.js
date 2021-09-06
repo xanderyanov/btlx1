@@ -6,8 +6,17 @@ $(function () {
 	});
 	$(".action_js_inProcedure").on("click", function (e) {
 		e.preventDefault();
-		$(".action__infoBoxOverlay").fadeIn();
-		$("body").addClass("stop");
+
+		$(".overlay1").fadeOut(300);
+		$(".innerPriceBox").slideUp(300);
+		// $this.closest(".eCard__item").find(".innerPriceBox3__wrapper").fadeOut(300);
+		// $this.closest(".eCard__item").find(".innerPriceBox3").slideUp(300);
+		$("body").removeClass("stop");
+
+		setTimeout(function () {
+			$(".action__infoBoxOverlay").fadeIn();
+			$("body").addClass("stop");
+		}, 500);
 	});
 	$(".action__infoBox").on("click", function (e) {
 		e.stopPropagation();
@@ -37,5 +46,5 @@ $(function () {
 function floatActionOpen() {
 	setTimeout(function () {
 		$(".floatAction__js").slideDown();
-	}, 3000);
+	}, 1000);
 }

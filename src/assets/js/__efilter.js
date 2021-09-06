@@ -80,6 +80,13 @@ $(function () {
 		e.stopPropagation();
 		var $this = $(this);
 		var thisFilterContent = $this.closest(".eFilterArea__wrapper").find(".eFilter__area");
+
+		if ($(window).width() <= 768) {
+			$("html,body")
+				.stop()
+				.animate({ scrollTop: $this.offset().top - 30 }, 500);
+		}
+
 		if ($this.hasClass("eFilter__mbBtn_active")) {
 			if ($(window).width() <= 768) {
 				thisFilterContent.slideUp(300);

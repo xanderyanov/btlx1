@@ -35,6 +35,13 @@ $(function () {
 		e.stopPropagation();
 		var $this = $(this);
 		var thisBrandsContent = $this.closest(".eBrands__area").find(".eBrands__content");
+
+		if ($(window).width() <= 768) {
+			$("html,body")
+				.stop()
+				.animate({ scrollTop: $this.offset().top - 30 }, 500);
+		}
+
 		if ($this.hasClass("eBrands__btn_active")) {
 			if ($(window).width() <= 768) {
 				thisBrandsContent.slideUp(300);
@@ -167,6 +174,13 @@ $(function () {
 		e.stopPropagation();
 		var $this = $(this);
 		var thisCatalogContent = $this.closest(".eShopMenuCatalog__wrapper").find(".eShopMenu__outer_catalogOnly");
+
+		if ($(window).width() <= 768) {
+			$("html,body")
+				.stop()
+				.animate({ scrollTop: $this.offset().top - 30 }, 500);
+		}
+
 		if ($this.hasClass("eShopMenu__mobileBtn_active")) {
 			$this.removeClass("eShopMenu__mobileBtn_active");
 			thisCatalogContent.slideUp(300).removeClass("eShopMenu__outer_catalogOnly_active");

@@ -34,9 +34,16 @@ $(function () {
 			if ($(this).hasClass("xIntro__more_active")) {
 				$(this).removeClass("xIntro__more_active").text("Подробнее...");
 				$(".xMore").removeClass("xMore_active").slideUp();
+				if ($window.width() <= 800) {
+					$(".brandIntro__right").slideUp();
+				}
 			} else {
 				$(this).addClass("xIntro__more_active").text("Скрыть");
 				$(".xMore").addClass("xMore_active").slideDown();
+
+				if ($window.width() <= 800) {
+					$(".brandIntro__right").slideDown();
+				}
 			}
 		});
 	}

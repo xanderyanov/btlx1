@@ -29,6 +29,7 @@
 	.brandIntro__right {
 		width: 100%;
 		padding: 15px 0 0 0;
+		display: none;
 	}
 }
 
