@@ -93,6 +93,10 @@
 	.xTitle_actions {
 		justify-content: center;
 	}
+
+	.xTitle_actions h1 {
+		text-align: center;
+	}
 }
 
 @media screen and (orientation: landscape) and (max-device-width: 600px) {
