@@ -1277,9 +1277,9 @@ function initMaps() {
 		},
 		{
 			iconLayout: "default#image",
-			iconImageHref: "/btlassets/img/marker.png",
-			iconImageSize: [30, 48],
-			iconImageOffset: [-15, -48],
+			iconImageHref: "/btlassets/img/marker2.png",
+			iconImageSize: [64, 64],
+			iconImageOffset: [-32, -32],
 		}
 	);
 
