@@ -88,8 +88,54 @@
 	background: var(--color1);
 	z-index: 2100;
 }
+
 .eBrands__btn_100 {
 	width: calc(200% + 20px);
+}
+
+.eBrands__btn_selected {
+}
+
+.eBrands__btn_selectedStyle {
+	justify-content: space-between;
+	padding: 0 10px;
+}
+
+.eBrands__btnTitle {
+	display: flex;
+	align-items: center;
+}
+.eBrands__btnTitle span {
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 20px;
+	color: var(--color1);
+}
+.eBrands__btn_active span,
+.eBrands__btn:hover span,
+.eBrands__btn:focus span {
+	color: #fff;
+}
+
+.eBrands__btnReset {
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 20px;
+	color: #fff;
+	display: none;
+}
+
+.brand__selectedCount {
+	font-size: 10px;
+	margin-left: 5px;
+	border-radius: 50%;
+	font-weight: 300;
+	background: var(--red1);
+	color: #fff;
+	width: 18px;
+	height: 18px;
+	/* display: none; */
+	text-align: center;
 }
 
 .eBrands__content {

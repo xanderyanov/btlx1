@@ -1,0 +1,15 @@
+.p404 span {
+	font-size: 1.5rem;
+	display: block;
+}
+
+.p404 a {
+	font-size: 1.5rem;
+	font-weight: bold;
+	color: var(--color1);
+}
+
+.p404 a:hover {
+	color: var(--red1);
+	text-decoration: underline !important;
+}

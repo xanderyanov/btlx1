@@ -254,7 +254,12 @@ mixin eShopMenu
 mixin eShopMenuCatalogOnly
   //- .eShopMenu__mobileBtnOuter
   .eShopMenu__overlay
-  .eShopMenu__mobileBtn Каталог
+  //- .eShopMenu__mobileBtn.eShopMenu__mobileBtn_brand
+  .eShopMenu__mobileBtn
+    .eShopMenu__mobileBtnTitle 
+      span Каталог
+      span Christina Fitzgerald
+    a.eShopMenu__mobileBtnReset(href="#")  Сбросить
   nav.eShopMenu__outer_catalogOnly
     ul.eShopMenu.eShopMenu__scroll.xScroll2
       li.lev1

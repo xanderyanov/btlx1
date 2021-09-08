@@ -33,20 +33,14 @@
 	line-height: 20px;
 	color: var(--color1);
 	background: #fff;
-
 	display: none;
 	width: 100%;
 	height: 42px;
-	/* background: rgb(226, 213, 230); */
-	/* border-radius: 4px; */
 	justify-content: center;
 	align-items: center;
-	/* font-weight: 600;
-	font-size: 14px; */
-	/* line-height: 20px; */
-	/* color: var(--color1); */
 	cursor: pointer;
 	position: relative;
+	transition: all 0.3s;
 }
 
 .eBrands__btn:hover {
@@ -56,8 +50,42 @@
 
 .eShopMenu__mobileBtn_active {
 	z-index: 2100;
-	color: #fff;
+
 	background: var(--color1);
+}
+
+.eShopMenu__mobileBtnTitle {
+	display: flex;
+	align-items: center;
+	transition: all 0.3s;
+}
+
+.eShopMenu__mobileBtnTitle span {
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 20px;
+	color: var(--color1);
+}
+
+.eShopMenu__mobileBtnReset {
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 20px;
+	color: var(--color1);
+	display: none;
+}
+
+.eShopMenu__mobileBtn_brand {
+}
+
+.eShopMenu__mobileBtn_brandStyle {
+	justify-content: space-between;
+	padding: 0 10px;
+}
+
+.eShopMenu__mobileBtn_active span,
+.eShopMenu__mobileBtn_active a {
+	color: #fff;
 }
 
 .eShopMenu__outer100 {

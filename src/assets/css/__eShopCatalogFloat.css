@@ -347,7 +347,13 @@
 .aShops__azItem:focus {
 	text-decoration: none;
 	color: var(--orange);
-} /********************/
+}
+
+.aShops__azItem_active {
+	color: var(--red1);
+}
+
+/********************/
 
 .eSort__area {
 	display: flex;

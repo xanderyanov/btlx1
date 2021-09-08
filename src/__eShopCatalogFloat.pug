@@ -141,7 +141,11 @@ mixin catalogX
         .catalogX__leftInner
           .eBrands__area.eBrands__area_x
             .eBrands__overlay 
-            .eBrands__btn Бренды
+            .eBrands__btn.eBrands__btn_selected 
+              .eBrands__btnTitle 
+                span Бренды
+                .brand__selectedCount 1
+              a.eBrands__btnReset(href="/catalog") Сбросить
             .eBrands__content
               .eBrands__contentInner.eBrands__contentInner_scroll
                 +brands
