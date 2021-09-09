@@ -380,7 +380,7 @@ $(function () {
 		optionstsc1 = {
 			slidesPerView: 4,
 			loop: false,
-			spaceBetween: 10,
+			spaceBetween: 0,
 			// centeredSlides: true,
 			speed: 600,
 			autoplay: {
@@ -402,21 +402,18 @@ $(function () {
 			breakpoints: {
 				0: {
 					slidesPerView: 1.5,
+					// spaceBetween: 5,
 				},
-				340: {
+				415: {
 					slidesPerView: 2,
-					spaceBetween: 0,
+					// spaceBetween: 10,
 				},
 				600: {
 					slidesPerView: 3,
-					spaceBetween: 0,
 				},
-				920: {
+				820: {
 					slidesPerView: 4,
-					spaceBetween: 5,
-				},
-				1080: {
-					spaceBetween: 10,
+					// spaceBetween: 20,
 				},
 			},
 		};
@@ -428,7 +425,7 @@ $(function () {
 		optionstsc2 = {
 			slidesPerView: 4,
 			loop: false,
-			spaceBetween: 10,
+			spaceBetween: 0,
 			speed: 600,
 			autoplay: {
 				delay: 15000,
@@ -448,22 +445,19 @@ $(function () {
 			},
 			breakpoints: {
 				0: {
-					slidesPerView: 1,
+					slidesPerView: 1.5,
+					// spaceBetween: 5,
 				},
-				340: {
+				415: {
 					slidesPerView: 2,
-					spaceBetween: 0,
+					// spaceBetween: 10,
 				},
 				600: {
 					slidesPerView: 3,
-					spaceBetween: 0,
 				},
-				920: {
+				820: {
 					slidesPerView: 4,
-					spaceBetween: 5,
-				},
-				1080: {
-					spaceBetween: 10,
+					// spaceBetween: 20,
 				},
 			},
 		};

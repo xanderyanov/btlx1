@@ -179,20 +179,11 @@
 
 .mainContent__area {
 	position: relative;
-	margin-top: 10px;
-}
-
-.mainContent__wrapper {
-	position: relative;
 }
 
 .mainContent {
 	position: relative;
 	width: 100%;
-	/* display: flex;
-	align-items: center;
-	justify-content: space-between; */
-	padding: 50px 0;
 }
 
 .mainContent__left {

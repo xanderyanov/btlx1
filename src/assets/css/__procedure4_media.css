@@ -1,10 +1,10 @@
 @media only screen and (max-width: 1200px) {
-  .procedure4__introOuter {
-    padding: 0 10px;
-  }
-  .centerTextBox {
-    padding: 0 10px;
-  }
+	.procedure4__introOuter {
+		padding: 0 10px;
+	}
+	.centerTextBox {
+		padding: 0 10px;
+	}
 }
 
 @media only screen and (max-width: 1140px) {
@@ -14,7 +14,7 @@
 }
 
 @media only screen and (max-width: 1024px) {
-  /* .gallery4__pagination {
+	/* .gallery4__pagination {
     display: flex;
   }
   .gallery4__left {
@@ -23,7 +23,7 @@
   .gallery4__right {
     display: none;
   } */
-  /* .gallery4__area {
+	/* .gallery4__area {
     padding: 0 10px;
   } */
 }
@@ -38,31 +38,31 @@
 }
 
 @media only screen and (max-width: 600px) {
-  .gallery4-container {
+	/* .gallery4-container {
     padding: 10px 0 10px;
-  }
-  .outerLink4__area {
-    flex-direction: column;
-  }
-  .outerLink4 {
-    margin: 20px 0 0 0;
-    order: 2;
-  }
-  .procedure4__introImg__outer {
-    width: 100%;
-    order: 1;
-    padding: 0 0 20px 0;
-  }
-  .procedure4__introText {
-    width: 100%;
-    order: 2;
-  }
-  .procedure4__intro {
-    padding: 0 0 20px 0;
-  }
-  .centerTextBox {
-    margin: 20px auto;
-  }
+  } */
+	.outerLink4__area {
+		flex-direction: column;
+	}
+	.outerLink4 {
+		margin: 20px 0 0 0;
+		order: 2;
+	}
+	.procedure4__introImg__outer {
+		width: 100%;
+		order: 1;
+		padding: 0 0 20px 0;
+	}
+	.procedure4__introText {
+		width: 100%;
+		order: 2;
+	}
+	.procedure4__intro {
+		padding: 0 0 20px 0;
+	}
+	.centerTextBox {
+		margin: 20px auto;
+	}
 }
 
 @media only screen and (max-width: 480px) {

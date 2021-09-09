@@ -1,7 +1,7 @@
 @media only screen and (max-width: 1200px) {
-	.mainForm3__area {
+	/* .mainForm3__area {
 		padding: 0 10px;
-	}
+	} */
 }
 
 @media only screen and (max-width: 1140px) {
@@ -57,9 +57,9 @@
 	.form13 {
 		width: 100%;
 	}
-	.mainForm3__area {
+	/* .mainForm3__area {
 		margin: 30px 0 10px;
-	}
+	} */
 	.mainForm3__left {
 		width: 70%;
 		padding: 0;

@@ -60,33 +60,27 @@
 
 .tovarSimilarCaroucel {
 	width: 100%;
-	padding: 5px 0 30px;
 	position: relative;
-	/* margin: 0 -10px; */
 }
 
 .best2 {
 	display: flex;
-	/* align-items: center; */
 }
 
-.tsc1-slide {
-	height: auto;
-}
-
-.tsc1-container {
+.tsc1-container,
+.tsc2-container {
 	position: relative;
-	padding: 10px 0 5px;
+	margin: 0 -10px;
 }
 
 .tsc1-wrapper,
 .tsc2-wrapper {
 	align-items: stretch;
-	padding: 0 0 10px 0;
 }
 .tsc1-slide,
 .tsc2-slide {
 	height: auto;
+	padding: 0 10px 20px;
 }
 
 .tovarSimilarCaroucel__left,
@@ -141,11 +135,11 @@
 }
 
 .tovarSimilarCaroucel__left {
-	left: -16px;
+	left: -26px;
 }
 
 .tovarSimilarCaroucel__right {
-	right: -16px;
+	right: -26px;
 }
 
 .tovarSimilarCaroucel__left i,
@@ -178,12 +172,14 @@
 }
 
 .tsc__pagination {
+	position: relative;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	height: 12px;
 	width: 100%;
 	display: none;
+	margin: 10px 0 0;
 }
 
 .tsc__pagination .swiper-pagination-bullet {
@@ -206,7 +202,7 @@
 }
 
 .eCatalog__itemArea_inSlider {
-	padding: 10px;
+	/* padding: 0 10px; */
 	height: 100%;
 }
 

@@ -22,9 +22,6 @@
 }
 
 @media only screen and (max-width: 1024px) {
-	.mainContent__area {
-		margin-top: 5px;
-	}
 	.mainBox__itemOuter_rightBox .mainBox__item span {
 		font-size: 0.875rem;
 	}
@@ -103,9 +100,6 @@
 	.mainContent__left h2 {
 		margin: 0 0 10px 0;
 	}
-	.mainContent {
-		padding: 20px 0;
-	}
 }
 
 @media only screen and (max-width: 600px) {
@@ -122,9 +116,9 @@
 	.mainContent__inner {
 		width: 100%;
 	}
-	.mainContent {
+	/* .mainContent {
 		padding: 10px 0 30px;
-	}
+	} */
 }
 
 @media only screen and (max-width: 400px) {

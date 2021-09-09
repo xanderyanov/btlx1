@@ -14,7 +14,7 @@
 	width: 100%;
 	justify-content: space-between;
 	flex-wrap: wrap;
-	padding: 0 0 40px 0;
+	/* padding: 0 0 40px 0; */
 }
 
 .procedure3__introText {
@@ -129,7 +129,7 @@
 
 .imgSlider__outer {
 	width: 100%;
-	padding: 1rem 3rem;
+	padding: 0 3rem;
 }
 
 .imgSliderCaroucel {
@@ -150,7 +150,7 @@
 
 .imgSlider-wrapper {
 	align-items: stretch;
-	padding: 0 0 10px 0;
+	/* padding: 0 0 10px 0; */
 }
 .imgSlider-slide {
 	height: auto;
