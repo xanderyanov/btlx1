@@ -36,7 +36,8 @@ body
     .procedure3__introArea
       .procedure3__introOuter.wsite
         .xTitle.xTitle_actions
-          .actionImgFlag__outer.action_js_inProcedure
+          #goToActionsTopBtn.actionImgFlag__outer
+            //- .action_js_inProcedure
             //- .eCard__itemActionIco_inPage Акция
             .actionImgFlag
               i.icon-discount
@@ -249,11 +250,16 @@ body
                 tr
                   td Крылья носа!
                   td 2000 ₽
-          .actionBtn__area 
-            .actionBtn__inPrice.action_js_inProcedure Участвует в акции
-          .outerLink3__area
-            a.outerLink3(href="#", target="_blank", rel="nofollow") Купить
-            span Все для домашнего ухода Вы можете приобрести в нашем <strong>Бьюти-бутике.</strong>
+          //- .actionBtn__area 
+          //-   .actionBtn__inPrice.action_js_inProcedure Участвует в акции
+          //- .outerLink3__area
+          //-   a.outerLink3(href="#", target="_blank", rel="nofollow") Купить
+          //-   span Все для домашнего ухода Вы можете приобрести в нашем <strong>Бьюти-бутике.</strong>
+        
+        .wideBlock__area.actions__wrapper
+          .wideBlock
+            +actions
+        
         .card3__area
           .card3__outer
             .title3
@@ -264,8 +270,9 @@ body
   .site__footerf
     +footer3
   
-  +actionPopUp
+  //- +actionPopUp
 
+  +floatOrderBtn
   +popUpBlocks
   +scripts
   

@@ -33,14 +33,15 @@ mixin floatOrderBtn
           .floatOrder__right
             a.floatOrderBtn(href="#")  Оплатить заказ
     when 'actionInProcedure'
-      .floatAction__outer.floatAction__js
+      #goToActionsBottomBtn.floatAction__outer.floatAction__js
         .floatAction
           .floatAction__close 
             i.icon-close
           .floatAction__left
             i.icon-discount
           .floatAction__right
-            .floatAction__rightTop.action_js_inProcedure Участвует в акции
+            .floatAction__rightTop Участвует в акции
+                                  //- .action_js_inProcedure
             //- .floatAction__rightBottom 
             //-   span Участвует в акции
             //-   .floatActionBtn.action_js_inProcedure Подробнее

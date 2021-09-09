@@ -1,3 +1,5 @@
+include __actions
+
 mixin eCard 
   .eCard
     .eCard__itemOuter
@@ -16,83 +18,97 @@ mixin eCard
                 li ИАЛ
           .eCard__priceBtn.xBtn1
             i.icon-rrubles
-          .overlay1 
-            .ovarlay1__inner
-              .innerPriceBox.colorBox_e
-                .innerPriceBox__header
-                  .innerPriceBox__title Лазерная эпиляция Candela
-                  .innerPriceBox__close
-                    i.icon-close1
-                .innerPriceBox__content.xScroll2 
-                  .priceBox__area
-                    .priceBox__title
-                      h3 Название прайса
-                    .priceBox
-                      table
-                        tbody
-                          tr
-                            td Лазерная эпиляция: подбородок
-                            td 1900 руб.
-                          tr
-                            td Лазерная эпиляция: щеки
-                            td 2900 руб.
-                          tr
-                            td Лазерная эпиляция: верхняя губа
-                            td 1000 руб.
-                          tr
-                            td Лазерная эпиляция: лицо полностью
-                            td 4800 руб.
-                          tr
-                            td Лазерная эпиляция: подбородок
-                            td 1900 руб.
-                          tr
-                            td Лазерная эпиляция: щеки
-                            td 2900 руб.
-                          tr
-                            td Лазерная эпиляция: верхняя губа
-                            td 1000 руб.
-                          //- tr
-                          //-   td Лазерная эпиляция: подбородок
-                          //-   td 1900 руб.
-                          //- tr
-                          //-   td Лазерная эпиляция: щеки
-                          //-   td 2900 руб.
-                          //- tr
-                          //-   td Лазерная эпиляция: верхняя губа
-                          //-   td 1000 руб.
-                          //- tr
-                          //-   td Лазерная эпиляция: лицо полностью
-                          //-   td 4800 руб.
-                          //- tr
-                          //-   td Лазерная эпиляция: подбородок
-                          //-   td 1900 руб.
-                          //- tr
-                          //-   td Лазерная эпиляция: щеки
-                          //-   td 2900 руб.
-                          //- tr
-                          //-   td Лазерная эпиляция: верхняя губа
-                          //-   td 1000 руб.
-                          //- tr
-                          //-   td Лазерная эпиляция: подбородок
-                          //-   td 1900 руб.
-                          //- tr
-                          //-   td Лазерная эпиляция: щеки
-                          //-   td 2900 руб.
-                          //- tr
-                          //-   td Лазерная эпиляция: верхняя губа
-                          //-   td 1000 руб.
-                          //- tr
-                          //-   td Лазерная эпиляция: лицо полностью
-                          //-   td 4800 руб.
-                          //- tr
-                          //-   td Лазерная эпиляция: подбородок
-                          //-   td 1900 руб.
-                          //- tr
-                          //-   td Лазерная эпиляция: щеки
-                          //-   td 2900 руб.
-                          //- tr
-                          //-   td Лазерная эпиляция: верхняя губа
-                          //-   td 1000 руб.
+      .overlay1 
+        .ovarlay1__inner
+          .innerPriceBox.colorBox_e
+            .innerPriceBox__header
+              .innerPriceBox__title Лазерная эпиляция Candela
+              .innerPriceBox__close
+                i.icon-close1
+            .innerPriceBox__content.xScroll2 
+              .priceBox__area
+                .priceBox__title
+                  h3 Название прайса
+                .priceBox
+                  table
+                    tbody
+                      tr
+                        td Лазерная эпиляция: подбородок
+                        td 1900 руб.
+                      tr
+                        td Лазерная эпиляция: щеки
+                        td 2900 руб.
+                      tr
+                        td Лазерная эпиляция: верхняя губа
+                        td 1000 руб.
+                      tr
+                        td Лазерная эпиляция: лицо полностью
+                        td 4800 руб.
+                      tr
+                        td Лазерная эпиляция: подбородок
+                        td 1900 руб.
+                      tr
+                        td Лазерная эпиляция: щеки
+                        td 2900 руб.
+                      tr
+                        td Лазерная эпиляция: верхняя губа
+                        td 1000 руб.
+              .actionBtn__area_inEcard 
+                a.actionBtn__inPrice.action_js_inProcedure(href="/1")  Участвует в акции
+    .eCard__itemOuter
+      a.eCard__item(href="#")
+        .eCard__itemInner
+          .eCard__itemInnerLeft(style="background-image: url(assets/img/problem/01.jpg)")
+            .eCard__itemActionIco Акция
+          .eCard__itemInnerRight
+            .eCard__itemTitle Омоложение
+            .eCard__itemContent
+              p Инъекции на основе гиалуроновой кислоты. Улучшают качество кожи, разглаживают морщины
+              ul
+                li Мезоскульпт
+                li Новакутан
+                li Профайло 
+                li ИАЛ
+          .eCard__priceBtn.xBtn1
+            i.icon-rrubles
+      .overlay1 
+        .ovarlay1__inner
+          .innerPriceBox.colorBox_e
+            .innerPriceBox__header
+              .innerPriceBox__title Лазерная эпиляция Candela222
+              .innerPriceBox__close
+                i.icon-close1
+            .innerPriceBox__content.xScroll2 
+              .priceBox__area
+                .priceBox__title
+                  h3 Название прайса
+                .priceBox
+                  table
+                    tbody
+                      tr
+                        td Лазерная эпиляция: подбородок
+                        td 1900 руб.
+                      tr
+                        td Лазерная эпиляция: щеки
+                        td 2900 руб.
+                      tr
+                        td Лазерная эпиляция: верхняя губа
+                        td 1000 руб.
+                      tr
+                        td Лазерная эпиляция: лицо полностью
+                        td 4800 руб.
+                      tr
+                        td Лазерная эпиляция: подбородок
+                        td 1900 руб.
+                      tr
+                        td Лазерная эпиляция: щеки
+                        td 2900 руб.
+                      tr
+                        td Лазерная эпиляция: верхняя губа
+                        td 1000 руб.
+              .actionBtn__area_inEcard 
+                a.actionBtn__inPrice.action_js_inProcedure(href="/")  Участвует в акции22
+
     .eCard__itemOuter
       a.eCard__item(href="#")
         .eCard__itemInner

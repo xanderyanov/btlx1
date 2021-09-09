@@ -4,25 +4,26 @@ $(function () {
 		$(this).children(".action__infoBoxOverlay").fadeIn();
 		$("body").addClass("stop");
 	});
-	$(".action_js_inProcedure").on("click", function (e) {
-		e.preventDefault();
 
-		$(".overlay1").fadeOut(300);
-		$(".innerPriceBox").slideUp(300);
-		// $this.closest(".eCard__item").find(".innerPriceBox3__wrapper").fadeOut(300);
-		// $this.closest(".eCard__item").find(".innerPriceBox3").slideUp(300);
-		$("body").removeClass("stop");
+	// $(".action_js_inProcedure").on("click", function (e) {
+	// 	//e.preventDefault();
 
-		setTimeout(function () {
-			$(".action__infoBoxOverlay").fadeIn();
-			$("body").addClass("stop");
-		}, 500);
-	});
+	// 	var $this = $(this);
+
+	// 	$(".overlay1").fadeOut(300);
+	// 	$(".innerPriceBox").slideUp(300);
+	// 	$("body").removeClass("stop");
+	// 	setTimeout(function () {
+	// 		$this.closest(".eCard__item").find(".action__infoBoxOverlay").fadeIn();
+	// 		$("body").addClass("stop");
+	// 	}, 500);
+	// });
 	$(".action__infoBox").on("click", function (e) {
 		e.stopPropagation();
 	});
 	// Закрытие акции по кнопке Close
-	$(".action__infoBoxClose").on("click", function () {
+	$(".action__infoBoxClose").on("click", function (e) {
+		e.preventDefault();
 		$(".action__infoBoxOverlay").fadeOut(200);
 		$("body").removeClass("stop");
 	});
@@ -30,6 +31,7 @@ $(function () {
 	// Закрытие акции по оверлею
 	$(".action__infoBoxOverlay").on("click", function (e) {
 		e.stopPropagation();
+		e.preventDefault();
 		$("body").removeClass("stop");
 		$(".action__infoBoxOverlay").fadeOut();
 	});
