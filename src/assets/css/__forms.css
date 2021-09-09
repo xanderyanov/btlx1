@@ -746,6 +746,7 @@ input.work_emailZ {
 	line-height: 1.4;
 	color: var(--color1);
 	font-weight: 700;
+	white-space: nowrap;
 }
 
 .form3 {
