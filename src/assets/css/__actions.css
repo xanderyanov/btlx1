@@ -290,3 +290,11 @@
 	font-size: 8px;
 	line-height: 8px;
 }
+
+/**********************************/
+#actionsInPage {
+	display: block;
+	position: absolute;
+	top: -150px;
+	visibility: hidden;
+}

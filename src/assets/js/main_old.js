@@ -813,12 +813,16 @@ $(function () {
 		var menuHeight = 0;
 	}
 
-	$("#goToActionsTopBtn, #goToActionsBottomBtn").on("click", function (e) {
-		$("html,body")
-			.stop()
-			.animate({ scrollTop: $("#actionsInPage").offset().top - menuHeight }, 1000);
-		e.preventDefault();
-	});
+	if ($(".action__outer").length) {
+		var actionItemCardHeight = $(".action__outer").outerHeight();
+		$("#actionsInPage").css({ top: -actionItemCardHeight });
+		$("#goToActionsTopBtn, #goToActionsBottomBtn").on("click", function (e) {
+			$("html,body")
+				.stop()
+				.animate({ scrollTop: $("#actionsInPage").offset().top }, 1000);
+			e.preventDefault();
+		});
+	}
 
 	$("#goToAboutAnchor").on("click", function (e) {
 		$("html,body")
