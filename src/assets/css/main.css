@@ -517,3 +517,61 @@ a.btn3:hover {
 	width: 100%;
 	height: 100%;
 }
+
+.tablestyle1 {
+	position: relative;
+}
+
+.tablestyle1 table,
+.tablestyle1 table:last-child {
+	margin-bottom: 20px;
+}
+
+.tablestyle1 table td {
+	padding: 10px;
+}
+
+.tablestyle1 h4 span {
+	font-size: 18px;
+}
+
+.tablestyle1 .priceBox__area {
+	margin: 0;
+}
+
+.tablestyle1 .priceBox__title {
+	margin: 0 0 10px;
+}
+
+.tablestyle1 .priceBox__title h3 {
+	font-size: 1.375rem;
+}
+
+.tablestyle1 h2,
+.tablestyle1 h3,
+.tablestyle1 h4,
+.tablestyle1 h5 {
+	margin: 0 0 10px;
+}
+
+.daughter {
+	padding: 0 0 0 30px;
+}
+
+.prlevtitle,
+.daughter h3,
+.priceBox__title h3,
+.prwrapper h4 {
+	cursor: pointer;
+	transition: all 0.3s;
+}
+.prlevtitle:hover,
+.daughter h3:hover,
+.priceBox__title h3:hover,
+.prwrapper h4:hover {
+	color: var(--red1);
+}
+
+.prwrapper .priceBox__area {
+	padding: 0 0 0 30px;
+}

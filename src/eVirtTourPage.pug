@@ -1,26 +1,28 @@
-- var pageTitle = 'Страница мастера'
+- var pageTitle = 'Виртуальный тур'
 - var seoKeywords = 'Ключевые слова для страницы'
 - var seoDesc = 'Сео описание для страницы'
 
 include __const
+include __card
 include __header
 include __menu
+include __eShopMenu
+include __mainTop
+include __mainProblem
 include __breadcrumbs
 include __wideBlock
-include __eShopMenu
-include __eShopSlideLeftMenu
-
-include __master4
-
+include __services
 include __forms
+
 include __footer
 include __menuBottom1
-include __mainTop
-
-include __popUpBlocks
 
 include __old
-include __comments
+include __popUpBlocks
+include __eVirtTourPage
+include __pagination
+
+
 
 
 <!DOCTYPE html>
@@ -30,40 +32,24 @@ body
 
   .site__header
     +header
-  
+    //- +topMenu
 
 
   .site__center
-    +breadcrumbs4
-
-    +master4
-    +commentsCaroucel
-
-    +wideBlock
-
-    +portfolio
-
-    +imgCaroucel1
+    +breadcrumbs5
+    .dubleBox3__area.block_mbottom 
+      .dubleBox3.wsite
+        .dubleBox3__left 
+          +eShopMenu
+        .dubleBox3__right
+          +virtTour
 
 
-
-
-
+    //- +zBlock3
 
   .site__footer
     +footer3
 
-
-  //- +topMenuAdaptive
-  +search1
-
-  +masterWindowForm
-
-  +toUp
-  
-  //- +formCallBack
-
   +popUpBlocks
-
   +scripts
   

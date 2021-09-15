@@ -196,7 +196,7 @@
 
 .eCard__itemContent p {
 	margin-bottom: 5px;
-	font-weight: 300;
+	font-weight: 400;
 	font-size: 14px;
 	line-height: 1.3;
 	letter-spacing: 0.04em;
@@ -210,7 +210,7 @@
 }
 
 .eCard__itemContent li {
-	font-weight: 300;
+	font-weight: 400;
 	font-size: 14px;
 	line-height: 1.3;
 	letter-spacing: 0.04em;

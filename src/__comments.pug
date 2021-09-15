@@ -1,7 +1,7 @@
 mixin commentsCaroucel
   .commentsCaroucel__area
     .commentsCaroucel__outer.wsite
-      .commentsCaroucel__title.title1
+      .xTitle
         h2=commentsTitle
       .commentsCaroucel
         .swiper-container.commentsCaroucel-container
@@ -18,10 +18,17 @@ mixin commentsCaroucel
                           .commentsCard__date
                             span!= item.date + ' / '
                             span!= item.time  
-                      .commentsCard__text.cutLongString150!= item.text
+                      .commentsCard__textArea
+                        .commentsCard__text.cutLongString150!= item.text
+                        if item.fulltext
+                          .commentsCard__textAll!= item.fulltext
+                        if item.fulltext
+                          .commentsCard__more Читать весь отзыв
                       .commentsCard__doktor
                         .commentsCard__doktorName!= item.doktorName
                         .commentsCard__doctorPosition!= item.doktorPosition
+                  
+
         .commentsCaroucel__left
           i.icon-arr-left1
         .commentsCaroucel__right

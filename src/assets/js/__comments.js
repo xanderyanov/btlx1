@@ -68,4 +68,15 @@ $(function () {
 			cutLongString($(this), 150);
 		}
 	});
+
+	$(".commentsCard__more").on("click", function () {
+		var AllText = $(this).closest(".commentsCard__textArea").find(".commentsCard__textAll");
+		if ($(this).hasClass("open")) {
+			$(this).removeClass("open").text("Читать весь отзыв");
+			AllText.slideUp();
+		} else {
+			$(this).addClass("open").text("Свернуть");
+			AllText.slideDown();
+		}
+	});
 });
