@@ -56,6 +56,12 @@
 	.xBlock {
 		margin-bottom: 30px;
 	}
+
+	.tablestyle1 h1,
+	.tablestyle1 h2,
+	.tablestyle1 h3 {
+		text-align: left;
+	}
 }
 
 @media only screen and (max-width: 600px) {
@@ -185,6 +191,11 @@
 	.xIntro__more {
 		order: 4;
 	}
+
+	.tablestyle1 h4 span {
+		font-size: 16px;
+		padding: 0 0 0 10px;
+	}
 }
 
 @media only screen and (max-width: 480px) {
@@ -276,6 +287,25 @@
 	.xTitle h3 {
 		font-size: 1.25rem;
 	} */
+
+	.tablestyle1 .priceBox table td:nth-child(1) {
+		width: 70%;
+		padding: 5px;
+	}
+
+	.tablestyle1 .priceBox table td:nth-child(2) {
+		width: 30%;
+		padding: 5px;
+	}
+	.daughter {
+		padding: 0;
+	}
+	.tablestyle1 h4 span {
+		font-size: 12px;
+	}
+	.tablestyle1 h2 {
+		font-weight: 400;
+	}
 }
 
 @media only screen and (max-width: 414px) {

@@ -3,18 +3,21 @@ $(function () {
 
 	$(".daughter").hide();
 	$(".prlevtitle").on("click", function () {
+		$(this).toggleClass("open");
 		$(this).next().slideToggle();
 	});
 
-	$(".prwrapper").children(".priceBox__area").hide();
-	$(".prwrapper")
+	$(".oneServWrapper").children(".priceBox__area").hide();
+	$(".oneServWrapper")
 		.children("h3")
 		.on("click", function () {
+			$(this).toggleClass("open");
 			$(this).next().slideToggle();
 		});
-	$(".prwrapper")
+	$(".oneServWrapper")
 		.children("h4")
 		.on("click", function () {
+			$(this).toggleClass("open");
 			$(this).next().slideToggle();
 		});
 });
