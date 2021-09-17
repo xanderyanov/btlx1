@@ -149,3 +149,23 @@
 	width: 100%;
 	height: 100%;
 }
+
+.videoBox_i video {
+	position: relative;
+	z-index: 1;
+}
+
+.videoBox__playBtn {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: url(../img/play.png) center center no-repeat;
+	cursor: pointer;
+	z-index: 2;
+}
+
+.videoBox__playBtn_active {
+	display: none;
+}

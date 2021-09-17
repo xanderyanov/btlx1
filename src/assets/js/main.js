@@ -47,4 +47,15 @@ $(function () {
 			}
 		});
 	}
+	$(".videoBox__playBtn").on("click", function () {
+		var $this = $(this);
+		$this.toggleClass("videoBox__playBtn_active");
+		$this.closest(".videoBox_i").find("video").trigger("play")[0].controls = true;
+	});
+	$(".videoBox_i")
+		.children("video")
+		.on("play", function () {
+			var $this = $(this);
+			$this.closest(".eVideoGallery").find("video").not($this).trigger("pause");
+		});
 });

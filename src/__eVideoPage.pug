@@ -4,12 +4,34 @@ mixin eVideoGallery
       .eVideoGallery__itemOuter.jsFilterResultItem(data-sid='62') 
         .eVideoGallery__item
           .eVideoGallery__itemVideo.videoBox_i
-            iframe(width='560' height='315' src='https://www.youtube.com/embed/YCF6qjf1-h8' autoplay='1' frameborder='0' allow='accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen='')
+            .videoBox__playBtn
+            video(width="100%" height="auto" muted="" playsinline="" controls="controls" loop="" preload="auto" poster="assets/img/problem/figura.jpg")
+              source(src='assets/video/video20210903.mp4' type='video/mp4')
           .eVideoGallery__itemInfo
             .eVideoGallery__itemInfoTop.eVideoGallery__itemInfoTop_new
               .eVideoGallery__itemFlag New 
               .eVideoGallery__itemDate 12.08.2021
             .eVideoGallery__itemTitle  Лазерная эпиляция - интервью с нашим ведущим специалистом в этой области
+      .eVideoGallery__itemOuter.jsFilterResultItem(data-sid='62') 
+        .eVideoGallery__item
+          .eVideoGallery__itemVideo.videoBox_i
+            .videoBox__playBtn
+            video(width="100%" height="auto" muted="" playsinline="" controls="controls" loop="" preload="auto" poster="assets/img/problem/figura.jpg")
+              source(src='assets/video/video20210903.mp4' type='video/mp4')
+          .eVideoGallery__itemInfo
+            .eVideoGallery__itemInfoTop.eVideoGallery__itemInfoTop_new
+              .eVideoGallery__itemFlag New 
+              .eVideoGallery__itemDate 12.08.2021
+            .eVideoGallery__itemTitle  Лазерная эпиляция - интервью с нашим ведущим специалистом в этой области
+      //- .eVideoGallery__itemOuter.jsFilterResultItem(data-sid='62') 
+      //-   .eVideoGallery__item
+      //-     .eVideoGallery__itemVideo.videoBox_i
+      //-       iframe(width='560' height='315' src='https://www.youtube.com/embed/YCF6qjf1-h8' autoplay='1' frameborder='0' allow='accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen='')
+      //-     .eVideoGallery__itemInfo
+      //-       .eVideoGallery__itemInfoTop.eVideoGallery__itemInfoTop_new
+      //-         .eVideoGallery__itemFlag New 
+      //-         .eVideoGallery__itemDate 12.08.2021
+      //-       .eVideoGallery__itemTitle  Лазерная эпиляция - интервью с нашим ведущим специалистом в этой области
       .eVideoGallery__itemOuter.jsFilterResultItem(data-sid='17,18,19,21') 
         .eVideoGallery__item
           .eVideoGallery__itemVideo.videoBox_i
