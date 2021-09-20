@@ -520,6 +520,8 @@ a.btn3:hover {
 
 .tablestyle1 {
 	position: relative;
+	padding: 70px 100px;
+	background: #fff;
 }
 
 .tablestyle1 table,

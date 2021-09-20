@@ -60,3 +60,81 @@
 	white-space: nowrap;
 	font-weight: 400;
 }
+.tdPriceOuter {
+	display: flex;
+	/* flex-direction: column; */
+	/* align-items: flex-end; */
+	justify-content: space-between;
+}
+
+.oldPrice {
+	font-size: 14px;
+	color: #909090;
+	font-weight: 300;
+	text-decoration: line-through;
+	margin: 0 10px 0 0;
+	width: 45%;
+}
+
+/********************************************/
+
+.xPrice__area {
+	position: relative;
+}
+
+.xPrice_outer {
+	position: relative;
+}
+
+.xPrice__wide {
+	width: 100%;
+	display: flex;
+	border-bottom: 1px solid #e0e0e0;
+	margin-bottom: 50px;
+}
+
+.xPrice__dtTabTitle {
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 24px;
+	text-align: center;
+	letter-spacing: 0.04em;
+	color: #4f4f4f;
+	padding: 0 30px 20px;
+	cursor: pointer;
+	position: relative;
+}
+.xPrice__dtTabTitle.active {
+	color: #d74d63;
+}
+
+.xPrice__dtTabTitle.active:after {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	height: 3px;
+	width: 100%;
+	border-radius: 3px;
+	background: #d74d63;
+}
+
+.xPrice__splitOuter {
+	display: none;
+}
+.xPrice__splitOuter.active {
+	display: block;
+}
+
+.xPrice__split {
+	display: flex;
+}
+
+.xPrice__aside {
+	width: 25%;
+}
+.xPrice__content {
+	width: 75%;
+	padding: 0 0 0 30px;
+}

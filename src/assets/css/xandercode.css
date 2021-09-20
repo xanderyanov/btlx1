@@ -38,6 +38,10 @@
 	--formBtn: #7b87dc;
 }
 
+.grayscale {
+	filter: grayscale(100%);
+}
+
 .red {
 	color: var(--red1);
 }

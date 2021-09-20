@@ -1,11 +1,11 @@
 $(function () {
-	$(".daughter").hide();
+	// $(".daughter").hide();
 	$(".prlevtitle").on("click", function () {
 		$(this).toggleClass("open");
 		$(this).next().slideToggle();
 	});
 
-	$(".oneServWrapper").children(".priceBox__area").hide();
+	// $(".oneServWrapper").children(".priceBox__area").hide();
 	$(".oneServWrapper")
 		.children("h3")
 		.on("click", function () {
@@ -34,4 +34,16 @@ $(function () {
 			$(".oneServWrapper").children("h4").addClass("open").next().slideDown();
 		}
 	});
+
+	/********************************** Прайс на табах*/
+	// $(".xPrice__dtTabTitle").on("click", function () {
+	// 	var $this = $(this);
+	// 	$(".xPrice__dtTabTitle").not(this).removeClass("active");
+	// 	$this.addClass("active");
+	// 	$activId = $this.attr("data-titleId");
+	// 	$(".xPrice__splitOuter").removeClass("active").hide();
+	// 	$(".xPrice__splitOuter[data-contentId=" + $activId + "]")
+	// 		.addClass("active")
+	// 		.show();
+	// });
 });

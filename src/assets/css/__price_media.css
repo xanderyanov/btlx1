@@ -29,6 +29,17 @@
 }
 
 @media only screen and (max-width: 600px) {
+	.tdPriceOuter {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-end;
+		/* justify-content: flex-end; */
+	}
+
+	.oldPrice {
+		margin: 0;
+		width: auto;
+	}
 }
 
 @media only screen and (max-width: 480px) {

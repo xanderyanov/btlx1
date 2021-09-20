@@ -15,6 +15,9 @@
 	.xBlock {
 		margin-bottom: 40px;
 	}
+	.tablestyle1 {
+		padding: 30px 50px;
+	}
 }
 
 @media only screen and (max-width: 920px) {
@@ -61,6 +64,9 @@
 	.tablestyle1 h2,
 	.tablestyle1 h3 {
 		text-align: left;
+	}
+	.tablestyle1 {
+		padding: 20px 30px;
 	}
 }
 
@@ -289,6 +295,9 @@
 	.xTitle h3 {
 		font-size: 1.25rem;
 	} */
+	.tablestyle1 {
+		padding: 10px;
+	}
 
 	.tablestyle1 .priceBox table td:nth-child(1) {
 		width: 70%;

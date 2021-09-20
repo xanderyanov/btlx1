@@ -1,0 +1,94 @@
+- var pageTitle = 'Прайс-лист'
+- var seoKeywords = 'Ключевые слова для страницы'
+- var seoDesc = 'Сео описание для страницы'
+- var sliderTitle1 = 'Популярные товары'
+- var commentsTitle = 'Отзывы'
+
+include __const
+include __header
+include __popUpBlocks
+include __mainTop
+include __card
+include __mainBox
+include __news
+include __actions
+include __eShopTovarPage
+include __forms
+include __footer
+
+include __old
+include __blocks
+include __comments
+include __breadcrumbs
+include __price
+
+
+<!DOCTYPE html>
+html(lang="ru-RU")
++head
+body
+
+  .site__header
+    +header
+
+  .site__center
+    +breadcrumbs4
+    .xPrice__area 
+      .xPrice_outer.wsite
+        .xTitle 
+          h1 Наш прайс-лист
+        .xPrice__wide
+          .xPrice__dtTabTitle.active(data-titleId='a1') Аппаратная<br>косметология
+          .xPrice__dtTabTitle(data-titleId='a2') Инъекционная<br>косметология
+          .xPrice__dtTabTitle(data-titleId='a3') Эстетическая<br>гинекология
+          .xPrice__dtTabTitle(data-titleId='a4') Эстетика<br>и уход
+          .xPrice__dtTabTitle(data-titleId='a5') Лечебная<br>косметология
+          .xPrice__dtTabTitle(data-titleId='a6') Имидж-студия
+        .xPrice__splitOuter.active(data-contentId='a1')
+          .xPrice__split
+            .xPrice__aside
+              .xPrice__dtTabContent Меню 1
+            .xPrice__content
+              h2 Прайс 1
+        .xPrice__splitOuter(data-contentId='a2')
+          .xPrice__split
+            .xPrice__aside
+              .xPrice__dtTabContent Меню 2
+            .xPrice__content
+              h2 Прайс 2
+        .xPrice__splitOuter(data-contentId='a3') 
+          .xPrice__split
+            .xPrice__aside
+              .xPrice__dtTabContent Меню 3
+            .xPrice__content
+              h2 Прайс 3
+        .xPrice__splitOuter(data-contentId='a4') 
+          .xPrice__split
+            .xPrice__aside
+              .xPrice__dtTabContent Меню 4
+            .xPrice__content
+              h2 Прайс 4
+        .xPrice__splitOuter(data-contentId='a5') 
+          .xPrice__split
+            .xPrice__aside
+              .xPrice__dtTabContent Меню 5
+            .xPrice__content
+              h2 Прайс 5
+        .xPrice__splitOuter(data-contentId='a6') 
+          .xPrice__split
+            .xPrice__aside
+              .xPrice__dtTabContent Меню 6
+            .xPrice__content
+              h2 Прайс 6
+
+
+  
+  .site__footer
+    +footer3
+      
+
+
+  +popUpBlocks
+  +scripts
+
+    
