@@ -1272,13 +1272,13 @@ function initMaps() {
 		{
 			balloonContentHeader:
 				'<div class="baloon__top">Бьюти Лаунж</div>' +
-				'<div class="baloon__description">Центр косметологии и красоты</div>',
+				'<div class="baloon__description">Клиника красоты</div>',
 			balloonContentBody:
 				'<div class="baloon__content"><img src="/btlassets/img/logo-map2.png">' +
 				'<a href="tel:88452260000">8 (8452) 26-00-00</a>',
 			balloonContentFooter: '<div class="baloon__footer">Саратов, ул. Московская, 113/117, <br>ТК «Мир», 2 этаж.</div>',
 			clusterCaption: "Косметология<br>салон массажа<br>HAIR услуги<br>NAIL-BAR<br>профессиональная косметика",
-			hintContent: '<div class="baloon__top">Центр косметологии и красоты "Бьюти Лаунж"</div>',
+			hintContent: '<div class="baloon__top">Клиника красоты "Бьюти Лаунж"</div>',
 		},
 		{
 			iconLayout: "default#image",

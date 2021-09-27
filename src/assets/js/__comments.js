@@ -20,7 +20,7 @@ $(function () {
 			pagination: {
 				el: ".commentsCaroucel__pagination",
 				type: "bullets",
-				dynamicBullets: false,
+				dynamicBullets: true,
 				clickable: true,
 			},
 			breakpoints: {
@@ -69,14 +69,31 @@ $(function () {
 		}
 	});
 
+	// $(".commentsCard__more").on("click", function () {
+	// 	var AllText = $(this).closest(".commentsCard__textArea").find(".commentsCard__textAll");
+	// 	if ($(this).hasClass("open")) {
+	// 		$(this).removeClass("open").text("Читать весь отзыв");
+	// 		AllText.slideUp();
+	// 	} else {
+	// 		$(this).addClass("open").text("Свернуть");
+	// 		AllText.slideDown();
+	// 	}
+	// });
+
+
 	$(".commentsCard__more").on("click", function () {
-		var AllText = $(this).closest(".commentsCard__textArea").find(".commentsCard__textAll");
+		var Parent = $(this).closest(".commentsCard__textArea");
+		var AllText = Parent.find(".commentsCard__textAll");
+		var ShortText = Parent.find(".commentsCard__text");
 		if ($(this).hasClass("open")) {
 			$(this).removeClass("open").text("Читать весь отзыв");
 			AllText.slideUp();
+			ShortText.slideDown();
 		} else {
 			$(this).addClass("open").text("Свернуть");
 			AllText.slideDown();
+			ShortText.slideUp();
 		}
 	});
+
 });

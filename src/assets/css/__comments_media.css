@@ -1,13 +1,13 @@
 @media only screen and (max-width: 1200px) {
-	.commentsCaroucel__pagination {
-		display: flex;
-	}
-	.commentsCaroucel__left {
-		display: none;
-	}
-	.commentsCaroucel__right {
-		display: none;
-	}
+  .commentsCaroucel__pagination {
+    display: block;
+  }
+  .commentsCaroucel__left {
+    display: none;
+  }
+  .commentsCaroucel__right {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 1140px) {
@@ -17,9 +17,9 @@
 }
 
 @media only screen and (max-width: 1024px) {
-	.commentsCaroucel__area {
-		padding: 0;
-	}
+  .commentsCaroucel__area {
+    padding: 0;
+  }
 }
 
 @media only screen and (max-width: 920px) {
@@ -32,9 +32,9 @@
 }
 
 @media only screen and (max-width: 600px) {
-	.commentsCaroucel__outer {
-		margin: 0 -5px;
-	}
+  .commentsCaroucel__outer {
+    margin: 0 -5px;
+  }
 }
 
 @media only screen and (max-width: 480px) {
